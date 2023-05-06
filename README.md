@@ -6,7 +6,7 @@ Welcome to the PDF Question Answering Tool! This tool uses the power of ChatGPT,
 ##Generate openAI API keys here
 https://platform.openai.com/account/api-keys 
 
-##pip install langchain pypdf2 python-dotenv streamlit
+##pip install langchain pypdf2 python-dotenv streamlit openai tiktoken
 
 
 
