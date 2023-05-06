@@ -7,3 +7,11 @@ Welcome to the PDF Question Answering Tool! This tool uses the power of ChatGPT,
 https://platform.openai.com/account/api-keys 
 
 ##pip install langchain pypdf2 python-dotenv streamlit
+
+
+
+##
+  Warning: to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run /workspace/chatgpt-langchain-pdfreader/app.py [ARGUMENTS]
