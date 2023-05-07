@@ -7,10 +7,10 @@
 - This tool is designed to make information retrieval easier and more efficient. Whether you're a student, researcher, or simply looking to find answers to your questions, this tool is here to help. 
 - Give it a try today and experience the power of AI-assisted question answering!
 
-## Installation
+## Installation - OpenAI
 - Clone the repo
 - Add `.env` file and .gitignore files
-- Generate openAI API keys [here](https://platform.openai.com/account/api-keys )
+- Generate openAI API keys [here](https://platform.openai.com/account/api-keys) and update `OPENAI_API_KEY` in `.env`
 - Install below python libraries 
   ```python
   pip install langchain pypdf2 python-dotenv streamlit openai tiktoken
@@ -18,4 +18,17 @@
 - To view UI run below
   ```sh
   streamlit run /workspace/chatgpt-langchain-pdfreader/app.py
+  ```
+
+## Installation - HuggingFace
+- Clone the repo
+- Add `.env` file and .gitignore files
+- Generate openAI API keys [here](https://huggingface.co/settings/tokens) and update `HUGGING_FACE_API_KEY` in `.env`
+- Install below python libraries 
+  ```python
+  pip install pypdf2 python-dotenv streamlit transformers torch
+  ```
+- To view UI run below
+  ```sh
+  streamlit run /workspace/chatgpt-langchain-pdfreader/hugging_chat.py
   ```
