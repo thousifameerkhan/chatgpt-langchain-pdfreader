@@ -8,18 +8,18 @@
 - Give it a try today and experience the power of AI-assisted question answering!
 
 ## Fundamentals
-- `Text Embedding:`
-  - It is the process of representing words or phrases in a numerical vector space, such that the distance between the vectors reflects the semantic similarity between the corresponding words or phrases.
-  - This techniques provide a powerful way to represent natural language text data in a numerical vector space, enabling downstream machine learning models to more effectively capture semantic relationships between words and phrases.
-- `Vector Store:`
-  - It is a database system that stores and manages precomputed vector embeddings of text data, typically used for natural language processing tasks.
-  - It allows efficient storage and retrieval of precomputed embeddings, which can significantly speed up the process of training machine learning models on large text datasets.
 - `Chunk Size:` 
   - It refers to the number of characters or words that a text is divided into when using a text splitter. 
   - It determines the size of each individual chunk of text that is processed.
 - `CharacterTextSplitter:`
   - It works by taking in a string of text and a chunk size, and then splitting the text into chunks of that size. 
   - The chunks can be used for various purposes, such as indexing or processing with language models.
+- `Text Embedding:`
+  - It is the process of representing words or phrases in a numerical vector space, such that the distance between the vectors reflects the semantic similarity between the corresponding words or phrases.
+  - This techniques provide a powerful way to represent natural language text data in a numerical vector space, enabling downstream machine learning models to more effectively capture semantic relationships between words and phrases.
+- `Vector Store:`
+  - It is a database system that stores and manages precomputed vector embeddings of text data, typically used for natural language processing tasks.
+  - It allows efficient storage and retrieval of precomputed embeddings, which can significantly speed up the process of training machine learning models on large text datasets.
 
 ## Installation - OpenAI
 - Clone the repo
