@@ -62,3 +62,6 @@
   ```sh
   streamlit run /workspace/chatgpt-langchain-pdfreader/cohere_chat.py
   ```
+
+## Reference
+- [Weaviate](https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/weaviate.html)
