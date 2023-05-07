@@ -1,5 +1,6 @@
 import cohere
 import os
+from dotenv import load_dotenv
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
@@ -15,7 +16,7 @@ def main():
     # Loading API Key
     load_dotenv()
     print('Loaded Cohere API Key ->'+os.getenv("COHERE_KEY"))
-    print('Loaded Weaviate API Key ->'+os.getenv("WEAVIATE_KEY"))
+    print('Loaded Weaviate API Key ->'+os.getenv("WEAVIATE_URL"))
 
 if __name__ == '__main__':
     main()

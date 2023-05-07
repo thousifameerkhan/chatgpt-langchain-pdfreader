@@ -23,7 +23,7 @@
 
 ## Installation - OpenAI
 - Clone the repo
-- Add `.env` file and .gitignore files
+- Add `.env` file by copying `.env.sample`
 - Generate openAI API keys [here](https://platform.openai.com/account/api-keys) and update `OPENAI_API_KEY` in `.env`
 - Install below python libraries 
   ```python
@@ -37,8 +37,8 @@
 
 ## Installation - HuggingFace
 - Clone the repo
-- Add `.env` file and .gitignore files
-- Generate openAI API keys [here](https://huggingface.co/settings/tokens) and update `HUGGING_FACE_API_KEY` in `.env`
+- Add `.env` file by copying `.env.sample`
+- Generate HuggingFace API keys [here](https://huggingface.co/settings/tokens) and update `HUGGING_FACE_API_KEY` in `.env`
 - Install below python libraries 
   ```python
   pip install --upgrade pip
@@ -51,8 +51,8 @@
 
 ## Installation - Cohere
 - Clone the repo
-- Add `.env` file and .gitignore files
-- Generate openAI API keys [here](https://dashboard.cohere.ai/api-keys) and update `COHERE_KEY` in `.env`
+- Add `.env` file by copying `.env.sample`
+- Generate Cohere API keys [here](https://dashboard.cohere.ai/api-keys) and update `COHERE_KEY` in `.env`
 - Install below python libraries 
   ```python
   pip install --upgrade pip
