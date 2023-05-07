@@ -50,4 +50,12 @@
 ## Installation - Cohere
 - Clone the repo
 - Add `.env` file and .gitignore files
-- Generate openAI API keys [here](https://huggingface.co/settings/tokens) and update `HUGGING_FACE_API_KEY` in `.env`
+- Generate openAI API keys [here](https://dashboard.cohere.ai/api-keys) and update `COHERE_KEY` in `.env`
+- Install below python libraries 
+  ```python
+  pip install pypdf2 python-dotenv streamlit cohere langchain weaviate
+  ```
+- To view UI run below
+  ```sh
+  streamlit run /workspace/chatgpt-langchain-pdfreader/cohere_chat.py
+  ```
