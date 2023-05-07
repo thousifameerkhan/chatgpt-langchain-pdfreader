@@ -27,6 +27,7 @@
 - Generate openAI API keys [here](https://platform.openai.com/account/api-keys) and update `OPENAI_API_KEY` in `.env`
 - Install below python libraries 
   ```python
+  pip install --upgrade pip
   pip install langchain pypdf2 python-dotenv streamlit openai tiktoken
   ```
 - To view UI run below
@@ -40,6 +41,7 @@
 - Generate openAI API keys [here](https://huggingface.co/settings/tokens) and update `HUGGING_FACE_API_KEY` in `.env`
 - Install below python libraries 
   ```python
+  pip install --upgrade pip
   pip install pypdf2 python-dotenv streamlit transformers torch
   ```
 - To view UI run below
@@ -53,7 +55,8 @@
 - Generate openAI API keys [here](https://dashboard.cohere.ai/api-keys) and update `COHERE_KEY` in `.env`
 - Install below python libraries 
   ```python
-  pip install pypdf2 python-dotenv streamlit cohere langchain weaviate
+  pip install --upgrade pip
+  pip install pypdf2 python-dotenv streamlit cohere langchain weaviate-client
   ```
 - To view UI run below
   ```sh
