@@ -12,6 +12,7 @@ def main():
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask your PDF 😁")
     pdf = st.file_uploader("Upload your PDF",type="pdf")
+    user_question = st.text_input("Ask any question about your PDF :")
 
     # Loading API Key
     load_dotenv()
