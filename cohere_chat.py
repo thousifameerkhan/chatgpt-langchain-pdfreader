@@ -37,10 +37,7 @@ def main():
         )
         chunks = text_splitter.split_text(text)
 
-        # Creating Embeddings
-        embeddings = CohereEmbeddings(cohere_api_key=os.getenv("COHERE_KEY"))
-
-        # Creating Knowledgebase
+        # Creating Weaviate Client
         WEAVIATE_URL = getpass.getpass(os.getenv("WEAVIATE_URL"))
         knowledgeBase = Weaviate.
 
