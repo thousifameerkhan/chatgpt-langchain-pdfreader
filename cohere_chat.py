@@ -27,6 +27,7 @@ def main():
         text = ""
         for page in pdf_reader.pages:
             text += page.extract_text()
+        # st.write(text)
 
         # Text Splitting
         text_splitter = CharacterTextSplitter(
@@ -38,10 +39,8 @@ def main():
         chunks = text_splitter.split_text(text)
 
         # Creating Weaviate Client
-        WEAVIATE_URL = getpass.getpass(os.getenv("WEAVIATE_URL"))
-        knowledgeBase = Weaviate.
-
-
+        # WEAVIATE_URL = getpass.getpass(os.getenv("WEAVIATE_URL"))
+        # knowledgeBase = Weaviate.
         
 
 if __name__ == '__main__':
