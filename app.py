@@ -9,7 +9,7 @@ from langchain.vectorstores import FAISS
 
 def main():
     load_dotenv()
-    print('Hello World')
+    # print('Hello World')
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask yout PDF 😁")
 
