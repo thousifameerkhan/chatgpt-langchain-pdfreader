@@ -89,6 +89,7 @@ def main():
                 }
         client.schema.create(schema)
         vectorstore = Weaviate(client, "UserManual", "content")
+        doc_result = embeddings.embed_documents()
 
         user_question = st.text_input("Ask any question about your PDF :")
 
