@@ -65,8 +65,9 @@ def main():
                             },
                             "moduleConfig": {
                                 "text2vec-cohere": {
-                                "model": "multilingual-22-12",
-                                "truncate": "RIGHT"
+                                    "model": "multilingual-22-12",
+                                    "truncate": "RIGHT",
+                                    "vectorizeClassName": True
                                 }
                             },
                             "properties": [
@@ -78,8 +79,8 @@ def main():
                                     "description": "Vectorized data of OFSLL User Manual",
                                     "moduleConfig": {
                                         "text2vec-cohere": {
-                                        "skip": "false",
-                                        "vectorizePropertyName": "false"
+                                        "skip": False,
+                                        "vectorizePropertyName": False
                                         }
                                     }
                                 }
