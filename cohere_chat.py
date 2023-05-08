@@ -89,9 +89,15 @@ def main():
                 }
         client.schema.create(schema)
         vectorstore = Weaviate(client, "UserManual", "content")
-        doc_result = embeddings.embed_documents()
 
+        # Storing Data
+        knowledge_base = Weaviate.from_texts(chunks, embeddings)
+
+        # Querying Data
         user_question = st.text_input("Ask any question about your PDF :")
+        if user_question:
+            docs = knowledge_base.similarity_search(user_question)
+            st.write(docs)
 
 if __name__ == '__main__':
     main()
