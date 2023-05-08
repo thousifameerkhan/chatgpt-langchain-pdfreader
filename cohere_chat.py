@@ -97,7 +97,10 @@ def main():
         # Querying Data
         user_question = st.text_input("Ask any question about your PDF :")
         if user_question:
-            docs = knowledge_base.similarity_search(user_question)
+            docs = knowledge_base.similarity_search(
+                    user_question,
+                    nearVector=[0.5,0.2,0.8]
+                   )
             st.write(docs)
 
 if __name__ == '__main__':
