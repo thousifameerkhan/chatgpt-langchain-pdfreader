@@ -66,3 +66,4 @@
 ## Reference
 - [Cohere](https://python.langchain.com/en/latest/modules/models/text_embedding/examples/cohere.html)
 - [Weaviate](https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/weaviate.html)
+- [CSV Chat](https://www.youtube.com/watch?v=nr-mDSi9LxA)
