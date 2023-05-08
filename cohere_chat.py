@@ -78,8 +78,8 @@ def main():
                                     "description": "Vectorized data of OFSLL User Manual",
                                     "moduleConfig": {
                                         "text2vec-cohere": {
-                                        "skip": false,
-                                        "vectorizePropertyName": false
+                                        "skip": "false",
+                                        "vectorizePropertyName": "false"
                                         }
                                     }
                                 }
