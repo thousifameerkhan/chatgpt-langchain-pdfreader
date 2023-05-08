@@ -1,12 +1,12 @@
 import cohere
 import os
+import weaviate
 from dotenv import load_dotenv
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import CohereEmbeddings
 from langchain.vectorstores import Weaviate
-import weaviate
 
 def main():
     print('Starting Document ChatBot')
