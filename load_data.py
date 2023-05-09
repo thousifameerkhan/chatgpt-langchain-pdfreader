@@ -76,7 +76,9 @@ def create_weaviate_schema_and_class():
     Weaviate(weaviate_client,"Key","Description")
     print('##########################################################\n')
 
-def load_csv_data():
+    return weaviate_client
+
+def load_csv_data(weaviate_client):
     print('##########################################################')
     print('>>>>>>>>>>>>>>>  Loading data from CSV File  <<<<<<<<<<<<<')
     print('##########################################################')
@@ -89,18 +91,38 @@ def load_csv_data():
                }
     doc = CSVLoader(file_path=os.getenv("CSV_FILE_LOCATION"), csv_args=csv_args)
     
-    # Display CSV DataLoaded
-    # for i, row in enumerate(doc.load()):
-    #     print('Row {}: {}'.format(i+1, row))
+    # Load the OpenAI embeddings model
+    openai_embeddings = OpenAIEmbeddings()
+
+    # Create and add Weaviate objects for each row in the CSV
+    for i, row in enumerate(doc.load()):
+        # Display CSV DataLoaded
+        # print('Row {}: {}'.format(i+1, row))
+        
+        key = row['Key']
+        description = row['Description']
+        description_vector = openai_embeddings.embed_text(description)
     
+        # Create a Weaviate object with the Key and Description fields
+        data_object = {
+            "Key": key,
+            "Description": description_vector
+        }
+
+        # Add the object to Weaviate
+        weaviate_client.data_object.create(data_object, class_name="Data")
+
+        print('Object {}: {} added to Weaviate'.format(i+1, data_object))
+
+
     print("CSV Data Loaded Successfully")
     print('##########################################################\n')
 
 def main():
     print("\nStarted Updating Knowledge of DataMappingGPT")
     
-    create_weaviate_schema_and_class()
-    load_csv_data()
+    weaviate_client = create_weaviate_schema_and_class()
+    load_csv_data(weaviate_client)
     
     print("Completed Updating Knowledge of DataMappingGPT\n")
 
