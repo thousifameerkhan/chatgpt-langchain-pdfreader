@@ -12,7 +12,8 @@ def load_env_variables():
     # Loading API Key
     load_dotenv()
     
-    print('\n>>>>>>>>>>>>>Displaying Environment Variables<<<<<<<<<<<')
+    print('\n##########################################################')
+    print('>>>>>>>>>>>>>  Displaying Environment Variables <<<<<<<<<<')
     print('##########################################################')
     print('Loaded OpenAI API Key     -> '+os.getenv("OPENAI_API_KEY"))
     print('Loaded Weaviate URL       -> '+os.getenv("WEAVIATE_URL"))
@@ -24,7 +25,8 @@ def create_weaviate_schema_and_class():
     # Loading Env Variables
     load_env_variables()
     
-    print('>>>>>>>>>>>>Creating Master Schema and Classes<<<<<<<<<<<<')
+    print('##########################################################')
+    print('>>>>>>>>>>  Creating Master Schema and Classes  <<<<<<<<<<')
     print('##########################################################')
     # Setting Variables
     weaviate_url = os.getenv("WEAVIATE_URL")
@@ -75,6 +77,11 @@ def create_weaviate_schema_and_class():
     print('##########################################################\n')
 
 def load_csv_data():
+    print('##########################################################')
+    print('>>>>>>>>>>>>>>>  Loading data from CSV File  <<<<<<<<<<<<<')
+    print('##########################################################')
+    print("Initiated Data Load Process")
+    
     # Loading CSV
     csv_args = {
                 "delimiter": ",",
@@ -83,12 +90,18 @@ def load_csv_data():
     doc = CSVLoader(file_path=os.getenv("CSV_FILE_LOCATION"), csv_args=csv_args)
     
     # Display CSV DataLoaded
-    for i, row in enumerate(doc.load()):
-        print('Row {}: {}'.format(i+1, row))
+    # for i, row in enumerate(doc.load()):
+    #     print('Row {}: {}'.format(i+1, row))
+    
+    print("CSV Data Loaded Successfully")
+    print('##########################################################\n')
 
 def main():
     print("\nStarted Updating Knowledge of DataMappingGPT")
+    
     create_weaviate_schema_and_class()
+    load_csv_data()
+    
     print("Completed Updating Knowledge of DataMappingGPT\n")
 
 if __name__ == '__main__':
