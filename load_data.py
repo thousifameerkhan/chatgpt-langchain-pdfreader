@@ -2,11 +2,10 @@ import os
 import requests
 import weaviate
 from dotenv import load_dotenv
+import pandas as pd
 
-from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Weaviate
-
 
 def load_env_variables():
     # Loading API Key
@@ -65,8 +64,14 @@ def create_weaviate_schema_and_class():
                             },
                             {
                                 "name": "Description",
+                                "moduleConfig": {
+                                    "text2vec-openai": {
+                                        "vectorizePropertyName": True,
+                                        "vectorizer": "openai"
+                                    }
+                                },
                                 "dataType": ["text"],
-                                "description": "Description on Data. This field will be store as Vector"
+                                "description": "Description of Account Table Data"
                             }
                         ]
                     }
@@ -82,38 +87,35 @@ def load_csv_data(weaviate_client):
     print('##########################################################')
     print('>>>>>>>>>>>>>>>  Loading data from CSV File  <<<<<<<<<<<<<')
     print('##########################################################')
+    
+    class_name = os.getenv("MASTER_CLASS_NAME")
     print("Initiated Data Load Process")
     
     # Loading CSV
-    csv_args = {
-                "delimiter": ",",
-                'fieldnames': ['Key','Description']
-               }
-    doc = CSVLoader(file_path=os.getenv("CSV_FILE_LOCATION"), csv_args=csv_args)
-    
+    df = pd.read_csv(os.getenv("CSV_FILE_LOCATION"), usecols=['Key', 'Description'])
+   
     # Load the OpenAI embeddings model
     openai_embeddings = OpenAIEmbeddings()
 
     # Create and add Weaviate objects for each row in the CSV
-    for i, row in enumerate(doc.load()):
+    for i, row in df.iterrows():
         # Display CSV DataLoaded
         # print('Row {}: {}'.format(i+1, row))
         
         key = row['Key']
         description = row['Description']
-        description_vector = openai_embeddings.embed_text(description)
+        description_vector = openai_embeddings.embed_query(description)
+        description_string = " ".join([str(x) for x in description_vector])
     
         # Create a Weaviate object with the Key and Description fields
         data_object = {
             "Key": key,
-            "Description": description_vector
+            "Description": description_string
         }
 
         # Add the object to Weaviate
-        weaviate_client.data_object.create(data_object, class_name="Data")
-
+        weaviate_client.data_object.create(data_object, class_name=class_name)
         print('Object {}: {} added to Weaviate'.format(i+1, data_object))
-
 
     print("CSV Data Loaded Successfully")
     print('##########################################################\n')
@@ -133,7 +135,7 @@ if __name__ == '__main__':
 # << Init pip Commands >>
 #########################
 # pip install --upgrade pip
-# pip install python-dotenv langchain weaviate-client openai
+# pip install python-dotenv langchain weaviate-client openai pandas
 # python load_data.py
 
 # << Weaviate Endpoints >>
