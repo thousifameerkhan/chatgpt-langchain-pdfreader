@@ -115,7 +115,7 @@ def load_csv_data(weaviate_client):
 
         # Add the object to Weaviate
         weaviate_client.data_object.create(data_object, class_name=class_name)
-        print('Object {}: {} added to Weaviate'.format(i+1, data_object))
+        # print('Object {}: {} added to Weaviate'.format(i+1, data_object))
 
     print("CSV Data Loaded Successfully")
     print('##########################################################\n')
@@ -125,6 +125,7 @@ def main():
     
     weaviate_client = create_weaviate_schema_and_class()
     load_csv_data(weaviate_client)
+    weaviate_client.close()
     
     print("Completed Updating Knowledge of DataMappingGPT\n")
 
