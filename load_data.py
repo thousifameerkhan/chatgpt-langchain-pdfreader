@@ -17,13 +17,12 @@ def main():
                 "quotechar": '"',
                 'fieldnames': ['Key','Description']
                }
-    loader = CSVLoader(file_path='./01-data/table_column_names.csv', csv_args=csv_args);
+    loader = CSVLoader(file_path='./01-data/master_table_column_comments.csv', csv_args=csv_args);
     print(loader)
 
 
 if __name__ == '__main__':
     main()
-
 
 
 # << Init pip Commands >>
