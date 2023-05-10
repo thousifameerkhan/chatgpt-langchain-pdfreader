@@ -1,0 +1,42 @@
+###
+### Perform Semantic Search in Weaviate
+###
+
+###
+### Variables
+###
+
+### Define the query variable
+@query = "Account Number"
+
+### Base URL of the Weaviate server
+@BASE_URL = https://mapping-data-gpt-v3n86qqk.weaviate.network
+
+### API Key for OpenAI GPT-3
+@OPENAI_API_KEY = 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
+
+###
+### Search and Retrieve Property Key
+###
+
+# Perform semantic search using OpenAI GPT-3
+POST {{BASE_URL}}/v1/data/semantic-search HTTP/1.1
+Content-Type: application/json
+
+{
+  "concept": "Master",
+  "limit": 1,
+  "filters": {
+    "path": ["Description"],
+    "operator": "Text",
+    "value": "{{query}}"
+  },
+  "fields": [
+    {
+      "path": ["Key"]
+    }
+  ]
+}
+
+### Retrieve the object with the retrieved key
+GET {{BASE_URL}}/v1/objects/{{response.body.paths[0].key}} HTTP/1.1
