@@ -1,5 +1,4 @@
 import os
-import openai
 import requests
 import weaviate
 from dotenv import load_dotenv
@@ -99,7 +98,7 @@ def load_csv_data(weaviate_client):
    
     # Load the OpenAI embeddings model
     # openai_embeddings = OpenAIEmbeddings()
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    # openai.api_key = os.getenv("OPENAI_API_KEY")
        
     # Create and add Weaviate objects for each row in the CSV
     for i, row in df.iterrows():
@@ -112,17 +111,17 @@ def load_csv_data(weaviate_client):
         print('Row Value, key:'+key+', description:'+description)
         
         # Generate embeddings using the OpenAI API
-        response = openai.Completion.create(
-            engine='text-davinci-003',
-            prompt=description,
-            max_tokens=4000
-        )
-        description_vector = response.choices[0].text.strip()
+        # response = openai.Completion.create(
+        #     engine='text-davinci-003',
+        #     prompt=description,
+        #     max_tokens=4000
+        # )
+        # description_vector = response.choices[0].text.strip()
     
         # Create a Weaviate object with the Key and Description fields
         data_object = {
             "key": key,
-            "description": description_vector
+            "description": description
         }
 
         # Add the object to Weaviate
