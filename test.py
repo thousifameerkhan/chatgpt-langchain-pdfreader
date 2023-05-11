@@ -1,48 +1,45 @@
 import openai
-import requests
+import os
+from dotenv import load_dotenv
+from weaviate import Client
+from weaviate.exceptions import UnexpectedStatusCodeException
 
 # Configure OpenAI API
-openai.api_key = "YOUR_OPENAI_API_KEY"
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Configure Weaviate connection
-weaviate_url = "https://mapping-data-gpt-v3n86qqk.weaviate.network/v1"
-headers = {"Content-Type": "application/json"}
+weaviate_url = os.getenv("WEAVIATE_URL")
 
-# Define OpenAI GPT-3 completion function
-def complete_prompt(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=50,
-        n=1,
-        stop=None,
-        temperature=0.7,
-        top_p=1.0,
-        frequency_penalty=0.0,
-        presence_penalty=0.0,
+# Creating Weaviate Client to interact VectorDB
+weaviate_client = Client(weaviate_url)
+
+# User input for semantic search
+user_query = input("Enter your search query: ")
+
+# Generate embeddings for user query using the OpenAI API
+response = openai.Completion.create(
+    engine='text-davinci-003',
+    prompt=user_query,
+    max_tokens=4000
+)
+user_embeddings = response.choices[0].text.strip()
+print('User Input Vector: '+user_embeddings)
+
+# Create a Weaviate object with the user query
+query_object = {
+    "description": user_embeddings
+}
+
+# Perform the semantic search in Weaviate
+try:
+    search_results = weaviate_client.schema.query_object(
+        class_name=os.getenv("MASTER_CLASS_NAME"),
+        vector=query_object,
+        limit=10
     )
-    return response.choices[0].text.strip()
-
-# Define Weaviate semantic search function
-def semantic_search(query):
-    query = f'{{Find the key where Description: "{query}"}}'
-    response = requests.post(f"{weaviate_url}/graphql", headers=headers, data=query)
-    response_json = response.json()
-    print(response_json)
-    concepts = response_json["data"]["Get"]["Concepts"]["result"]
-    return [concept["id"] for concept in concepts]
-
-# Main program
-def main():
-    while True:
-        user_query = input("Enter your search query (or 'q' to quit): ")
-        if user_query == 'q':
-            break
-        semantic_results = semantic_search(user_query)
-        for result in semantic_results:
-            prompt = f"What is the meaning of {result}?"
-            completion = complete_prompt(prompt)
-            print(f"Result: {result}\nExplanation: {completion}\n")
-
-if __name__ == "__main__":
-    main()
+    for result in search_results['data']['searchResults']:
+        print(result['entity']['key'])
+        # Access other relevant information from the search results as needed
+except UnexpectedStatusCodeException as e:
+    print(f"Semantic search failed: {e}")

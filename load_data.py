@@ -1,10 +1,10 @@
 import os
+import openai
 import requests
 import weaviate
 from dotenv import load_dotenv
 import pandas as pd
 
-from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Weaviate
 
 def load_env_variables():
@@ -36,50 +36,53 @@ def create_weaviate_schema_and_class():
     # Creating Weaviate Client to interact VectorDB
     weaviate_client = weaviate.Client(weaviate_url)
     
-    # Drop Master Class
-    response = requests.delete(class_url)
-    if response.status_code == 200:
-        print(f"Class {class_name} deleted successfully")
-    else:
-        print(f"Failed to delete class {class_name} or {class_name} class does not exist")
-    
-    # Drop Schema
-    response = requests.delete(schema_url)
-    if response.status_code == 200:
-        print("Schema deleted successfully")
-    else:
-        print("Failed to delete schema or no schema exist")
-    
-    # Creating New Schema
-    schema = {
-                "classes": [
-                    {
-                        "class": class_name,
-                        "description": "Used to store the Master Data",
-                        "properties": [
-                            {
-                                "name": "key",
-                                "dataType": ["text"],
-                                "description": "Key Column"
-                            },
-                            {
-                                "name": "description",
-                                "moduleConfig": {
-                                    "text2vec-openai": {
-                                        "vectorizePropertyName": True,
-                                        "vectorizer": "openai"
-                                    }
+    try:
+        # Drop Master Class
+        response = requests.delete(class_url)
+        if response.status_code == 200:
+            print(f"Class {class_name} deleted successfully")
+        else:
+            print(f"Failed to delete class {class_name} or {class_name} class does not exist")
+        
+        # Drop Schema
+        response = requests.delete(schema_url)
+        if response.status_code == 200:
+            print("Schema deleted successfully")
+        else:
+            print("Failed to delete schema or no schema exist")
+        
+        # Creating New Schema
+        schema = {
+                    "classes": [
+                        {
+                            "class": class_name,
+                            "description": "Used to store the Master Data",
+                            "properties": [
+                                {
+                                    "name": "key",
+                                    "dataType": ["text"],
+                                    "description": "Key Column"
                                 },
-                                "dataType": ["text"],
-                                "description": "Description of Account Table Data"
-                            }
-                        ]
-                    }
-                ]
-            }
-    weaviate_client.schema.create(schema)
-    Weaviate(weaviate_client,"key","description")
-    print('##########################################################\n')
+                                {
+                                    "name": "description",
+                                    "moduleConfig": {
+                                        "text2vec-openai": {
+                                            "vectorizePropertyName": True,
+                                            "vectorizer": "openai"
+                                        }
+                                    },
+                                    "dataType": ["text"],
+                                    "description": "Description of Account Table Data"
+                                }
+                            ]
+                        }
+                    ]
+                }
+        weaviate_client.schema.create(schema)
+        Weaviate(weaviate_client,"key","description")
+        print('##########################################################\n')
+    except:
+        print("Error Creating Schema")
 
     return weaviate_client
 
@@ -95,8 +98,9 @@ def load_csv_data(weaviate_client):
     df = pd.read_csv(os.getenv("CSV_FILE_LOCATION"), usecols=['key', 'description'])
    
     # Load the OpenAI embeddings model
-    openai_embeddings = OpenAIEmbeddings()
-
+    # openai_embeddings = OpenAIEmbeddings()
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+       
     # Create and add Weaviate objects for each row in the CSV
     for i, row in df.iterrows():
         # Display CSV DataLoaded
@@ -106,9 +110,14 @@ def load_csv_data(weaviate_client):
         description = row['description']
 
         print('Row Value, key:'+key+', description:'+description)
-        embeddings = OpenAIEmbeddings()
-        description_vector = Weaviate.from_texts(description, embeddings)
-        print("Vector Value "+str(description_vector))
+        
+        # Generate embeddings using the OpenAI API
+        response = openai.Completion.create(
+            engine='text-davinci-003',
+            prompt=description,
+            max_tokens=4000
+        )
+        description_vector = response.choices[0].text.strip()
     
         # Create a Weaviate object with the Key and Description fields
         data_object = {
@@ -128,8 +137,7 @@ def main():
     
     weaviate_client = create_weaviate_schema_and_class()
     load_csv_data(weaviate_client)
-    weaviate_client.close()
-    
+
     print("Completed Updating Knowledge of DataMappingGPT\n")
 
 if __name__ == '__main__':
