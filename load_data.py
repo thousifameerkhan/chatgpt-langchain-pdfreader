@@ -58,12 +58,12 @@ def create_weaviate_schema_and_class():
                         "description": "Used to store the Master Data",
                         "properties": [
                             {
-                                "name": "Key",
+                                "name": "key",
                                 "dataType": ["text"],
                                 "description": "Key Column"
                             },
                             {
-                                "name": "Description",
+                                "name": "description",
                                 "moduleConfig": {
                                     "text2vec-openai": {
                                         "vectorizePropertyName": True,
@@ -102,10 +102,10 @@ def load_csv_data(weaviate_client):
         # Display CSV DataLoaded
         # print('Row {}: {}'.format(i+1, row))
         
-        key = row['Key']
-        description = row['Description']
-        description_vector = openai_embeddings.embed_query(description)
-        description_string = " ".join([str(x) for x in description_vector])
+        key = row['key']
+        description = row['description']
+        # description_vector = openai_embeddings.embed_query(description)
+        # description_string = " ".join([str(x) for x in description_vector])
     
         # Create a Weaviate object with the Key and Description fields
         data_object = {

@@ -1,4 +1,4 @@
-Key,Description
+key,description
 ACCOUNTS.ACC_AAD_ID,The system generated unique identification number for the account
 ACCOUNTS.ACC_AAG_END_DT,Plan arrangement end date
 ACCOUNTS.ACC_AAG_IND,Plan arrangement indicator
