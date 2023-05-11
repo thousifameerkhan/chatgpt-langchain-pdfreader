@@ -13,7 +13,7 @@
 @BASE_URL = https://mapping-data-gpt-v3n86qqk.weaviate.network
 
 ### API Key for OpenAI GPT-3
-@OPENAI_API_KEY = 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
+@OPENAI_API_KEY = sk-
 
 ###
 ### Search and Retrieve Property Key
