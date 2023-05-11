@@ -78,7 +78,7 @@ def create_weaviate_schema_and_class():
                 ]
             }
     weaviate_client.schema.create(schema)
-    Weaviate(weaviate_client,"Key","Description")
+    Weaviate(weaviate_client,"key","description")
     print('##########################################################\n')
 
     return weaviate_client
@@ -92,7 +92,7 @@ def load_csv_data(weaviate_client):
     print("Initiated Data Load Process")
     
     # Loading CSV
-    df = pd.read_csv(os.getenv("CSV_FILE_LOCATION"), usecols=['Key', 'Description'])
+    df = pd.read_csv(os.getenv("CSV_FILE_LOCATION"), usecols=['key', 'description'])
    
     # Load the OpenAI embeddings model
     openai_embeddings = OpenAIEmbeddings()
@@ -104,13 +104,16 @@ def load_csv_data(weaviate_client):
         
         key = row['key']
         description = row['description']
-        # description_vector = openai_embeddings.embed_query(description)
-        # description_string = " ".join([str(x) for x in description_vector])
+
+        print('Row Value, key:'+key+', description:'+description)
+        embeddings = OpenAIEmbeddings()
+        description_vector = Weaviate.from_texts(description, embeddings)
+        print("Vector Value "+str(description_vector))
     
         # Create a Weaviate object with the Key and Description fields
         data_object = {
-            "Key": key,
-            "Description": description_string
+            "key": key,
+            "description": description_vector
         }
 
         # Add the object to Weaviate
@@ -136,7 +139,7 @@ if __name__ == '__main__':
 # << Init pip Commands >>
 #########################
 # pip install --upgrade pip
-# pip install python-dotenv langchain weaviate-client openai pandas
+# pip install python-dotenv langchain weaviate-client openai pandas tiktoken
 # python load_data.py
 
 # << Weaviate Endpoints >>
