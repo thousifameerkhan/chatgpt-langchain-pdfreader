@@ -16,3 +16,6 @@ DELETE  {{WEAVIATE_URL}}/v1/schema/Master
 
 ### Delete HistoryText Schema
 DELETE  {{WEAVIATE_URL}}/v1/schema/HistoryText
+
+### Get Master Objects
+GET {{WEAVIATE_URL}}/v1/objects?class=Master

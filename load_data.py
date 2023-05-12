@@ -68,8 +68,8 @@ def create_weaviate_schema_and_class():
                             "moduleConfig": {
                                 "text2vec-openai": {
                                     "vectorizeClassName": True,
-                                    "model": "ada",
-                                    "modelVersion": "002",
+                                    "model": "davinci",
+                                    "modelVersion": "003",
                                     "type": "text"
                                 }
                             },
