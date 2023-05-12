@@ -1,13 +1,17 @@
 import os
+import openai
 import time
 import traceback
 import requests
 import weaviate
-from openai.embeddings_utils import get_embedding
-from dotenv import load_dotenv
 import pandas as pd
-
+from dotenv import load_dotenv
+from openai.embeddings_utils import get_embedding
 from langchain.vectorstores import Weaviate
+
+weaviate_client = None
+class_name = None
+csv_filepath = None
 
 def load_env_variables():
     # Loading API Key
@@ -29,18 +33,23 @@ def create_weaviate_schema_and_class():
     print('##########################################################')
     print('>>>>>>>>>>  Creating Master Schema and Classes  <<<<<<<<<<')
     print('##########################################################')
+    
+    # Declare Global Variables
+    global csv_filepath
+    global class_name
+    global weaviate_client
+
     # Setting Variables
     weaviate_url = os.getenv("WEAVIATE_URL")
-    schema_url = f"{weaviate_url}/schema"
     class_name = os.getenv("MASTER_CLASS_NAME")
+    schema_url = f"{weaviate_url}/schema"
     class_url = f"{weaviate_url}/v1/schema/{class_name}"
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+    csv_filepath = os.getenv("CSV_FILE_LOCATION")
 
     # Creating Weaviate Client to interact VectorDB
     weaviate_client = weaviate.Client(
-                                        weaviate_url,
-                                        additional_headers = {
-                                                                "X-OpenAI-Api-Key": os.getenv("OPENAI_API_KEY")
-                                                             }
+                                        weaviate_url
                                      )
     
     try:
@@ -64,15 +73,7 @@ def create_weaviate_schema_and_class():
                         {
                             "class": class_name,
                             "description": "Used to store the Master Data",
-                            "vectorizer": "text2vec-openai",
-                            "moduleConfig": {
-                                "text2vec-openai": {
-                                    "vectorizeClassName": True,
-                                    "model": "davinci",
-                                    "modelVersion": "003",
-                                    "type": "text"
-                                }
-                            },
+                            "vectorizer": "none",
                             "properties": [
                                 {
                                     "name": "key",
@@ -82,16 +83,7 @@ def create_weaviate_schema_and_class():
                                 {
                                     "name": "description",
                                     "dataType": ["text"],
-                                    "description": "Description of Account Table Data",
-                                    "moduleConfig": {
-                                        "text2vec-openai": {
-                                            "vectorizePropertyName": False,
-                                            "skip": True,
-                                            "vectorizer": "text2vec-openai"
-                                        }
-                                    },
-                                    "indexFilterable": True,
-                                    "indexSearchable": True
+                                    "description": "Description of Master Table Key Data"
                                 }
                             ]
                         }
@@ -100,23 +92,46 @@ def create_weaviate_schema_and_class():
         weaviate_client.schema.create(schema)
         Weaviate(weaviate_client,"key","description")
         print("Schema created successfully")
+        
         print('##########################################################\n')
     except:
         print("Error Creating Schema")
         traceback.print_exc()
 
-    return weaviate_client
-
-def load_csv_data(weaviate_client):
+def load_csv_data():
     print('##########################################################')
     print('>>>>>>>>>>>>>>>  Loading data from CSV File  <<<<<<<<<<<<<')
     print('##########################################################')
     
-    class_name = os.getenv("MASTER_CLASS_NAME")
     print("Initiated Data Load Process")
     
+    # Declare Global Variables
+    global csv_filepath
+    global class_name
+    global weaviate_client
+
     # Loading CSV
-    df = pd.read_csv(os.getenv("CSV_FILE_LOCATION"), usecols=['key', 'description'])
+    df = pd.read_csv(csv_filepath, usecols=['key', 'description'])
+    
+    # Updating Embedding
+    retry_attempts = 3
+    retry_interval = 65
+    new_embedding= []
+
+    for index, row in df.iterrows():
+        for attempt in range(retry_attempts):
+            try:
+                embedding = get_embedding(row['description'], engine="text-embedding-ada-002")
+                new_embedding.append(embedding)
+                print('Added Index: ' + str(index) + ' & Key: ' + row['key'])
+                break
+            except Exception as e:
+                time.sleep(retry_interval)
+                print(str(e))
+        else:
+            print("Maximum retry attempts reached. Exiting...")
+
+    df['embedding']=new_embedding    
 
     # Create and add Weaviate objects for each row in the CSV
     for i, row in df.iterrows():
@@ -125,6 +140,7 @@ def load_csv_data(weaviate_client):
         
         key = row['key']
         description = row['description']
+        vector = row['embedding']
 
         print('Row Value, key:'+key+', description:'+description)
     
@@ -135,21 +151,7 @@ def load_csv_data(weaviate_client):
         }
 
         # Add the object to Weaviate
-        retry_attempts = 3
-        retry_interval = 120  # seconds
-
-        for attempt in range(retry_attempts):
-            try:
-                weaviate_client.data_object.create(data_object, class_name=class_name)
-                # If the request succeeds, exit the loop
-                break  
-            except Exception as e:
-                print("An error occurred:", str(e))
-                time.sleep(retry_interval)
-
-            if attempt == retry_attempts - 1:
-                print("Maximum retry attempts reached. Exiting...")
-
+        weaviate_client.data_object.create(data_object, class_name=class_name, vector=vector)
         # print('Object {}: {} added to Weaviate'.format(i+1, data_object))
 
     print("CSV Data Loaded Successfully")
@@ -158,13 +160,27 @@ def load_csv_data(weaviate_client):
 def main():
     print("\nStarted Updating Knowledge of DataMappingGPT")
     
-    weaviate_client = create_weaviate_schema_and_class()
-    load_csv_data(weaviate_client)
+    create_weaviate_schema_and_class()
+    load_csv_data()
 
     print("Completed Updating Knowledge of DataMappingGPT\n")
 
 if __name__ == '__main__':
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # << Init pip Commands >>
