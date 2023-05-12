@@ -1,6 +1,7 @@
 import os
 import requests
 import weaviate
+from openai.embeddings_utils import get_embedding
 from dotenv import load_dotenv
 import pandas as pd
 
@@ -56,6 +57,12 @@ def create_weaviate_schema_and_class():
                         {
                             "class": class_name,
                             "description": "Used to store the Master Data",
+                            "vectorizer": "text2vec-openai",
+                            "moduleConfig": {
+                                "text2vec-openai": {
+                                    "vectorizeClassName": True
+                                }
+                            },
                             "properties": [
                                 {
                                     "name": "key",
@@ -64,14 +71,17 @@ def create_weaviate_schema_and_class():
                                 },
                                 {
                                     "name": "description",
+                                    "dataType": ["text"],
+                                    "description": "Description of Account Table Data",
                                     "moduleConfig": {
                                         "text2vec-openai": {
-                                            "vectorizePropertyName": True,
-                                            "vectorizer": "openai"
+                                            "vectorizePropertyName": False,
+                                            "skip": True,
+                                            "vectorizer": "text2vec-openai"
                                         }
                                     },
-                                    "dataType": ["text"],
-                                    "description": "Description of Account Table Data"
+                                    "indexFilterable": true,
+                                    "indexSearchable": true
                                 }
                             ]
                         }
@@ -97,8 +107,8 @@ def load_csv_data(weaviate_client):
     df = pd.read_csv(os.getenv("CSV_FILE_LOCATION"), usecols=['key', 'description'])
    
     # Load the OpenAI embeddings model
-    # openai_embeddings = OpenAIEmbeddings()
-    # openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai_embeddings = OpenAIEmbeddings()
+    openai.api_key = os.getenv("OPENAI_API_KEY")
        
     # Create and add Weaviate objects for each row in the CSV
     for i, row in df.iterrows():

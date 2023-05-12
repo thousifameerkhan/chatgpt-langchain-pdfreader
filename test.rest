@@ -1,42 +1,18 @@
-###
-### Perform Semantic Search in Weaviate
-###
+### Loading Varaiables
+@OPENAI_API_KEY=<>
+@WEAVIATE_URL=<>
+@CSV_FILE_LOCATION=./01-data/master_table_column_comments.csv
+@MASTER_CLASS_NAME=Master
 
-###
-### Variables
-###
 
-### Define the query variable
-@query = "Account Number"
+### Getting list of Schema
+GET {{WEAVIATE_URL}}/v1/schema
 
-### Base URL of the Weaviate server
-@BASE_URL = https://mapping-data-gpt-v3n86qqk.weaviate.network
+### Delete Account Schema
+DELETE  {{WEAVIATE_URL}}/v1/schema/Account
 
-### API Key for OpenAI GPT-3
-@OPENAI_API_KEY = sk-
+### Delete Master Schema
+DELETE  {{WEAVIATE_URL}}/v1/schema/Master
 
-###
-### Search and Retrieve Property Key
-###
-
-# Perform semantic search using OpenAI GPT-3
-POST {{BASE_URL}}/v1/data/semantic-search HTTP/1.1
-Content-Type: application/json
-
-{
-  "concept": "Master",
-  "limit": 1,
-  "filters": {
-    "path": ["Description"],
-    "operator": "Text",
-    "value": "{{query}}"
-  },
-  "fields": [
-    {
-      "path": ["Key"]
-    }
-  ]
-}
-
-### Retrieve the object with the retrieved key
-GET {{BASE_URL}}/v1/objects/{{response.body.paths[0].key}} HTTP/1.1
+### Delete HistoryText Schema
+DELETE  {{WEAVIATE_URL}}/v1/schema/HistoryText
