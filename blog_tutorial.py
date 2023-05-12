@@ -3,8 +3,8 @@ from openai.embeddings_utils import get_embedding
 import pandas as pd
 import weaviate
 
-openai.api_key = "sk-"
-client = weaviate.Client(url="h")
+openai.api_key = "sk"
+client = weaviate.Client(url="https")
 
 
 def read_json_file():
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     weaviate_add_data(dataframe)
     # Run the above 4 lines only once!
     
-    input_text = "american economy"
+    input_text = "USA economy"
     k_vectors = 3
 
     result = query(input_text, k_vectors)
