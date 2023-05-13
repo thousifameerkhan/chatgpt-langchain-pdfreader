@@ -30,10 +30,6 @@
   pip install --upgrade pip
   pip install langchain pypdf2 python-dotenv streamlit openai tiktoken
   ```
-- To view UI run below
-  ```sh
-  streamlit run /workspace/chatgpt-langchain-pdfreader/app.py
-  ```
 
 ## Installation - HuggingFace
 - Clone the repo
@@ -44,10 +40,7 @@
   pip install --upgrade pip
   pip install pypdf2 python-dotenv streamlit transformers torch
   ```
-- To view UI run below
-  ```sh
-  streamlit run /workspace/chatgpt-langchain-pdfreader/hugging_chat.py
-  ```
+
 
 ## Installation - Cohere
 - Clone the repo
