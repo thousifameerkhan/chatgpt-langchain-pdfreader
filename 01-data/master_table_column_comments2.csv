@@ -1,0 +1,100 @@
+key,description
+ACCOUNTS.ACC_AAD_ID,The system generated unique identification number for the account
+ACCOUNTS.ACC_AAG_END_DT,Plan arrangement end date
+ACCOUNTS.ACC_AAG_IND,Plan arrangement indicator
+ACCOUNTS.ACC_AAG_START_DT,Plan arrangement start date
+ACCOUNTS.ACC_ABS_RUN_DT_LAST,Stores the trial balance last run date
+ACCOUNTS.ACC_ABS_RUN_DT_NEXT,Stores the trial balance next run date
+ACCOUNTS.ACC_ACC_RUN_DT_NEXT,The effective date of next accrual run date
+ACCOUNTS.ACC_ACCRUAL_AUTO_STOP_IND,Indicates stop accrual has been posted through batch
+ACCOUNTS.ACC_ACCRUAL_BASE_METHOD_CD,Reference key to lookup accrual base method such as 360 365 or 366
+ACCOUNTS.ACC_ACCRUAL_CALC_METHOD_CD,Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest
+ACCOUNTS.ACC_ACCRUAL_CALC_METHOD_CD_CUR,Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest ( Current )
+ACCOUNTS.ACC_ACCRUAL_DT_LAST,The date on which last interest accrual date was done
+ACCOUNTS.ACC_ACCRUAL_DT_START,The date on which interest accrual date starts
+ACCOUNTS.ACC_ACCRUAL_PAST_MATURITY_IND,Indicates whether accrual is allowed after maturity
+ACCOUNTS.ACC_ACCRUAL_START_DAYS,Number of delay days for accrual to start
+ACCOUNTS.ACC_ACCRUAL_START_DT_BASIS_CD,Reference key to lookup accrual start date basis
+ACCOUNTS.ACC_ACCRUAL_STOP_IND,Indicates whether accrual has been stopped
+ACCOUNTS.ACC_ACH_ACCOUNT_NBR,The account number of the bank for ACH transaction
+ACCOUNTS.ACC_ACH_ACCOUNT_NBR_CUR,The account number of the bank for ACH transaction (Current)
+ACCOUNTS.ACC_ACH_ACCOUNT_TYPE_CD,Reference key to lookup ACH account type such as checking saving etc
+ACCOUNTS.ACC_ACH_ACCOUNT_TYPE_CD_CUR,Reference key to lookup ACH account type such as checking saving etc (Current)
+ACCOUNTS.ACC_ACH_BANK_NAME,The name of the ACH bank of the customer
+ACCOUNTS.ACC_ACH_BANK_NAME_CUR,The name of the ACH bank of the customer (Current)
+ACCOUNTS.ACC_ACH_BANK_ROUTING_NBR,The 9-digit ABA number of the ACH bank of the customer
+ACCOUNTS.ACC_ACH_BANK_ROUTING_NBR_CUR,The 9-digit ABA number of the ACH bank of the customer. (Current)
+ACCOUNTS.ACC_ACH_FEE_IND,ACH fee indicator
+ACCOUNTS.ACC_ACH_FEE_IND_CUR,Stores information on current ACH fee indicator
+ACCOUNTS.ACC_ACH_IND,Indicates whether the account has been setup for ACH
+ACCOUNTS.ACC_ACH_IND_CUR,Indicates whether the account has been setup for ACH (Current)
+ACCOUNTS.ACC_ACH_PMT_AMT,Amount of payment used in ACH transaction
+ACCOUNTS.ACC_ACH_PMT_AMT_CUR,Amount of payment used in ACH transaction. (Current)
+ACCOUNTS.ACC_ACH_PMT_DAY,The day on which debit to ACH will occur
+ACCOUNTS.ACC_ACH_PMT_DAY_CUR,The day on which debit to ACH will occur (Current)
+ACCOUNTS.ACC_ACH_PMT_FREQ_CD,Reference key to lookup ACH payment frequency such as weekly monthly etc
+ACCOUNTS.ACC_ACH_PMT_FREQ_CD_CUR,Reference key to lookup ACH payment frequency such as weekly monthly etc (Current)
+ACCOUNTS.ACC_ACH_PROCESS_DT_NEXT,The date on which last ACH processing was done
+ACCOUNTS.ACC_ACH_START_DT,The date on which ACH processing started
+ACCOUNTS.ACC_ACH_START_DT_CUR,The date on which ACH processing started (Current)
+ACCOUNTS.ACC_ACQUISITION_CHARGE_AMT,Rebate acquisition charge amount to be added if early payoff for the account contract
+ACCOUNTS.ACC_ACTIVE_DT,The date on which account was activated
+ACCOUNTS.ACC_ADS_LIFE,Account ADS Life
+ACCOUNTS.ACC_ADV_AMT_LAST,The amount of the  last advance
+ACCOUNTS.ACC_ADV_DRAW_END_DT,The end date to draw advance for stage funded loans
+ACCOUNTS.ACC_ADV_DT_LAST,The date on which last advance was given
+ACCOUNTS.ACC_ADV_INITIAL_MAX,Maximum allowable initial advance amount
+ACCOUNTS.ACC_ADV_INITIAL_MIN,Minimum allowable initial advance amount
+ACCOUNTS.ACC_ADV_MAX,The maximum allowable advance amount
+ACCOUNTS.ACC_ADV_MIN,The minimum allowable advance amount
+ACCOUNTS.ACC_ADV_TOLERANCE_AMT,The advance tolerance amount used for accessing overlimit fee
+ACCOUNTS.ACC_ADV_TOLERANCE_PER,The advance tolerance percentage used for accessing overlimit fee
+ACCOUNTS.ACC_AMT_FINANCED,Total amount financed
+ACCOUNTS.ACC_AMT_PD_IN_EXCESS,Account amount paid in excess
+ACCOUNTS.ACC_ANN_RUN_DT_NEXT,The effective date of next anniversary run date
+ACCOUNTS.ACC_ANNIVERSARY_NO_TERM,Number of terms for anniversary
+ACCOUNTS.ACC_APP_DT,The date on which application was received
+ACCOUNTS.ACC_APP_NBR,Application number
+ACCOUNTS.ACC_APP_PURPOSE_CD,Reference key to lookup application purpose
+ACCOUNTS.ACC_APP_SOURCE_CD,Reference key to lookup application source
+ACCOUNTS.ACC_APP_STATUS_CD,Reference key to lookup application status such as new approved rejected  etc
+ACCOUNTS.ACC_APP_STATUS_CHG_DT_LAST,The date on which the last application status change was done
+ACCOUNTS.ACC_APP_SUB_STATUS_CD,Reference key to lookup application sub status such as rehash verified funded  etc
+ACCOUNTS.ACC_APR,Annual percentage rate
+ACCOUNTS.ACC_AUTO_DIALER_IND,Indicates whether the account in the auto dialer queue
+ACCOUNTS.ACC_BACKDATE_DT,The date upto which backdate transaction is allowed
+ACCOUNTS.ACC_BALLOON_AMT,Contract balloon payment amount
+ACCOUNTS.ACC_BALLOON_AMT_CUR,Current balloon payment amount
+ACCOUNTS.ACC_BALLOON_METHOD_CD,Reference key to lookup balloon method such as N or N+1 payments
+ACCOUNTS.ACC_BILL_AMT_LAST,Last bill amount
+ACCOUNTS.ACC_BILL_CALENDAR_METHOD_CD,Indicates the bill calendar method code
+ACCOUNTS.ACC_BILL_CYCLE_CD,Reference key to lookup billing cycle such as weekly monthly etc
+ACCOUNTS.ACC_BILL_METHOD_CD,Reference key to lookup billing method level interest only etc
+ACCOUNTS.ACC_BILL_PMT_DUE_AMT_MIN,The minimum amount for statements payment due
+ACCOUNTS.ACC_BILL_TYPE_CD,Reference key to lookup billing type such as coupon or statement
+ACCOUNTS.ACC_BKRP_COMMENT,A user defined comment for bankruptcy
+ACCOUNTS.ACC_BKRP_DISPOSITION_CD,Reference key to lookup bankruptcy disposition
+ACCOUNTS.ACC_BKRP_DT,The date on which bankruptcy was filed
+ACCOUNTS.ACC_BKRP_END_DT,The date on which bankruptcy ended
+ACCOUNTS.ACC_BKRP_FILE_RCVD_DT,The date on which bankruptcy file was received
+ACCOUNTS.ACC_BKRP_IND,Indicates whether the account is in bankruptcy
+ACCOUNTS.ACC_BKRP_NEXT_FOLLOWUP_DT,The date on which next followup is scheduled
+ACCOUNTS.ACC_BKRP_TYPE_CD,Reference key to lookup bankruptcy type such as chapter 7 11 13
+ACCOUNTS.ACC_BOOK_NO,Account Book Number
+ACCOUNTS.ACC_BSR_RUN_DT_NEXT,Indicates the BSR Next Run Date
+ACCOUNTS.ACC_BSR_SCORE,Stores the Behavioral Score
+ACCOUNTS.ACC_BUSINESS_IND,Indicates if the customer class is Business or not 
+ACCOUNTS.ACC_BUYOUT_IND,Indicates the end of the lease buyout option
+ACCOUNTS.ACC_CALC_METHOD_CD,Reference key to lookup reason for tax exemption
+ACCOUNTS.ACC_CAP_COST_ADJ,Adjusted capitalized cost
+ACCOUNTS.ACC_CAP_COST_GRO,Gross capitalized cost
+ACCOUNTS.ACC_CAP_COST_RED,Reduction of capitalized cost
+ACCOUNTS.ACC_CHBK_AMT,Total amount of chargeback amount
+ACCOUNTS.ACC_CHBK_CHGOFF_BASIS_CD,Plan parameter charge off basis code such as Term  Days
+ACCOUNTS.ACC_CHBK_CHGOFF_CALC_METHOD_CD,Plan parameter charge off calculation method such as Earned  Percentage
+ACCOUNTS.ACC_CHBK_CHGOFF_DAYS,Plan parameter charge off days if the basis code is Days
+ACCOUNTS.ACC_CHBK_CHGOFF_PER,Plan parameter charge off percentage if calculation method is Percentage
+ACCOUNTS.ACC_CHBK_CHGOFF_TERM,Plan parameter charge off term if basis code is Term
+ACCOUNTS.ACC_CHBK_PDOFF_BASIS_CD,Plan parameter paid off basis code such as Term  Days
+ACCOUNTS.ACC_CHBK_PDOFF_CALC_METHOD_CD,Plan parameter paid off calculation method such as Earned  Percentage
+ACCOUNTS.ACC_CHBK_PDOFF_DAYS,Plan parameter paid off days if the basis code is Days
