@@ -1,0 +1,157 @@
+key,description
+API_CONTACTS.APP_PIS_INSTRUMENT,Reference key to instrument
+API_CONTACTS.APP_CONTRACT_DT,The date on which contract was booked
+API_CONTACTS.APP_AMT_FINANCED,Total amount financed
+API_CONTACTS.APP_CR_LMT,Credit limit(Original)
+API_CONTACTS.APP_TERM,Term of the contract(Original)
+API_CONTACTS.APP_DRAW_TERM,Number of term draw period is allowed
+API_CONTACTS.APP_REPMT_TERM,The repayment term of the contract
+API_CONTACTS.APP_RATE,The contract rate
+API_CONTACTS.APP_INDEX_TYPE_CD,Reference key to lookup index type such as prime  etc
+API_CONTACTS.APP_INDEX_RATE,Index rate(Original)
+API_CONTACTS.APP_MRATE,The margin rate(Original)
+API_CONTACTS.APP_BALLOON_AMT,Contract balloon payment amount
+API_CONTACTS.APP_FIRST_PMT_DT,The date on which first payment should be received
+API_CONTACTS.APP_MATURITY_DT,The date on which the account would mature(Original)
+API_CONTACTS.APP_FINANCE_CHARGE,The finance charge or total estimated interest charge on the contract
+API_CONTACTS.APP_TOTAL_OF_PMTS,Total of all payments or total note amount
+API_CONTACTS.APP_TOTAL_DOWN_PMT_AMT,Total down payment amount of contract
+API_CONTACTS.APP_TOTAL_SALE_PRC,Total sale price of the asset on contract
+API_CONTACTS.APP_PMT_AMT,Payment amount(Original)
+API_CONTACTS.APP_APR,Annual percentage rate
+API_CONTACTS.APP_PRM_CODE,Reference Key to Promotion Coe
+API_CONTACTS.APP_MATURITY_INDEX_TYPE_CD,Reference key to lookup index type such as prime  etc
+API_CONTACTS.APP_MATURITY_MRATE,The maturity margin rate
+API_CONTACTS.APP_PCB_BRANCH_CSS,Reference key to portfolio branch(Servicing)
+API_CONTACTS.APP_COLLECTOR_USR_CODE,Collector associated with account
+API_CONTACTS.APP_CPP_CODE,Reference Key to Compensation plan code
+API_CONTACTS.APP_RATE_BUY,The buy rate of the contract
+API_CONTACTS.APP_COMP_AMT,Total Compensation amount
+API_CONTACTS.APP_FEE_AMT_ESCROWED,Total escrow advance amount received (original)
+API_CONTACTS.APP_COMP_AMT_UPFRONT,Upfront compensation amount
+API_CONTACTS.APP_COMP_AMT_REMAINING,Remaining compensation amount
+API_CONTACTS.APP_RATE_SPREAD,Rate spread for HMDA reporting
+API_CONTACTS.APP_HOEPA_CD,Home ownership and equity protection act code for HMDA reporting
+API_CONTACTS.APP_LIEN_STATUS_CD,Lien status code for HMDA reporting
+API_CONTACTS.APP_COUPON_FIRST_PMT_DT,The date on which first payment is expected on the re-ordered coupon book
+API_CONTACTS.APP_COUPON_ORDER_BY,Identifies coupon ordered by
+API_CONTACTS.APP_COUPON_ORDER_DT,The date on which coupon book was re-ordered
+API_CONTACTS.APP_COUPON_ORDER_IND,Indicates whether the coupon has been re-ordered
+API_CONTACTS.APP_COUPON_START_NO,The starting number of the coupon
+API_CONTACTS.APP_EARLY_PRE_PMT_PENALTY_IND,Indicates if early repayment fee can be charged
+API_CONTACTS.APP_PRE_PMT_TOLERANCE_AMT,Tolerance amount to calculate pre-payment penalty fee
+API_CONTACTS.APP_PROM_CANCEL_DLQ_DAYS,Stores the delinquency days after which the promotion is cancelled automatically
+API_CONTACTS.APP_CR_CONSUMED,Credit limit already consumed on account
+API_CONTACTS.APP_FINAL_PMT_AMT,Final payment amount
+API_CONTACTS.APP_STAGE_FUND_IND,Indicates if stage funding is allowed
+API_CONTACTS.APP_COLLECT_INTEREST_IND,Indicates whether the interest has to be collected or not
+API_CONTACTS.APP_PROM_TOLERANCE_AMT,Promotion tolerance amount checked against outstanding balance for promotion benefits
+API_CONTACTS.APP_PROM_PERIOD_TYPE_CD,Promotion period type
+API_CONTACTS.APP_ACH_BANK_NAME,The name of the ACH bank of the customer
+API_CONTACTS.APP_ACH_BANK_ROUTING_NBR,The 9-digit ABA number of the ACH bank of the customer
+API_CONTACTS.APP_ACH_ACCOUNT_TYPE_CD,Reference key to lookup ACH account type such as checking saving etc
+API_CONTACTS.APP_ACH_ACCOUNT_NBR,The account number of the bank for ACH transaction
+API_CONTACTS.APP_ACH_PMT_DAY,The actual day that the ACH payment will be taken out of the customer account
+API_CONTACTS.APP_ACH_PMT_AMT,Amount of payment used in ACH transaction
+API_CONTACTS.APP_ACH_PMT_FREQ_CD,Reference key to lookup ACH payment frequency such as weekly monthly etc
+API_CONTACTS.APP_ACH_START_DT,The date on which ACH processing started
+API_CONTACTS.APP_ACH_IND,Indicates whether the account has been setup for ACH
+API_CONTACTS.APP_RPMT_CUR_CURRENCY_CODE,Reference key to Currency  Repayment Currency (Current)
+API_CONTACTS.APP_PDC_IND,PDC indicator for applications
+API_CONTACTS.APP_ORIG_SYS_XREF,Reference key to application id of legacy system
+API_CONTACTS.APP_PTC_COMPANY,Reference key to portfolio company
+API_CONTACTS.APP_PCB_BRANCH,Reference Key to portfolio branch(Origination)
+API_CONTACTS.APP_NBR,A unique application number
+API_CONTACTS.APP_DT,The effective date of the application
+API_CONTACTS.APP_PRD_PRODUCT,Reference key to product
+API_CONTACTS.APP_SOURCE_CD,Identifies the source of the application such as Fax  Web
+API_CONTACTS.APP_UNDERWRITER_USR_CODE,The underwriter who approved the credit application
+API_CONTACTS.APP_PRO_TYPE_CD,Reference key to lookup producer type such as dealer  agent  etc
+API_CONTACTS.APP_PRO_NBR,Reference to producer number
+API_CONTACTS.ADC_PRP_PRICING,Reference Key to Product Pricings
+API_CONTACTS.ADC_CR_GRADE_CD,The application decision approved credit grade
+API_CONTACTS.ADC_CR_SCORE,The application decision credit score
+API_CONTACTS.APP_TOTAL_DISCOUNT_RATE,Stores the Total Discount Rate. This is used for Conversion of data from other system
+API_CONTACTS.APP_ORIG_SYS_XREF,Reference key to application id of legacy system
+API_CONTACTS.APP_PTC_COMPANY,Reference key to portfolio company
+API_CONTACTS.APP_PCB_BRANCH,Reference Key to portfolio branch(Origination)
+API_CONTACTS.APP_NBR,A unique application number
+API_CONTACTS.APP_DT,The effective date of the application
+API_CONTACTS.APP_PRD_PRODUCT,Reference key to product
+API_CONTACTS.APP_SOURCE_CD,Identifies the source of the application such as Fax  Web
+API_CONTACTS.APP_UNDERWRITER_USR_CODE,The underwriter who approved the credit application
+API_CONTACTS.APP_PRO_TYPE_CD,Reference key to lookup producer type such as dealer  agent  etc
+API_CONTACTS.APP_PRO_NBR,Reference to producer number
+API_CONTACTS.APP_CONVERSION_DT,Date of conversion
+API_CONTACTS.APP_NEW_IND,Indicates converting new account
+API_CONTACTS.APP_LINK_EXISTING_CUSTOMER_IND,Indicates whether the account should be linked to existing customer
+API_CONTACTS.APP_MULTIPLE_OFFER_IND,Indicates if Multiple offer is enabled for the branch. This is used for Conversion of data from other system
+API_CONTACTS.APP_REPMT_FIXED_PRINCIPAL_AMT,Stores the Repayment Principal Amount. This is used for Conversion of data from other system
+API_CONTACTS.APP_EXTEND_BALLOON_TERM_MAX,Stores the Maximum Extended Balloon Term. This is used for Conversion of data from other system
+API_CONTACTS.APP_TIME_ZONE_CD,Stores the Time Zone Code. This is used for Conversion of data from other system
+API_CONTACTS.APP_STMT_PREFERENCE_MODE_CD,Application Statement Preference Mode code
+API_CONTACTS.APP_CLASS_TYPE_CD,Application class type code (SBL/INV/BUS)
+API_CONTACTS.APP_LINKED_ACC_NBR,Indicates the linked account number for an account
+API_CONTACTS.APP_MULTI_BILL_ASSET_RATE_IND,Indicates whether multiple asset rates are applicable for one billing period or not
+API_CONTACTS.APP_PAH_HIERARCHY_CODE,Payment Hierarchy Code
+API_CONTACTS.APP_PMT_MODE_CD,Reference lookup to Accounts payment mode current (cash/check)
+API_CONTACTS.APP_STMT_PREFERENCE_MODE_CD,Application Statement Preference Mode code
+API_CONTACTS.APP_RATE_MAX_INCREASE_YEAR,Maximum allowable increase in rate in a year
+API_CONTACTS.APP_ACCRUAL_CALC_METHOD_CD,Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest
+API_CONTACTS.APP_RATE_MAX_INCREASE_LIFE,Maximum allowable increase in rate in the life of the contract
+API_CONTACTS.APP_TOTAL_OF_PMTS_ESTIMATED,Application Total Of Payments Estimated
+API_CONTACTS.CREATED_BY,Standard Who
+API_CONTACTS.CREATION_DATE,Standard Who
+API_CONTACTS.APP_ACH_FEE_IND,Application ACH fee indicator
+API_CONTACTS.APP_ADV_DRAW_END_DT,The end date to draw advance for stage funded loans
+API_CONTACTS.APP_AGREEMENT_TYPE_CD,Agreement type Code - Usage/Rental/Undefined.
+API_CONTACTS.APP_API_ID,Unique Sequence number for multi threading
+API_CONTACTS.APP_CAP_COST_GRO,Application Capital Cost Gross
+API_CONTACTS.APP_CAP_COST_RED,Application Capital Cost Residual
+API_CONTACTS.APP_CHARGE_CALC_METHOD_CD,Charge caluclation method code for Tiered / Non Tiered.
+API_CONTACTS.APP_COMP_REVISE_PLAN_TERM,Compensation plan revision term
+API_CONTACTS.APP_CONTRACT_VERIFY_BY,Contract Verify Date 
+API_CONTACTS.APP_COUPON_NOS,Number of coupons for order
+API_CONTACTS.APP_DISCOUNT_AMT,Discount Amount applicable for Rental Billing
+API_CONTACTS.APP_DISCOUNT_PER,Discount Percentage
+API_CONTACTS.APP_DRAW_TERM_RATE,Stores the rate at the time of stage funding
+API_CONTACTS.APP_ERROR_IND,Indicates error on conversion record
+API_CONTACTS.APP_EXCESS_RENT_COL_METHOD_CD,Excess rent colculation method code for Actual/Average.
+API_CONTACTS.APP_FLEXIBLE_REPAYMENT_IND,Indicates flexible repayment schedule is allowed or not
+API_CONTACTS.APP_INDEX_RATE_EFFECTIVE,Stores the Index Effective rate
+API_CONTACTS.APP_INSTALLMENT_METHOD_CD,Method to calculate payment amount Equated EQ Final Payment Differs FPD
+API_CONTACTS.APP_MASTER_ACC_IND,Indicates if the application is marked as master account or not
+API_CONTACTS.APP_MASTER_ACC_NBR,Master account number to which the application is linked
+API_CONTACTS.APP_MATURITY_MRATE_EFFECTIVE,Stores the effective maturity margin rate
+API_CONTACTS.APP_MAX_TIME_BAR_YEAR,Staging data source : Max Time Bar Year
+API_CONTACTS.APP_MAX_USAGE,Maximum units allowed per cycle.
+API_CONTACTS.APP_MRATE_EFFECTIVE,Stores the Effective for the margin
+API_CONTACTS.APP_PMT_MAX_INCREASE_LIFE,Application Payment max increase life
+API_CONTACTS.APP_PMT_MAX_INCREASE_YEAR,Application Payment max increase year
+API_CONTACTS.APP_PREPAID_AMT,Application Prepaid Amount
+API_CONTACTS.APP_PROBABLE_DELIVERY_DT,Application probable delivery date
+API_CONTACTS.APP_PROFIT_RATE,Application profit rate
+API_CONTACTS.APP_PROM_PROFIT_RATE,Application promotional profit rate
+API_CONTACTS.APP_RATE_BUY_EFFECTIVE,Stores the effective buy rate
+API_CONTACTS.APP_RATE_CHG_FREQ_TYPE_CD,Reference key to lookup rate change frequency type such as MONTHLY QUARTERLY etc
+API_CONTACTS.APP_RATE_CHG_PERIOD,Stores the time or period between subsequent rate change based on rate adjustment frequency
+API_CONTACTS.APP_RATE_CHG_RSC_METHOD_CD,Reference key to lookup Rate Change Reschedule Method
+API_CONTACTS.APP_RATE_CHG_RSC_VALUE,The percentage value to be used to change the payment amount when rate changes on account
+API_CONTACTS.APP_RATE_EFFECTIVE,Stores the Effective rate
+API_CONTACTS.APP_RECOURSE_TYPE_CD,Stores Recourse Type from lookup code
+API_CONTACTS.APP_RENTAL_FEE,Application Rental fee
+API_CONTACTS.APP_RENT_END_DATE,Rental End Date 
+API_CONTACTS.APP_RENT_FACTOR,Application Rent Factror
+API_CONTACTS.APP_RENT_START_DATE,Rental Start date with timestamp
+API_CONTACTS.APP_RENT_VAL,Application Rent Value
+API_CONTACTS.APP_REPAYMENT_SKIP_PERIOD,Stores all months that are allowed to skip payment such as MARCH APRIL MAY
+API_CONTACTS.APP_REPAYMENT_TYPE_CD,Reference key to lookup account repayment type
+API_CONTACTS.APP_REQ_BALLOON_AMT,Application Requested Balloon amount
+API_CONTACTS.APP_RESIDUAL_DAYS,Application residual days
+API_CONTACTS.APP_RESIDUAL_PER,Application  Residual Percentage
+API_CONTACTS.APP_RESIDUAL_VAL,Application Residual Value
+API_CONTACTS.APP_SALES_TAX_AMT_ESTIMATED,Application Sales Tax Amount Estimated
+API_CONTACTS.APP_SALES_TAX_PER_ESTIMATED,Application Sales Tax Percentage Estimated
+API_CONTACTS.APP_SECURITY_DEPOSIT_AMT,Application Security Deposit Amount
+API_CONTACTS.APP_SIGNING_DT,Application signing date
+API_CONTACTS.APP_STMT_CONSOLIDATE_IND,Application statement consolidation indicator
