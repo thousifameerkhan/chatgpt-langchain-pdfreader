@@ -1,0 +1,154 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+ACD_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,Y,Y,Y
+ACD_ITEMIZATION_TCD_CODE1,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,Y,Y,Y
+ACD_VAL1,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE2,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL2,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE3,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL3,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE4,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL4,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE5,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL5,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE6,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL6,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE7,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL7,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE8,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL8,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE9,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL9,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE10,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL10,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE11,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL11,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE12,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL12,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE13,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL13,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE14,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL14,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE15,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL15,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE16,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL16,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE17,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL17,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE18,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL18,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE19,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL19,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE20,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL20,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE21,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL21,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE22,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL22,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE23,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL23,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE24,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL24,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACD_ITEMIZATION_TCD_CODE25,VARCHAR2,,N,Reference Key to itemization transaction,,,,,,,,N,N,N
+ACD_VAL25,NUMBER,,N,The value associated with this itemization transaction,,,,,,,,N,N,N
+ACI_ITEMIZATION_TCD_CODE,VARCHAR2,,N,The insurance type,,,,,,,,N,N,N
+ACI_VAL,NUMBER,,N,The value associated with this insurance,,,,,,,,N,N,N
+ACI_INS_SUB_TYPE_CD,VARCHAR2,,N,The insurance sub type,LOV_LOOKUP_DESC,,,,,,,N,N,N
+ACI_COMPANY,VARCHAR2,,N,The insurance company name,,,,,,,,N,N,N
+ACI_POLICY_NBR,VARCHAR2,,N,The insurance policy number,,,,,,,,N,N,N
+ESC_ITEMIZATION_TCD_CODE,VARCHAR2,,N,Reference key to transaction (Itemization),,,,,,,,N,N,N
+ESC_VAL,NUMBER,,N,The value associated with the escrow itemization transaction,,,,,,,,N,N,N
+ESC_TYPE_CD,VARCHAR2,,N,Escrow type for the itemization such as Insurance or Tax,,,,,,,,N,N,N
+ESC_SUB_TYPE,VARCHAR2,,N,Reference key to the escrow setup for escrow itemization,,,,,,,,N,N,N
+ESC_VEN_NBR,VARCHAR2,,N,Disbursement vendor number for the escrow itemization,,,,,,,,N,N,N
+ESC_REQUIRED_IND,VARCHAR2,,N,Indicates whether escrow is required for the escrow itemization,,,,,,,,N,N,N
+ESC_OPT_OUT_IND,VARCHAR2,,N,Indicates whether opt out from escrow itemization,,,,,,,,N,N,N
+ESC_EDR_RULE,VARCHAR2,,N,Escrow disbursement rule,,,,,,,,N,N,N
+ESC_YRLY_DISBURSE_AMT,NUMBER,,N,Yearly disbursement amount for the escrow itemization,,,,,,,,N,N,N
+ESC_MATURITY_DT,DATE,,N,Insurance/Tax Escrow itemization maturity date,,,,,,,,N,N,N
+ESC_POLICY_NBR,VARCHAR2,,N,The insurance policy number,,,,,,,,N,N,N
+ESC_EFFECTIVE_DT,DATE,,N,The effective date of the escrow itemization,,,,,,,,N,N,N
+ESC_EXPIRATION_DT,DATE,,N,The expiry date of the escrow itemization,,,,,,,,N,N,N
+ESC_REF_ACCOUNT_NBR,VARCHAR2,,N,Reference customer Tax/Insurance account number for the escrow itemization,,,,,,,,N,N,N
+ESC_PROPERTY_TAX_CD,VARCHAR2,,N,Property tax code for the tax escrow itemization,LOV_LOOKUP_DESC,,,,,,,N,N,N
+ESC_COVERAGE_TYPE_CD,VARCHAR2,,N, Escrow insurance itemization coverage type,LOV_LOOKUP_DESC,,,,,,,N,N,N
+ESC_COVERAGE_TERM,NUMBER,,N,Escrow insurance itemization coverage term,,,,,,,,N,N,N
+ESC_COVERAGE_AMT,NUMBER,,N,Escrow insurance itemization coverage amount,,,,,,,,N,N,N
+ESC_CUSHION_ALLOWED_IND,VARCHAR2,,N,Indicates is cushion is allowed for an escrow itemization,,,,,,,,N,N,N
+AAW_CMP_CODE,VARCHAR2,,N,Reference Key to commission plan code,,,,,,,,N,N,N
+ACI_COMMISSION_AMT,NUMBER,,N,Insurance contract itemization commission amount,,,,,,,,N,N,N
+ACI_INS_REFUND_ALLOWED_IND,VARCHAR2,,N,Indicates insurance refund allowed,,,,,,,,N,N,N
+ACI_INS_REFUND_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup insurance refund calculation method such as sum of digits,,,,,,,,N,N,N
+ACI_CMP_CODE,VARCHAR2,,N,Reference Key to commission plan code,,,,,,,,N,N,N
+ESC_ITEMIZATION_TCD_CODE,VARCHAR2,,N,Reference key to transaction (Itemization),,,,,,,,N,N,N
+ESC_TYPE_CD,VARCHAR2,,N,Escrow type for the itemization such as Insurance or Tax,,,,,,,,N,N,N
+ESC_VEN_NBR,VARCHAR2,,N,Disbursement vendor number for the escrow itemization,,,,,,,,N,N,N
+ESC_REQUIRED_IND,VARCHAR2,,N,Indicates whether escrow is required for the escrow itemization,,,,,,,,N,N,N
+ESC_OPT_OUT_IND,VARCHAR2,,N,Indicates whether opt out from escrow itemization,,,,,,,,N,N,N
+ESC_EDR_RULE,VARCHAR2,,N,Escrow disbursement rule,,,,,,,,N,N,N
+ESC_YRLY_DISBURSE_AMT,NUMBER,,N,Yearly disbursement amount for the escrow itemization,,,,,,,,N,N,N
+ESC_MATURITY_DT,DATE,,N,Insurance/Tax Escrow itemization maturity date,,,,,,,,N,N,N
+ESC_POLICY_NBR,VARCHAR2,,N,The insurance policy number,,,,,,,,N,N,N
+ESC_EFFECTIVE_DT,DATE,,N,The effective date of the escrow itemization,,,,,,,,N,N,N
+ESC_EXPIRATION_DT,DATE,,N,The expiry date of the escrow itemization,,,,,,,,N,N,N
+ESC_REF_ACCOUNT_NBR,VARCHAR2,,N,Reference customer Tax/Insurance account number for the escrow itemization,,,,,,,,N,N,N
+ESC_PROPERTY_TAX_CD,VARCHAR2,,N,Property tax code for the tax escrow itemization,,,,,,,,N,N,N
+ESC_COVERAGE_TYPE_CD,VARCHAR2,,N, Escrow insurance itemization coverage type,,,,,,,,N,N,N
+ESC_COVERAGE_TERM,NUMBER,,N,Escrow insurance itemization coverage term,,,,,,,,N,N,N
+ESC_COVERAGE_AMT,NUMBER,,N,Escrow insurance itemization coverage amount,,,,,,,,N,N,N
+ESC_CUSHION_ALLOWED_IND,VARCHAR2,,N,Indicates is cushion is allowed for an escrow itemization,,,,,,,,N,N,N
+ESC_SUB_TYPE,VARCHAR2,,N,Reference key to the escrow setup for escrow itemization,,,,,,,,N,N,N
+ESC_VAL,NUMBER,,N,The value associated with the escrow itemization transaction,,,,,,,,N,N,N
+ACD_CANCEL_FEE,NUMBER,,N,Stores the insurance cancellation fee amount and it is used for converting accounts from other system,,,,,,,,N,N,N
+ACD_CANCEL_GRACE_DAYS,NUMBER,,N,The number of days that allows insurance cancellation without fee and it is used for converting accounts from other system,,,,,,,,N,N,N
+ACD_GRACE_PERIOD_FEE_IND,VARCHAR2,,N,Indicates whether or not cancellation fee could be charged during grace days and it is used for converting accounts from other system,,,,,,,,Y,Y,Y
+ACD_ITEMIZATION_TYPE_CD,VARCHAR2,,N,Reference key to lookup contract itemization type and it is used for converting accounts from other system,,,,,,,,Y,Y,Y
+ACD_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency,,,,,,,,N,N,N
+ACD_DISB_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency,,,,,,,,N,N,N
+ACD_DISBURSEMENT_TYPE,VARCHAR2,,N,disbursement Type,,,,,,,,Y,Y,Y
+ACD_PREFUNDING_STATUS_CD,VARCHAR2,,N,Prefunding Status code,,,,,,,,Y,N,Y
+ACD_PMT_DT,DATE,,N,Payment Date,,,,,,,,Y,N,Y
+ACD_PMT_REFERENCE_NBR,VARCHAR2,,N,Payment Reference Number,,,,,,,,Y,N,Y
+ACI_COMMENT2,VARCHAR2,,N,A user defined comment for the insurance,,,,,,,,N,N,N
+ACI_TERM2,NUMBER,,N,Total term of the insurance,,,,,,,,N,N,N
+ACI_PRIMARY_BENEFICIARY2,VARCHAR2,,N,Second insurance primary beneficiary name in  ,,,,,,,,N,N,N
+ACI_COMMISSION_AMT2,NUMBER,,N,Insurance contract itemization commission amount for insurance 2,,,,,,,,N,N,N
+ACI_CMP_CODE2,VARCHAR2,,N,Reference Key to commission plan code for insurance 2,,,,,,,,N,N,N
+ACI_INS_REFUND_ALLOWED_IND2,VARCHAR2,,N,Indicates insurance refund allowed for insurance 2,,,,,,,,N,N,N
+ACI_INS_REFUND_CALC_METHD_CD2,VARCHAR2,,N,Reference key to lookup insurance refund calculation method such as sum of digits for insurance 2,,,,,,,,N,N,N
+ACI_EFFECTIVE_DT2,DATE,,N,Date on which the policy comes into effect for insurance 2,,,,,,,,N,N,N
+ACD_INS_CANCEL_FEE_FROM_CD,VARCHAR2,,N,Cancel fee from rebate or premium possible values PRM/RBT/NULL,,,,,,,,N,N,N
+ACD_INS_CANCEL_FEE_FROM_CD,VARCHAR2,,N,Cancel fee from rebate or premium possible values PRM/RBT/NULL,,,,,,,,N,N,N
+ACI_PHONE_EXTN12,NUMBER,,N,Phone number 1 extn of the insurance company for insurance 2,,,,,,,,N,N,N
+ACI_ITEMIZATION_TCD_CODE2,VARCHAR2,,N,Insurance type for insurance 2,,,,,,,,N,N,N
+ACI_VAL2,NUMBER,,N,Value associated with this insurance for insurance 2,,,,,,,,N,N,N
+ACI_INS_SUB_TYPE_CD2,VARCHAR2,,N,Insurance sub type for insurance 2,,,,,,,,N,N,N
+ACI_COMPANY2,VARCHAR2,,N,Insurance company name for insurance 2,,,,,,,,N,N,N
+ACI_POLICY_NBR2,VARCHAR2,,N,Insurance policy number for insurance 2,,,,,,,,N,N,N
+ACI_PHONE_NO12,NUMBER,,N,Phone number 1 of the insurance company for insurance 2,,,,,,,,N,N,N
+ACI_PHONE_NO1,NUMBER,,N,The phone number 1 of the insurance company,,,,,,,,N,N,N
+ACI_PHONE_EXTN1,NUMBER,,N,The phone number 1 extn of the insurance company,,,,,,,,N,N,N
+ACI_EFFECTIVE_DT,DATE,,N,Date on which the policy comes into effect,,,,,,,,N,N,N
+ACI_EXPIRY_DT,DATE,,N,First insurance expiration date in  ,,,,,,,,N,N,N
+ACI_TERM,NUMBER,,N,Total term of the insurance,,,,,,,,N,N,N
+ACI_PRIMARY_BENEFICIARY,VARCHAR2,,N,Name of the primary beneficiary of insurance,,,,,,,,N,N,N
+ACI_COMMENT,VARCHAR2,,N,A user defined comment for the insurance,,,,,,,,N,N,N
+AAW_ITEMIZATION_TCD_CODE,VARCHAR2,,N,Itemization related to warranty,,,,,,,,N,N,N
+AAW_VAL,NUMBER,,N,Value of warranty policy,,,,,,,,N,N,N
+AAW_COMPANY,VARCHAR2,,N,Name of warranty company,,,,,,,,N,N,N
+AAW_POLICY_NBR,VARCHAR2,,N,Policy of warranty,,,,,,,,N,N,N
+AAW_PHONE_NO1,NUMBER,,N,Phone number of warranty company,,,,,,,,N,N,N
+AAW_PHONE_EXTN1,NUMBER,,N,Phone extension of warranty company,,,,,,,,N,N,N
+AAW_COMMENT,VARCHAR2,,N,Comment of warranty,,,,,,,,N,N,N
+AAW_COMMISSION_AMT,NUMBER,,N,Warranty or extended service contract itemization commission amount,,,,,,,,N,N,N
+AAW_INS_REFUND_ALLOWED_IND,VARCHAR2,,N,Indicates insurance refund allowed,,,,,,,,N,N,N
+AAW_INS_REFUND_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup insurance refund calculation method such as sum of digits,LOV_LOOKUP_DESC,,,,,,,N,N,N
+ACI_INS_AUTO_REBATE_IND2,VARCHAR2,,Y,Indicator for auto premium rebate allowed or not,,,,,,,,Y,N,N
+ACI_INS_AUTO_REBATE_IND,VARCHAR2,,Y,Indicator for auto premium rebate allowed or not,,,,,,,,Y,N,N
+ACD_1098_SELLER_PMT_IND,VARCHAR2,,N,contract details Seller payment indicator,,,,,,,,Y,Y,Y
+ACD_1098_SELLER_PMT_IND,VARCHAR2,,N,contract details Seller payment indicator,,,,,,,,Y,Y,Y
+ACI_EXPIRY_DT2,DATE,,N,Second insurance expiration date in  ,,,,,,,,Y,Y,N
+CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
+ACI_PIN_CODE,VARCHAR2,,N,First insurance pincode in  ,,,,,,,,Y,Y,N
+ACI_PIN_CODE2,VARCHAR2,,N,Second insurance pincode in  ,,,,,,,,Y,Y,N
+CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y

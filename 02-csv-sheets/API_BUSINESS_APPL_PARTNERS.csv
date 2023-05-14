@@ -1,0 +1,31 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+BSP_APP_ORIG_SYS_XREF,VARCHAR2,,N,  Unique Identification Number from the Legacy System,,,,,,,,Y,Y,
+BSP_FIRST_NAME,VARCHAR2,,N,  Stores the First Name,,,,,,,,N,N,
+BSP_LAST_NAME,VARCHAR2,,N,  Stores the Last Name,,,,,,,,N,N,
+BSP_SSN,NUMBER,,Y,  Stores the SSN Number,,,,,,,,Y,Y,
+BSP_BIRTH_DT,DATE,,N,  Stores the Birth Date,,,,,,,,N,N,
+BSP_PERC_OWNERSHIP,NUMBER,,Y,  Stores the Percentage of Ownership,,,,,,,,Y,Y,
+BSP_NETWORTH,NUMBER,,Y,  Stores Net worth,,,,,,,,Y,Y,
+BSP_GROSS_INCOME,NUMBER,,Y,  Stores Gross Income,,,,,,,,Y,Y,
+BSP_PHONE,NUMBER,,Y,  Phone Number,,,,,,,,N,Y,
+BSP_ADDRESS_NBR,VARCHAR2,,N,  Address Number,,,,,,,,N,N,
+BSP_ADDRESS1,VARCHAR2,,N,  First line of Address,,,,,,,,N,N,
+BSP_CITY,VARCHAR2,,Y,  City Name,,,,,,,,Y,Y,
+BSP_STATE_CD,VARCHAR2,,Y,  State Code,STATE_CD,,,,,,,Y,Y,
+BSP_ZIP,VARCHAR2,,Y,  Zip Code,,,,,,,,Y,Y,
+BSP_COUNTRY_CD,VARCHAR2,,Y,  Country Name,COUNTRY_CD,,,,,,,Y,Y,
+BSP_DIRECTOR_IND,VARCHAR2,,N,Indicates whether the director is partner,,,,,,,,Y,Y,
+BSP_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,PHONE_ISD_CD,,,,,,,N,N,
+BSP_LANGUAGE_CD,VARCHAR2,,N,Reference key to lookup language such as English,LANGUAGE_CD,,,,,,,N,N,
+BSP_MIDDLE_NAME,VARCHAR2,,N,Business Partner Middle Name,,,,,,,,N,N,
+BSP_BIRTH_PLACE,VARCHAR2,,N,Partner Birth Place,,,,,,,,N,N,
+BSP_TITLE,VARCHAR2,,N,Business Partners Title ,,,,,,,,N,N,
+BSP_RACE_NATIONAL_ORIGIN_CD,VARCHAR2,,N,Race  National and Origin Code,RACE_NATIONAL_ORIGIN_CD,,,,,,,N,N,
+BSP_EMAIL,VARCHAR2,,N,Email address of the business partner,,,,,,,,N,N,
+BSP_PHONE_EXTN,NUMBER,,N,Business Partner Phone Extension,,,,,,,,N,N,
+BSP_ADDRESS2,VARCHAR2,,N,Second line of Address,,,,,,,,N,N,
+BSP_ZIP_EXTN,VARCHAR2,,N,Zip Code Extension for Business applicants Partner ,,,,,,,,N,N,
+BSP_PREFIX_CD,VARCHAR2,,N,Reference key to lookup business applicant partner Prefix Code,PHONE_FAX_PREFIX_CD,,,,,,,Y,Y,N
+BSP_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Business applicant  partner permission to text,,,,,,,,Y,Y,N
+BSP_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Business applicant partner permission to call,,,,,,,,Y,Y,N

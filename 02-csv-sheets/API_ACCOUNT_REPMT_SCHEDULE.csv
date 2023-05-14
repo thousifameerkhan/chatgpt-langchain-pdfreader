@@ -1,0 +1,12 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+ACP_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system and it is used for converting accounts from other system,,,,,,,,Y,,
+ACP_SEQ,NUMBER,,N,Sequence number for account repayment schedule and it is used for converting accounts from other system,,,,,,,,Y,,
+ACP_REPAYMENT_DT,DATE,,N,Stores the payment date for repayment schedule and it is used for converting accounts from other system,,,,,,,,Y,,
+ACP_REPAYMENT_AMT,NUMBER,,N,Stores the payment amount for repayment schedule and it is used for converting accounts from other system,,,,,,,,Y,,
+ACP_NO_OF_PMTS,NUMBER,,N,Stores the number of payments for repayment schedule and it is used for converting accounts from other system,,,,,,,,Y,,
+ACP_SYSTEM_GENERATED_IND,VARCHAR2,,N,Indicates if the payment in schedule is system generated and it is used for converting accounts from other system,,,,,,,,Y,,
+ACP_PRINCIPAL_AMT,NUMBER,,N,Stores Interest Amount calculated,,,,,,,,N,,
+ACP_INTEREST_AMT,NUMBER,,N,Stores Principal Amount calculated,,,,,,,,N,,
+CREATED_BY,VARCHAR2,,Y,Standard Who and it is used for converting accounts from other system,,,,,,,,Y,Y,Y
+CREATION_DATE,DATE,,Y,Standard Who and it is used for converting accounts from other system,,,,,,,,Y,Y,Y

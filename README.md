@@ -60,3 +60,7 @@
 - [Cohere](https://python.langchain.com/en/latest/modules/models/text_embedding/examples/cohere.html)
 - [Weaviate](https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/weaviate.html)
 - [CSV Chat](https://www.youtube.com/watch?v=nr-mDSi9LxA)
+
+## Misc
+- pip install pandas openpyxl
+- remove_comma.py is the file that travers through the excel sheet and extracts the data into csv files. comma is replaced by a space.

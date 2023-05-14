@@ -1,0 +1,16 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+ADH_APP_ORIG_XREF,VARCHAR2,,N,Original system reference used for conversion only,,,,,,,,Y,Y,
+ADH_DUE_DT,DATE,,N,Stores the due date for the Account,,,,,,,,Y,Y,
+ADH_DUE_AMT,NUMBER,,N,Stores the due amount for the Account,,,,,,,,Y,Y,
+ADH_BALANCE_AMT,NUMBER,,N,Stores the balance amount for the due date,,,,,,,,Y,Y,
+ADH_ACTUAL_DAYS_PAST_DUE,NUMBER,,N,Stores the Actual days from the last due date,,,,,,,,N,N,
+ADH_PMT_SATISFIED_IND,VARCHAR2,,N,Indicates the payment satisfied is allowed for the account,,,,,,,,Y,Y,
+ADH_PMT_DT,DATE,,N,Stores the Payment date for the account,,,,,,,,N,N,
+ADH_PMT_AMT,NUMBER,,N,Stores the Payment amount for the account,,,,,,,,N,N,
+ADH_PRIMARY_IND,VARCHAR2,,N,Indicator specifying whether the due date is the primary due date or not,,,,,,,,Y,Y,
+ADH_TXN_SET_ID,NUMBER,,N,System generated unique identification number for transaction set,,,,,,,,N,N,
+CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,N,N,
+CREATION_DATE,DATE,,N,Standard Who,,,,,,,,N,N,
+LAST_UPDATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,N,N,
+LAST_UPDATE_DATE,DATE,,N,Standard Who,,,,,,,,N,N,

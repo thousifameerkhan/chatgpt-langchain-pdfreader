@@ -1,0 +1,158 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+APP_PIS_INSTRUMENT,VARCHAR2,,N,Reference key to instrument,LOV_PROMOTIONS,,,,,,,Y,Y,Y
+APP_CONTRACT_DT,DATE,,N,The date on which contract was booked,,,,,,,,Y,Y,Y
+APP_AMT_FINANCED,NUMBER,,N,Total amount financed,,,,,,,,Y,Y,Y
+APP_CR_LMT,NUMBER,,N,Credit limit(Original),,,,,,,,Y,Y,Y
+APP_TERM,NUMBER,,N,Term of the contract(Original),,,,,,,,Y,Y,Y
+APP_DRAW_TERM,NUMBER,,N,Number of term draw period is allowed,,,,,,,,Y,Y,Y
+APP_REPMT_TERM,NUMBER,,N,The repayment term of the contract,,,,,,,,Y,N,Y
+APP_RATE,NUMBER,,N,The contract rate,,,,,,,,Y,Y,Y
+APP_INDEX_TYPE_CD,VARCHAR2,,N,Reference key to lookup index type such as prime  etc,,,,,,,,Y,Y,Y
+APP_INDEX_RATE,NUMBER,,N,Index rate(Original),,,,,,,,Y,Y,Y
+APP_MRATE,NUMBER,,N,The margin rate(Original),,,,,,,,Y,Y,Y
+APP_BALLOON_AMT,NUMBER,,N,Contract balloon payment amount,,,,,,,,Y,Y,Y
+APP_FIRST_PMT_DT,DATE,,N,The date on which first payment should be received,,,,,,,,Y,Y,Y
+APP_MATURITY_DT,DATE,,N,The date on which the account would mature(Original),,,,,,,,Y,Y,Y
+APP_FINANCE_CHARGE,NUMBER,,N,The finance charge or total estimated interest charge on the contract,,,,,,,,Y,Y,Y
+APP_TOTAL_OF_PMTS,NUMBER,,N,Total of all payments or total note amount,,,,,,,,Y,N,Y
+APP_TOTAL_DOWN_PMT_AMT,NUMBER,,N,Total down payment amount of contract,,,,,,,,Y,N,Y
+APP_TOTAL_SALE_PRC,NUMBER,,N,Total sale price of the asset on contract,,,,,,,,Y,Y,Y
+APP_PMT_AMT,NUMBER,,N,Payment amount(Original),,,,,,,,Y,N,Y
+APP_APR,NUMBER,,N,Annual percentage rate,,,,,,,,Y,Y,Y
+APP_PRM_CODE,VARCHAR2,,N,Reference Key to Promotion Coe,LOV_PROMOTIONS,,,,,,,Y,Y,Y
+APP_MATURITY_INDEX_TYPE_CD,VARCHAR2,,N,Reference key to lookup index type such as prime  etc,,,,,,,,Y,Y,Y
+APP_MATURITY_MRATE,NUMBER,,N,The maturity margin rate,,,,,,,,Y,Y,Y
+APP_PCB_BRANCH_CSS,VARCHAR2,,N,Reference key to portfolio branch(Servicing),LOV_CON_PCB_BRANCH_CSS,,,,,,,Y,Y,Y
+APP_COLLECTOR_USR_CODE,VARCHAR2,,N,Collector associated with account,LOV_USER,,,,,,,N,N,N
+APP_CPP_CODE,VARCHAR2,,N,Reference Key to Compensation plan code,LOV_PROMOTIONS,,,,,,,Y,Y,Y
+APP_RATE_BUY,NUMBER,,N,The buy rate of the contract,,,,,,,,Y,Y,Y
+APP_COMP_AMT,NUMBER,,N,Total Compensation amount,,,,,,,,Y,Y,Y
+APP_FEE_AMT_ESCROWED,NUMBER,,N,Total escrow advance amount received (original),,,,,,,,Y,Y,Y
+APP_COMP_AMT_UPFRONT,NUMBER,,N,Upfront compensation amount,,,,,,,,Y,Y,Y
+APP_COMP_AMT_REMAINING,NUMBER,,N,Remaining compensation amount,,,,,,,,Y,Y,Y
+APP_RATE_SPREAD,NUMBER,,N,Rate spread for HMDA reporting,,,,,,,,Y,Y,Y
+APP_HOEPA_CD,VARCHAR2,,N,Home ownership and equity protection act code for HMDA reporting,,,,,,,,Y,Y,Y
+APP_LIEN_STATUS_CD,VARCHAR2,,N,Lien status code for HMDA reporting,,,,,,,,N,N,N
+APP_COUPON_FIRST_PMT_DT,DATE,,N,The date on which first payment is expected on the re-ordered coupon book,,,,,,,,N,N,N
+APP_COUPON_ORDER_BY,VARCHAR2,,N,Identifies coupon ordered by,,,,,,,,N,N,N
+APP_COUPON_ORDER_DT,DATE,,N,The date on which coupon book was re-ordered,,,,,,,,N,N,N
+APP_COUPON_ORDER_IND,VARCHAR2,,N,Indicates whether the coupon has been re-ordered,,,,,,,,Y,Y,Y
+APP_COUPON_START_NO,NUMBER,,N,The starting number of the coupon,,,,,,,,Y,Y,Y
+APP_EARLY_PRE_PMT_PENALTY_IND,VARCHAR2,,N,Indicates if early repayment fee can be charged,,,,,,,,Y,N,Y
+APP_PRE_PMT_TOLERANCE_AMT,NUMBER,,N,Tolerance amount to calculate pre-payment penalty fee,,,,,,,,N,N,N
+APP_PROM_CANCEL_DLQ_DAYS,NUMBER,,N,Stores the delinquency days after which the promotion is cancelled automatically,,,,,,,,N,N,N
+APP_CR_CONSUMED,NUMBER,,N,Credit limit already consumed on account,,,,,,,,N,N,N
+APP_FINAL_PMT_AMT,NUMBER,,N,Final payment amount,,,,,,,,N,N,N
+APP_STAGE_FUND_IND,VARCHAR2,,N,Indicates if stage funding is allowed,,,,,,,,Y,N,Y
+APP_COLLECT_INTEREST_IND,VARCHAR2,,N,Indicates whether the interest has to be collected or not,,,,,,,,Y,N,Y
+APP_PROM_TOLERANCE_AMT,NUMBER,,N,Promotion tolerance amount checked against outstanding balance for promotion benefits,,,,,,,,N,N,N
+APP_PROM_PERIOD_TYPE_CD,VARCHAR2,,N,Promotion period type,,,,,,,,N,N,N
+APP_ACH_BANK_NAME,VARCHAR2,,N,The name of the ACH bank of the customer,,,,,,,,N,N,N
+APP_ACH_BANK_ROUTING_NBR,VARCHAR2,,N,The 9-digit ABA number of the ACH bank of the customer,,,,,,,,N,N,N
+APP_ACH_ACCOUNT_TYPE_CD,VARCHAR2,,N,Reference key to lookup ACH account type such as checking saving etc,,,,,,,,N,N,N
+APP_ACH_ACCOUNT_NBR,VARCHAR2,,N,The account number of the bank for ACH transaction,,,,,,,,N,N,N
+APP_ACH_PMT_DAY,NUMBER,,N,The actual day that the ACH payment will be taken out of the customer account,,,,,,,,Y,Y,Y
+APP_ACH_PMT_AMT,NUMBER,,N,Amount of payment used in ACH transaction,,,,,,,,Y,Y,Y
+APP_ACH_PMT_FREQ_CD,VARCHAR2,,N,Reference key to lookup ACH payment frequency such as weekly monthly etc,,,,,,,,Y,Y,Y
+APP_ACH_START_DT,DATE,,N,The date on which ACH processing started,,,,,,,,N,N,N
+APP_ACH_IND,VARCHAR2,,N,Indicates whether the account has been setup for ACH,,,,,,,,Y,Y,Y
+APP_RPMT_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency  Repayment Currency (Current),,,,,,,,Y,Y,Y
+APP_PDC_IND,VARCHAR2,,N,PDC indicator for applications,,,,,,,,Y,Y,Y
+APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,Y,Y,Y
+APP_PTC_COMPANY,VARCHAR2,,N,Reference key to portfolio company,,,,,,,,Y,Y,Y
+APP_PCB_BRANCH,VARCHAR2,,N,Reference Key to portfolio branch(Origination),,,,,,,,Y,Y,Y
+APP_NBR,VARCHAR2,,N,A unique application number,,,,,,,,Y,Y,Y
+APP_DT,DATE,,N,The effective date of the application,,,,,,,,Y,Y,Y
+APP_PRD_PRODUCT,VARCHAR2,,N,Reference key to product,,,,,,,,Y,Y,Y
+APP_SOURCE_CD,VARCHAR2,,N,Identifies the source of the application such as Fax  Web,,,,,,,,Y,Y,Y
+APP_UNDERWRITER_USR_CODE,VARCHAR2,,N,The underwriter who approved the credit application,,,,,,,,N,N,N
+APP_PRO_TYPE_CD,VARCHAR2,,N,Reference key to lookup producer type such as dealer  agent  etc,,,,,,,,Y,Y,Y
+APP_PRO_NBR,VARCHAR2,,N,Reference to producer number,,,,,,,,N,N,N
+ADC_PRP_PRICING,VARCHAR2,,N,Reference Key to Product Pricings,,,,,,,,N,N,N
+ADC_CR_GRADE_CD,VARCHAR2,,N,The application decision approved credit grade,,,,,,,,Y,Y,Y
+ADC_CR_SCORE,NUMBER,,N,The application decision credit score,,,,,,,,Y,Y,Y
+APP_TOTAL_DISCOUNT_RATE,NUMBER,,N,Stores the Total Discount Rate. This is used for Conversion of data from other system,,,,,,,,,,
+APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,,,
+APP_PTC_COMPANY,VARCHAR2,,N,Reference key to portfolio company,,,,,,,,,,
+APP_PCB_BRANCH,VARCHAR2,,N,Reference Key to portfolio branch(Origination),,,,,,,,,,
+APP_NBR,VARCHAR2,,N,A unique application number,,,,,,,,,,
+APP_DT,DATE,,N,The effective date of the application,,,,,,,,,,
+APP_PRD_PRODUCT,VARCHAR2,,N,Reference key to product,,,,,,,,,,
+APP_SOURCE_CD,VARCHAR2,,N,Identifies the source of the application such as Fax  Web,APP_SOURCE_CD,,,,,,,,,
+APP_UNDERWRITER_USR_CODE,VARCHAR2,,N,The underwriter who approved the credit application,,,,,,,,,,
+APP_PRO_TYPE_CD,VARCHAR2,,N,Reference key to lookup producer type such as dealer  agent  etc,PRO_TYPE_CD,,,,,,,,,
+APP_PRO_NBR,VARCHAR2,,N,Reference to producer number,,,,,,,,,,
+APP_CONVERSION_DT,DATE,,Y,Date of conversion,,,,,,,,,,
+APP_NEW_IND,VARCHAR2,,Y,Indicates converting new account,,,,,,,,,,
+APP_LINK_EXISTING_CUSTOMER_IND,VARCHAR2,,Y,Indicates whether the account should be linked to existing customer,,,,,,,,,,
+APP_MULTIPLE_OFFER_IND,VARCHAR2,,N,Indicates if Multiple offer is enabled for the branch. This is used for Conversion of data from other system,,,,,,,,,,
+APP_REPMT_FIXED_PRINCIPAL_AMT,NUMBER,,N,Stores the Repayment Principal Amount. This is used for Conversion of data from other system,,,,,,,,,,
+APP_EXTEND_BALLOON_TERM_MAX,NUMBER,,N,Stores the Maximum Extended Balloon Term. This is used for Conversion of data from other system,,,,,,,,,,
+APP_TIME_ZONE_CD,VARCHAR2,,N,Stores the Time Zone Code. This is used for Conversion of data from other system,TIME_ZONE_CD,,,,,,,,,
+APP_STMT_PREFERENCE_MODE_CD,VARCHAR2,,N,Application Statement Preference Mode code,,,,,,,,Y,Y,Y
+APP_CLASS_TYPE_CD,VARCHAR2,,N,Application class type code (SBL/INV/BUS),APP_CLASS_TYPE_CD,,,,,,,Y,Y,Y
+APP_LINKED_ACC_NBR,VARCHAR2,,N,Indicates the linked account number for an account,,,,,,,,Y,Y,Y
+APP_MULTI_BILL_ASSET_RATE_IND,VARCHAR2,,Y,Indicates whether multiple asset rates are applicable for one billing period or not,,,,,,,,Y,Y,Y
+APP_PAH_HIERARCHY_CODE,VARCHAR2,,N,Payment Hierarchy Code,,,,,,,,Y,Y,Y
+APP_PMT_MODE_CD,VARCHAR2,,N,Reference lookup to Accounts payment mode current (cash/check),,,,,,,,Y,Y,Y
+APP_STMT_PREFERENCE_MODE_CD,VARCHAR2,,N,Application Statement Preference Mode code,,,,,,,,Y,Y,Y
+APP_RATE_MAX_INCREASE_YEAR,NUMBER,,N,Maximum allowable increase in rate in a year,,,,,,,,Y,Y,Y
+APP_ACCRUAL_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest,ACCRUAL_CALC_METHOD_CD,,,,,,,Y,Y,Y
+APP_RATE_MAX_INCREASE_LIFE,NUMBER,,N,Maximum allowable increase in rate in the life of the contract,,,,,,,,Y,Y,Y
+APP_TOTAL_OF_PMTS_ESTIMATED,NUMBER,,N,Application Total Of Payments Estimated,,,,,,,,N,Y,N
+CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
+CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
+APP_ACH_FEE_IND,VARCHAR2,,N,Application ACH fee indicator,,,,,,,,Y,Y,N
+APP_ADV_DRAW_END_DT,DATE,,N,The end date to draw advance for stage funded loans,,,,,,,,Y,Y,N
+APP_AGREEMENT_TYPE_CD,VARCHAR2,,N,Agreement type Code - Usage/Rental/Undefined.,AGREEMENT_TYPE_CD,,,,,,,N,Y,N
+APP_API_ID,NUMBER,,Y,Unique Sequence number for multi threading,,,,,,,,Y,Y,Y
+APP_CAP_COST_GRO,NUMBER,,N,Application Capital Cost Gross,,,,,,,,N,Y,N
+APP_CAP_COST_RED,NUMBER,,N,Application Capital Cost Residual,,,,,,,,N,Y,N
+APP_CHARGE_CALC_METHOD_CD,VARCHAR2,,N,Charge caluclation method code for Tiered / Non Tiered.,CHARGE_CALC_METHOD_CD,,,,,,,N,Y,N
+APP_COMP_REVISE_PLAN_TERM,NUMBER,,N,Compensation plan revision term,,,,,,,,Y,Y,N
+APP_CONTRACT_VERIFY_BY,VARCHAR2,,N,Contract Verify Date ,,,,,,,,Y,Y,Y
+APP_COUPON_NOS,NUMBER,,N,Number of coupons for order,,,,,,,,Y,Y,N
+APP_DISCOUNT_AMT,NUMBER,,N,Discount Amount applicable for Rental Billing,,,,,,,,N,Y,N
+APP_DISCOUNT_PER,NUMBER,,N,Discount Percentage,,,,,,,,N,Y,N
+APP_DRAW_TERM_RATE,NUMBER,,N,Stores the rate at the time of stage funding,,,,,,,,Y,Y,N
+APP_ERROR_IND,VARCHAR2,,Y,Indicates error on conversion record,,,,,,,,Y,Y,Y
+APP_EXCESS_RENT_COL_METHOD_CD,VARCHAR2,,N,Excess rent colculation method code for Actual/Average.,EXCESS_RENT_COL_METHOD_CD,,,,,,,N,Y,N
+APP_FLEXIBLE_REPAYMENT_IND,VARCHAR2,,N,Indicates flexible repayment schedule is allowed or not,,,,,,,,Y,Y,N
+APP_INDEX_RATE_EFFECTIVE,NUMBER,,N,Stores the Index Effective rate,,,,,,,,Y,Y,Y
+APP_INSTALLMENT_METHOD_CD,VARCHAR2,,N,Method to calculate payment amount Equated EQ Final Payment Differs FPD,INSTALLMENT_METHOD_CD,,,,,,,Y,Y,N
+APP_MASTER_ACC_IND,VARCHAR2,,N,Indicates if the application is marked as master account or not,,,,,,,,Y,Y,Y
+APP_MASTER_ACC_NBR,VARCHAR2,,N,Master account number to which the application is linked,,,,,,,,Y,Y,Y
+APP_MATURITY_MRATE_EFFECTIVE,NUMBER,,N,Stores the effective maturity margin rate,,,,,,,,Y,Y,Y
+APP_MAX_TIME_BAR_YEAR,NUMBER,,N,Staging data source : Max Time Bar Year,,,,,,,,N,Y,N
+APP_MAX_USAGE,NUMBER,,N,Maximum units allowed per cycle.,,,,,,,,N,Y,N
+APP_MRATE_EFFECTIVE,NUMBER,,N,Stores the Effective for the margin,,,,,,,,Y,Y,Y
+APP_PMT_MAX_INCREASE_LIFE,NUMBER,,N,Application Payment max increase life,,,,,,,,Y,Y,N
+APP_PMT_MAX_INCREASE_YEAR,NUMBER,,N,Application Payment max increase year,,,,,,,,Y,Y,N
+APP_PREPAID_AMT,NUMBER,,N,Application Prepaid Amount,,,,,,,,N,Y,N
+APP_PROBABLE_DELIVERY_DT,DATE,,N,Application probable delivery date,,,,,,,,Y,Y,N
+APP_PROFIT_RATE,NUMBER,,N,Application profit rate,,,,,,,,Y,Y,N
+APP_PROM_PROFIT_RATE,NUMBER,,N,Application promotional profit rate,,,,,,,,Y,Y,N
+APP_RATE_BUY_EFFECTIVE,NUMBER,,N,Stores the effective buy rate,,,,,,,,Y,Y,Y
+APP_RATE_CHG_FREQ_TYPE_CD,VARCHAR2,,N,Reference key to lookup rate change frequency type such as MONTHLY QUARTERLY etc,,,,,,,,Y,Y,N
+APP_RATE_CHG_PERIOD,NUMBER,,N,Stores the time or period between subsequent rate change based on rate adjustment frequency,,,,,,,,Y,Y,N
+APP_RATE_CHG_RSC_METHOD_CD,VARCHAR2,,N,Reference key to lookup Rate Change Reschedule Method,,,,,,,,Y,Y,N
+APP_RATE_CHG_RSC_VALUE,NUMBER,,N,The percentage value to be used to change the payment amount when rate changes on account,,,,,,,,Y,Y,N
+APP_RATE_EFFECTIVE,NUMBER,,N,Stores the Effective rate,,,,,,,,Y,Y,Y
+APP_RECOURSE_TYPE_CD,VARCHAR2,,N,Stores Recourse Type from lookup code,RECOURSE_TYPE_CD,,,,,,,Y,Y,Y
+APP_RENTAL_FEE,NUMBER,,N,Application Rental fee,,,,,,,,Y,Y,N
+APP_RENT_END_DATE,DATE,,N,Rental End Date ,,,,,,,,N,Y,N
+APP_RENT_FACTOR,NUMBER,,N,Application Rent Factror,,,,,,,,N,Y,N
+APP_RENT_START_DATE,DATE,,N,Rental Start date with timestamp,,,,,,,,N,Y,N
+APP_RENT_VAL,NUMBER,,N,Application Rent Value,,,,,,,,N,Y,N
+APP_REPAYMENT_SKIP_PERIOD,VARCHAR2,,N,Stores all months that are allowed to skip payment such as MARCH APRIL MAY,,,,,,,,Y,Y,N
+APP_REPAYMENT_TYPE_CD,VARCHAR2,,N,Reference key to lookup account repayment type,REPAYMENT_TYPE_CD,,,,,,,Y,Y,N
+APP_REQ_BALLOON_AMT,NUMBER,,N,Application Requested Balloon amount,,,,,,,,Y,Y,N
+APP_RESIDUAL_DAYS,NUMBER,,N,Application residual days,,,,,,,,Y,Y,N
+APP_RESIDUAL_PER,NUMBER,,N,Application  Residual Percentage,,,,,,,,N,Y,N
+APP_RESIDUAL_VAL,NUMBER,,N,Application Residual Value,,,,,,,,N,Y,N
+APP_SALES_TAX_AMT_ESTIMATED,NUMBER,,N,Application Sales Tax Amount Estimated,,,,,,,,N,Y,N
+APP_SALES_TAX_PER_ESTIMATED,NUMBER,,N,Application Sales Tax Percentage Estimated,,,,,,,,N,Y,N
+APP_SECURITY_DEPOSIT_AMT,NUMBER,,N,Application Security Deposit Amount,,,,,,,,N,Y,N
+APP_SIGNING_DT,DATE,,N,Application signing date,,,,,,,,Y,Y,N
+APP_STMT_CONSOLIDATE_IND,VARCHAR2,,N,Application statement consolidation indicator,,,,,,,,Y,Y,Y

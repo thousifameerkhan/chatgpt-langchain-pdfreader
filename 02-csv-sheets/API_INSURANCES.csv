@@ -1,0 +1,38 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+INS_PRIMARY_BENEFICIARY,VARCHAR2,,N,Stores the primary beneficiary for the insurance details,,,,,,,,N,,
+INS_CANCEL_REASON_CD,VARCHAR2,,N,Reference key to lookup insurance cancel reason,INS_CANCEL_REASON_CD,,,,,,,N,,
+INS_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,Y,,
+INS_COMPANY,VARCHAR2,,N,Stores the insurance company name,,,,,,,,N,,
+INS_PHONE_NO1,NUMBER,,N,Stores the phone number #1 for the insurance transaction,,,,,,,,N,,
+INS_PHONE_EXTN1,NUMBER,,N,Stores phone number extension for insurance details,,,,,,,,N,,
+INS_PHONE_NO2,NUMBER,,N,Stores phone number for insurance details,,,,,,,,N,,
+INS_PHONE_EXTN2,NUMBER,,N,Stores the phone number #2 for the insurance details,,,,,,,,N,,
+INS_POLICY_NBR,VARCHAR2,,N,Stores insurance policy number,,,,,,,,Y,,
+INS_EFFECTIVE_DT,DATE,,N,Stores insurance effective date,,,,,,,,Y,,
+INS_TERM,NUMBER,,N,Stores insurance term,,,,,,,,Y,,
+INS_EXPIRY_DT,DATE,,N,Stores insurance expiry date,,,,,,,,N,,
+INS_PREMIUM_AMT,NUMBER,,N,Stores the premium amount for the insurance,,,,,,,,Y,,
+INS_SECONDARY_BENEFICIARY,VARCHAR2,,N,Stores secondary beneficiary for the insurance,,,,,,,,N,,
+INS_CANCEL_DT,DATE,,N,Stores Insurance cancellation date,,,,,,,,N,,
+INS_CANCEL_TERM_REM,NUMBER,,N,The remaining term of the contract at the time of cancellation,,,,,,,,Y,,
+INS_REFUND_AMT_EST,NUMBER,,N,Stores the estimated refund amount for the insurance,,,,,,,,Y,,
+INS_REFUND_AMT_RCVD,NUMBER,,N,Stores the refund amount received from the insurance company,,,,,,,,Y,,
+INS_COMPLETE_REFUND_RCVD_IND,VARCHAR2,,N,Indicates the complete refund received,,,,,,,,Y,,
+INS_INSURANCE_TYPE_CD,VARCHAR2,,N,Reference key to lookup insurance type,INSURANCE_TYPE_CD,,,,,,,Y,,
+INS_SUB_TYPE_CD,VARCHAR2,,N,Reference key to lookup insurance sub type,INS_SUB_TYPE_CD,,,,,,,Y,,
+INS_COMMENT,VARCHAR2,,N,Stores the comment for the insurance details,,,,,,,,N,,
+INS_REFUND_ALLOWED_IND,VARCHAR2,,N,Indicates whether or not the insurance cancellation is allowed,,,,,,,,Y,,
+INS_REFUND_CALC_METHOD_CD,VARCHAR2,,N,Stores the contract method that is used to calculate refund in the event of insurance cancellation,INS_REFUND_CALC_METHOD_CD,,,,,,,Y,,
+INS_CONTRACT_IND,VARCHAR2,,N,Indicates if the insurance was part of contract,,,,,,,,Y,,
+INS_INSURANCE_STATUS_CD,VARCHAR2,,N,Reference key to lookup insurance status,INSURANCE_STATUS_CD,,,,,,,Y,,
+INS_INSURANCE_MODE_CD,VARCHAR2,,N,Reference key to lookup insurance mode,INSURANCE_MODE_CD,,,,,,,Y,,
+INS_CANCEL_FEE,NUMBER,,N,Stores the insurance cancellation fee amount,,,,,,,,,,
+INS_GRACE_PERIOD_FEE_IND,VARCHAR2,,N,Indicates whether or not cancellation fee could be charged during grace days,,,,,,,,Y,,
+INS_CANCEL_GRACE_DAYS,NUMBER,,N,The number of days that allows insurance cancellation without fee,,,,,,,,Y,,
+INS_CANCEL_FEE_FROM_CD,VARCHAR2,,N,Cancel fee from rebate or premium possible values PRM/RBT/NULL,CANCEL_FEE_FROM_CD,,,,,,,N,,
+INS_TXN_DT,DATE,,Y,Date of Transaction,,,,,,,,Y,N,Y
+CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,Y
+INS_PIN_CODE,VARCHAR2,,N,Pin Code,,,,,,,,Y,N,N
+CREATION_DATE,DATE,,N,Standard Who,,,,,,,,Y,Y,Y
+INS_TXN_DT,DATE,,Y,Date of Transaction,,,,,,,,Y,Y,Y

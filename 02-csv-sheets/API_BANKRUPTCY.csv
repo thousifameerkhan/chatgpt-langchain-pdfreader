@@ -1,0 +1,16 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,Y
+BKP_NEXT_FOLLOWUP_DT,DATE,,N,The date on which next followup is scheduled,,,,,,,,Y,Y,Y
+BKP_END_DT,DATE,,N,The date on which bankruptcy ended,,,,,,,,Y,Y,Y
+BKP_DISPOSITION_CD,VARCHAR2,,N,Reference key to lookup bankruptcy disposition,BKRP_DISPOSITION_CD,,,,,,,Y,Y,Y
+BKP_TYPE_CD,VARCHAR2,,N,Reference key to lookup bankruptcy type such as chapter 7 11 13,BKRP_TYPE_CD,,,,,,,Y,Y,Y
+BKP_COMMENT,VARCHAR2,,N,A user defined comment for bankruptcy,,,,,,,,Y,Y,Y
+BKP_IND,VARCHAR2,,N,Indicates whether the account is in bankruptcy,,,,,,,,Y,Y,Y
+BKP_DT,DATE,,N,The date on which bankruptcy was filed,,,,,,,,Y,Y,Y
+BKP_FILE_RCVD_DT,DATE,,N,The date on which bankruptcy file was received,,,,,,,,Y,Y,Y
+CREATION_DATE,DATE,,N,Standard Who,,,,,,,,Y,Y,Y
+BKP_CUR_IND,VARCHAR2,,N,Indicates the current bankruptcy record ,,,,,,,,Y,Y,Y
+BKP_ORIG_SYS_XREF,VARCHAR2,,N,Unique Identification Number from the Legacy System,,,,,,,,Y,Y,Y
+BKP_NBR,VARCHAR2,,N,Bankruptcy Number,,,,,,,,Y,Y,Y
+BKP_RELATION_TYPE_CD,VARCHAR2,,N,Relation of bankrupt customer such as primary  spouse  secondary  cosigner,RELATION_TYPE_CD,,,,,,,Y,Y,Y

@@ -1,0 +1,15 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
+CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
+ABH_ACC_STATUS_CD,VARCHAR2,,N,Account Status Code,ACC_STATUS_CD,,,,,,,Y,Y,Y
+ABH_CURRENT_IND,VARCHAR2,,N,Current Indicator,,,,,,,,Y,Y,Y
+ABH_PAYMENT_HISTORY,VARCHAR2,,N,Payment History,,,,,,,,Y,Y,Y
+ABH_ACC_CRB_ACC_STATUS_CD,VARCHAR2,,N,CRB Account Status,ACC_STATUS_CD,,,,,,,Y,Y,Y
+ABH_BILLING_DATE,DATE,,N,Billing Date,,,,,,,,Y,Y,Y
+ABH_CURRENT_BAL_AMT,NUMBER,,N,Current balance amount,,,,,,,,Y,Y,Y
+ABH_DOFD_DT,DATE,,N,Date of First Delinquency,,,,,,,,Y,Y,Y
+ABH_CIIC_CODE,VARCHAR2,,N,CIIC Code,,,,,,,,Y,Y,Y
+ABH_AMT_PAST_DUE,NUMBER,,N,Amount Past Due,,,,,,,,Y,Y,Y
+ABH_MONTHLY_PMT_AMT,NUMBER,,N,Monthly Payment Amount,,,,,,,,Y,Y,Y
+ABH_ORIG_SYS_XREF,VARCHAR2,,N,Unique Identification Number from the Legacy System,,,,,,,,Y,Y,Y

@@ -1,0 +1,21 @@
+Version,Unnamed: 1
+ARU-dbdrv,
+Extractor Version,
+Template Code,
+Template Type,TYPE_EXCEL_TEMPLATE
+Preprocess XSLT File,
+Last Modified Date,
+Last Modified By,
+,
+Data Constraints:,
+XDO_?XDOFIELD1?,<?COL_NAME?>
+XDO_?XDOFIELD2?,<?COL_TYPE?>
+XDO_?XDOFIELD3?,<?COL_LENGTH?>
+XDO_?XDOFIELD4?,<?COL_NULLABLE?>
+XDO_?XDOFIELD5?,<?COL_COMMENTS?>
+XDO_?XDOFIELD6?,<?COL_LOOKUP?>
+XDO_?XDOFIELD7?,<?COL_LN_REQ?>
+XDO_?XDOFIELD8?,<?COL_LS_REQ?>
+XDO_?XDOFIELD9?,<?COL_LOC_REQ?>
+XDO_SHEET_?,<?.//G_TABNAME?>
+XDO_SHEET_NAME_?,<?.//TAB_NAME?>

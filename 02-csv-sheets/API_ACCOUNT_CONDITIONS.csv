@@ -1,0 +1,8 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,Y
+CREATION_DATE,DATE,,N,Standard Who,,,,,,,,Y,Y,Y
+ACO_START_DT,DATE,,N,The effective date the condition was started,,,,,,,,Y,Y,Y
+ACO_ACC_CONDITION_REASON_CD,VARCHAR2,,N,The reason of the condition  such as 1ST - First Payment Default  CH7 - Chapter 7 Filed and CLAIM - Insurance Claim,CAC_REASON_CD,,,,,,,Y,Y,Y
+ACO_ACC_CONDITION_CD,VARCHAR2,,N,The type of the condition  such as DELQ - Delinquency  BKRP - Bankruptcy and TIP - Termination in Progress (Payoff),ACC_CONDITION_CD,,,,,,,Y,Y,Y
+ACO_ORIG_SYS_XREF,VARCHAR2,,N,Unique Identification Number from the Legacy System,,,,,,,,Y,Y,Y

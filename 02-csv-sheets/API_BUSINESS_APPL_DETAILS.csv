@@ -1,0 +1,112 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+BSD_APP_ORIG_SYS_XREF,VARCHAR2,,N,  Unique Identification Number from the Legacy System,,,,,,,,Y,,
+BSD_ORGANIZATION_TYPE_CD,VARCHAR2,,N,  Organization Type Code,ORGANIZATION_TYPE_CD,,,,,,,N,,
+BSD_BUSINESS_TYPE_CD,VARCHAR2,,N,  Business Type Code,BUSINESS_TYPE_CD,,,,,,,N,,
+BSD_BUSINESS_NAME,VARCHAR2,,N,  Business Name,,,,,,,,N,,
+BSD_LEGAL_NAME,VARCHAR2,,N,  Business Legal Name,,,,,,,,N,,
+BSD_TAX_ID,VARCHAR2,,N,  Business Tax ID,,,,,,,,N,,
+BSD_START_DT,DATE,,N,  Business Start Date,,,,,,,,N,,
+BSD_CURR_NO_OF_EMPLOYEES,NUMBER,,Y,  Current Number of Employees,,,,,,,,Y,,
+BSD_NO_OF_EMPLOYEES,NUMBER,,Y,  Number of Employees,,,,,,,,Y,,
+BSD_NO_OF_LOCATIONS,NUMBER,,Y,  Business Number of Locations,,,,,,,,Y,,
+BSD_CURR_MANAGEMENT,NUMBER,,Y,  Business Current Management,,,,,,,,Y,,
+BSD_CHECKING_BANK,VARCHAR2,,N,   Checking Bank,,,,,,,,N,,
+BSD_BANK_ACNO,VARCHAR2,,N,  Bank Account Number,,,,,,,,N,,
+BSD_AVG_CHECKING_BALANCE,NUMBER,,Y,  Business Average Checking  Balance,,,,,,,,Y,,
+BSD_ANALYSIS_FREQ_CD,VARCHAR2,,N,  Business Analysis Frequency Code,ANALYSIS_FREQ_CD,,,,,,,N,,
+BSD_GROSS_MARGIN_FACTOR,NUMBER,,Y,  Gross Margin factor,,,,,,,,Y,,
+BSD_INCOME_AMT,NUMBER,,Y,  Business Income Amount,,,,,,,,Y,,
+BSD_BUSINESS_EXP_AMT,NUMBER,,Y,  Business Expense Amount,,,,,,,,Y,,
+BSD_PERSONAL_EXP_AMT,NUMBER,,Y,  Business Personal Expense Amount,,,,,,,,Y,,
+BSD_ANNUAL_SALES_REVENUE,NUMBER,,Y,  Business Annual Sales Revenue,,,,,,,,Y,,
+BSD_PROJ_SALES_AMT,NUMBER,,Y,  Business Projected Sales Amount,,,,,,,,Y,,
+BSD_AVG_COLLECTION,NUMBER,,Y,  Business Average Collection,,,,,,,,Y,,
+BSD_ANN_AVG_PROJ_COLLECTION,NUMBER,,Y,  Business Annual Average Projected Collection,,,,,,,,Y,,
+BSD_BOOK_LIST_VAL,NUMBER,,Y,  Business Book List Value,,,,,,,,Y,,
+BSD_OPEN_DELQ_PERC,NUMBER,,Y,  Business Open Delinquency Percentage,,,,,,,,Y,,
+BSD_TURNOVER,NUMBER,,Y,  Business Turn Over,,,,,,,,Y,,
+BSD_EQUITY,NUMBER,,Y,  Business Equity,,,,,,,,Y,,
+BSD_CAPITAL_AMT,NUMBER,,Y,  Capital Amount,,,,,,,,Y,,
+BSD_EARNED_SURPLUS_AMT,NUMBER,,Y,  Earned Surplus Amount,,,,,,,,Y,,
+BSD_GROSS_PROFIT_AMT,NUMBER,,Y,  Gross Profit Amount,,,,,,,,Y,,
+BSD_NET_PROFIT_AMT,NUMBER,,Y,  Net Profit Amount,,,,,,,,Y,,
+BSD_WORKING_CAPITAL_AMT,NUMBER,,Y,  Working Capital Amount,,,,,,,,Y,,
+BSD_EXP_AMT,NUMBER,,Y,   Business Expense Amount,,,,,,,,Y,,
+BSD_PROJ_ANN_SALES_AMT,NUMBER,,Y,   Business Projected Annual Sales Amount,,,,,,,,Y,,
+BSD_PROJ_ANN_EXP_AMT,NUMBER,,Y,   Business Projected Annual Expense Amount,,,,,,,,Y,,
+BSD_CURRENT_ASSET_AMT,NUMBER,,Y,   Current Asset Amount,,,,,,,,Y,,
+BSD_FIXED_ASSET_AMT,NUMBER,,Y,   Fixed Asset Amount,,,,,,,,Y,,
+BSD_INTANGIBLE_ASSET_AMT,NUMBER,,Y,   Intangible Asset Amount,,,,,,,,Y,,
+BSD_CURRENT_LIABILITY_AMT,NUMBER,,Y,   Current Liability Amount,,,,,,,,Y,,
+BSD_LONGTERM_LIABILITY_AMT,NUMBER,,Y,   Long-term Liability Amount,,,,,,,,Y,,
+BSD_TOT_FINANCIAL_AMT,NUMBER,,Y,   Business Total Financial Amount,,,,,,,,Y,,
+BSD_EQUITY_AMT,NUMBER,,Y,  Equity Amount,,,,,,,,Y,,
+BSD_TOT_LIABILITY_AMT,NUMBER,,Y,  Business Total Liability Amount,,,,,,,,Y,,
+BSD_EQUITY_RATIO,NUMBER,,Y,  Equity Ratio,,,,,,,,Y,,
+BSD_ASSET_LIABILITY_RATIO,NUMBER,,Y,  Asset Liability Ratio,,,,,,,,Y,,
+BSD_ERROR_IND,VARCHAR2,,Y,  Error Indicator,,,,,,,,N,,
+BSD_PAH_HIERARCHY_CODE,VARCHAR2,,N,Payment Hierarchy Code,,,,,,,,Y,Y,Y
+BSD_STOP_CORR_IND,VARCHAR2,,N,Indicates if Business Applicant correspondence must be stopped ,,,,,,,,Y,Y,Y
+BSD_EMAIL,VARCHAR2,,N,Email address of Business Applicant,,,,,,,,Y,Y,Y
+BSD_SKIP_IND,VARCHAR2,,N,Indicates if current Business Address for customer is not valid,,,,,,,,Y,Y,Y
+BSD_REFERENCE_NBR,VARCHAR2,,N,Reference number for business applicant,,,,,,,,Y,Y,Y
+BSD_TIME_ZONE_CD,VARCHAR2,,N,Stores the Timezone of the Business Applicants,TIME_ZONE_CD,,,,,,,Y,Y,Y
+BSD_COMMENTS,VARCHAR2,,N,Business applicant comments,,,,,,,,Y,Y,Y
+BSD_PRIVACY_OPT_OUT_IND,VARCHAR2,,N,Indicates if Business Applicant has opted out to share privacy information,,,,,,,,Y,Y,Y
+BSD_SHARE_CR_OPT_OUT_IND,VARCHAR2,,N,Business Applicant Share Credit Opt Out Indicator,,,,,,,,Y,Y,Y
+BSD_CREDIT_SCORE,NUMBER,,N,Credit score for Business Applicant,,,,,,,,Y,Y,Y
+BSD_REASON_CD,VARCHAR2,,N,Business Applicant reason code reference to lookup,,,,,,,,Y,Y,Y
+BSD_CREDIT_SCORE_RECEIVED_DT,DATE,,N,Credit score received date for Business Applicant,,,,,,,,Y,Y,Y
+BSD_CREDIT_SOURCE_CD,VARCHAR2,,N,Business applicants credit source code,CRB_SOURCE_CD,,,,,,,Y,Y,Y
+BSD_BANKRUPTCY_IND,VARCHAR2,,N,Indicates if the Business applicant bankruptcy is  enabled are not  ,,,,,,,,Y,Y,Y
+BSD_UPDATE_BUSINESS_INFO_IND,VARCHAR2,,N,Business Applicant override indicator,,,,,,,,Y,Y,Y
+BSD_INSURANCE_OPT_OUT_IND,VARCHAR2,,N,Business Applicant Insurance Opt Out Indicator ,,,,,,,,Y,Y,Y
+BSD_MARKETING_OPT_OUT_IND,VARCHAR2,,N,Business Applicant Marketing Opt Out Indicator,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE1,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE10,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE2,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE3,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE4,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE5,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE6,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE7,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE8,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_FTA_TABLE_ATTRIBUTE9,VARCHAR2,,N,Attribute Name ,,,,,,,,Y,Y,Y
+BAT_VALUE1,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE10,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE2,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE3,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE4,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE5,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE6,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE7,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE8,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BAT_VALUE9,VARCHAR2,,N,Attribute value ,,,,,,,,Y,Y,Y
+BSD_BANKRUPTCY_IND,VARCHAR2,,N,Indicates if the Business applicant bankruptcy is  enabled are not  ,,,,,,,,Y,Y,Y
+BSD_BUSINESS_CATEGORY_CD,VARCHAR2,,N,The category of business applicant details,,,,,,,,Y,Y,Y
+BSD_BUS_ID,NUMBER,,Y,system generated unique  reference  id,,,,,,,,Y,Y,Y
+BSD_COMMENTS,VARCHAR2,,N,Business applicant comments,,,,,,,,Y,Y,Y
+BSD_CREDIT_SCORE,NUMBER,,N,Credit score for Business Applicant,,,,,,,,Y,Y,Y
+BSD_CREDIT_SCORE_RECEIVED_DT,DATE,,N,Credit score received date for Business Applicant,,,,,,,,Y,Y,Y
+BSD_CREDIT_SOURCE_CD,VARCHAR2,,N,Business applicants credit source code,,,,,,,,Y,Y,Y
+BSD_CRED_LIMIT_EXPIRY_DT,DATE,,Y,Business applicant credit limit expiry date,,,,,,,,Y,Y,Y
+BSD_CRED_LIMIT_GRADE_CD,VARCHAR2,,N,Reference key to lookup business applicant credit limit grade code,,,,,,,,Y,Y,Y
+BSD_CRED_LIMIT_MAX_AMT,NUMBER,,Y,Business applicant maximum credit limit amount,,,,,,,,Y,Y,Y
+BSD_CRED_LIMIT_MAX_LC_RATE,NUMBER,,Y,Business applicant credit limit maximum late charge,,,,,,,,Y,Y,Y
+BSD_CRED_LIMIT_RENEW_DT,DATE,,Y,Business applicant credit limit renew date,,,,,,,,Y,Y,Y
+BSD_CUR_AVG_CHECKING_BALANCE,NUMBER,,N,Stores the Average Checking Balance of business,,,,,,,,Y,Y,Y
+BSD_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency,CURRENCY_CD,,,,,,,Y,Y,Y
+BSD_EMAIL,VARCHAR2,,N,Email address of Business Applicant,,,,,,,,Y,Y,Y
+BSD_INSURANCE_OPT_OUT_IND,VARCHAR2,,N,Business Applicant Insurance Opt Out Indicator ,,,,,,,,Y,Y,Y
+BSD_LIAB_NBR,VARCHAR2,,N,Liability number for  Api_business_appl_details,,,,,,,,Y,Y,Y
+BSD_MARKETING_OPT_OUT_IND,VARCHAR2,,N,Business Applicant Marketing Opt Out Indicator,,,,,,,,Y,Y,Y
+BSD_PRIOR_BUSINESS_IND,VARCHAR2,,Y,Indicates whether the  priority business  is allowed,,,,,,,,Y,Y,Y
+BSD_PRIVACY_OPT_OUT_IND,VARCHAR2,,N,Indicates if Business Applicant has opted out to share privacy information,,,,,,,,Y,Y,Y
+BSD_REASON_CD,VARCHAR2,,N,Business Applicant reason code reference to lookup,,,,,,,,Y,Y,Y
+BSD_REFERENCE_NBR,VARCHAR2,,N,Reference number for business applicant,,,,,,,,Y,Y,Y
+BSD_SHARE_CR_OPT_OUT_IND,VARCHAR2,,N,Business Applicant Share Credit Opt Out Indicator,,,,,,,,Y,Y,Y
+BSD_SKIP_IND,VARCHAR2,,N,Indicates if current Business Address for customer is not valid,,,,,,,,Y,Y,Y
+BSD_STOP_CORR_IND,VARCHAR2,,N,Indicates if Business Applicant correspondence must be stopped ,,,,,,,,Y,Y,Y
+BSD_UPDATE_BUSINESS_INFO_IND,VARCHAR2,,N,Business Applicant override indicator,,,,,,,,Y,Y,Y
+BSD_UTILIZATION_PERC,NUMBER,,Y,Business applicant credit limit utilization percentage,,,,,,,,Y,Y,Y

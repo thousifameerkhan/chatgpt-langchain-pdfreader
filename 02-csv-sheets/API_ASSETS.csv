@@ -1,0 +1,145 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+ASE_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to asset/collateral of legacy system,,,,,,,,Y,Y,
+ASE_CONDITION_CD,VARCHAR2,,N,The condition of the asset  such as Excellent  Good  Poor,ASE_CONDITION_CD,,,,,,,N,N,
+AVL_VALUATION_SOURCE_CD,VARCHAR2,,N,Source of the valuation  such as NADN - NADA New  BRKR - Broker on which this valuation is based,VALUATION_SOURCE_CD,,,,,,,Y,Y,
+ATA_VALUE5,VARCHAR2,,N,The value of the asset tracking attribute 5,,,,,,,,N,N,
+ATR_AAT_TYPE5,VARCHAR2,,N,Reference key to the asset attribute type 5,,,,,,,,N,N,
+AVL_ADDONS_VAL,NUMBER,,N,Valuation of the addons that are with the asset,,,,,,,,Y,Y,
+ATA_FTA_TABLE_ATTRIBUTE5,VARCHAR2,,N,Name of the asset tracking attribute parameter 5,,,,,,,,N,N,
+ASE_LOT,VARCHAR2,,N,The asset lot number,,,,,,,,N,N,
+AVL_CURRENCY_USAGE_VAL,NUMBER,,N,Currency usage value,,,,,,,,Y,Y,
+ASE_PRIMARY_IND,VARCHAR2,,N,Indicator specifying whether the asset is the primary asset or not,,,,,,,,N,N,
+ASE_ASSET_CLASS_CD,VARCHAR2,,N,The asset class  such as New  Used,VEHICLE_ASSET_CLASS_CD,,,,,,,Y,Y,
+ASE_AST_TYPE,VARCHAR2,,N,The type of the asset  such as Vehicle  Home  Goods,,,,,,,,Y,Y,
+ASE_ASB_TYPE,VARCHAR2,,N,The sub type of the asset  such as Car  Single_Fam  Gen_Equipment,,,,,,,,Y,Y,
+ASE_IDENTIFICATION_NBR,VARCHAR2,,N,The unique identification number for the asset for example  VIN for a vehicle,,,,,,,,Y,Y,
+ASE_REGISTRATION_NBR,VARCHAR2,,N,The registration number of the asset,,,,,,,,Y,Y,
+ASE_ASSET_STATUS_CD,VARCHAR2,,N,The status of the asset  such as Active  New  Undefined,ASSET_STATUS_CD,,,,,,,Y,Y,
+ASE_YEAR,NUMBER,,N,The calendar year in which the asset was created,,,,,,,,Y,Y,
+ASE_MAKE,VARCHAR2,,N,The make of the asset  such as Mercedes  Volvo,,,,,,,,N,N,
+ASE_MODEL,VARCHAR2,,N,The model of the asset  such as Camry  Jetta,,,,,,,,N,N,
+ASE_BODY,VARCHAR2,,N,The asset body type such as 2-door  4-door,,,,,,,,N,N,
+ASE_ADDRESS1,VARCHAR2,,N,Address line 1 of the asset,,,,,,,,N,N,
+ASE_ADDRESS2,VARCHAR2,,N,Address line 2 of the asset,,,,,,,,N,N,
+ASE_ZIP,VARCHAR2,,N,The zip code component of the asset address,,,,,,,,N,N,
+ASE_CITY,VARCHAR2,,N,The city component of the asset address,,,,,,,,N,N,
+ASE_STATE_CD,VARCHAR2,,N,State component of the asset address  such as MN - Minnesota  IA - Iowa,STATE_CD,,,,,,,N,N,
+ASE_ZIP_EXTN,VARCHAR2,,N,The zip code extension component of the asset address,,,,,,,,N,N,
+ASE_COUNTRY_CD,VARCHAR2,,N,The country of the asset address,COUNTRY_CD,,,,,,,N,N,
+ASE_COUNTY_CD,VARCHAR2,,N,The county portion of the asset address,COUNTY_CD,,,,,,,N,N,
+ASE_USAGE_START,NUMBER,,N,The starting usage figure for the asset,,,,,,,,Y,Y,
+ASE_USAGE_BASE,NUMBER,,N,The base amount of usage for the asset,,,,,,,,Y,Y,
+ASE_USAGE_EXTRA,NUMBER,,N,The amount of extra usage of the asset,,,,,,,,Y,Y,
+ASE_USAGE_TOTAL,NUMBER,,N,The total usage of the asset,,,,,,,,Y,Y,
+ASE_USAGE_CHARGE,NUMBER,,N,Rate of charge (US $) per usage unit of the asset,,,,,,,,Y,Y,
+AVL_VALUATION_DT,DATE,,N,Date on which this valuation was carried out,,,,,,,,Y,Y,
+AVL_VALUATION_EDITION,VARCHAR2,,N,Edition of the valuation source on which this valuation is based,,,,,,,,N,N,
+AVL_VALUATION_SUPPLEMENT,VARCHAR2,,N,Supplement of the valuation source on which this valuation is based,,,,,,,,N,N,
+AVL_USAGE,NUMBER,,N,The number of usage units accrued on the asset at the time of valuation,,,,,,,,Y,Y,
+AVL_RETAIL_VAL,NUMBER,,N,Retail valuation for the asset,,,,,,,,Y,Y,
+AVL_WHOLESALE_VAL,NUMBER,,N,Wholesale valuation of the asset,,,,,,,,Y,Y,
+AVL_USAGE_VAL,NUMBER,,N,The monetary value of the accrued usage units at the time of valuation,,,,,,,,Y,Y,
+AVL_ADDONS_VAL,NUMBER,,N,Valuation of the addons that are with the asset,,,,,,,,Y,Y,
+ATA_FTA_TABLE_ATTRIBUTE1,VARCHAR2,,N,Name of the asset tracking attribute parameter 1,,,,,,,,N,N,
+ATA_VALUE1,VARCHAR2,,N,The value of the asset tracking attribute 1,,,,,,,,N,N,
+ATA_FTA_TABLE_ATTRIBUTE2,VARCHAR2,,N,Name of the asset tracking attribute parameter 2,,,,,,,,N,N,
+ATA_VALUE2,VARCHAR2,,N,The value of the asset tracking attribute 2,,,,,,,,N,N,
+ATA_FTA_TABLE_ATTRIBUTE3,VARCHAR2,,N,Name of the asset tracking attribute parameter 3,,,,,,,,N,N,
+ATA_VALUE3,VARCHAR2,,N,The value of the asset tracking attribute 3,,,,,,,,N,N,
+ATA_FTA_TABLE_ATTRIBUTE4,VARCHAR2,,N,Name of the asset tracking attribute parameter 4,,,,,,,,N,N,
+ATA_VALUE4,VARCHAR2,,N,The value of the asset tracking attribute 4,,,,,,,,N,N,
+ATA_FTA_TABLE_ATTRIBUTE5,VARCHAR2,,N,Name of the asset tracking attribute parameter 5,,,,,,,,N,N,
+ATR_AAT_TYPE1,VARCHAR2,,N,Reference key to the asset attribute type 1,,,,,,,,N,N,
+ATR_VALUE1,VARCHAR2,,N,The value of the asset attribute 1,,,,,,,,N,N,
+ATR_AAT_TYPE2,VARCHAR2,,N,Reference key to the asset attribute type 2,,,,,,,,N,N,
+ATR_VALUE2,VARCHAR2,,N,The value of the asset attribute 2,,,,,,,,N,N,
+ATR_AAT_TYPE3,VARCHAR2,,N,Reference key to the asset attribute type 3,,,,,,,,N,N,
+ATR_VALUE3,VARCHAR2,,N,The value of the asset attribute 3,,,,,,,,N,N,
+ATR_AAT_TYPE4,VARCHAR2,,N,Reference key to the asset attribute type 4,,,,,,,,N,N,
+ATR_VALUE4,VARCHAR2,,N,The value of the asset attribute 4,,,,,,,,N,N,
+ATR_VALUE5,VARCHAR2,,N,The value of the asset attribute 5,,,,,,,,N,N,
+ATR_AAT_DESC1,VARCHAR2,,N,Stores description for attribute #1 and it is used for converting accounts from other system,,,,,,,,N,N,
+ATR_AAT_DESC2,VARCHAR2,,N,Stores description for attribute #2 and it is used for converting accounts from other system,,,,,,,,N,N,
+ATR_AAT_DESC3,VARCHAR2,,N,Stores description for attribute #3 and it is used for converting accounts from other system,,,,,,,,N,N,
+ATR_AAT_DESC4,VARCHAR2,,N,Stores description for attribute #4 and it is used for converting accounts from other system,,,,,,,,N,N,
+ATR_AAT_DESC5,VARCHAR2,,N,Stores description for attribute #5 and it is used for converting accounts from other system,,,,,,,,N,N,
+ASE_COUNTRY_CD,VARCHAR2,,N,The country of the asset address,,,,,,,,Y,Y,
+ASE_REPO_FORC_TYPE_CD,VARCHAR2,,N,Repo-Foreclosure type,REPO_FORC_TYPE_CD,,,,,,,N,N,
+ASE_REPO_FORC_DISPOSITION_CD,VARCHAR2,,N,Repo-Foreclosure disposition code,REPO_FORC_DISPOSITION_CD,,,,,,,Y,Y,
+ASE_REPO_FORC_DT,DATE,,N,Repo-Foreclosure start date,,,,,,,,N,N,
+ASE_REPO_FORC_FILE_RCVD_DT,DATE,,N,Repo-Foreclosure file received date,,,,,,,,N,N,
+ASE_REPO_FORC_END_DT,DATE,,N,Repo-Foreclosure end date,,,,,,,,N,N,
+ASE_REPO_FORC_COMMENT,VARCHAR2,,N,Repo-Foreclosure comment,,,,,,,,N,N,
+ASE_LEGAL_DESC,VARCHAR2,,N,The asset legal description,,,,,,,,N,N,
+ASE_LOT,VARCHAR2,,N,The asset lot number,,,,,,,,N,N,
+ASE_SUB_DIVISION,VARCHAR2,,N,The asset sub division,,,,,,,,N,N,
+ASE_PARCEL_ID_NBR,VARCHAR2,,N,The asset parcel identification number,,,,,,,,N,N,
+ASE_METE_BONDS_IND,VARCHAR2,,N,Indicates if asset is on a land where surveyed with the Metes and Bounds surveying system,,,,,,,,Y,Y,
+ASE_FLOOD_ZONE_IND,VARCHAR2,,N,Identifies if asset is in flood zone,,,,,,,,Y,Y,
+ASE_AGREEMENT_TYPE_CD,VARCHAR2,,N,Agreement type Code - Usage/Rental/Undefined.,,,,,,,,,,Y
+ASE_AGREEMENT_TYPE_CD,VARCHAR2,,N,Agreement type Code - Usage/Rental/Undefined.,AGREEMENT_TYPE_CD,,,,,,,N,Y,N
+ASE_ASSOCIATION_CD,VARCHAR2,,N,Association code,ASE_ASSOCIATION_CD,,,,,,,Y,Y,Y
+ASE_BILLING_IND,VARCHAR2,,N,Billing Indicator,,,,,,,,Y,Y,Y
+ASE_BILLING_POINTS,NUMBER,,N,Billing points,,,,,,,,Y,Y,Y
+ASE_BUILDING_CD,VARCHAR2,,N,Building code,ASE_BUILDING_CD,,,,,,,Y,Y,Y
+ASE_CLUB_IND,VARCHAR2,,N,Club Indicator,,,,,,,,Y,Y,Y
+ASE_CLUB_NAME_CD,VARCHAR2,,N,Club name code,ASE_CLUB_NAME_CD,,,,,,,Y,Y,Y
+ASE_DUE_AMT_ACCOUNT_TYPE_CD,VARCHAR2,,N,Due Amount account tye code,ASE_DUE_AMT_ACCOUNT_TYPE_CD,,,,,,,Y,Y,Y
+ASE_EXPIRED_IND,VARCHAR2,,N,Expired Indicator,,,,,,,,Y,Y,Y
+ASE_EXPIRY_DT,DATE,,N,Expiry date,,,,,,,,Y,Y,Y
+ASE_GRAND_FATHER_POINTS,NUMBER,,Y,Grandfather points,,,,,,,,Y,Y,Y
+ASE_INVENTORY_SITE_CD,VARCHAR2,,N,Inventory site code,ASE_INVENTORY_SITE_CD,,,,,,,Y,Y,Y
+ASE_MASTER_CONS_POINT_IND,VARCHAR2,,N,Indicator to consolidate points at master account level,,,,,,,,Y,Y,Y
+ASE_MEMBERSHIP_1_IND,VARCHAR2,,N,Membership 1 Indicator,,,,,,,,Y,Y,Y
+ASE_MEMBERSHIP_2_IND,VARCHAR2,,N,Membership 2 Indicator,,,,,,,,Y,Y,Y
+ASE_MEMBERSHIP_3_IND,VARCHAR2,,N,Membership 3 Indicator,,,,,,,,Y,Y,Y
+ASE_MEMBERSHIP_4_IND,VARCHAR2,,N,Membership 4 Indicator,,,,,,,,Y,Y,Y
+ASE_MEMBERSHIP_5_IND,VARCHAR2,,N,Membership 5 Indicator,,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_10_DT,DATE,,N,Other attribute 10 date,,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_1_CD,VARCHAR2,,N,Other attribute 1 code,ASE_OTHER_ATR_1_CD,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_2_CD,VARCHAR2,,N,Other attribute 2 code,ASE_OTHER_ATR_2_CD,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_3_CD,VARCHAR2,,N,Other attribute 3 code,ASE_OTHER_ATR_3_CD,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_4_CD,VARCHAR2,,N,Other attribute 4 code,ASE_OTHER_ATR_4_CD,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_5_CD,VARCHAR2,,N,Other attribute 5 code,ASE_OTHER_ATR_5_CD,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_6_DT,DATE,,N,Other attribute 6 date,,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_7_DT,DATE,,N,Other attribute 7 date,,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_8_DT,DATE,,N,Other attribute 8 date,,,,,,,,Y,Y,Y
+ASE_OTHER_ATR_9_DT,DATE,,N,Other attribute 9 date,,,,,,,,Y,Y,Y
+ASE_PHASE_NBR_CD,VARCHAR2,,N,Phase number code,ASE_PHASE_NBR_CD,,,,,,,Y,Y,Y
+ASE_PLUS_MEMBERSHIP_TYPE_IND,VARCHAR2,,N,Plus membership type indicator,,,,,,,,Y,Y,Y
+ASE_POINTS,NUMBER,,N,Points,,,,,,,,Y,Y,Y
+ASE_POINT_CONS_TYPE_CD,VARCHAR2,,N,Points consolidate type code,ASE_POINT_CONS_TYPE_CD,,,,,,,Y,Y,Y
+ASE_PRORATION_POINTS_IND,VARCHAR2,,N,Proration points Indicator,,,,,,,,Y,Y,Y
+ASE_PR_MARKING_IND,VARCHAR2,,N,PR marking Indicator,,,,,,,,Y,Y,Y
+ASE_RESALE_IND,VARCHAR2,,Y,Resale Indicator,,,,,,,,Y,Y,Y
+ASE_RESORT_CD,VARCHAR2,,N,Resort code,ASE_RESORT_CD,,,,,,,Y,Y,Y
+ASE_SIGN_GRAND_FATHER_IND,VARCHAR2,,N,Sign grandfather Indicator,,,,,,,,Y,Y,Y
+ASE_SUBSTITUTION_IND,VARCHAR2,,N,Indicator specifying whether the asset is a substitute for a previous asset,,,,,,,,Y,Y,Y
+ASE_TRADE_ELGIBLE_IND,VARCHAR2,,N,Trade eligible Indicator,,,,,,,,Y,Y,Y
+ASE_TRAVEL_DT,DATE,,N,Travel date,,,,,,,,Y,Y,Y
+ASE_UNIT_CD,VARCHAR2,,N,Unit code,ASE_UNIT_CD,,,,,,,Y,Y,Y
+ASE_UNIT_TYPE_CD,VARCHAR2,,N,Unit type code,ASE_UNIT_TYPE_CD,,,,,,,Y,Y,Y
+ASE_USAGE_START_DT,DATE,,N,Usage start date,,,,,,,,Y,Y,Y
+ASE_USAGE_TYPE_CD,VARCHAR2,,N,Usage type code,ASE_USAGE_TYPE_CD,,,,,,,Y,Y,Y
+ASE_WEEK_CD,VARCHAR2,,N,Week code,ASE_WEEK_CD,,,,,,,Y,Y,Y
+ASE_BASE_RENT_AMT,NUMBER,,N,Base Rental Amount calculated in origination,,,,,,,,N,Y,N
+ASE_CHARGE_CALC_METHOD_CD,VARCHAR2,,N,Charge caluclation method code for Tiered / Non Tiered.,CHARGE_CALC_METHOD_CD,,,,,,,N,Y,N
+ASE_DISCOUNT_AMT,NUMBER,,N,Discount Amount applicable for Rental Billing,,,,,,,,N,Y,N
+ASE_DISCOUNT_PER,NUMBER,,N,Discount Percentage,,,,,,,,N,Y,N
+ASE_ELASTIC_TERM_CAL_METHOD_CD,VARCHAR2,,N,Number of term by which the total units will be elapsed.,ELASTIC_TERM_CAL_METHOD_CD,,,,,,,N,Y,N
+ASE_ELASTIC_USAGE_TERM,NUMBER,,N,Number of term by which the total units will be elapsed.,,,,,,,,N,Y,N
+ASE_ESTIMATED_LIFE,NUMBER,,N,Contains Estimated life of an Asset.,,,,,,,,Y,Y,N
+ASE_EXCESS_RENT_COL_METHOD_CD,VARCHAR2,,N,Excess rent colculation method code for Actual/Average.,EXCESS_RENT_COL_METHOD_CD,,,,,,,N,Y,N
+ASE_MAX_USAGE,NUMBER,,N,Maximum units allowed per cycle.,,,,,,,,N,Y,N
+ASE_MIN_USAGE,NUMBER,,N,Minimum Usage,,,,,,,,N,Y,N
+ASE_RESET_FREQUENCY,NUMBER,,N,Rollover/Advance units will expire at this frequency.,,,,,,,,N,Y,N
+ASE_SECURITY_DEPOSIT_AMT,NUMBER,,N,Security deposite amount for Rental.,,,,,,,,N,Y,N
+ASE_TERM_MAX_UNITS,NUMBER,,N,Maximum units per term autocalculated value based on usage cycle and max units per cycle.,,,,,,,,N,Y,N
+ASE_USAGE_BILL_CYCLE_CD,VARCHAR2,,N,Frequency code at which usage bill has be calculated.,USAGE_BILL_CYCLE_CD,,,,,,,N,Y,N
+ASE_USAGE_BILL_DT_LAST,DATE,,N,Usage bill last run date,,,,,,,,N,Y,N
+ASE_USAGE_BILL_DT_NEXT,DATE,,N,Next billing date for usage,,,,,,,,N,Y,N
+ASE_USAGE_FEED_PATTERN_CD,VARCHAR2,,N,Usage feed pattern code for Actual/Incremental,USAGE_FEED_PATTERN_CD,,,,,,,N,Y,N
+ASE_USAGE_METHOD_CD,VARCHAR2,,N,Usage method code for Usage/Rental,,,,,,,,N,Y,N
+CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
+CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y

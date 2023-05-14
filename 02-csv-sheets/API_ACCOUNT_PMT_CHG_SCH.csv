@@ -1,0 +1,11 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+ART_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system and it is used for converting accounts from other system,,,,,,,,Y,,
+ART_SEQ,NUMBER,,N,Sequence Id For Account Payment Change Schedule,,,,,,,,Y,,
+ART_FREQ,VARCHAR2,,N,Reference key to lookup payment change frequency type such as TERM,,,,,,,,Y,,
+ART_NO_OF_ADJUSTMENTS,NUMBER,,N,The number of adjustments that should take place for particular frequency,,,,,,,,Y,,
+ART_PERIOD,NUMBER,,N,Stores the period between subsequent payment change based on payment adjustment frequency,,,,,,,,Y,,
+ART_OPTION_TYPE,VARCHAR2,,N,The identifier for the repayment type such as STEP UP  STEP DOWN or BULLET,,,,,,,,Y,,
+ART_ADJUSTMENT_VALUE,NUMBER,,N,Value adjusted against payment,,,,,,,,N,,
+CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,Y
+CREATION_DATE,DATE,,N,Standard Who,,,,,,,,Y,Y,Y

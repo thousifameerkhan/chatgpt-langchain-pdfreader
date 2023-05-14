@@ -1,0 +1,176 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+APL_APP_ORIG_SYS_XREF,VARCHAR2,,N,Original system cross reference for application,,,,,,,,Y,Y,Y
+APL_RELATION_TYPE_CD,VARCHAR2,,N,Relation of applicant such as primary  spouse  secondary  cosigner,RELATION_TYPE_CD,,,,,,,Y,Y,Y
+APL_FIRST_NAME,VARCHAR2,,N,First name of applicant,,,,,,,,Y,Y,Y
+APL_MIDDLE_NAME,VARCHAR2,,N,Applicant middle name,,,,,,,,N,N,N
+APL_LAST_NAME,VARCHAR2,,N,Applicant last name,,,,,,,,Y,Y,Y
+APL_GENERATION_CD,VARCHAR2,,N,Applicant generation such as Jr  Sr  III,GENERATION_CD,,,,,,,Y,Y,Y
+APL_SSN,NUMBER,,N,Nine digit Social Security number,,,,,,,,Y,Y,Y
+APL_BIRTH_DT,DATE,,N,Birth date of applicant,,,,,,,,Y,Y,Y
+APL_GENDER_CD,VARCHAR2,,N,Gender of applicant  M=male  F=female,GENDER_CD,,,,,,,Y,Y,Y
+APL_LANGUAGE_CD,VARCHAR2,,N,Primary language of applicant such as E (English)  S (Spanish),LANGUAGE_CD,,,,,,,Y,Y,Y
+APL_MARITAL_STATUS_CD,VARCHAR2,,N,Applicant marital status such as M (Married)  S (Single),MARITAL_STATUS_CD,,,,,,,N,N,N
+APL_EMAIL_ADDRESS1,VARCHAR2,,N,Applicant email address,,,,,,,,N,N,N
+APL_CLASS_TYPE_CD,VARCHAR2,,N,Applicant class as defined by Company such as employee,APL_CUS_CLASS_TYPE_CD,,,,,,,Y,Y,Y
+APL_CRB_ECOA_CD,VARCHAR2,,N,Applicant ECOA code on the liability such as individual  joint contractual liability etc,CRB_ECOA_CD,,,,,,,N,N,N
+APL_RACE_NATIONAL_ORIGIN_CD,VARCHAR2,,N,Applicant national origin,RACE_NATIONAL_ORIGIN_CD,,,,,,,N,N,N
+APA_ADDRESS_NBR,VARCHAR2,,N,Numeric portion of address location,,,,,,,,Y,Y,Y
+APA_STREET_NAME,VARCHAR2,,N,Name of street where address is located,,,,,,,,N,N,N
+APA_APT_STE_NBR,VARCHAR2,,N,Apartment or suite number of address,,,,,,,,N,N,N
+APA_ADDRESS1,VARCHAR2,,N,First line of address for this location,,,,,,,,Y,Y,Y
+APA_ADDRESS2,VARCHAR2,,N,Second line of address for this location,,,,,,,,N,N,N
+APA_ZIP,VARCHAR2,,N,5 Digit Zip Code of applicant address,,,,,,,,Y,Y,Y
+APA_CITY,VARCHAR2,,N,City name of address,,,,,,,,Y,Y,Y
+APA_STATE_CD,VARCHAR2,,N,Name of state where address is located,STATE_CD,,,,,,,Y,Y,Y
+APA_ZIP_EXTN,VARCHAR2,,N,Last 4 digits of Zip Code of applicant address,,,,,,,,N,N,N
+APA_COUNTRY_CD,VARCHAR2,,N,Stores country code for OTHERS applicant address,COUNTRY_CD,,,,,,,Y,Y,Y
+APA_PHONE,NUMBER,,N,The phone number at the address,,,,,,,,Y,Y,Y
+APA_OWNERSHIP_CD,VARCHAR2,,N,Indicates if applicant owns or rents property,OWNERSHIP_CD,,,,,,,Y,Y,Y
+APA_LOCATION,VARCHAR2,,N,Identifies MSA (metropolitan statistical area) location,,,,,,,,N,N,N
+APA_BLOCK,VARCHAR2,,N,Identifies census tract/block number of address,,,,,,,,N,N,N
+APA_COMMENT,VARCHAR2,,N,Comments about applicant address,,,,,,,,N,N,N
+APE_NAME,VARCHAR2,,N,Name of employer,,,,,,,,Y,Y,Y
+APE_TITLE,VARCHAR2,,N,The actual name of applicant position at employment,,,,,,,,N,N,N
+APE_OCCUPATION_CD,VARCHAR2,,N,Occupation of applicant such as professional,OCCUPATION_CD,,,,,,,N,N,N
+APE_ADDRESS1,VARCHAR2,,N,First line of address for this location of employment,,,,,,,,N,N,N
+APE_ADDRESS1,VARCHAR2,,N,First line of address for this location of employment,,,,,,,,N,N,N
+APE_ADDRESS2,VARCHAR2,,N,Second line of address for this location of employment,,,,,,,,N,N,N
+APE_ZIP,VARCHAR2,,N,5 Digit Zip Code of employer address,,,,,,,,N,N,N
+APE_CITY,VARCHAR2,,N,City name of address,,,,,,,,N,N,N
+APE_STATE_CD,VARCHAR2,,N,State code where employment is located,STATE_CD,,,,,,,N,N,N
+APE_ZIP_EXTN,VARCHAR2,,N,Last 4 digits of Zip Code of employer address,,,,,,,,N,N,N
+APE_COUNTRY_CD,VARCHAR2,,N,Stores country code for OTHERS applicant employment address,COUNTRY_CD,,,,,,,Y,Y,Y
+APE_PHONE,NUMBER,,N,Phone number of employer,,,,,,,,Y,Y,Y
+APE_PHONE_EXTN,NUMBER,,N,Phone number extension of employer,,,,,,,,N,N,N
+APE_COMMENT,VARCHAR2,,N,Comments about applicant address,,,,,,,,N,N,N
+APT_MOBILE_NUMBER,NUMBER,,N,The mobile number of the customer(Non Primary),,,,,,,,N,N,N
+APT_FAX_NUMBER,NUMBER,,N,The fax number of the customer(Non Primary),,,,,,,,N,N,N
+APT_PAGER_NUMBER,NUMBER,,N,The pager number of the customer(Non Primary),,,,,,,,N,N,N
+APL_ETHNIC_CD,VARCHAR2,,N,Ethnic Code,,,,,,,,N,N,N
+APA_COUNTRY_CD,VARCHAR2,,N,Stores country code for OTHERS applicant address,,,,,,,,Y,Y,Y
+APE_COUNTRY_CD,VARCHAR2,,N,Stores country code for OTHERS applicant employment address,,,,,,,,Y,Y,Y
+APE_EMPLOYMENT_TYPE_CD,VARCHAR2,,N,Type of the employment such as full time  part time,EMPLOYMENT_TYPE_CD,,,,,,,Y,Y,Y
+APE_STREET_NAME,VARCHAR2,,N,Street Name,,,,,,,,N,N,N
+APE_APT_STE_NBR,VARCHAR2,,N,Apartment Number,,,,,,,,N,N,N
+APE_ADDRESS_NBR,VARCHAR2,,N,Street number of address for this location,,,,,,,,N,N,N
+APA_STREET_NAME,VARCHAR2,,N,Name of street where address is located,,,,,,,,N,N,N
+APA_APT_STE_NBR,VARCHAR2,,N,Apartment or suite number of address,,,,,,,,N,N,N
+APA_ADDRESS_NBR,VARCHAR2,,N,Numeric portion of address location,,,,,,,,N,N,N
+APL_SALUTATION_TYPE_CD,VARCHAR2,,N,Salutation,SALUTATION_TYPE_CD,,,,,,,N,N,N
+APL_CHRISTIAN_NAME,VARCHAR2,,N,Applicant Initials,,,,,,,,N,N,N
+APL_MAIDEN_MI_NAME,VARCHAR2,,N,Applicant Middle Initial,,,,,,,,N,N,N
+APL_MAIDEN_NAME,VARCHAR2,,N,Applicant Maiden Name,,,,,,,,N,N,N
+APL_FULL_NAME,VARCHAR2,,N,Applicant Full Name,,,,,,,,N,N,N
+APL_PERMIT_TO_STAY_CD,VARCHAR2,,N,Permission to Stay in the Country,PERMIT_TO_STAY_CD,,,,,,,N,N,N
+APL_PERMIT_TO_WORK_CD,VARCHAR2,,N,Permission to Work in the Country,PERMIT_TO_WORK_CD,,,,,,,N,N,N
+APL_SPECIALITY_TYPE_CD,VARCHAR2,,N,Special Condition for Applicant,SPECIALITY_TYPE_CD,,,,,,,N,N,N
+APL_EXISTING_CIF,VARCHAR2,,N,Existing applicant CIF,,,,,,,,N,N,N
+APL_PASSPORT_NBR,VARCHAR2,,N,Passport number of customer,,,,,,,,N,N,N
+APL_PASSPORT_ISSUE_DT,DATE,,N,Passport Issue date of customer,,,,,,,,N,N,N
+APL_PASSPORT_EXPIRY_DT,DATE,,N,Passport expiry date of customer,,,,,,,,N,N,N
+APL_MSG_PREFERENCE,VARCHAR2,,N,Stores the Message reference,,,,,,,,Y,Y,Y
+APL_NATIONAL_ID,VARCHAR2,,N,National ID of applicant,,,,,,,,Y,Y,Y
+APA_LANDMARK,VARCHAR2,,N,Landmark near address,,,,,,,,N,N,N
+APA_ADDRESS3,VARCHAR2,,N,Address Line 3,,,,,,,,N,N,N
+APE_DEPARTMENT,VARCHAR2,,N,Stores the department,,,,,,,,N,N,N
+APE_EMPLOYEE_ID,VARCHAR2,,N,Stores the Employee ID,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE1,VARCHAR2,,N,Name of the unit tracking attribute parameter1,,,,,,,,N,N,N
+ALT_VALUE1,VARCHAR2,,N,Value1,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE2,VARCHAR2,,N,Name of the unit tracking attribute parameter2,,,,,,,,N,N,N
+ALT_VALUE2,VARCHAR2,,N,Value2,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE3,VARCHAR2,,N,Name of the unit tracking attribute parameter3,,,,,,,,N,N,N
+ALT_VALUE3,VARCHAR2,,N,Value3,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE4,VARCHAR2,,N,Name of the unit tracking attribute parameter4,,,,,,,,N,N,N
+ALT_VALUE4,VARCHAR2,,N,Value4,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE5,VARCHAR2,,N,Name of the unit tracking attribute parameter5,,,,,,,,N,N,N
+ALT_VALUE5,VARCHAR2,,N,Value5,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE6,VARCHAR2,,N,Name of the unit tracking attribute parameter6,,,,,,,,N,N,N
+ALT_VALUE6,VARCHAR2,,N,Value6,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE7,VARCHAR2,,N,Name of the unit tracking attribute parameter7,,,,,,,,N,N,N
+ALT_VALUE7,VARCHAR2,,N,Value7,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE8,VARCHAR2,,N,Name of the unit tracking attribute parameter8,,,,,,,,N,N,N
+ALT_VALUE8,VARCHAR2,,N,Value8,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE9,VARCHAR2,,N,Name of the unit tracking attribute parameter9,,,,,,,,N,N,N
+ALT_VALUE9,VARCHAR2,,N,Value9,,,,,,,,N,N,N
+ALT_FTA_TABLE_ATTRIBUTE10,VARCHAR2,,N,Name of the unit tracking attribute parameter10,,,,,,,,N,N,N
+ALT_VALUE10,VARCHAR2,,N,Value10,,,,,,,,N,N,N
+APL_VISA_NBR,VARCHAR2,,Y,Other Applicant visa number,,,,,,,,Y,Y,Y
+APL_NATIONALITY_CD,VARCHAR2,,Y,Other Applicant nationality code,,,,,,,,Y,Y,Y
+APL_EDUCATION_LEVEL_CD,VARCHAR2,,Y,Other Applicant education level code,,,,,,,,Y,Y,Y
+APA_CONFIRMED_IND,VARCHAR2,,Y,Indicates if the address is confirmed or not,,,,,,,,Y,Y,Y
+APT_TIME_ZONE_CD,VARCHAR2,,N, Stores the Timezone of the other customer,,,,,,,,N,N,N
+APL_PA_ADDRESS,VARCHAR2,,N,Applicant personal address,,,,,,,,Y,Y,Y
+APL_KYC_REF_NBR,VARCHAR2,,N,Applicant  know your customer reference number,,,,,,,,N,N,N
+APL_KYC_STATUS_CD,VARCHAR2,,N,Status Code,,,,,,,,N,N,N
+APL_LIAB_NBR,VARCHAR2,,N,Applicant liability number,,,,,,,,N,N,N
+APL_BIRTH_PLACE,VARCHAR2,,N,   Birth Place,,,,,,,,N,N,N
+APL_BIRTH_COUNTRY_CD,VARCHAR2,,N,Birth Country Code,,,,,,,,N,N,N
+APL_US_RES_IND,VARCHAR2,,N,Indicates whether the  US Resident   is allowed,,,,,,,,N,N,N
+APL_CUSTOMER_CATEGORY_CD,VARCHAR2,,N,Applicant customer category code,,,,,,,,N,N,N
+APL_PA_ISSUED_IND,VARCHAR2,,N,Indicates whether the payee issued is currently enabled,,,,,,,,N,N,N
+APL_PA_HOLDER_NAME,VARCHAR2,,N, Address Holder Name,,,,,,,,N,N,N
+APL_PA_HOLDER_ADR_CNTRY_CD,VARCHAR2,,N,Country Code,,,,,,,,N,N,N
+APL_PA_HOLDER_NATIONALITY_CD,VARCHAR2,,N,Holder Nationality Code,,,,,,,,N,N,N
+APL_PA_HOLDER_PHONE,NUMBER,,N,Personal  holder phone,,,,,,,,N,N,N
+APA_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,,,,,,,,N,N,N
+APE_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,,,,,,,,N,N,N
+APL_PA_HOLDER_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,,,,,,,,Y,Y,Y
+APT_TELECOM_TYPE_CD,VARCHAR2,,N,Telecome type of customer  from lookup code,,,,,,,,Y,Y,Y
+APT_PHONE_ISD_CD,VARCHAR2,,N,Phone Isd Code,,,,,,,,N,N,N
+APT_PHONE_EXTN,NUMBER,,N,Phone Extension of the customer,,,,,,,,N,N,N
+APT_PHONE,NUMBER,,N,Phone Number of the customer,,,,,,,,Y,Y,Y
+APL_SCRA_IND,VARCHAR2,,N,Stores the scra Indicator,,,,,,,,Y,Y,Y
+APL_SCRA_EFFECTIVE_DT,DATE,,N,Stores the scra effective date,,,,,,,,N,N,N
+APL_SCRA_ORDER_REF_NBR,VARCHAR2,,N,Stores the scra order reference number,,,,,,,,N,N,N
+APL_SCRA_RELEASED_DT,DATE,,N,Stores the scra released date,,,,,,,,N,N,N
+APE_ACTUAL_PAY_DAY_DT,DATE,,N,Actual pay day date of the other applicants employment for conversion.,,,,,,,,N,N,N
+APA_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
+APE_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
+APE_STATED_PAY_DAY_DT,DATE,,N,Stated pay date,,,,,,,,Y,Y,Y
+APA_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
+APE_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
+APE_STATED_PAY_DAY_DT,DATE,,N,Stated pay date,,,,,,,,Y,Y,Y
+APL_PAH_HIERARCHY_CODE,VARCHAR2,,N,Payment Hierarchy Code,,,,,,,,Y,Y,Y
+APL_SKIP_IND,VARCHAR2,,N,Indicates if current address for business applicant is not valid,,,,,,,,Y,Y,Y
+APL_SHARE_CREDIT_INFO_IND,VARCHAR2,,N,Share Credit Opt Out Indicator,,,,,,,,Y,Y,Y
+APL_PRIVACY_OPT_OUT_IND,VARCHAR2,,N,Indicates if business applicant has opted out to share privacy information,,,,,,,,Y,Y,Y
+APL_DECEASED_DT,DATE,,N,Deceased date of customer,,,,,,,,Y,Y,Y
+APL_STOP_CORR_IND,VARCHAR2,,N,Indicates if customer correspondence must be stopped,,,,,,,,Y,Y,Y
+APL_UPDATE_CUSTOMER_INFO_IND,VARCHAR2,,N,Customer override indicator,,,,,,,,Y,Y,Y
+APL_COMMENTS,VARCHAR2,,N,Customer Comments,,,,,,,,Y,Y,Y
+APL_CREDIT_SOURCE_CD,VARCHAR2,,N,Reference to Credit source code,CRB_SOURCE_CD,,,,,,,Y,Y,Y
+APL_CREDIT_SCORE,NUMBER,,N,Archive:Credit score value,,,,,,,,Y,Y,Y
+APL_REFERENCE_NBR,VARCHAR2,,N,Reference Number,,,,,,,,Y,Y,Y
+APL_CREDIT_SCORE_RECEIVED_DT,DATE,,N,Credit score received date.,,,,,,,,Y,Y,Y
+APL_REASON_CD,VARCHAR2,,N,Customer Reason code,,,,,,,,Y,Y,Y
+APA_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Applicant address Permission to call,,,,,,,,Y,Y,Y
+APA_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Applicant address Permission to text,,,,,,,,Y,Y,Y
+APE_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Applicant employment Permission to call,,,,,,,,Y,Y,Y
+APE_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Applicant employment Permission to text,,,,,,,,Y,Y,Y
+APL_COMMENTS,VARCHAR2,,N,Customer Comments,,,,,,,,Y,Y,Y
+APL_CREDIT_SCORE,NUMBER,,N,Archive:Credit score value,,,,,,,,Y,Y,Y
+APL_CREDIT_SCORE_RECEIVED_DT,DATE,,N,Credit score received date.,,,,,,,,Y,Y,Y
+APL_CREDIT_SOURCE_CD,VARCHAR2,,N,Reference to Credit source code,,,,,,,,Y,Y,Y
+APL_CRED_LIMIT_EXPIRY_DT,DATE,,Y,Business applicant credit limit expiry date,,,,,,,,Y,Y,Y
+APL_CRED_LIMIT_GRADE_CD,VARCHAR2,,N,Reference key to lookup credit limit grade code ,,,,,,,,Y,Y,Y
+APL_CRED_LIMIT_MAX_AMT,NUMBER,,N,Stores the maximum credit limit amount,,,,,,,,Y,Y,Y
+APL_CRED_LIMIT_MAX_LC_RATE,NUMBER,,Y,Stores the credit limit maximum Late Charge rate,,,,,,,,Y,Y,Y
+APL_CRED_LIMIT_RENEW_DT,DATE,,Y,Business applicant credit limit renew date,,,,,,,,Y,Y,Y
+APL_CUS_NBR,VARCHAR2,,N,Reference Number for Customer,,,,,,,,Y,Y,Y
+APL_DECEASED_DT,DATE,,N,Deceased date of customer,,,,,,,,Y,Y,Y
+APL_INSURANCE_OPT_OUT_IND,VARCHAR2,,N,Applicant Insurance Opt Out Indicator,,,,,,,,N,Y,N
+APL_MARKETING_OPT_OUT_IND,VARCHAR2,,N,Applicant Marketing Opt Out Indicator,,,,,,,,N,Y,N
+APL_PRIVACY_OPT_OUT_IND,VARCHAR2,,N,Indicates if business applicant has opted out to share privacy information,,,,,,,,Y,Y,Y
+APL_REASON_CD,VARCHAR2,,N,Customer Reason code,,,,,,,,Y,Y,Y
+APL_REFERENCE_NBR,VARCHAR2,,N,Reference Number,,,,,,,,Y,Y,Y
+APL_SHARE_CREDIT_INFO_IND,VARCHAR2,,N,Share Credit Opt Out Indicator,,,,,,,,Y,Y,Y
+APL_SHARE_CR_OPT_OUT_IND,VARCHAR2,,N,Staging :  Share Credit Opt Out Indicator,,,,,,,,N,Y,N
+APL_SKIP_IND,VARCHAR2,,N,Indicates if current address for business applicant is not valid,,,,,,,,Y,Y,Y
+APL_STOP_CORR_IND,VARCHAR2,,N,Indicates if customer correspondence must be stopped,,,,,,,,Y,Y,Y
+APL_UPDATE_CUSTOMER_INFO_IND,VARCHAR2,,N,Customer override indicator,,,,,,,,Y,Y,Y
+APL_UTILIZATION_PERC,NUMBER,,Y,Stores the applicant credit limit utilization percentage,,,,,,,,Y,Y,Y
+APT_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Applicant telecom Permission to call,,,,,,,,Y,Y,Y
+APT_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Applicant telecom Permission to text,,,,,,,,Y,Y,Y
+CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
+CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y

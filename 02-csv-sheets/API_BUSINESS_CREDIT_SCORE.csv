@@ -1,0 +1,14 @@
+OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
+BCS_COMMENTS,VARCHAR2,,N,Comments Regarding the Credit Score,,,,,,,,Y,N,N
+BCS_CREDIT_SCORE,NUMBER,,Y,Credit Score From the Credit Bureau,,,,,,,,Y,N,N
+BCS_CREDIT_SCORE_RECEIVED_DT,DATE,,Y,Date of which Credit Score received,,,,,,,,Y,N,N
+BCS_CREDIT_SOURCE_CD,VARCHAR2,,Y,Name of The third Party Credit Bureau,,,,,,,,Y,N,N
+BCS_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,Y,N,N
+BCS_REASON_CD,VARCHAR2,,N,Reference to Reason Code,,,,,,,,Y,N,N
+BCS_REFERENCE_NBR,VARCHAR2,,N,Reference Number,,,,,,,,Y,N,N
+BCS_TXN_DT,DATE,,Y,Date of Tranaction Date,,,,,,,,Y,N,N
+CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,N,N
+CREATION_DATE,DATE,,N,Standard Who,,,,,,,,Y,N,N
+LAST_UPDATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,Y
+LAST_UPDATE_DATE,DATE,,N,Standard Who,,,,,,,,Y,Y,Y
