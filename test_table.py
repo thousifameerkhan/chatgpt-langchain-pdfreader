@@ -33,11 +33,16 @@ def load_env_variables():
                                         weaviate_url
                                      )
 
+def show_dataframe(df):
+    return df.style.hide_index().set_table_attributes('class="table"').render()
+
+
 def prompt_text(prompt):
   # Declare Global Variables
   load_env_variables()
   global class_name
   global weaviate_client
+  global df
   openai.api_key = os.getenv("OPENAI_API_KEY")
   
   # Embedding User Input
@@ -51,7 +56,15 @@ def prompt_text(prompt):
         .with_limit(4) \
         .do()
   print(result)
-
+  df = pd.DataFrame(result)
+  iface = gr.Interface(
+    fn=show_dataframe,
+    inputs=gr.inputs.Dataframe(),
+    outputs=gr.outputs.HTML(),
+    title="Display Pandas DataFrame as a Table",
+    description="This app displays a Pandas DataFrame as an HTML table using Gradio.",
+    theme="default"
+    )
   output =""
   closest_paragraphs = result.get('data').get('Get').get(class_name)
   for p in closest_paragraphs:
@@ -67,6 +80,10 @@ def add_text(history, text):
     history = history + [(None, prompt_text(text))]
 
     return history, ""
+
+    return df.style.hide_index().set_table_attributes('class="table"').render()
+
+
 
 def add_file(history, file):
     global valid_file
@@ -107,6 +124,16 @@ def main():
         btn.upload(add_file, [chatbot, btn], [chatbot]).then(
                     bot, chatbot, chatbot
                 )
+    
+    iface = gr.Interface(
+        fn=show_dataframe,
+        inputs=gr.inputs.Dataframe(),
+        outputs=gr.outputs.HTML(),
+        title="Display Pandas DataFrame as a Table",
+        description="This app displays a Pandas DataFrame as an HTML table using Gradio.",
+        theme="default"
+    )
+
 
     demo.launch()
 
