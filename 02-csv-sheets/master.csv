@@ -1,0 +1,1744 @@
+key,description
+API_CONTRACTS.APP_PIS_INSTRUMENT,APP_PIS_INSTRUMENT Reference key to instrument
+API_CONTRACTS.APP_CONTRACT_DT,APP_CONTRACT_DT The date on which contract was booked
+API_CONTRACTS.APP_AMT_FINANCED,APP_AMT_FINANCED Total amount financed
+API_CONTRACTS.APP_CR_LMT,APP_CR_LMT Credit limit(Original)
+API_CONTRACTS.APP_TERM,APP_TERM Term of the contract(Original)
+API_CONTRACTS.APP_DRAW_TERM,APP_DRAW_TERM Number of term draw period is allowed
+API_CONTRACTS.APP_REPMT_TERM,APP_REPMT_TERM The repayment term of the contract
+API_CONTRACTS.APP_RATE,APP_RATE The contract rate
+API_CONTRACTS.APP_INDEX_TYPE_CD,APP_INDEX_TYPE_CD Reference key to lookup index type such as prime  etc
+API_CONTRACTS.APP_INDEX_RATE,APP_INDEX_RATE Index rate(Original)
+API_CONTRACTS.APP_MRATE,APP_MRATE The margin rate(Original)
+API_CONTRACTS.APP_BALLOON_AMT,APP_BALLOON_AMT Contract balloon payment amount
+API_CONTRACTS.APP_FIRST_PMT_DT,APP_FIRST_PMT_DT The date on which first payment should be received
+API_CONTRACTS.APP_MATURITY_DT,APP_MATURITY_DT The date on which the account would mature(Original)
+API_CONTRACTS.APP_FINANCE_CHARGE,APP_FINANCE_CHARGE The finance charge or total estimated interest charge on the contract
+API_CONTRACTS.APP_TOTAL_OF_PMTS,APP_TOTAL_OF_PMTS Total of all payments or total note amount
+API_CONTRACTS.APP_TOTAL_DOWN_PMT_AMT,APP_TOTAL_DOWN_PMT_AMT Total down payment amount of contract
+API_CONTRACTS.APP_TOTAL_SALE_PRC,APP_TOTAL_SALE_PRC Total sale price of the asset on contract
+API_CONTRACTS.APP_PMT_AMT,APP_PMT_AMT Payment amount(Original)
+API_CONTRACTS.APP_APR,APP_APR Annual percentage rate
+API_CONTRACTS.APP_PRM_CODE,APP_PRM_CODE Reference Key to Promotion Coe
+API_CONTRACTS.APP_MATURITY_INDEX_TYPE_CD,APP_MATURITY_INDEX_TYPE_CD Reference key to lookup index type such as prime  etc
+API_CONTRACTS.APP_MATURITY_MRATE,APP_MATURITY_MRATE The maturity margin rate
+API_CONTRACTS.APP_PCB_BRANCH_CSS,APP_PCB_BRANCH_CSS Reference key to portfolio branch(Servicing)
+API_CONTRACTS.APP_COLLECTOR_USR_CODE,APP_COLLECTOR_USR_CODE Collector associated with account
+API_CONTRACTS.APP_CPP_CODE,APP_CPP_CODE Reference Key to Compensation plan code
+API_CONTRACTS.APP_RATE_BUY,APP_RATE_BUY The buy rate of the contract
+API_CONTRACTS.APP_COMP_AMT,APP_COMP_AMT Total Compensation amount
+API_CONTRACTS.APP_FEE_AMT_ESCROWED,APP_FEE_AMT_ESCROWED Total escrow advance amount received (original)
+API_CONTRACTS.APP_COMP_AMT_UPFRONT,APP_COMP_AMT_UPFRONT Upfront compensation amount
+API_CONTRACTS.APP_COMP_AMT_REMAINING,APP_COMP_AMT_REMAINING Remaining compensation amount
+API_CONTRACTS.APP_RATE_SPREAD,APP_RATE_SPREAD Rate spread for HMDA reporting
+API_CONTRACTS.APP_HOEPA_CD,APP_HOEPA_CD Home ownership and equity protection act code for HMDA reporting
+API_CONTRACTS.APP_LIEN_STATUS_CD,APP_LIEN_STATUS_CD Lien status code for HMDA reporting
+API_CONTRACTS.APP_COUPON_FIRST_PMT_DT,APP_COUPON_FIRST_PMT_DT The date on which first payment is expected on the re-ordered coupon book
+API_CONTRACTS.APP_COUPON_ORDER_BY,APP_COUPON_ORDER_BY Identifies coupon ordered by
+API_CONTRACTS.APP_COUPON_ORDER_DT,APP_COUPON_ORDER_DT The date on which coupon book was re-ordered
+API_CONTRACTS.APP_COUPON_ORDER_IND,APP_COUPON_ORDER_IND Indicates whether the coupon has been re-ordered
+API_CONTRACTS.APP_COUPON_START_NO,APP_COUPON_START_NO The starting number of the coupon
+API_CONTRACTS.APP_EARLY_PRE_PMT_PENALTY_IND,APP_EARLY_PRE_PMT_PENALTY_IND Indicates if early repayment fee can be charged
+API_CONTRACTS.APP_PRE_PMT_TOLERANCE_AMT,APP_PRE_PMT_TOLERANCE_AMT Tolerance amount to calculate pre-payment penalty fee
+API_CONTRACTS.APP_PROM_CANCEL_DLQ_DAYS,APP_PROM_CANCEL_DLQ_DAYS Stores the delinquency days after which the promotion is cancelled automatically
+API_CONTRACTS.APP_CR_CONSUMED,APP_CR_CONSUMED Credit limit already consumed on account
+API_CONTRACTS.APP_FINAL_PMT_AMT,APP_FINAL_PMT_AMT Final payment amount
+API_CONTRACTS.APP_STAGE_FUND_IND,APP_STAGE_FUND_IND Indicates if stage funding is allowed
+API_CONTRACTS.APP_COLLECT_INTEREST_IND,APP_COLLECT_INTEREST_IND Indicates whether the interest has to be collected or not
+API_CONTRACTS.APP_PROM_TOLERANCE_AMT,APP_PROM_TOLERANCE_AMT Promotion tolerance amount checked against outstanding balance for promotion benefits
+API_CONTRACTS.APP_PROM_PERIOD_TYPE_CD,APP_PROM_PERIOD_TYPE_CD Promotion period type
+API_CONTRACTS.APP_ACH_BANK_NAME,APP_ACH_BANK_NAME The name of the ACH bank of the customer
+API_CONTRACTS.APP_ACH_BANK_ROUTING_NBR,APP_ACH_BANK_ROUTING_NBR The 9-digit ABA number of the ACH bank of the customer
+API_CONTRACTS.APP_ACH_ACCOUNT_TYPE_CD,APP_ACH_ACCOUNT_TYPE_CD Reference key to lookup ACH account type such as checking saving etc
+API_CONTRACTS.APP_ACH_ACCOUNT_NBR,APP_ACH_ACCOUNT_NBR The account number of the bank for ACH transaction
+API_CONTRACTS.APP_ACH_PMT_DAY,APP_ACH_PMT_DAY The actual day that the ACH payment will be taken out of the customer account
+API_CONTRACTS.APP_ACH_PMT_AMT,APP_ACH_PMT_AMT Amount of payment used in ACH transaction
+API_CONTRACTS.APP_ACH_PMT_FREQ_CD,APP_ACH_PMT_FREQ_CD Reference key to lookup ACH payment frequency such as weekly monthly etc
+API_CONTRACTS.APP_ACH_START_DT,APP_ACH_START_DT The date on which ACH processing started
+API_CONTRACTS.APP_ACH_IND,APP_ACH_IND Indicates whether the account has been setup for ACH
+API_CONTRACTS.APP_RPMT_CUR_CURRENCY_CODE,APP_RPMT_CUR_CURRENCY_CODE Reference key to Currency  Repayment Currency (Current)
+API_CONTRACTS.APP_PDC_IND,APP_PDC_IND PDC indicator for applications
+API_CONTRACTS.APP_ORIG_SYS_XREF,APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_CONTRACTS.APP_PTC_COMPANY,APP_PTC_COMPANY Reference key to portfolio company
+API_CONTRACTS.APP_PCB_BRANCH,APP_PCB_BRANCH Reference Key to portfolio branch(Origination)
+API_CONTRACTS.APP_NBR,APP_NBR A unique application number
+API_CONTRACTS.APP_DT,APP_DT The effective date of the application
+API_CONTRACTS.APP_PRD_PRODUCT,APP_PRD_PRODUCT Reference key to product
+API_CONTRACTS.APP_SOURCE_CD,APP_SOURCE_CD Identifies the source of the application such as Fax  Web
+API_CONTRACTS.APP_UNDERWRITER_USR_CODE,APP_UNDERWRITER_USR_CODE The underwriter who approved the credit application
+API_CONTRACTS.APP_PRO_TYPE_CD,APP_PRO_TYPE_CD Reference key to lookup producer type such as dealer  agent  etc
+API_CONTRACTS.APP_PRO_NBR,APP_PRO_NBR Reference to producer number
+API_CONTRACTS.ADC_PRP_PRICING,ADC_PRP_PRICING Reference Key to Product Pricings
+API_CONTRACTS.ADC_CR_GRADE_CD,ADC_CR_GRADE_CD The application decision approved credit grade
+API_CONTRACTS.ADC_CR_SCORE,ADC_CR_SCORE The application decision credit score
+API_CONTRACTS.APP_TOTAL_DISCOUNT_RATE,APP_TOTAL_DISCOUNT_RATE Stores the Total Discount Rate. This is used for Conversion of data from other system
+API_CONTRACTS.APP_ORIG_SYS_XREF,APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_CONTRACTS.APP_PTC_COMPANY,APP_PTC_COMPANY Reference key to portfolio company
+API_CONTRACTS.APP_PCB_BRANCH,APP_PCB_BRANCH Reference Key to portfolio branch(Origination)
+API_CONTRACTS.APP_NBR,APP_NBR A unique application number
+API_CONTRACTS.APP_DT,APP_DT The effective date of the application
+API_CONTRACTS.APP_PRD_PRODUCT,APP_PRD_PRODUCT Reference key to product
+API_CONTRACTS.APP_SOURCE_CD,APP_SOURCE_CD Identifies the source of the application such as Fax  Web
+API_CONTRACTS.APP_UNDERWRITER_USR_CODE,APP_UNDERWRITER_USR_CODE The underwriter who approved the credit application
+API_CONTRACTS.APP_PRO_TYPE_CD,APP_PRO_TYPE_CD Reference key to lookup producer type such as dealer  agent  etc
+API_CONTRACTS.APP_PRO_NBR,APP_PRO_NBR Reference to producer number
+API_CONTRACTS.APP_CONVERSION_DT,APP_CONVERSION_DT Date of conversion
+API_CONTRACTS.APP_NEW_IND,APP_NEW_IND Indicates converting new account
+API_CONTRACTS.APP_LINK_EXISTING_CUSTOMER_IND,APP_LINK_EXISTING_CUSTOMER_IND Indicates whether the account should be linked to existing customer
+API_CONTRACTS.APP_MULTIPLE_OFFER_IND,APP_MULTIPLE_OFFER_IND Indicates if Multiple offer is enabled for the branch. This is used for Conversion of data from other system
+API_CONTRACTS.APP_REPMT_FIXED_PRINCIPAL_AMT,APP_REPMT_FIXED_PRINCIPAL_AMT Stores the Repayment Principal Amount. This is used for Conversion of data from other system
+API_CONTRACTS.APP_EXTEND_BALLOON_TERM_MAX,APP_EXTEND_BALLOON_TERM_MAX Stores the Maximum Extended Balloon Term. This is used for Conversion of data from other system
+API_CONTRACTS.APP_TIME_ZONE_CD,APP_TIME_ZONE_CD Stores the Time Zone Code. This is used for Conversion of data from other system
+API_CONTRACTS.APP_STMT_PREFERENCE_MODE_CD,APP_STMT_PREFERENCE_MODE_CD Application Statement Preference Mode code
+API_CONTRACTS.APP_CLASS_TYPE_CD,APP_CLASS_TYPE_CD Application class type code (SBL/INV/BUS)
+API_CONTRACTS.APP_LINKED_ACC_NBR,APP_LINKED_ACC_NBR Indicates the linked account number for an account
+API_CONTRACTS.APP_MULTI_BILL_ASSET_RATE_IND,APP_MULTI_BILL_ASSET_RATE_IND Indicates whether multiple asset rates are applicable for one billing period or not
+API_CONTRACTS.APP_PAH_HIERARCHY_CODE,APP_PAH_HIERARCHY_CODE Payment Hierarchy Code
+API_CONTRACTS.APP_PMT_MODE_CD,APP_PMT_MODE_CD Reference lookup to Accounts payment mode current (cash/check)
+API_CONTRACTS.APP_STMT_PREFERENCE_MODE_CD,APP_STMT_PREFERENCE_MODE_CD Application Statement Preference Mode code
+API_CONTRACTS.APP_RATE_MAX_INCREASE_YEAR,APP_RATE_MAX_INCREASE_YEAR Maximum allowable increase in rate in a year
+API_CONTRACTS.APP_ACCRUAL_CALC_METHOD_CD,APP_ACCRUAL_CALC_METHOD_CD Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest
+API_CONTRACTS.APP_RATE_MAX_INCREASE_LIFE,APP_RATE_MAX_INCREASE_LIFE Maximum allowable increase in rate in the life of the contract
+API_CONTRACTS.APP_TOTAL_OF_PMTS_ESTIMATED,APP_TOTAL_OF_PMTS_ESTIMATED Application Total Of Payments Estimated
+API_CONTRACTS.CREATED_BY,CREATED_BY Standard Who
+API_CONTRACTS.CREATION_DATE,CREATION_DATE Standard Who
+API_CONTRACTS.APP_ACH_FEE_IND,APP_ACH_FEE_IND Application ACH fee indicator
+API_CONTRACTS.APP_ADV_DRAW_END_DT,APP_ADV_DRAW_END_DT The end date to draw advance for stage funded loans
+API_CONTRACTS.APP_AGREEMENT_TYPE_CD,APP_AGREEMENT_TYPE_CD Agreement type Code - Usage/Rental/Undefined.
+API_CONTRACTS.APP_API_ID,APP_API_ID Unique Sequence number for multi threading
+API_CONTRACTS.APP_CAP_COST_GRO,APP_CAP_COST_GRO Application Capital Cost Gross
+API_CONTRACTS.APP_CAP_COST_RED,APP_CAP_COST_RED Application Capital Cost Residual
+API_CONTRACTS.APP_CHARGE_CALC_METHOD_CD,APP_CHARGE_CALC_METHOD_CD Charge caluclation method code for Tiered / Non Tiered.
+API_CONTRACTS.APP_COMP_REVISE_PLAN_TERM,APP_COMP_REVISE_PLAN_TERM Compensation plan revision term
+API_CONTRACTS.APP_CONTRACT_VERIFY_BY,APP_CONTRACT_VERIFY_BY Contract Verify Date 
+API_CONTRACTS.APP_COUPON_NOS,APP_COUPON_NOS Number of coupons for order
+API_CONTRACTS.APP_DISCOUNT_AMT,APP_DISCOUNT_AMT Discount Amount applicable for Rental Billing
+API_CONTRACTS.APP_DISCOUNT_PER,APP_DISCOUNT_PER Discount Percentage
+API_CONTRACTS.APP_DRAW_TERM_RATE,APP_DRAW_TERM_RATE Stores the rate at the time of stage funding
+API_CONTRACTS.APP_ERROR_IND,APP_ERROR_IND Indicates error on conversion record
+API_CONTRACTS.APP_EXCESS_RENT_COL_METHOD_CD,APP_EXCESS_RENT_COL_METHOD_CD Excess rent colculation method code for Actual/Average.
+API_CONTRACTS.APP_FLEXIBLE_REPAYMENT_IND,APP_FLEXIBLE_REPAYMENT_IND Indicates flexible repayment schedule is allowed or not
+API_CONTRACTS.APP_INDEX_RATE_EFFECTIVE,APP_INDEX_RATE_EFFECTIVE Stores the Index Effective rate
+API_CONTRACTS.APP_INSTALLMENT_METHOD_CD,APP_INSTALLMENT_METHOD_CD Method to calculate payment amount Equated EQ Final Payment Differs FPD
+API_CONTRACTS.APP_MASTER_ACC_IND,APP_MASTER_ACC_IND Indicates if the application is marked as master account or not
+API_CONTRACTS.APP_MASTER_ACC_NBR,APP_MASTER_ACC_NBR Master account number to which the application is linked
+API_CONTRACTS.APP_MATURITY_MRATE_EFFECTIVE,APP_MATURITY_MRATE_EFFECTIVE Stores the effective maturity margin rate
+API_CONTRACTS.APP_MAX_TIME_BAR_YEAR,APP_MAX_TIME_BAR_YEAR Staging data source : Max Time Bar Year
+API_CONTRACTS.APP_MAX_USAGE,APP_MAX_USAGE Maximum units allowed per cycle.
+API_CONTRACTS.APP_MRATE_EFFECTIVE,APP_MRATE_EFFECTIVE Stores the Effective for the margin
+API_CONTRACTS.APP_PMT_MAX_INCREASE_LIFE,APP_PMT_MAX_INCREASE_LIFE Application Payment max increase life
+API_CONTRACTS.APP_PMT_MAX_INCREASE_YEAR,APP_PMT_MAX_INCREASE_YEAR Application Payment max increase year
+API_CONTRACTS.APP_PREPAID_AMT,APP_PREPAID_AMT Application Prepaid Amount
+API_CONTRACTS.APP_PROBABLE_DELIVERY_DT,APP_PROBABLE_DELIVERY_DT Application probable delivery date
+API_CONTRACTS.APP_PROFIT_RATE,APP_PROFIT_RATE Application profit rate
+API_CONTRACTS.APP_PROM_PROFIT_RATE,APP_PROM_PROFIT_RATE Application promotional profit rate
+API_CONTRACTS.APP_RATE_BUY_EFFECTIVE,APP_RATE_BUY_EFFECTIVE Stores the effective buy rate
+API_CONTRACTS.APP_RATE_CHG_FREQ_TYPE_CD,APP_RATE_CHG_FREQ_TYPE_CD Reference key to lookup rate change frequency type such as MONTHLY QUARTERLY etc
+API_CONTRACTS.APP_RATE_CHG_PERIOD,APP_RATE_CHG_PERIOD Stores the time or period between subsequent rate change based on rate adjustment frequency
+API_CONTRACTS.APP_RATE_CHG_RSC_METHOD_CD,APP_RATE_CHG_RSC_METHOD_CD Reference key to lookup Rate Change Reschedule Method
+API_CONTRACTS.APP_RATE_CHG_RSC_VALUE,APP_RATE_CHG_RSC_VALUE The percentage value to be used to change the payment amount when rate changes on account
+API_CONTRACTS.APP_RATE_EFFECTIVE,APP_RATE_EFFECTIVE Stores the Effective rate
+API_CONTRACTS.APP_RECOURSE_TYPE_CD,APP_RECOURSE_TYPE_CD Stores Recourse Type from lookup code
+API_CONTRACTS.APP_RENTAL_FEE,APP_RENTAL_FEE Application Rental fee
+API_CONTRACTS.APP_RENT_END_DATE,APP_RENT_END_DATE Rental End Date 
+API_CONTRACTS.APP_RENT_FACTOR,APP_RENT_FACTOR Application Rent Factror
+API_CONTRACTS.APP_RENT_START_DATE,APP_RENT_START_DATE Rental Start date with timestamp
+API_CONTRACTS.APP_RENT_VAL,APP_RENT_VAL Application Rent Value
+API_CONTRACTS.APP_REPAYMENT_SKIP_PERIOD,APP_REPAYMENT_SKIP_PERIOD Stores all months that are allowed to skip payment such as MARCH APRIL MAY
+API_CONTRACTS.APP_REPAYMENT_TYPE_CD,APP_REPAYMENT_TYPE_CD Reference key to lookup account repayment type
+API_CONTRACTS.APP_REQ_BALLOON_AMT,APP_REQ_BALLOON_AMT Application Requested Balloon amount
+API_CONTRACTS.APP_RESIDUAL_DAYS,APP_RESIDUAL_DAYS Application residual days
+API_CONTRACTS.APP_RESIDUAL_PER,APP_RESIDUAL_PER Application  Residual Percentage
+API_CONTRACTS.APP_RESIDUAL_VAL,APP_RESIDUAL_VAL Application Residual Value
+API_CONTRACTS.APP_SALES_TAX_AMT_ESTIMATED,APP_SALES_TAX_AMT_ESTIMATED Application Sales Tax Amount Estimated
+API_CONTRACTS.APP_SALES_TAX_PER_ESTIMATED,APP_SALES_TAX_PER_ESTIMATED Application Sales Tax Percentage Estimated
+API_CONTRACTS.APP_SECURITY_DEPOSIT_AMT,APP_SECURITY_DEPOSIT_AMT Application Security Deposit Amount
+API_CONTRACTS.APP_SIGNING_DT,APP_SIGNING_DT Application signing date
+API_CONTRACTS.APP_STMT_CONSOLIDATE_IND,APP_STMT_CONSOLIDATE_IND Application statement consolidation indicator
+API_CONTRACT_DETAILS.ACD_APP_ORIG_SYS_XREF,ACD_APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE1,ACD_ITEMIZATION_TCD_CODE1 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL1,ACD_VAL1 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE2,ACD_ITEMIZATION_TCD_CODE2 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL2,ACD_VAL2 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE3,ACD_ITEMIZATION_TCD_CODE3 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL3,ACD_VAL3 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE4,ACD_ITEMIZATION_TCD_CODE4 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL4,ACD_VAL4 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE5,ACD_ITEMIZATION_TCD_CODE5 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL5,ACD_VAL5 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE6,ACD_ITEMIZATION_TCD_CODE6 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL6,ACD_VAL6 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE7,ACD_ITEMIZATION_TCD_CODE7 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL7,ACD_VAL7 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE8,ACD_ITEMIZATION_TCD_CODE8 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL8,ACD_VAL8 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE9,ACD_ITEMIZATION_TCD_CODE9 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL9,ACD_VAL9 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE10,ACD_ITEMIZATION_TCD_CODE10 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL10,ACD_VAL10 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE11,ACD_ITEMIZATION_TCD_CODE11 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL11,ACD_VAL11 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE12,ACD_ITEMIZATION_TCD_CODE12 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL12,ACD_VAL12 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE13,ACD_ITEMIZATION_TCD_CODE13 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL13,ACD_VAL13 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE14,ACD_ITEMIZATION_TCD_CODE14 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL14,ACD_VAL14 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE15,ACD_ITEMIZATION_TCD_CODE15 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL15,ACD_VAL15 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE16,ACD_ITEMIZATION_TCD_CODE16 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL16,ACD_VAL16 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE17,ACD_ITEMIZATION_TCD_CODE17 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL17,ACD_VAL17 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE18,ACD_ITEMIZATION_TCD_CODE18 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL18,ACD_VAL18 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE19,ACD_ITEMIZATION_TCD_CODE19 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL19,ACD_VAL19 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE20,ACD_ITEMIZATION_TCD_CODE20 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL20,ACD_VAL20 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE21,ACD_ITEMIZATION_TCD_CODE21 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL21,ACD_VAL21 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE22,ACD_ITEMIZATION_TCD_CODE22 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL22,ACD_VAL22 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE23,ACD_ITEMIZATION_TCD_CODE23 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL23,ACD_VAL23 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE24,ACD_ITEMIZATION_TCD_CODE24 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL24,ACD_VAL24 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TCD_CODE25,ACD_ITEMIZATION_TCD_CODE25 Reference Key to itemization transaction
+API_CONTRACT_DETAILS.ACD_VAL25,ACD_VAL25 The value associated with this itemization transaction
+API_CONTRACT_DETAILS.ACI_ITEMIZATION_TCD_CODE,ACI_ITEMIZATION_TCD_CODE The insurance type
+API_CONTRACT_DETAILS.ACI_VAL,ACI_VAL The value associated with this insurance
+API_CONTRACT_DETAILS.ACI_INS_SUB_TYPE_CD,ACI_INS_SUB_TYPE_CD The insurance sub type
+API_CONTRACT_DETAILS.ACI_COMPANY,ACI_COMPANY The insurance company name
+API_CONTRACT_DETAILS.ACI_POLICY_NBR,ACI_POLICY_NBR The insurance policy number
+API_CONTRACT_DETAILS.ESC_ITEMIZATION_TCD_CODE,ESC_ITEMIZATION_TCD_CODE Reference key to transaction (Itemization)
+API_CONTRACT_DETAILS.ESC_VAL,ESC_VAL The value associated with the escrow itemization transaction
+API_CONTRACT_DETAILS.ESC_TYPE_CD,ESC_TYPE_CD Escrow type for the itemization such as Insurance or Tax
+API_CONTRACT_DETAILS.ESC_SUB_TYPE,ESC_SUB_TYPE Reference key to the escrow setup for escrow itemization
+API_CONTRACT_DETAILS.ESC_VEN_NBR,ESC_VEN_NBR Disbursement vendor number for the escrow itemization
+API_CONTRACT_DETAILS.ESC_REQUIRED_IND,ESC_REQUIRED_IND Indicates whether escrow is required for the escrow itemization
+API_CONTRACT_DETAILS.ESC_OPT_OUT_IND,ESC_OPT_OUT_IND Indicates whether opt out from escrow itemization
+API_CONTRACT_DETAILS.ESC_EDR_RULE,ESC_EDR_RULE Escrow disbursement rule
+API_CONTRACT_DETAILS.ESC_YRLY_DISBURSE_AMT,ESC_YRLY_DISBURSE_AMT Yearly disbursement amount for the escrow itemization
+API_CONTRACT_DETAILS.ESC_MATURITY_DT,ESC_MATURITY_DT Insurance/Tax Escrow itemization maturity date
+API_CONTRACT_DETAILS.ESC_POLICY_NBR,ESC_POLICY_NBR The insurance policy number
+API_CONTRACT_DETAILS.ESC_EFFECTIVE_DT,ESC_EFFECTIVE_DT The effective date of the escrow itemization
+API_CONTRACT_DETAILS.ESC_EXPIRATION_DT,ESC_EXPIRATION_DT The expiry date of the escrow itemization
+API_CONTRACT_DETAILS.ESC_REF_ACCOUNT_NBR,ESC_REF_ACCOUNT_NBR Reference customer Tax/Insurance account number for the escrow itemization
+API_CONTRACT_DETAILS.ESC_PROPERTY_TAX_CD,ESC_PROPERTY_TAX_CD Property tax code for the tax escrow itemization
+API_CONTRACT_DETAILS.ESC_COVERAGE_TYPE_CD,ESC_COVERAGE_TYPE_CD  Escrow insurance itemization coverage type
+API_CONTRACT_DETAILS.ESC_COVERAGE_TERM,ESC_COVERAGE_TERM Escrow insurance itemization coverage term
+API_CONTRACT_DETAILS.ESC_COVERAGE_AMT,ESC_COVERAGE_AMT Escrow insurance itemization coverage amount
+API_CONTRACT_DETAILS.ESC_CUSHION_ALLOWED_IND,ESC_CUSHION_ALLOWED_IND Indicates is cushion is allowed for an escrow itemization
+API_CONTRACT_DETAILS.AAW_CMP_CODE,AAW_CMP_CODE Reference Key to commission plan code
+API_CONTRACT_DETAILS.ACI_COMMISSION_AMT,ACI_COMMISSION_AMT Insurance contract itemization commission amount
+API_CONTRACT_DETAILS.ACI_INS_REFUND_ALLOWED_IND,ACI_INS_REFUND_ALLOWED_IND Indicates insurance refund allowed
+API_CONTRACT_DETAILS.ACI_INS_REFUND_CALC_METHOD_CD,ACI_INS_REFUND_CALC_METHOD_CD Reference key to lookup insurance refund calculation method such as sum of digits
+API_CONTRACT_DETAILS.ACI_CMP_CODE,ACI_CMP_CODE Reference Key to commission plan code
+API_CONTRACT_DETAILS.ESC_ITEMIZATION_TCD_CODE,ESC_ITEMIZATION_TCD_CODE Reference key to transaction (Itemization)
+API_CONTRACT_DETAILS.ESC_TYPE_CD,ESC_TYPE_CD Escrow type for the itemization such as Insurance or Tax
+API_CONTRACT_DETAILS.ESC_VEN_NBR,ESC_VEN_NBR Disbursement vendor number for the escrow itemization
+API_CONTRACT_DETAILS.ESC_REQUIRED_IND,ESC_REQUIRED_IND Indicates whether escrow is required for the escrow itemization
+API_CONTRACT_DETAILS.ESC_OPT_OUT_IND,ESC_OPT_OUT_IND Indicates whether opt out from escrow itemization
+API_CONTRACT_DETAILS.ESC_EDR_RULE,ESC_EDR_RULE Escrow disbursement rule
+API_CONTRACT_DETAILS.ESC_YRLY_DISBURSE_AMT,ESC_YRLY_DISBURSE_AMT Yearly disbursement amount for the escrow itemization
+API_CONTRACT_DETAILS.ESC_MATURITY_DT,ESC_MATURITY_DT Insurance/Tax Escrow itemization maturity date
+API_CONTRACT_DETAILS.ESC_POLICY_NBR,ESC_POLICY_NBR The insurance policy number
+API_CONTRACT_DETAILS.ESC_EFFECTIVE_DT,ESC_EFFECTIVE_DT The effective date of the escrow itemization
+API_CONTRACT_DETAILS.ESC_EXPIRATION_DT,ESC_EXPIRATION_DT The expiry date of the escrow itemization
+API_CONTRACT_DETAILS.ESC_REF_ACCOUNT_NBR,ESC_REF_ACCOUNT_NBR Reference customer Tax/Insurance account number for the escrow itemization
+API_CONTRACT_DETAILS.ESC_PROPERTY_TAX_CD,ESC_PROPERTY_TAX_CD Property tax code for the tax escrow itemization
+API_CONTRACT_DETAILS.ESC_COVERAGE_TYPE_CD,ESC_COVERAGE_TYPE_CD  Escrow insurance itemization coverage type
+API_CONTRACT_DETAILS.ESC_COVERAGE_TERM,ESC_COVERAGE_TERM Escrow insurance itemization coverage term
+API_CONTRACT_DETAILS.ESC_COVERAGE_AMT,ESC_COVERAGE_AMT Escrow insurance itemization coverage amount
+API_CONTRACT_DETAILS.ESC_CUSHION_ALLOWED_IND,ESC_CUSHION_ALLOWED_IND Indicates is cushion is allowed for an escrow itemization
+API_CONTRACT_DETAILS.ESC_SUB_TYPE,ESC_SUB_TYPE Reference key to the escrow setup for escrow itemization
+API_CONTRACT_DETAILS.ESC_VAL,ESC_VAL The value associated with the escrow itemization transaction
+API_CONTRACT_DETAILS.ACD_CANCEL_FEE,ACD_CANCEL_FEE Stores the insurance cancellation fee amount and it is used for converting accounts from other system
+API_CONTRACT_DETAILS.ACD_CANCEL_GRACE_DAYS,ACD_CANCEL_GRACE_DAYS The number of days that allows insurance cancellation without fee and it is used for converting accounts from other system
+API_CONTRACT_DETAILS.ACD_GRACE_PERIOD_FEE_IND,ACD_GRACE_PERIOD_FEE_IND Indicates whether or not cancellation fee could be charged during grace days and it is used for converting accounts from other system
+API_CONTRACT_DETAILS.ACD_ITEMIZATION_TYPE_CD,ACD_ITEMIZATION_TYPE_CD Reference key to lookup contract itemization type and it is used for converting accounts from other system
+API_CONTRACT_DETAILS.ACD_CUR_CURRENCY_CODE,ACD_CUR_CURRENCY_CODE Reference key to Currency
+API_CONTRACT_DETAILS.ACD_DISB_CUR_CURRENCY_CODE,ACD_DISB_CUR_CURRENCY_CODE Reference key to Currency
+API_CONTRACT_DETAILS.ACD_DISBURSEMENT_TYPE,ACD_DISBURSEMENT_TYPE disbursement Type
+API_CONTRACT_DETAILS.ACD_PREFUNDING_STATUS_CD,ACD_PREFUNDING_STATUS_CD Prefunding Status code
+API_CONTRACT_DETAILS.ACD_PMT_DT,ACD_PMT_DT Payment Date
+API_CONTRACT_DETAILS.ACD_PMT_REFERENCE_NBR,ACD_PMT_REFERENCE_NBR Payment Reference Number
+API_CONTRACT_DETAILS.ACI_COMMENT2,ACI_COMMENT2 A user defined comment for the insurance
+API_CONTRACT_DETAILS.ACI_TERM2,ACI_TERM2 Total term of the insurance
+API_CONTRACT_DETAILS.ACI_PRIMARY_BENEFICIARY2,ACI_PRIMARY_BENEFICIARY2 Second insurance primary beneficiary name in  
+API_CONTRACT_DETAILS.ACI_COMMISSION_AMT2,ACI_COMMISSION_AMT2 Insurance contract itemization commission amount for insurance 2
+API_CONTRACT_DETAILS.ACI_CMP_CODE2,ACI_CMP_CODE2 Reference Key to commission plan code for insurance 2
+API_CONTRACT_DETAILS.ACI_INS_REFUND_ALLOWED_IND2,ACI_INS_REFUND_ALLOWED_IND2 Indicates insurance refund allowed for insurance 2
+API_CONTRACT_DETAILS.ACI_INS_REFUND_CALC_METHD_CD2,ACI_INS_REFUND_CALC_METHD_CD2 Reference key to lookup insurance refund calculation method such as sum of digits for insurance 2
+API_CONTRACT_DETAILS.ACI_EFFECTIVE_DT2,ACI_EFFECTIVE_DT2 Date on which the policy comes into effect for insurance 2
+API_CONTRACT_DETAILS.ACD_INS_CANCEL_FEE_FROM_CD,ACD_INS_CANCEL_FEE_FROM_CD Cancel fee from rebate or premium possible values PRM/RBT/NULL
+API_CONTRACT_DETAILS.ACD_INS_CANCEL_FEE_FROM_CD,ACD_INS_CANCEL_FEE_FROM_CD Cancel fee from rebate or premium possible values PRM/RBT/NULL
+API_CONTRACT_DETAILS.ACI_PHONE_EXTN12,ACI_PHONE_EXTN12 Phone number 1 extn of the insurance company for insurance 2
+API_CONTRACT_DETAILS.ACI_ITEMIZATION_TCD_CODE2,ACI_ITEMIZATION_TCD_CODE2 Insurance type for insurance 2
+API_CONTRACT_DETAILS.ACI_VAL2,ACI_VAL2 Value associated with this insurance for insurance 2
+API_CONTRACT_DETAILS.ACI_INS_SUB_TYPE_CD2,ACI_INS_SUB_TYPE_CD2 Insurance sub type for insurance 2
+API_CONTRACT_DETAILS.ACI_COMPANY2,ACI_COMPANY2 Insurance company name for insurance 2
+API_CONTRACT_DETAILS.ACI_POLICY_NBR2,ACI_POLICY_NBR2 Insurance policy number for insurance 2
+API_CONTRACT_DETAILS.ACI_PHONE_NO12,ACI_PHONE_NO12 Phone number 1 of the insurance company for insurance 2
+API_CONTRACT_DETAILS.ACI_PHONE_NO1,ACI_PHONE_NO1 The phone number 1 of the insurance company
+API_CONTRACT_DETAILS.ACI_PHONE_EXTN1,ACI_PHONE_EXTN1 The phone number 1 extn of the insurance company
+API_CONTRACT_DETAILS.ACI_EFFECTIVE_DT,ACI_EFFECTIVE_DT Date on which the policy comes into effect
+API_CONTRACT_DETAILS.ACI_EXPIRY_DT,ACI_EXPIRY_DT First insurance expiration date in  
+API_CONTRACT_DETAILS.ACI_TERM,ACI_TERM Total term of the insurance
+API_CONTRACT_DETAILS.ACI_PRIMARY_BENEFICIARY,ACI_PRIMARY_BENEFICIARY Name of the primary beneficiary of insurance
+API_CONTRACT_DETAILS.ACI_COMMENT,ACI_COMMENT A user defined comment for the insurance
+API_CONTRACT_DETAILS.AAW_ITEMIZATION_TCD_CODE,AAW_ITEMIZATION_TCD_CODE Itemization related to warranty
+API_CONTRACT_DETAILS.AAW_VAL,AAW_VAL Value of warranty policy
+API_CONTRACT_DETAILS.AAW_COMPANY,AAW_COMPANY Name of warranty company
+API_CONTRACT_DETAILS.AAW_POLICY_NBR,AAW_POLICY_NBR Policy of warranty
+API_CONTRACT_DETAILS.AAW_PHONE_NO1,AAW_PHONE_NO1 Phone number of warranty company
+API_CONTRACT_DETAILS.AAW_PHONE_EXTN1,AAW_PHONE_EXTN1 Phone extension of warranty company
+API_CONTRACT_DETAILS.AAW_COMMENT,AAW_COMMENT Comment of warranty
+API_CONTRACT_DETAILS.AAW_COMMISSION_AMT,AAW_COMMISSION_AMT Warranty or extended service contract itemization commission amount
+API_CONTRACT_DETAILS.AAW_INS_REFUND_ALLOWED_IND,AAW_INS_REFUND_ALLOWED_IND Indicates insurance refund allowed
+API_CONTRACT_DETAILS.AAW_INS_REFUND_CALC_METHOD_CD,AAW_INS_REFUND_CALC_METHOD_CD Reference key to lookup insurance refund calculation method such as sum of digits
+API_CONTRACT_DETAILS.ACI_INS_AUTO_REBATE_IND2,ACI_INS_AUTO_REBATE_IND2 Indicator for auto premium rebate allowed or not
+API_CONTRACT_DETAILS.ACI_INS_AUTO_REBATE_IND,ACI_INS_AUTO_REBATE_IND Indicator for auto premium rebate allowed or not
+API_CONTRACT_DETAILS.ACD_1098_SELLER_PMT_IND,ACD_1098_SELLER_PMT_IND contract details Seller payment indicator
+API_CONTRACT_DETAILS.ACD_1098_SELLER_PMT_IND,ACD_1098_SELLER_PMT_IND contract details Seller payment indicator
+API_CONTRACT_DETAILS.ACI_EXPIRY_DT2,ACI_EXPIRY_DT2 Second insurance expiration date in  
+API_CONTRACT_DETAILS.CREATION_DATE,CREATION_DATE Standard Who
+API_CONTRACT_DETAILS.ACI_PIN_CODE,ACI_PIN_CODE First insurance pincode in  
+API_CONTRACT_DETAILS.ACI_PIN_CODE2,ACI_PIN_CODE2 Second insurance pincode in  
+API_CONTRACT_DETAILS.CREATED_BY,CREATED_BY Standard Who
+API_CUSTOMERS_PRIMARY.ALT_VALUE4,ALT_VALUE4 Value4
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE5,ALT_FTA_TABLE_ATTRIBUTE5 Name of the unit tracking attribute parameter5
+API_CUSTOMERS_PRIMARY.ALT_VALUE5,ALT_VALUE5 Value5
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE6,ALT_FTA_TABLE_ATTRIBUTE6 Name of the unit tracking attribute parameter6
+API_CUSTOMERS_PRIMARY.ALT_VALUE6,ALT_VALUE6 Value6
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE7,ALT_FTA_TABLE_ATTRIBUTE7 Name of the unit tracking attribute parameter7
+API_CUSTOMERS_PRIMARY.ALT_VALUE7,ALT_VALUE7 Value7
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE8,ALT_FTA_TABLE_ATTRIBUTE8 Name of the unit tracking attribute parameter8
+API_CUSTOMERS_PRIMARY.ALT_VALUE8,ALT_VALUE8 Value8
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE9,ALT_FTA_TABLE_ATTRIBUTE9 Name of the unit tracking attribute parameter9
+API_CUSTOMERS_PRIMARY.ALT_VALUE9,ALT_VALUE9 Value9
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE10,ALT_FTA_TABLE_ATTRIBUTE10 Name of the unit tracking attribute parameter10
+API_CUSTOMERS_PRIMARY.ALT_VALUE10,ALT_VALUE10 Value10
+API_CUSTOMERS_PRIMARY.APL_APP_ORIG_SYS_XREF,APL_APP_ORIG_SYS_XREF Original system cross reference for application
+API_CUSTOMERS_PRIMARY.APL_FIRST_NAME,APL_FIRST_NAME First name of applicant
+API_CUSTOMERS_PRIMARY.APL_MIDDLE_NAME,APL_MIDDLE_NAME Applicant middle name
+API_CUSTOMERS_PRIMARY.APL_LAST_NAME,APL_LAST_NAME Applicant last name
+API_CUSTOMERS_PRIMARY.APL_GENERATION_CD,APL_GENERATION_CD Applicant generation such as Jr  Sr  III
+API_CUSTOMERS_PRIMARY.APL_SSN,APL_SSN Nine digit Social Security number
+API_CUSTOMERS_PRIMARY.APL_BIRTH_DT,APL_BIRTH_DT Birth date of applicant
+API_CUSTOMERS_PRIMARY.APL_GENDER_CD,APL_GENDER_CD Gender of applicant  M=male  F=female
+API_CUSTOMERS_PRIMARY.APL_LANGUAGE_CD,APL_LANGUAGE_CD Primary language of applicant such as E (English)  S (Spanish)
+API_CUSTOMERS_PRIMARY.APL_MARITAL_STATUS_CD,APL_MARITAL_STATUS_CD Applicant marital status such as M (Married)  S (Single)
+API_CUSTOMERS_PRIMARY.APL_EMAIL_ADDRESS1,APL_EMAIL_ADDRESS1 Applicant email address
+API_CUSTOMERS_PRIMARY.APL_CLASS_TYPE_CD,APL_CLASS_TYPE_CD Applicant class as defined by Company such as employee
+API_CUSTOMERS_PRIMARY.APL_CRB_ECOA_CD,APL_CRB_ECOA_CD Applicant ECOA code on the liability such as individual  joint contractual liability etc
+API_CUSTOMERS_PRIMARY.APL_RACE_NATIONAL_ORIGIN_CD,APL_RACE_NATIONAL_ORIGIN_CD Applicant national origin
+API_CUSTOMERS_PRIMARY.APA_ADDRESS_NBR,APA_ADDRESS_NBR Numeric portion of address location
+API_CUSTOMERS_PRIMARY.APA_STREET_NAME,APA_STREET_NAME Name of street where address is located
+API_CUSTOMERS_PRIMARY.APA_APT_STE_NBR,APA_APT_STE_NBR Apartment or suite number of address
+API_CUSTOMERS_PRIMARY.APA_ADDRESS1,APA_ADDRESS1 First line of address for this location
+API_CUSTOMERS_PRIMARY.APA_ADDRESS2,APA_ADDRESS2 Second line of address for this location
+API_CUSTOMERS_PRIMARY.APA_ZIP,APA_ZIP 5 Digit Zip Code of applicant address
+API_CUSTOMERS_PRIMARY.APA_CITY,APA_CITY City name of address
+API_CUSTOMERS_PRIMARY.APA_STATE_CD,APA_STATE_CD Name of state where address is located
+API_CUSTOMERS_PRIMARY.APA_ZIP_EXTN,APA_ZIP_EXTN Last 4 digits of Zip Code of applicant address
+API_CUSTOMERS_PRIMARY.APA_COUNTRY_CD,APA_COUNTRY_CD Stores country code for PRIMARY applicant address
+API_CUSTOMERS_PRIMARY.APA_PHONE,APA_PHONE The phone number at the address
+API_CUSTOMERS_PRIMARY.APA_OWNERSHIP_CD,APA_OWNERSHIP_CD Indicates if applicant owns or rents property
+API_CUSTOMERS_PRIMARY.APA_LOCATION,APA_LOCATION Identifies MSA (metropolitan statistical area) location
+API_CUSTOMERS_PRIMARY.APA_BLOCK,APA_BLOCK Identifies census tract/block number of address
+API_CUSTOMERS_PRIMARY.APA_COMMENT,APA_COMMENT Comments about applicant address
+API_CUSTOMERS_PRIMARY.APE_NAME,APE_NAME Name of employer
+API_CUSTOMERS_PRIMARY.APE_TITLE,APE_TITLE The actual name of applicant position at employment
+API_CUSTOMERS_PRIMARY.APE_OCCUPATION_CD,APE_OCCUPATION_CD Occupation of applicant such as professional
+API_CUSTOMERS_PRIMARY.APE_ADDRESS1,APE_ADDRESS1 First line of address for this location of employment
+API_CUSTOMERS_PRIMARY.APE_ADDRESS1,APE_ADDRESS1 First line of address for this location of employment
+API_CUSTOMERS_PRIMARY.APE_ADDRESS2,APE_ADDRESS2 Second line of address for this location of employment
+API_CUSTOMERS_PRIMARY.APE_ZIP,APE_ZIP 5 Digit Zip Code of employer address
+API_CUSTOMERS_PRIMARY.APE_CITY,APE_CITY City name of address
+API_CUSTOMERS_PRIMARY.APE_STATE_CD,APE_STATE_CD State code where employment is located
+API_CUSTOMERS_PRIMARY.APE_ZIP_EXTN,APE_ZIP_EXTN Last 4 digits of Zip Code of employer address
+API_CUSTOMERS_PRIMARY.APE_COUNTRY_CD,APE_COUNTRY_CD Stores country code for PRIMARY applicant employment address
+API_CUSTOMERS_PRIMARY.APE_PHONE,APE_PHONE Phone number of employer
+API_CUSTOMERS_PRIMARY.APE_PHONE_EXTN,APE_PHONE_EXTN Phone number extension of employer
+API_CUSTOMERS_PRIMARY.APE_COMMENT,APE_COMMENT Comments about applicant address
+API_CUSTOMERS_PRIMARY.APT_MOBILE_NUMBER,APT_MOBILE_NUMBER The mobile number of the primary customer
+API_CUSTOMERS_PRIMARY.APT_FAX_NUMBER,APT_FAX_NUMBER The fax number of the primary customer
+API_CUSTOMERS_PRIMARY.APT_PAGER_NUMBER,APT_PAGER_NUMBER The pager number of the primary customer
+API_CUSTOMERS_PRIMARY.APL_ETHNIC_CD,APL_ETHNIC_CD Ethnic Code
+API_CUSTOMERS_PRIMARY.APA_COUNTRY_CD,APA_COUNTRY_CD Stores country code for PRIMARY applicant address
+API_CUSTOMERS_PRIMARY.APE_COUNTRY_CD,APE_COUNTRY_CD Stores country code for PRIMARY applicant employment address
+API_CUSTOMERS_PRIMARY.APE_EMPLOYMENT_TYPE_CD,APE_EMPLOYMENT_TYPE_CD Type of the employment such as full time  part time
+API_CUSTOMERS_PRIMARY.APE_STREET_NAME,APE_STREET_NAME Street Name
+API_CUSTOMERS_PRIMARY.APE_APT_STE_NBR,APE_APT_STE_NBR Apartment Number
+API_CUSTOMERS_PRIMARY.APE_ADDRESS_NBR,APE_ADDRESS_NBR Street number of address for this location
+API_CUSTOMERS_PRIMARY.APA_STREET_NAME,APA_STREET_NAME Name of street where address is located
+API_CUSTOMERS_PRIMARY.APA_APT_STE_NBR,APA_APT_STE_NBR Apartment or suite number of address
+API_CUSTOMERS_PRIMARY.APA_ADDRESS_NBR,APA_ADDRESS_NBR Numeric portion of address location
+API_CUSTOMERS_PRIMARY.APL_SALUTATION_TYPE_CD,APL_SALUTATION_TYPE_CD Salutation
+API_CUSTOMERS_PRIMARY.APL_CHRISTIAN_NAME,APL_CHRISTIAN_NAME Applicant Initials
+API_CUSTOMERS_PRIMARY.APL_MAIDEN_MI_NAME,APL_MAIDEN_MI_NAME Applicant Middle Initial
+API_CUSTOMERS_PRIMARY.APL_MAIDEN_NAME,APL_MAIDEN_NAME Applicant Maiden Name
+API_CUSTOMERS_PRIMARY.APL_FULL_NAME,APL_FULL_NAME Applicant Full Name
+API_CUSTOMERS_PRIMARY.APL_PERMIT_TO_STAY_CD,APL_PERMIT_TO_STAY_CD Permission to Stay in the Country
+API_CUSTOMERS_PRIMARY.APL_PERMIT_TO_WORK_CD,APL_PERMIT_TO_WORK_CD Permission to Work in the Country
+API_CUSTOMERS_PRIMARY.APL_SPECIALITY_TYPE_CD,APL_SPECIALITY_TYPE_CD Special Condition for Applicant
+API_CUSTOMERS_PRIMARY.APL_EXISTING_CIF,APL_EXISTING_CIF Existing applicant CIF
+API_CUSTOMERS_PRIMARY.APL_PASSPORT_NBR,APL_PASSPORT_NBR Passport number of customer
+API_CUSTOMERS_PRIMARY.APL_PASSPORT_ISSUE_DT,APL_PASSPORT_ISSUE_DT Passport Issue date of customer
+API_CUSTOMERS_PRIMARY.APL_PASSPORT_EXPIRY_DT,APL_PASSPORT_EXPIRY_DT Passport expiry date of customer
+API_CUSTOMERS_PRIMARY.APL_MSG_PREFERENCE,APL_MSG_PREFERENCE Stores the Message reference
+API_CUSTOMERS_PRIMARY.APL_NATIONAL_ID,APL_NATIONAL_ID National ID of applicant
+API_CUSTOMERS_PRIMARY.APA_LANDMARK,APA_LANDMARK Landmark near address
+API_CUSTOMERS_PRIMARY.APA_ADDRESS3,APA_ADDRESS3 Address Line 3
+API_CUSTOMERS_PRIMARY.APE_DEPARTMENT,APE_DEPARTMENT Stores the department
+API_CUSTOMERS_PRIMARY.APE_EMPLOYEE_ID,APE_EMPLOYEE_ID Stores the Employee ID
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE1,ALT_FTA_TABLE_ATTRIBUTE1 Name of the unit tracking attribute parameter1
+API_CUSTOMERS_PRIMARY.ALT_VALUE1,ALT_VALUE1 Value1
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE2,ALT_FTA_TABLE_ATTRIBUTE2 Name of the unit tracking attribute parameter2
+API_CUSTOMERS_PRIMARY.ALT_VALUE2,ALT_VALUE2 Value2
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE3,ALT_FTA_TABLE_ATTRIBUTE3 Name of the unit tracking attribute parameter3
+API_CUSTOMERS_PRIMARY.ALT_VALUE3,ALT_VALUE3 Value3
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE4,ALT_FTA_TABLE_ATTRIBUTE4 Name of the unit tracking attribute parameter4
+API_CUSTOMERS_PRIMARY.APL_VISA_NBR,APL_VISA_NBR Primary visa number
+API_CUSTOMERS_PRIMARY.APL_NATIONALITY_CD,APL_NATIONALITY_CD Primary Nationality code
+API_CUSTOMERS_PRIMARY.APL_EDUCATION_LEVEL_CD,APL_EDUCATION_LEVEL_CD Primary Applicant education level code
+API_CUSTOMERS_PRIMARY.APA_CONFIRMED_IND,APA_CONFIRMED_IND Indicates if the address is confirmed or not
+API_CUSTOMERS_PRIMARY.APT_TIME_ZONE_CD,APT_TIME_ZONE_CD  Stores the Timezone of the primary customer
+API_CUSTOMERS_PRIMARY.APL_SCRA_IND,APL_SCRA_IND Stores the scra Indicator
+API_CUSTOMERS_PRIMARY.APL_SCRA_EFFECTIVE_DT,APL_SCRA_EFFECTIVE_DT Stores the scra effective date
+API_CUSTOMERS_PRIMARY.APL_SCRA_ORDER_REF_NBR,APL_SCRA_ORDER_REF_NBR Stores the scra order reference number
+API_CUSTOMERS_PRIMARY.APL_SCRA_RELEASED_DT,APL_SCRA_RELEASED_DT Stores the scra released date
+API_CUSTOMERS_PRIMARY.APL_PA_ADDRESS,APL_PA_ADDRESS Address
+API_CUSTOMERS_PRIMARY.APL_KYC_REF_NBR,APL_KYC_REF_NBR Applicant  know your customer reference number
+API_CUSTOMERS_PRIMARY.APL_KYC_STATUS_CD,APL_KYC_STATUS_CD Status Code
+API_CUSTOMERS_PRIMARY.APL_LIAB_NBR,APL_LIAB_NBR Applicant liability number
+API_CUSTOMERS_PRIMARY.APL_BIRTH_PLACE,APL_BIRTH_PLACE Birth Place
+API_CUSTOMERS_PRIMARY.APL_BIRTH_COUNTRY_CD,APL_BIRTH_COUNTRY_CD Country Code
+API_CUSTOMERS_PRIMARY.APL_US_RES_IND,APL_US_RES_IND Indicates whether the US Resident is currently enabled
+API_CUSTOMERS_PRIMARY.APL_CUSTOMER_CATEGORY_CD,APL_CUSTOMER_CATEGORY_CD Customer Category Code
+API_CUSTOMERS_PRIMARY.APL_PA_ISSUED_IND,APL_PA_ISSUED_IND Indicates whether the payee issued is currently enabled
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_NAME,APL_PA_HOLDER_NAME Holder Name
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_ADR_CNTRY_CD,APL_PA_HOLDER_ADR_CNTRY_CD Applicant Personal  holder  address country code
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_NATIONALITY_CD,APL_PA_HOLDER_NATIONALITY_CD unique Applicant Nationality code
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_PHONE,APL_PA_HOLDER_PHONE Holder Phone Number
+API_CUSTOMERS_PRIMARY.APA_PHONE_ISD_CD,APA_PHONE_ISD_CD Phone ISD code for  Api_Customers_Primary
+API_CUSTOMERS_PRIMARY.APE_PHONE_ISD_CD,APE_PHONE_ISD_CD Phone ISD code
+API_CUSTOMERS_PRIMARY.APT_PHONE_ISD_CD,APT_PHONE_ISD_CD Phone ISD Code
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_PHONE_ISD_CD,APL_PA_HOLDER_PHONE_ISD_CD  Phone ISD code
+API_CUSTOMERS_PRIMARY.APT_PHONE,APT_PHONE Phone number
+API_CUSTOMERS_PRIMARY.APT_PHONE_EXTN,APT_PHONE_EXTN Phone Extension
+API_CUSTOMERS_PRIMARY.APT_TELECOM_TYPE_CD,APT_TELECOM_TYPE_CD Type of the telecom such as pager
+API_CUSTOMERS_PRIMARY.APE_ACTUAL_PAY_DAY_DT,APE_ACTUAL_PAY_DAY_DT Actual pay day date of the primary applicants employment for conversion.
+API_CUSTOMERS_PRIMARY.APA_CUR_CURRENCY_CODE,APA_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_CUR_CURRENCY_CODE,APE_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_STATED_PAY_DAY_DT,APE_STATED_PAY_DAY_DT Stated pay date
+API_CUSTOMERS_PRIMARY.APA_CUR_CURRENCY_CODE,APA_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_CUR_CURRENCY_CODE,APE_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_STATED_PAY_DAY_DT,APE_STATED_PAY_DAY_DT Stated pay date
+API_CUSTOMERS_PRIMARY.APL_PAH_HIERARCHY_CODE,APL_PAH_HIERARCHY_CODE Payment Hierarchy Code
+API_CUSTOMERS_PRIMARY.APL_SHARE_CREDIT_INFO_IND,APL_SHARE_CREDIT_INFO_IND Share Credit Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_SKIP_IND,APL_SKIP_IND Indicates if current address for business applicant is not valid
+API_CUSTOMERS_PRIMARY.APL_DECEASED_DT,APL_DECEASED_DT Deceased date of customer
+API_CUSTOMERS_PRIMARY.APL_STOP_CORR_IND,APL_STOP_CORR_IND Indicates if customer correspondence must be stopped
+API_CUSTOMERS_PRIMARY.APL_PRIVACY_OPT_OUT_IND,APL_PRIVACY_OPT_OUT_IND Indicates if business applicant has opted out to share privacy information
+API_CUSTOMERS_PRIMARY.APL_UPDATE_CUSTOMER_INFO_IND,APL_UPDATE_CUSTOMER_INFO_IND Customer override indicator
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE,APL_CREDIT_SCORE Archive:Credit score value
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE_RECEIVED_DT,APL_CREDIT_SCORE_RECEIVED_DT Credit score received date.
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SOURCE_CD,APL_CREDIT_SOURCE_CD Reference to Credit source code
+API_CUSTOMERS_PRIMARY.APL_COMMENTS,APL_COMMENTS Customer Comments
+API_CUSTOMERS_PRIMARY.APL_REASON_CD,APL_REASON_CD Customer Reason code
+API_CUSTOMERS_PRIMARY.APL_REFERENCE_NBR,APL_REFERENCE_NBR Reference Number
+API_CUSTOMERS_PRIMARY.APL_SKIP_IND,APL_SKIP_IND Indicates if current address for business applicant is not valid
+API_CUSTOMERS_PRIMARY.APL_SHARE_CR_OPT_OUT_IND,APL_SHARE_CR_OPT_OUT_IND Staging :  Share Credit Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_UPDATE_CUSTOMER_INFO_IND,APL_UPDATE_CUSTOMER_INFO_IND Customer override indicator
+API_CUSTOMERS_PRIMARY.APL_UTILIZATION_PERC,APL_UTILIZATION_PERC Stores the applicant credit limit utilization percentage
+API_CUSTOMERS_PRIMARY.APT_PERMISSION_TO_CALL_IND,APT_PERMISSION_TO_CALL_IND Indicates Applicant telecom Permission to call
+API_CUSTOMERS_PRIMARY.APT_PERMISSION_TO_TEXT_IND,APT_PERMISSION_TO_TEXT_IND Indicates Applicant telecom Permission to text
+API_CUSTOMERS_PRIMARY.CREATED_BY,CREATED_BY Standard Who
+API_CUSTOMERS_PRIMARY.CREATION_DATE,CREATION_DATE Standard Who
+API_CUSTOMERS_PRIMARY.APA_PERMISSION_TO_CALL_IND,APA_PERMISSION_TO_CALL_IND Indicates Applicant address Permission to call
+API_CUSTOMERS_PRIMARY.APA_PERMISSION_TO_TEXT_IND,APA_PERMISSION_TO_TEXT_IND Indicates Applicant address Permission to text
+API_CUSTOMERS_PRIMARY.APE_PERMISSION_TO_CALL_IND,APE_PERMISSION_TO_CALL_IND Indicates Applicant employment Permission to call
+API_CUSTOMERS_PRIMARY.APE_PERMISSION_TO_TEXT_IND,APE_PERMISSION_TO_TEXT_IND Indicates Applicant employment Permission to text
+API_CUSTOMERS_PRIMARY.APL_COMMENTS,APL_COMMENTS Customer Comments
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE,APL_CREDIT_SCORE Archive:Credit score value
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE_RECEIVED_DT,APL_CREDIT_SCORE_RECEIVED_DT Credit score received date.
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SOURCE_CD,APL_CREDIT_SOURCE_CD Reference to Credit source code
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_EXPIRY_DT,APL_CRED_LIMIT_EXPIRY_DT Business applicant credit limit expiry date
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_GRADE_CD,APL_CRED_LIMIT_GRADE_CD Reference key to lookup credit limit grade code 
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_MAX_AMT,APL_CRED_LIMIT_MAX_AMT Stores the maximum credit limit amount
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_MAX_LC_RATE,APL_CRED_LIMIT_MAX_LC_RATE Stores the credit limit maximum Late Charge rate
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_RENEW_DT,APL_CRED_LIMIT_RENEW_DT Business applicant credit limit renew date
+API_CUSTOMERS_PRIMARY.APL_CUS_NBR,APL_CUS_NBR Reference Number for Customer
+API_CUSTOMERS_PRIMARY.APL_DECEASED_DT,APL_DECEASED_DT Deceased date of customer
+API_CUSTOMERS_PRIMARY.APL_INSURANCE_OPT_OUT_IND,APL_INSURANCE_OPT_OUT_IND Applicant Insurance Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_MARKETING_OPT_OUT_IND,APL_MARKETING_OPT_OUT_IND Applicant Marketing Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_PRIVACY_OPT_OUT_IND,APL_PRIVACY_OPT_OUT_IND Indicates if business applicant has opted out to share privacy information
+API_CUSTOMERS_PRIMARY.APL_REASON_CD,APL_REASON_CD Customer Reason code
+API_CUSTOMERS_PRIMARY.APL_REFERENCE_NBR,APL_REFERENCE_NBR Reference Number
+API_CUSTOMERS_PRIMARY.APL_SHARE_CREDIT_INFO_IND,APL_SHARE_CREDIT_INFO_IND Share Credit Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_STOP_CORR_IND,APL_STOP_CORR_IND Indicates if customer correspondence must be stopped
+API_CUSTOMERS_OTHER.APL_APP_ORIG_SYS_XREF,APL_APP_ORIG_SYS_XREF Original system cross reference for application
+API_CUSTOMERS_OTHER.APL_RELATION_TYPE_CD,APL_RELATION_TYPE_CD Relation of applicant such as primary  spouse  secondary  cosigner
+API_CUSTOMERS_OTHER.APL_FIRST_NAME,APL_FIRST_NAME First name of applicant
+API_CUSTOMERS_OTHER.APL_MIDDLE_NAME,APL_MIDDLE_NAME Applicant middle name
+API_CUSTOMERS_OTHER.APL_LAST_NAME,APL_LAST_NAME Applicant last name
+API_CUSTOMERS_OTHER.APL_GENERATION_CD,APL_GENERATION_CD Applicant generation such as Jr  Sr  III
+API_CUSTOMERS_OTHER.APL_SSN,APL_SSN Nine digit Social Security number
+API_CUSTOMERS_OTHER.APL_BIRTH_DT,APL_BIRTH_DT Birth date of applicant
+API_CUSTOMERS_OTHER.APL_GENDER_CD,APL_GENDER_CD Gender of applicant  M=male  F=female
+API_CUSTOMERS_OTHER.APL_LANGUAGE_CD,APL_LANGUAGE_CD Primary language of applicant such as E (English)  S (Spanish)
+API_CUSTOMERS_OTHER.APL_MARITAL_STATUS_CD,APL_MARITAL_STATUS_CD Applicant marital status such as M (Married)  S (Single)
+API_CUSTOMERS_OTHER.APL_EMAIL_ADDRESS1,APL_EMAIL_ADDRESS1 Applicant email address
+API_CUSTOMERS_OTHER.APL_CLASS_TYPE_CD,APL_CLASS_TYPE_CD Applicant class as defined by Company such as employee
+API_CUSTOMERS_OTHER.APL_CRB_ECOA_CD,APL_CRB_ECOA_CD Applicant ECOA code on the liability such as individual  joint contractual liability etc
+API_CUSTOMERS_OTHER.APL_RACE_NATIONAL_ORIGIN_CD,APL_RACE_NATIONAL_ORIGIN_CD Applicant national origin
+API_CUSTOMERS_OTHER.APA_ADDRESS_NBR,APA_ADDRESS_NBR Numeric portion of address location
+API_CUSTOMERS_OTHER.APA_STREET_NAME,APA_STREET_NAME Name of street where address is located
+API_CUSTOMERS_OTHER.APA_APT_STE_NBR,APA_APT_STE_NBR Apartment or suite number of address
+API_CUSTOMERS_OTHER.APA_ADDRESS1,APA_ADDRESS1 First line of address for this location
+API_CUSTOMERS_OTHER.APA_ADDRESS2,APA_ADDRESS2 Second line of address for this location
+API_CUSTOMERS_OTHER.APA_ZIP,APA_ZIP 5 Digit Zip Code of applicant address
+API_CUSTOMERS_OTHER.APA_CITY,APA_CITY City name of address
+API_CUSTOMERS_OTHER.APA_STATE_CD,APA_STATE_CD Name of state where address is located
+API_CUSTOMERS_OTHER.APA_ZIP_EXTN,APA_ZIP_EXTN Last 4 digits of Zip Code of applicant address
+API_CUSTOMERS_OTHER.APA_COUNTRY_CD,APA_COUNTRY_CD Stores country code for OTHERS applicant address
+API_CUSTOMERS_OTHER.APA_PHONE,APA_PHONE The phone number at the address
+API_CUSTOMERS_OTHER.APA_OWNERSHIP_CD,APA_OWNERSHIP_CD Indicates if applicant owns or rents property
+API_CUSTOMERS_OTHER.APA_LOCATION,APA_LOCATION Identifies MSA (metropolitan statistical area) location
+API_CUSTOMERS_OTHER.APA_BLOCK,APA_BLOCK Identifies census tract/block number of address
+API_CUSTOMERS_OTHER.APA_COMMENT,APA_COMMENT Comments about applicant address
+API_CUSTOMERS_OTHER.APE_NAME,APE_NAME Name of employer
+API_CUSTOMERS_OTHER.APE_TITLE,APE_TITLE The actual name of applicant position at employment
+API_CUSTOMERS_OTHER.APE_OCCUPATION_CD,APE_OCCUPATION_CD Occupation of applicant such as professional
+API_CUSTOMERS_OTHER.APE_ADDRESS1,APE_ADDRESS1 First line of address for this location of employment
+API_CUSTOMERS_OTHER.APE_ADDRESS1,APE_ADDRESS1 First line of address for this location of employment
+API_CUSTOMERS_OTHER.APE_ADDRESS2,APE_ADDRESS2 Second line of address for this location of employment
+API_CUSTOMERS_OTHER.APE_ZIP,APE_ZIP 5 Digit Zip Code of employer address
+API_CUSTOMERS_OTHER.APE_CITY,APE_CITY City name of address
+API_CUSTOMERS_OTHER.APE_STATE_CD,APE_STATE_CD State code where employment is located
+API_CUSTOMERS_OTHER.APE_ZIP_EXTN,APE_ZIP_EXTN Last 4 digits of Zip Code of employer address
+API_CUSTOMERS_OTHER.APE_COUNTRY_CD,APE_COUNTRY_CD Stores country code for OTHERS applicant employment address
+API_CUSTOMERS_OTHER.APE_PHONE,APE_PHONE Phone number of employer
+API_CUSTOMERS_OTHER.APE_PHONE_EXTN,APE_PHONE_EXTN Phone number extension of employer
+API_CUSTOMERS_OTHER.APE_COMMENT,APE_COMMENT Comments about applicant address
+API_CUSTOMERS_OTHER.APT_MOBILE_NUMBER,APT_MOBILE_NUMBER The mobile number of the customer(Non Primary)
+API_CUSTOMERS_OTHER.APT_FAX_NUMBER,APT_FAX_NUMBER The fax number of the customer(Non Primary)
+API_CUSTOMERS_OTHER.APT_PAGER_NUMBER,APT_PAGER_NUMBER The pager number of the customer(Non Primary)
+API_CUSTOMERS_OTHER.APL_ETHNIC_CD,APL_ETHNIC_CD Ethnic Code
+API_CUSTOMERS_OTHER.APA_COUNTRY_CD,APA_COUNTRY_CD Stores country code for OTHERS applicant address
+API_CUSTOMERS_OTHER.APE_COUNTRY_CD,APE_COUNTRY_CD Stores country code for OTHERS applicant employment address
+API_CUSTOMERS_OTHER.APE_EMPLOYMENT_TYPE_CD,APE_EMPLOYMENT_TYPE_CD Type of the employment such as full time  part time
+API_CUSTOMERS_OTHER.APE_STREET_NAME,APE_STREET_NAME Street Name
+API_CUSTOMERS_OTHER.APE_APT_STE_NBR,APE_APT_STE_NBR Apartment Number
+API_CUSTOMERS_OTHER.APE_ADDRESS_NBR,APE_ADDRESS_NBR Street number of address for this location
+API_CUSTOMERS_OTHER.APA_STREET_NAME,APA_STREET_NAME Name of street where address is located
+API_CUSTOMERS_OTHER.APA_APT_STE_NBR,APA_APT_STE_NBR Apartment or suite number of address
+API_CUSTOMERS_OTHER.APA_ADDRESS_NBR,APA_ADDRESS_NBR Numeric portion of address location
+API_CUSTOMERS_OTHER.APL_SALUTATION_TYPE_CD,APL_SALUTATION_TYPE_CD Salutation
+API_CUSTOMERS_OTHER.APL_CHRISTIAN_NAME,APL_CHRISTIAN_NAME Applicant Initials
+API_CUSTOMERS_OTHER.APL_MAIDEN_MI_NAME,APL_MAIDEN_MI_NAME Applicant Middle Initial
+API_CUSTOMERS_OTHER.APL_MAIDEN_NAME,APL_MAIDEN_NAME Applicant Maiden Name
+API_CUSTOMERS_OTHER.APL_FULL_NAME,APL_FULL_NAME Applicant Full Name
+API_CUSTOMERS_OTHER.APL_PERMIT_TO_STAY_CD,APL_PERMIT_TO_STAY_CD Permission to Stay in the Country
+API_CUSTOMERS_OTHER.APL_PERMIT_TO_WORK_CD,APL_PERMIT_TO_WORK_CD Permission to Work in the Country
+API_CUSTOMERS_OTHER.APL_SPECIALITY_TYPE_CD,APL_SPECIALITY_TYPE_CD Special Condition for Applicant
+API_CUSTOMERS_OTHER.APL_EXISTING_CIF,APL_EXISTING_CIF Existing applicant CIF
+API_CUSTOMERS_OTHER.APL_PASSPORT_NBR,APL_PASSPORT_NBR Passport number of customer
+API_CUSTOMERS_OTHER.APL_PASSPORT_ISSUE_DT,APL_PASSPORT_ISSUE_DT Passport Issue date of customer
+API_CUSTOMERS_OTHER.APL_PASSPORT_EXPIRY_DT,APL_PASSPORT_EXPIRY_DT Passport expiry date of customer
+API_CUSTOMERS_OTHER.APL_MSG_PREFERENCE,APL_MSG_PREFERENCE Stores the Message reference
+API_CUSTOMERS_OTHER.APL_NATIONAL_ID,APL_NATIONAL_ID National ID of applicant
+API_CUSTOMERS_OTHER.APA_LANDMARK,APA_LANDMARK Landmark near address
+API_CUSTOMERS_OTHER.APA_ADDRESS3,APA_ADDRESS3 Address Line 3
+API_CUSTOMERS_OTHER.APE_DEPARTMENT,APE_DEPARTMENT Stores the department
+API_CUSTOMERS_OTHER.APE_EMPLOYEE_ID,APE_EMPLOYEE_ID Stores the Employee ID
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE1,ALT_FTA_TABLE_ATTRIBUTE1 Name of the unit tracking attribute parameter1
+API_CUSTOMERS_OTHER.ALT_VALUE1,ALT_VALUE1 Value1
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE2,ALT_FTA_TABLE_ATTRIBUTE2 Name of the unit tracking attribute parameter2
+API_CUSTOMERS_OTHER.ALT_VALUE2,ALT_VALUE2 Value2
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE3,ALT_FTA_TABLE_ATTRIBUTE3 Name of the unit tracking attribute parameter3
+API_CUSTOMERS_OTHER.ALT_VALUE3,ALT_VALUE3 Value3
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE4,ALT_FTA_TABLE_ATTRIBUTE4 Name of the unit tracking attribute parameter4
+API_CUSTOMERS_OTHER.ALT_VALUE4,ALT_VALUE4 Value4
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE5,ALT_FTA_TABLE_ATTRIBUTE5 Name of the unit tracking attribute parameter5
+API_CUSTOMERS_OTHER.ALT_VALUE5,ALT_VALUE5 Value5
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE6,ALT_FTA_TABLE_ATTRIBUTE6 Name of the unit tracking attribute parameter6
+API_CUSTOMERS_OTHER.ALT_VALUE6,ALT_VALUE6 Value6
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE7,ALT_FTA_TABLE_ATTRIBUTE7 Name of the unit tracking attribute parameter7
+API_CUSTOMERS_OTHER.ALT_VALUE7,ALT_VALUE7 Value7
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE8,ALT_FTA_TABLE_ATTRIBUTE8 Name of the unit tracking attribute parameter8
+API_CUSTOMERS_OTHER.ALT_VALUE8,ALT_VALUE8 Value8
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE9,ALT_FTA_TABLE_ATTRIBUTE9 Name of the unit tracking attribute parameter9
+API_CUSTOMERS_OTHER.ALT_VALUE9,ALT_VALUE9 Value9
+API_CUSTOMERS_OTHER.ALT_FTA_TABLE_ATTRIBUTE10,ALT_FTA_TABLE_ATTRIBUTE10 Name of the unit tracking attribute parameter10
+API_CUSTOMERS_OTHER.ALT_VALUE10,ALT_VALUE10 Value10
+API_CUSTOMERS_OTHER.APL_VISA_NBR,APL_VISA_NBR Other Applicant visa number
+API_CUSTOMERS_OTHER.APL_NATIONALITY_CD,APL_NATIONALITY_CD Other Applicant nationality code
+API_CUSTOMERS_OTHER.APL_EDUCATION_LEVEL_CD,APL_EDUCATION_LEVEL_CD Other Applicant education level code
+API_CUSTOMERS_OTHER.APA_CONFIRMED_IND,APA_CONFIRMED_IND Indicates if the address is confirmed or not
+API_CUSTOMERS_OTHER.APT_TIME_ZONE_CD,APT_TIME_ZONE_CD  Stores the Timezone of the other customer
+API_CUSTOMERS_OTHER.APL_PA_ADDRESS,APL_PA_ADDRESS Applicant personal address
+API_CUSTOMERS_OTHER.APL_KYC_REF_NBR,APL_KYC_REF_NBR Applicant  know your customer reference number
+API_CUSTOMERS_OTHER.APL_KYC_STATUS_CD,APL_KYC_STATUS_CD Status Code
+API_CUSTOMERS_OTHER.APL_LIAB_NBR,APL_LIAB_NBR Applicant liability number
+API_CUSTOMERS_OTHER.APL_BIRTH_PLACE,APL_BIRTH_PLACE    Birth Place
+API_CUSTOMERS_OTHER.APL_BIRTH_COUNTRY_CD,APL_BIRTH_COUNTRY_CD Birth Country Code
+API_CUSTOMERS_OTHER.APL_US_RES_IND,APL_US_RES_IND Indicates whether the  US Resident   is allowed
+API_CUSTOMERS_OTHER.APL_CUSTOMER_CATEGORY_CD,APL_CUSTOMER_CATEGORY_CD Applicant customer category code
+API_CUSTOMERS_OTHER.APL_PA_ISSUED_IND,APL_PA_ISSUED_IND Indicates whether the payee issued is currently enabled
+API_CUSTOMERS_OTHER.APL_PA_HOLDER_NAME,APL_PA_HOLDER_NAME  Address Holder Name
+API_CUSTOMERS_OTHER.APL_PA_HOLDER_ADR_CNTRY_CD,APL_PA_HOLDER_ADR_CNTRY_CD Country Code
+API_CUSTOMERS_OTHER.APL_PA_HOLDER_NATIONALITY_CD,APL_PA_HOLDER_NATIONALITY_CD Holder Nationality Code
+API_CUSTOMERS_OTHER.APL_PA_HOLDER_PHONE,APL_PA_HOLDER_PHONE Personal  holder phone
+API_CUSTOMERS_OTHER.APA_PHONE_ISD_CD,APA_PHONE_ISD_CD Phone ISD code
+API_CUSTOMERS_OTHER.APE_PHONE_ISD_CD,APE_PHONE_ISD_CD Phone ISD code
+API_CUSTOMERS_OTHER.APL_PA_HOLDER_PHONE_ISD_CD,APL_PA_HOLDER_PHONE_ISD_CD Phone ISD code
+API_CUSTOMERS_OTHER.APT_TELECOM_TYPE_CD,APT_TELECOM_TYPE_CD Telecome type of customer  from lookup code
+API_CUSTOMERS_OTHER.APT_PHONE_ISD_CD,APT_PHONE_ISD_CD Phone Isd Code
+API_CUSTOMERS_OTHER.APT_PHONE_EXTN,APT_PHONE_EXTN Phone Extension of the customer
+API_CUSTOMERS_OTHER.APT_PHONE,APT_PHONE Phone Number of the customer
+API_CUSTOMERS_OTHER.APL_SCRA_IND,APL_SCRA_IND Stores the scra Indicator
+API_CUSTOMERS_OTHER.APL_SCRA_EFFECTIVE_DT,APL_SCRA_EFFECTIVE_DT Stores the scra effective date
+API_CUSTOMERS_OTHER.APL_SCRA_ORDER_REF_NBR,APL_SCRA_ORDER_REF_NBR Stores the scra order reference number
+API_CUSTOMERS_OTHER.APL_SCRA_RELEASED_DT,APL_SCRA_RELEASED_DT Stores the scra released date
+API_CUSTOMERS_OTHER.APE_ACTUAL_PAY_DAY_DT,APE_ACTUAL_PAY_DAY_DT Actual pay day date of the other applicants employment for conversion.
+API_CUSTOMERS_OTHER.APA_CUR_CURRENCY_CODE,APA_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_OTHER.APE_CUR_CURRENCY_CODE,APE_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_OTHER.APE_STATED_PAY_DAY_DT,APE_STATED_PAY_DAY_DT Stated pay date
+API_CUSTOMERS_OTHER.APA_CUR_CURRENCY_CODE,APA_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_OTHER.APE_CUR_CURRENCY_CODE,APE_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_OTHER.APE_STATED_PAY_DAY_DT,APE_STATED_PAY_DAY_DT Stated pay date
+API_CUSTOMERS_OTHER.APL_PAH_HIERARCHY_CODE,APL_PAH_HIERARCHY_CODE Payment Hierarchy Code
+API_CUSTOMERS_OTHER.APL_SKIP_IND,APL_SKIP_IND Indicates if current address for business applicant is not valid
+API_CUSTOMERS_OTHER.APL_SHARE_CREDIT_INFO_IND,APL_SHARE_CREDIT_INFO_IND Share Credit Opt Out Indicator
+API_CUSTOMERS_OTHER.APL_PRIVACY_OPT_OUT_IND,APL_PRIVACY_OPT_OUT_IND Indicates if business applicant has opted out to share privacy information
+API_CUSTOMERS_OTHER.APL_DECEASED_DT,APL_DECEASED_DT Deceased date of customer
+API_CUSTOMERS_OTHER.APL_STOP_CORR_IND,APL_STOP_CORR_IND Indicates if customer correspondence must be stopped
+API_CUSTOMERS_OTHER.APL_UPDATE_CUSTOMER_INFO_IND,APL_UPDATE_CUSTOMER_INFO_IND Customer override indicator
+API_CUSTOMERS_OTHER.APL_COMMENTS,APL_COMMENTS Customer Comments
+API_CUSTOMERS_OTHER.APL_CREDIT_SOURCE_CD,APL_CREDIT_SOURCE_CD Reference to Credit source code
+API_CUSTOMERS_OTHER.APL_CREDIT_SCORE,APL_CREDIT_SCORE Archive:Credit score value
+API_CUSTOMERS_OTHER.APL_REFERENCE_NBR,APL_REFERENCE_NBR Reference Number
+API_CUSTOMERS_OTHER.APL_CREDIT_SCORE_RECEIVED_DT,APL_CREDIT_SCORE_RECEIVED_DT Credit score received date.
+API_CUSTOMERS_OTHER.APL_REASON_CD,APL_REASON_CD Customer Reason code
+API_CUSTOMERS_OTHER.APA_PERMISSION_TO_CALL_IND,APA_PERMISSION_TO_CALL_IND Indicates Applicant address Permission to call
+API_CUSTOMERS_OTHER.APA_PERMISSION_TO_TEXT_IND,APA_PERMISSION_TO_TEXT_IND Indicates Applicant address Permission to text
+API_CUSTOMERS_OTHER.APE_PERMISSION_TO_CALL_IND,APE_PERMISSION_TO_CALL_IND Indicates Applicant employment Permission to call
+API_CUSTOMERS_OTHER.APE_PERMISSION_TO_TEXT_IND,APE_PERMISSION_TO_TEXT_IND Indicates Applicant employment Permission to text
+API_CUSTOMERS_OTHER.APL_COMMENTS,APL_COMMENTS Customer Comments
+API_CUSTOMERS_OTHER.APL_CREDIT_SCORE,APL_CREDIT_SCORE Archive:Credit score value
+API_CUSTOMERS_OTHER.APL_CREDIT_SCORE_RECEIVED_DT,APL_CREDIT_SCORE_RECEIVED_DT Credit score received date.
+API_CUSTOMERS_OTHER.APL_CREDIT_SOURCE_CD,APL_CREDIT_SOURCE_CD Reference to Credit source code
+API_CUSTOMERS_OTHER.APL_CRED_LIMIT_EXPIRY_DT,APL_CRED_LIMIT_EXPIRY_DT Business applicant credit limit expiry date
+API_CUSTOMERS_OTHER.APL_CRED_LIMIT_GRADE_CD,APL_CRED_LIMIT_GRADE_CD Reference key to lookup credit limit grade code 
+API_CUSTOMERS_OTHER.APL_CRED_LIMIT_MAX_AMT,APL_CRED_LIMIT_MAX_AMT Stores the maximum credit limit amount
+API_CUSTOMERS_OTHER.APL_CRED_LIMIT_MAX_LC_RATE,APL_CRED_LIMIT_MAX_LC_RATE Stores the credit limit maximum Late Charge rate
+API_CUSTOMERS_OTHER.APL_CRED_LIMIT_RENEW_DT,APL_CRED_LIMIT_RENEW_DT Business applicant credit limit renew date
+API_CUSTOMERS_OTHER.APL_CUS_NBR,APL_CUS_NBR Reference Number for Customer
+API_CUSTOMERS_OTHER.APL_DECEASED_DT,APL_DECEASED_DT Deceased date of customer
+API_CUSTOMERS_OTHER.APL_INSURANCE_OPT_OUT_IND,APL_INSURANCE_OPT_OUT_IND Applicant Insurance Opt Out Indicator
+API_CUSTOMERS_OTHER.APL_MARKETING_OPT_OUT_IND,APL_MARKETING_OPT_OUT_IND Applicant Marketing Opt Out Indicator
+API_CUSTOMERS_OTHER.APL_PRIVACY_OPT_OUT_IND,APL_PRIVACY_OPT_OUT_IND Indicates if business applicant has opted out to share privacy information
+API_CUSTOMERS_OTHER.APL_REASON_CD,APL_REASON_CD Customer Reason code
+API_CUSTOMERS_OTHER.APL_REFERENCE_NBR,APL_REFERENCE_NBR Reference Number
+API_CUSTOMERS_OTHER.APL_SHARE_CREDIT_INFO_IND,APL_SHARE_CREDIT_INFO_IND Share Credit Opt Out Indicator
+API_CUSTOMERS_OTHER.APL_SHARE_CR_OPT_OUT_IND,APL_SHARE_CR_OPT_OUT_IND Staging :  Share Credit Opt Out Indicator
+API_CUSTOMERS_OTHER.APL_SKIP_IND,APL_SKIP_IND Indicates if current address for business applicant is not valid
+API_CUSTOMERS_OTHER.APL_STOP_CORR_IND,APL_STOP_CORR_IND Indicates if customer correspondence must be stopped
+API_CUSTOMERS_OTHER.APL_UPDATE_CUSTOMER_INFO_IND,APL_UPDATE_CUSTOMER_INFO_IND Customer override indicator
+API_CUSTOMERS_OTHER.APL_UTILIZATION_PERC,APL_UTILIZATION_PERC Stores the applicant credit limit utilization percentage
+API_CUSTOMERS_OTHER.APT_PERMISSION_TO_CALL_IND,APT_PERMISSION_TO_CALL_IND Indicates Applicant telecom Permission to call
+API_CUSTOMERS_OTHER.APT_PERMISSION_TO_TEXT_IND,APT_PERMISSION_TO_TEXT_IND Indicates Applicant telecom Permission to text
+API_CUSTOMERS_OTHER.CREATED_BY,CREATED_BY Standard Who
+API_CUSTOMERS_OTHER.CREATION_DATE,CREATION_DATE Standard Who
+API_ASSETS.ASE_APP_ORIG_SYS_XREF,ASE_APP_ORIG_SYS_XREF Reference key to asset/collateral of legacy system
+API_ASSETS.ASE_CONDITION_CD,ASE_CONDITION_CD The condition of the asset  such as Excellent  Good  Poor
+API_ASSETS.AVL_VALUATION_SOURCE_CD,AVL_VALUATION_SOURCE_CD Source of the valuation  such as NADN - NADA New  BRKR - Broker on which this valuation is based
+API_ASSETS.ATA_VALUE5,ATA_VALUE5 The value of the asset tracking attribute 5
+API_ASSETS.ATR_AAT_TYPE5,ATR_AAT_TYPE5 Reference key to the asset attribute type 5
+API_ASSETS.AVL_ADDONS_VAL,AVL_ADDONS_VAL Valuation of the addons that are with the asset
+API_ASSETS.ATA_FTA_TABLE_ATTRIBUTE5,ATA_FTA_TABLE_ATTRIBUTE5 Name of the asset tracking attribute parameter 5
+API_ASSETS.ASE_LOT,ASE_LOT The asset lot number
+API_ASSETS.AVL_CURRENCY_USAGE_VAL,AVL_CURRENCY_USAGE_VAL Currency usage value
+API_ASSETS.ASE_PRIMARY_IND,ASE_PRIMARY_IND Indicator specifying whether the asset is the primary asset or not
+API_ASSETS.ASE_ASSET_CLASS_CD,ASE_ASSET_CLASS_CD The asset class  such as New  Used
+API_ASSETS.ASE_AST_TYPE,ASE_AST_TYPE The type of the asset  such as Vehicle  Home  Goods
+API_ASSETS.ASE_ASB_TYPE,ASE_ASB_TYPE The sub type of the asset  such as Car  Single_Fam  Gen_Equipment
+API_ASSETS.ASE_IDENTIFICATION_NBR,ASE_IDENTIFICATION_NBR The unique identification number for the asset for example  VIN for a vehicle
+API_ASSETS.ASE_REGISTRATION_NBR,ASE_REGISTRATION_NBR The registration number of the asset
+API_ASSETS.ASE_ASSET_STATUS_CD,ASE_ASSET_STATUS_CD The status of the asset  such as Active  New  Undefined
+API_ASSETS.ASE_YEAR,ASE_YEAR The calendar year in which the asset was created
+API_ASSETS.ASE_MAKE,ASE_MAKE The make of the asset  such as Mercedes  Volvo
+API_ASSETS.ASE_MODEL,ASE_MODEL The model of the asset  such as Camry  Jetta
+API_ASSETS.ASE_BODY,ASE_BODY The asset body type such as 2-door  4-door
+API_ASSETS.ASE_ADDRESS1,ASE_ADDRESS1 Address line 1 of the asset
+API_ASSETS.ASE_ADDRESS2,ASE_ADDRESS2 Address line 2 of the asset
+API_ASSETS.ASE_ZIP,ASE_ZIP The zip code component of the asset address
+API_ASSETS.ASE_CITY,ASE_CITY The city component of the asset address
+API_ASSETS.ASE_STATE_CD,ASE_STATE_CD State component of the asset address  such as MN - Minnesota  IA - Iowa
+API_ASSETS.ASE_ZIP_EXTN,ASE_ZIP_EXTN The zip code extension component of the asset address
+API_ASSETS.ASE_COUNTRY_CD,ASE_COUNTRY_CD The country of the asset address
+API_ASSETS.ASE_COUNTY_CD,ASE_COUNTY_CD The county portion of the asset address
+API_ASSETS.ASE_USAGE_START,ASE_USAGE_START The starting usage figure for the asset
+API_ASSETS.ASE_USAGE_BASE,ASE_USAGE_BASE The base amount of usage for the asset
+API_ASSETS.ASE_USAGE_EXTRA,ASE_USAGE_EXTRA The amount of extra usage of the asset
+API_ASSETS.ASE_USAGE_TOTAL,ASE_USAGE_TOTAL The total usage of the asset
+API_ASSETS.ASE_USAGE_CHARGE,ASE_USAGE_CHARGE Rate of charge (US $) per usage unit of the asset
+API_ASSETS.AVL_VALUATION_DT,AVL_VALUATION_DT Date on which this valuation was carried out
+API_ASSETS.AVL_VALUATION_EDITION,AVL_VALUATION_EDITION Edition of the valuation source on which this valuation is based
+API_ASSETS.AVL_VALUATION_SUPPLEMENT,AVL_VALUATION_SUPPLEMENT Supplement of the valuation source on which this valuation is based
+API_ASSETS.AVL_USAGE,AVL_USAGE The number of usage units accrued on the asset at the time of valuation
+API_ASSETS.AVL_RETAIL_VAL,AVL_RETAIL_VAL Retail valuation for the asset
+API_ASSETS.AVL_WHOLESALE_VAL,AVL_WHOLESALE_VAL Wholesale valuation of the asset
+API_ASSETS.AVL_USAGE_VAL,AVL_USAGE_VAL The monetary value of the accrued usage units at the time of valuation
+API_ASSETS.AVL_ADDONS_VAL,AVL_ADDONS_VAL Valuation of the addons that are with the asset
+API_ASSETS.ATA_FTA_TABLE_ATTRIBUTE1,ATA_FTA_TABLE_ATTRIBUTE1 Name of the asset tracking attribute parameter 1
+API_ASSETS.ATA_VALUE1,ATA_VALUE1 The value of the asset tracking attribute 1
+API_ASSETS.ATA_FTA_TABLE_ATTRIBUTE2,ATA_FTA_TABLE_ATTRIBUTE2 Name of the asset tracking attribute parameter 2
+API_ASSETS.ATA_VALUE2,ATA_VALUE2 The value of the asset tracking attribute 2
+API_ASSETS.ATA_FTA_TABLE_ATTRIBUTE3,ATA_FTA_TABLE_ATTRIBUTE3 Name of the asset tracking attribute parameter 3
+API_ASSETS.ATA_VALUE3,ATA_VALUE3 The value of the asset tracking attribute 3
+API_ASSETS.ATA_FTA_TABLE_ATTRIBUTE4,ATA_FTA_TABLE_ATTRIBUTE4 Name of the asset tracking attribute parameter 4
+API_ASSETS.ATA_VALUE4,ATA_VALUE4 The value of the asset tracking attribute 4
+API_ASSETS.ATA_FTA_TABLE_ATTRIBUTE5,ATA_FTA_TABLE_ATTRIBUTE5 Name of the asset tracking attribute parameter 5
+API_ASSETS.ATR_AAT_TYPE1,ATR_AAT_TYPE1 Reference key to the asset attribute type 1
+API_ASSETS.ATR_VALUE1,ATR_VALUE1 The value of the asset attribute 1
+API_ASSETS.ATR_AAT_TYPE2,ATR_AAT_TYPE2 Reference key to the asset attribute type 2
+API_ASSETS.ATR_VALUE2,ATR_VALUE2 The value of the asset attribute 2
+API_ASSETS.ATR_AAT_TYPE3,ATR_AAT_TYPE3 Reference key to the asset attribute type 3
+API_ASSETS.ATR_VALUE3,ATR_VALUE3 The value of the asset attribute 3
+API_ASSETS.ATR_AAT_TYPE4,ATR_AAT_TYPE4 Reference key to the asset attribute type 4
+API_ASSETS.ATR_VALUE4,ATR_VALUE4 The value of the asset attribute 4
+API_ASSETS.ATR_VALUE5,ATR_VALUE5 The value of the asset attribute 5
+API_ASSETS.ATR_AAT_DESC1,ATR_AAT_DESC1 Stores description for attribute #1 and it is used for converting accounts from other system
+API_ASSETS.ATR_AAT_DESC2,ATR_AAT_DESC2 Stores description for attribute #2 and it is used for converting accounts from other system
+API_ASSETS.ATR_AAT_DESC3,ATR_AAT_DESC3 Stores description for attribute #3 and it is used for converting accounts from other system
+API_ASSETS.ATR_AAT_DESC4,ATR_AAT_DESC4 Stores description for attribute #4 and it is used for converting accounts from other system
+API_ASSETS.ATR_AAT_DESC5,ATR_AAT_DESC5 Stores description for attribute #5 and it is used for converting accounts from other system
+API_ASSETS.ASE_COUNTRY_CD,ASE_COUNTRY_CD The country of the asset address
+API_ASSETS.ASE_REPO_FORC_TYPE_CD,ASE_REPO_FORC_TYPE_CD Repo-Foreclosure type
+API_ASSETS.ASE_REPO_FORC_DISPOSITION_CD,ASE_REPO_FORC_DISPOSITION_CD Repo-Foreclosure disposition code
+API_ASSETS.ASE_REPO_FORC_DT,ASE_REPO_FORC_DT Repo-Foreclosure start date
+API_ASSETS.ASE_REPO_FORC_FILE_RCVD_DT,ASE_REPO_FORC_FILE_RCVD_DT Repo-Foreclosure file received date
+API_ASSETS.ASE_REPO_FORC_END_DT,ASE_REPO_FORC_END_DT Repo-Foreclosure end date
+API_ASSETS.ASE_REPO_FORC_COMMENT,ASE_REPO_FORC_COMMENT Repo-Foreclosure comment
+API_ASSETS.ASE_LEGAL_DESC,ASE_LEGAL_DESC The asset legal description
+API_ASSETS.ASE_LOT,ASE_LOT The asset lot number
+API_ASSETS.ASE_SUB_DIVISION,ASE_SUB_DIVISION The asset sub division
+API_ASSETS.ASE_PARCEL_ID_NBR,ASE_PARCEL_ID_NBR The asset parcel identification number
+API_ASSETS.ASE_METE_BONDS_IND,ASE_METE_BONDS_IND Indicates if asset is on a land where surveyed with the Metes and Bounds surveying system
+API_ASSETS.ASE_FLOOD_ZONE_IND,ASE_FLOOD_ZONE_IND Identifies if asset is in flood zone
+API_ASSETS.ASE_AGREEMENT_TYPE_CD,ASE_AGREEMENT_TYPE_CD Agreement type Code - Usage/Rental/Undefined.
+API_ASSETS.ASE_AGREEMENT_TYPE_CD,ASE_AGREEMENT_TYPE_CD Agreement type Code - Usage/Rental/Undefined.
+API_ASSETS.ASE_ASSOCIATION_CD,ASE_ASSOCIATION_CD Association code
+API_ASSETS.ASE_BILLING_IND,ASE_BILLING_IND Billing Indicator
+API_ASSETS.ASE_BILLING_POINTS,ASE_BILLING_POINTS Billing points
+API_ASSETS.ASE_BUILDING_CD,ASE_BUILDING_CD Building code
+API_ASSETS.ASE_CLUB_IND,ASE_CLUB_IND Club Indicator
+API_ASSETS.ASE_CLUB_NAME_CD,ASE_CLUB_NAME_CD Club name code
+API_ASSETS.ASE_DUE_AMT_ACCOUNT_TYPE_CD,ASE_DUE_AMT_ACCOUNT_TYPE_CD Due Amount account tye code
+API_ASSETS.ASE_EXPIRED_IND,ASE_EXPIRED_IND Expired Indicator
+API_ASSETS.ASE_EXPIRY_DT,ASE_EXPIRY_DT Expiry date
+API_ASSETS.ASE_GRAND_FATHER_POINTS,ASE_GRAND_FATHER_POINTS Grandfather points
+API_ASSETS.ASE_INVENTORY_SITE_CD,ASE_INVENTORY_SITE_CD Inventory site code
+API_ASSETS.ASE_MASTER_CONS_POINT_IND,ASE_MASTER_CONS_POINT_IND Indicator to consolidate points at master account level
+API_ASSETS.ASE_MEMBERSHIP_1_IND,ASE_MEMBERSHIP_1_IND Membership 1 Indicator
+API_ASSETS.ASE_MEMBERSHIP_2_IND,ASE_MEMBERSHIP_2_IND Membership 2 Indicator
+API_ASSETS.ASE_MEMBERSHIP_3_IND,ASE_MEMBERSHIP_3_IND Membership 3 Indicator
+API_ASSETS.ASE_MEMBERSHIP_4_IND,ASE_MEMBERSHIP_4_IND Membership 4 Indicator
+API_ASSETS.ASE_MEMBERSHIP_5_IND,ASE_MEMBERSHIP_5_IND Membership 5 Indicator
+API_ASSETS.ASE_OTHER_ATR_10_DT,ASE_OTHER_ATR_10_DT Other attribute 10 date
+API_ASSETS.ASE_OTHER_ATR_1_CD,ASE_OTHER_ATR_1_CD Other attribute 1 code
+API_ASSETS.ASE_OTHER_ATR_2_CD,ASE_OTHER_ATR_2_CD Other attribute 2 code
+API_ASSETS.ASE_OTHER_ATR_3_CD,ASE_OTHER_ATR_3_CD Other attribute 3 code
+API_ASSETS.ASE_OTHER_ATR_4_CD,ASE_OTHER_ATR_4_CD Other attribute 4 code
+API_ASSETS.ASE_OTHER_ATR_5_CD,ASE_OTHER_ATR_5_CD Other attribute 5 code
+API_ASSETS.ASE_OTHER_ATR_6_DT,ASE_OTHER_ATR_6_DT Other attribute 6 date
+API_ASSETS.ASE_OTHER_ATR_7_DT,ASE_OTHER_ATR_7_DT Other attribute 7 date
+API_ASSETS.ASE_OTHER_ATR_8_DT,ASE_OTHER_ATR_8_DT Other attribute 8 date
+API_ASSETS.ASE_OTHER_ATR_9_DT,ASE_OTHER_ATR_9_DT Other attribute 9 date
+API_ASSETS.ASE_PHASE_NBR_CD,ASE_PHASE_NBR_CD Phase number code
+API_ASSETS.ASE_PLUS_MEMBERSHIP_TYPE_IND,ASE_PLUS_MEMBERSHIP_TYPE_IND Plus membership type indicator
+API_ASSETS.ASE_POINTS,ASE_POINTS Points
+API_ASSETS.ASE_POINT_CONS_TYPE_CD,ASE_POINT_CONS_TYPE_CD Points consolidate type code
+API_ASSETS.ASE_PRORATION_POINTS_IND,ASE_PRORATION_POINTS_IND Proration points Indicator
+API_ASSETS.ASE_PR_MARKING_IND,ASE_PR_MARKING_IND PR marking Indicator
+API_ASSETS.ASE_RESALE_IND,ASE_RESALE_IND Resale Indicator
+API_ASSETS.ASE_RESORT_CD,ASE_RESORT_CD Resort code
+API_ASSETS.ASE_SIGN_GRAND_FATHER_IND,ASE_SIGN_GRAND_FATHER_IND Sign grandfather Indicator
+API_ASSETS.ASE_SUBSTITUTION_IND,ASE_SUBSTITUTION_IND Indicator specifying whether the asset is a substitute for a previous asset
+API_ASSETS.ASE_TRADE_ELGIBLE_IND,ASE_TRADE_ELGIBLE_IND Trade eligible Indicator
+API_ASSETS.ASE_TRAVEL_DT,ASE_TRAVEL_DT Travel date
+API_ASSETS.ASE_UNIT_CD,ASE_UNIT_CD Unit code
+API_ASSETS.ASE_UNIT_TYPE_CD,ASE_UNIT_TYPE_CD Unit type code
+API_ASSETS.ASE_USAGE_START_DT,ASE_USAGE_START_DT Usage start date
+API_ASSETS.ASE_USAGE_TYPE_CD,ASE_USAGE_TYPE_CD Usage type code
+API_ASSETS.ASE_WEEK_CD,ASE_WEEK_CD Week code
+API_ASSETS.ASE_BASE_RENT_AMT,ASE_BASE_RENT_AMT Base Rental Amount calculated in origination
+API_ASSETS.ASE_CHARGE_CALC_METHOD_CD,ASE_CHARGE_CALC_METHOD_CD Charge caluclation method code for Tiered / Non Tiered.
+API_ASSETS.ASE_DISCOUNT_AMT,ASE_DISCOUNT_AMT Discount Amount applicable for Rental Billing
+API_ASSETS.ASE_DISCOUNT_PER,ASE_DISCOUNT_PER Discount Percentage
+API_ASSETS.ASE_ELASTIC_TERM_CAL_METHOD_CD,ASE_ELASTIC_TERM_CAL_METHOD_CD Number of term by which the total units will be elapsed.
+API_ASSETS.ASE_ELASTIC_USAGE_TERM,ASE_ELASTIC_USAGE_TERM Number of term by which the total units will be elapsed.
+API_ASSETS.ASE_ESTIMATED_LIFE,ASE_ESTIMATED_LIFE Contains Estimated life of an Asset.
+API_ASSETS.ASE_EXCESS_RENT_COL_METHOD_CD,ASE_EXCESS_RENT_COL_METHOD_CD Excess rent colculation method code for Actual/Average.
+API_ASSETS.ASE_MAX_USAGE,ASE_MAX_USAGE Maximum units allowed per cycle.
+API_ASSETS.ASE_MIN_USAGE,ASE_MIN_USAGE Minimum Usage
+API_ASSETS.ASE_RESET_FREQUENCY,ASE_RESET_FREQUENCY Rollover/Advance units will expire at this frequency.
+API_ASSETS.ASE_SECURITY_DEPOSIT_AMT,ASE_SECURITY_DEPOSIT_AMT Security deposite amount for Rental.
+API_ASSETS.ASE_TERM_MAX_UNITS,ASE_TERM_MAX_UNITS Maximum units per term autocalculated value based on usage cycle and max units per cycle.
+API_ASSETS.ASE_USAGE_BILL_CYCLE_CD,ASE_USAGE_BILL_CYCLE_CD Frequency code at which usage bill has be calculated.
+API_ASSETS.ASE_USAGE_BILL_DT_LAST,ASE_USAGE_BILL_DT_LAST Usage bill last run date
+API_ASSETS.ASE_USAGE_BILL_DT_NEXT,ASE_USAGE_BILL_DT_NEXT Next billing date for usage
+API_ASSETS.ASE_USAGE_FEED_PATTERN_CD,ASE_USAGE_FEED_PATTERN_CD Usage feed pattern code for Actual/Incremental
+API_ASSETS.ASE_USAGE_METHOD_CD,ASE_USAGE_METHOD_CD Usage method code for Usage/Rental
+API_ASSETS.CREATED_BY,CREATED_BY Standard Who
+API_ASSETS.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE6,ACT_FTA_TABLE_ATTRIBUTE6 Name of the account tracking attribute parameter 6
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE7,ACT_FTA_TABLE_ATTRIBUTE7 Name of the account tracking attribute parameter 7
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE8,ACT_FTA_TABLE_ATTRIBUTE8 Name of the account tracking attribute parameter 8
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE9,ACT_FTA_TABLE_ATTRIBUTE9 Name of the account tracking attribute parameter 9
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE10,ACT_FTA_TABLE_ATTRIBUTE10 Name of the account tracking attribute parameter 10
+API_ACCOUNTS.ACT_VALUE1,ACT_VALUE1 Value of the account tracking attribute 1
+API_ACCOUNTS.ACT_VALUE2,ACT_VALUE2 Value of the account tracking attribute 2
+API_ACCOUNTS.ACT_VALUE3,ACT_VALUE3 Value of the account tracking attribute 3
+API_ACCOUNTS.ACT_VALUE4,ACT_VALUE4 Value of the account tracking attribute 4
+API_ACCOUNTS.ACT_VALUE5,ACT_VALUE5 Value of the account tracking attribute 5
+API_ACCOUNTS.ACT_VALUE6,ACT_VALUE6 Value of the account tracking attribute 6
+API_ACCOUNTS.ACT_VALUE7,ACT_VALUE7 Value of the account tracking attribute 7
+API_ACCOUNTS.ACT_VALUE8,ACT_VALUE8 Value of the account tracking attribute 8
+API_ACCOUNTS.ACT_VALUE9,ACT_VALUE9 Value of the account tracking attribute 9
+API_ACCOUNTS.ACT_VALUE10,ACT_VALUE10 Value of the account tracking attribute 10
+API_ACCOUNTS.ACC_ESC_REQUIRED_IND_CUR,ACC_ESC_REQUIRED_IND_CUR Indicates if escrow is allowed for the account (current)
+API_ACCOUNTS.ACC_ESC_OPT_OUT_IND_CUR,ACC_ESC_OPT_OUT_IND_CUR Indicates whether escrow is opted out (current)
+API_ACCOUNTS.ACC_ESC_ANALYSIS_RUN_DT_NEXT,ACC_ESC_ANALYSIS_RUN_DT_NEXT The latest date on which escrow analysis was done for the account
+API_ACCOUNTS.ACC_ESC_PMT_AMT_CUR,ACC_ESC_PMT_AMT_CUR Escrow payment amount (current)
+API_ACCOUNTS.ACC_DUE_ESC_AMT,ACC_DUE_ESC_AMT The escrow amount due for the account
+API_ACCOUNTS.ACC_ESC_AMT_PD,ACC_ESC_AMT_PD Total escrow amount paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT1,ACC_ESC_DUE_AMT1 Escrow Due amount 1 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT2,ACC_ESC_DUE_AMT2 Escrow Due amount 2 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT3,ACC_ESC_DUE_AMT3 Escrow Due amount 3 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT4,ACC_ESC_DUE_AMT4 Escrow Due amount 4 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT5,ACC_ESC_DUE_AMT5 Escrow Due amount 5 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD1,ACC_ESC_DUE_AMT_PD1 Escrow Due amount 1 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD2,ACC_ESC_DUE_AMT_PD2 Escrow Due amount 2 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD3,ACC_ESC_DUE_AMT_PD3 Escrow Due amount 3 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD4,ACC_ESC_DUE_AMT_PD4 Escrow Due amount 4 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD5,ACC_ESC_DUE_AMT_PD5 Escrow Due amount 5 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD_EXCESS,ACC_ESC_DUE_AMT_PD_EXCESS Total escrow amount paid against future due dates
+API_ACCOUNTS.ACC_ESC_BAL_OPEN,ACC_ESC_BAL_OPEN Opening escrow balance (ITD)
+API_ACCOUNTS.ACC_ESC_BAL,ACC_ESC_BAL Current posted escrow balance for the account
+API_ACCOUNTS.ACC_ESC_BAL_PD,ACC_ESC_BAL_PD Escrow balance paid (ITD)
+API_ACCOUNTS.ACC_ESC_BAL_ADJUST_PLUS,ACC_ESC_BAL_ADJUST_PLUS Positive adjustment escrow balance (ITD)
+API_ACCOUNTS.ACC_ESC_BAL_ADJUST_MINUS,ACC_ESC_BAL_ADJUST_MINUS Negative adjustment escrow balance (ITD)
+API_ACCOUNTS.ACC_NON_PERFORM_IND,ACC_NON_PERFORM_IND Indicates whether account is in non-performing state
+API_ACCOUNTS.ACC_NON_PERFORM_TYPE_CD,ACC_NON_PERFORM_TYPE_CD Reference key to lookup Non-Performance types such as non-accrual  etc
+API_ACCOUNTS.ACC_NON_PERFORM_INT_REBATE,ACC_NON_PERFORM_INT_REBATE Interest rebate computed when account gets into non-performing state
+API_ACCOUNTS.ACC_PROM_END_DT,ACC_PROM_END_DT The date on which promotion ends
+API_ACCOUNTS.ACC_PROM_PERIOD_TYPE_CD,ACC_PROM_PERIOD_TYPE_CD Promotion period type
+API_ACCOUNTS.ACC_PROM_TOLERANCE_AMT,ACC_PROM_TOLERANCE_AMT Promotion tolerance amount checked against outstanding balance for promotion benefits
+API_ACCOUNTS.ACC_FINAL_PMT_AMT,ACC_FINAL_PMT_AMT Final payment amount
+API_ACCOUNTS.ACC_ADV_DRAW_END_DT,ACC_ADV_DRAW_END_DT The end date to draw advance for stage funded loans
+API_ACCOUNTS.ACC_COUPON_FIRST_PMT_DT_CUR,ACC_COUPON_FIRST_PMT_DT_CUR The date on which first payment is expected on the re-ordered coupon book (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_NOS_CUR,ACC_COUPON_NOS_CUR Number of coupons for order (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_ORDER_BY_CUR,ACC_COUPON_ORDER_BY_CUR Identifies coupon ordered by (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_ORDER_IND_CUR,ACC_COUPON_ORDER_IND_CUR Indicates whether the coupon has been re-ordered (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_START_NO_CUR,ACC_COUPON_START_NO_CUR The starting number of the coupon (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_STATE_CD,ACC_STATE_CD Reference key to lookup state code and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_RSC_METHOD_CD,ACC_RATE_CHG_RSC_METHOD_CD Reference key to lookup Rate Change Reschedule Method and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_RSC_VALUE,ACC_RATE_CHG_RSC_VALUE The percentage value to be used to change the payment amount when rate changes on account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_OCCURANCES_MAX,ACC_RATE_CHG_OCCURANCES_MAX The maximum number of rate change occurrences for the particular rate adjustment frequency and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_FLEXIBLE_REPAYMENT_IND,ACC_FLEXIBLE_REPAYMENT_IND Indicates Flexible Repayment option is allowed or not and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_REPAYMENT_TYPE_CD,ACC_REPAYMENT_TYPE_CD Reference key to lookup account repayment type and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_LOSS_RESERVE_PRO_IND,ACC_LOSS_RESERVE_PRO_IND Indicates if account has contributed to dealer loss reserve and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_PRODUCER_HOLDBACK_AMT,ACC_PRODUCER_HOLDBACK_AMT Stores the amount held back from dealer proceed on that account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_PROM_CANCEL_DLQ_DAYS,ACC_PROM_CANCEL_DLQ_DAYS Stores the delinquency days after which the promotion is cancelled automatically and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_CRB_ACC_STATUS_CD,ACC_CRB_ACC_STATUS_CD Reference key to lookup credit bureau account status
+API_ACCOUNTS.ACC_RECURRING_CRD_PMT_IND,ACC_RECURRING_CRD_PMT_IND Recurring Credit Payment Indicator
+API_ACCOUNTS.ACC_RECURRING_CRD_PMT_AMT,ACC_RECURRING_CRD_PMT_AMT Recurring Credit Payment Amount
+API_ACCOUNTS.ACC_CRD_START_DT,ACC_CRD_START_DT Account Credit Start Date
+API_ACCOUNTS.ACC_IN_PROMOTION_IND,ACC_IN_PROMOTION_IND Indicates whether or not the account is in promotion and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_INT_AMT_ESTIMATED_CUR,ACC_INT_AMT_ESTIMATED_CUR Total current interest estimated amount for pre-compute loans and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_INDEX_RATE_ROUND_FACTOR_CD,ACC_INDEX_RATE_ROUND_FACTOR_CD Reference key to lookup index rate round factor
+API_ACCOUNTS.ACC_COLLECT_INTEREST_IND,ACC_COLLECT_INTEREST_IND Indicates whether the interest has to be collected or not
+API_ACCOUNTS.ACC_BOOK_NO,ACC_BOOK_NO Account Book Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_PAGE_NBR,ACC_PAGE_NBR Account Page Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEEDING_PAGE_NO,ACC_DEEDING_PAGE_NO Account Deeding Page Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEEDING_BOOK_NO,ACC_DEEDING_BOOK_NO Account Deeding Book Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEEDING_TRANSMITTAL_NO,ACC_DEEDING_TRANSMITTAL_NO Stores the Deeding Transmittal Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_MRTG_RECORDING_DT,ACC_MRTG_RECORDING_DT Stores the Mortgage Recording Date and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEED_RECORDING_DT,ACC_DEED_RECORDING_DT Stores the Deed Recording Date and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEED_INPUT_DT,ACC_DEED_INPUT_DT Stores the Deed Input Date and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_NOTE_TRANSMITTAL_NO,ACC_NOTE_TRANSMITTAL_NO Stores the Note Transmittal Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_CNCL_CSHOT_TRANSMITTAL_NBR,ACC_CNCL_CSHOT_TRANSMITTAL_NBR Cancel/Cashout Transmittal Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_OCCURANCES,ACC_RATE_CHG_OCCURANCES The number of times rate change has occurred for the particular rate adjustment frequency on account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_PERIOD,ACC_RATE_CHG_PERIOD Stores the time or period between subsequent rate change based on rate adjustment frequency on account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_FREQ_TYPE_CD,ACC_RATE_CHG_FREQ_TYPE_CD Reference key to lookup rate change frequency type such as MONTHLY QUARTERLY etc and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_EFFECTIVE_CUR,ACC_RATE_EFFECTIVE_CUR Stores the current effective rate
+API_ACCOUNTS.ACC_MRATE_EFFECTIVE_CUR,ACC_MRATE_EFFECTIVE_CUR Stores the current effective margin rate
+API_ACCOUNTS.ACC_INDEX_RATE_EFFECTIVE_CUR,ACC_INDEX_RATE_EFFECTIVE_CUR Stores the current effective index rate
+API_ACCOUNTS.ACC_TIME_ZONE_CD,ACC_TIME_ZONE_CD Stores the Time Zone Code. This is used for Conversion of data from other system
+API_ACCOUNTS.ACC_TOTAL_DISCOUNT_RATE,ACC_TOTAL_DISCOUNT_RATE Stores the Total Discount Rate. This is used for Conversion of data from other system
+API_ACCOUNTS.ACC_REPMT_FIXED_PRINCIPAL_AMT,ACC_REPMT_FIXED_PRINCIPAL_AMT Stores Principal Amount calculated
+API_ACCOUNTS.ACC_EXTEND_BALLOON_TERM_MAX,ACC_EXTEND_BALLOON_TERM_MAX Stores the maximum Extendable Balloon term
+API_ACCOUNTS.ACC_LOAN_CUR_CURRENCY_CODE,ACC_LOAN_CUR_CURRENCY_CODE Reference key to Currency  Loan Currency
+API_ACCOUNTS.ACC_RPMT_CUR_CURRENCY_CODE_CUR,ACC_RPMT_CUR_CURRENCY_CODE_CUR Reference key to Currency  Repayment Currency (Current)
+API_ACCOUNTS.ACC_AMT_PD_IN_EXCESS,ACC_AMT_PD_IN_EXCESS Stores information on Amount paid in Excess
+API_ACCOUNTS.ACC_ACH_FEE_IND,ACC_ACH_FEE_IND ACH fee indicator
+API_ACCOUNTS.ACC_PMT_MAX_INCREASE_YEAR,ACC_PMT_MAX_INCREASE_YEAR Payment max increase year
+API_ACCOUNTS.ACC_PMT_MAX_INCREASE_LIFE,ACC_PMT_MAX_INCREASE_LIFE Payment max increase life
+API_ACCOUNTS.ACC_PMT_START_OF_YEAR,ACC_PMT_START_OF_YEAR Payment start of the year
+API_ACCOUNTS.ACC_AAG_START_DT,ACC_AAG_START_DT Plan arrangement start date
+API_ACCOUNTS.ACC_AAG_END_DT,ACC_AAG_END_DT Plan arrangement end date
+API_ACCOUNTS.ACC_AAG_IND,ACC_AAG_IND Plan arrangement indicator
+API_ACCOUNTS.ACC_SIGNING_DT,ACC_SIGNING_DT Account signing date
+API_ACCOUNTS.ACC_PROBABLE_DELIVERY_DT,ACC_PROBABLE_DELIVERY_DT Accounts probable delivery date
+API_ACCOUNTS.ACC_RENTAL_FEE,ACC_RENTAL_FEE Rental fee
+API_ACCOUNTS.ACC_RESIDUAL_DAYS,ACC_RESIDUAL_DAYS Residual days
+API_ACCOUNTS.ACC_PROM_PROFIT_RATE,ACC_PROM_PROFIT_RATE Promotional profit rate
+API_ACCOUNTS.ACC_STOP_ACCRUAL_DAYS,ACC_STOP_ACCRUAL_DAYS Stop Accrual Days for accounts
+API_ACCOUNTS.ACC_LIAB_NBR,ACC_LIAB_NBR Liability number for accounts
+API_ACCOUNTS.ACC_POOL_CODE,ACC_POOL_CODE Pool code for the account
+API_ACCOUNTS.ACC_LINE_CODE,ACC_LINE_CODE The   line code for accounts
+API_ACCOUNTS.ACC_LINE_SERIAL_NO,ACC_LINE_SERIAL_NO Line Serial Number for accounts
+API_ACCOUNTS.ACC_UTILIZATION_REF_NBR,ACC_UTILIZATION_REF_NBR Utilization Reference number  for  account
+API_ACCOUNTS.ACC_DIRECT_DISB_MODE_CD,ACC_DIRECT_DISB_MODE_CD Reference key to lookup  account  direct disbursement mode code for accounts
+API_ACCOUNTS.ACC_DIRECT_DISB_CASA_ACC_NBR,ACC_DIRECT_DISB_CASA_ACC_NBR Direct disbursement casa  account number for accounts
+API_ACCOUNTS.ACC_SUBUNIT_CD,ACC_SUBUNIT_CD Stores the Sale transfer Sub Unit Code
+API_ACCOUNTS.ACC_SCRA_IND,ACC_SCRA_IND Stores the SCRA indicator
+API_ACCOUNTS.ACC_RATE_LAST,ACC_RATE_LAST Stores the last rate
+API_ACCOUNTS.ACC_CRB_FULL_PMT_HISTORY,ACC_CRB_FULL_PMT_HISTORY Complete credit bureau payment rating history
+API_ACCOUNTS.ACC_RAT_RUN_DT_NEXT,ACC_RAT_RUN_DT_NEXT Next run date of rate change processing
+API_ACCOUNTS.ACC_RATE_START_OF_YEAR,ACC_RATE_START_OF_YEAR Rate at the beginning of the year
+API_ACCOUNTS.ACC_CHGOFF_AMT,ACC_CHGOFF_AMT Total charged off amount
+API_ACCOUNTS.ACC_DDT_RUN_DT_LAST,ACC_DDT_RUN_DT_LAST Effective date of last billing date
+API_ACCOUNTS.ACC_CRB_FIRST_DLQ_DT,ACC_CRB_FIRST_DLQ_DT Date on which the account went delinquent for the first time
+API_ACCOUNTS.ACC_CLOSE_DT,ACC_CLOSE_DT Date on which account was closed
+API_ACCOUNTS.ACC_OPEN_IND,ACC_OPEN_IND Indicates whether the account is open or closed
+API_ACCOUNTS.ACC_INDEX_RATE,ACC_INDEX_RATE Index rate(Original)
+API_ACCOUNTS.ACC_MRATE,ACC_MRATE Margin rate(Original)
+API_ACCOUNTS.ACC_ACCRUAL_DT_START,ACC_ACCRUAL_DT_START Date on which interest accrual date starts
+API_ACCOUNTS.ACC_APP_ORIG_SYS_XREF,ACC_APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_ACCOUNTS.ACC_OPEN_IND,ACC_OPEN_IND Indicates whether the account is open or closed
+API_ACCOUNTS.ACC_STATUS_CD,ACC_STATUS_CD The status of the account such as ACTIVE  CHGOFF  PAID
+API_ACCOUNTS.ACC_EFFECTIVE_DT,ACC_EFFECTIVE_DT The date on which the account become effective
+API_ACCOUNTS.ACC_RATE_START_OF_YEAR,ACC_RATE_START_OF_YEAR Rate at the beginning of the year
+API_ACCOUNTS.ACC_TERM_CUR,ACC_TERM_CUR Term of the contract(Current)
+API_ACCOUNTS.ACC_TERM_PD,ACC_TERM_PD Term paid
+API_ACCOUNTS.ACC_MATURITY_DT_CUR,ACC_MATURITY_DT_CUR The date on which the account would mature(Current)
+API_ACCOUNTS.ACC_BALLOON_AMT_CUR,ACC_BALLOON_AMT_CUR Current balloon payment amount
+API_ACCOUNTS.ACC_ACCRUAL_DT_START,ACC_ACCRUAL_DT_START Date on which interest accrual date starts
+API_ACCOUNTS.ACC_ACCRUAL_DT_LAST,ACC_ACCRUAL_DT_LAST The date on which last interest accrual was done
+API_ACCOUNTS.ACC_ACCRUAL_STOP_IND,ACC_ACCRUAL_STOP_IND Indicates whether accrual has been stopped
+API_ACCOUNTS.ACC_EXTN_COUNT_YEAR,ACC_EXTN_COUNT_YEAR Number of extensions given in a year
+API_ACCOUNTS.ACC_EXTN_COUNT_LIFE,ACC_EXTN_COUNT_LIFE Number of extensions given in the life of the account
+API_ACCOUNTS.ACC_EXTN_TERM_YEAR,ACC_EXTN_TERM_YEAR Number of cycles extended  in a year
+API_ACCOUNTS.ACC_EXTN_TERM_LIFE,ACC_EXTN_TERM_LIFE Number of cycles extended in the life of the account
+API_ACCOUNTS.ACC_EXTN_DT_LAST,ACC_EXTN_DT_LAST The date on which last extension was given
+API_ACCOUNTS.ACC_ADV_DT_LAST,ACC_ADV_DT_LAST The date on which last advance was given
+API_ACCOUNTS.ACC_PMT_DT_LAST,ACC_PMT_DT_LAST The date on which last payment was received
+API_ACCOUNTS.ACC_PMT_AMT_LAST,ACC_PMT_AMT_LAST The amount of the last payment received
+API_ACCOUNTS.ACC_LAST_ACTIVITY_DT,ACC_LAST_ACTIVITY_DT The date on which last activity was performed on an account
+API_ACCOUNTS.ACC_CLOSE_DT,ACC_CLOSE_DT Date on which account was closed
+API_ACCOUNTS.ACC_RATE_CUR,ACC_RATE_CUR The contract rate(Current)
+API_ACCOUNTS.ACC_PMT_AMT_CUR,ACC_PMT_AMT_CUR Payment amount(Current)
+API_ACCOUNTS.ACC_ACH_IND_CUR,ACC_ACH_IND_CUR Indicates whether the account has been setup for ACH (Current)
+API_ACCOUNTS.ACC_ACH_BANK_NAME_CUR,ACC_ACH_BANK_NAME_CUR The name of the ACH bank of the customer (Current)
+API_ACCOUNTS.ACC_ACH_BANK_ROUTING_NBR_CUR,ACC_ACH_BANK_ROUTING_NBR_CUR The 9-digit ABA number of the ACH bank of the customer. (Current)
+API_ACCOUNTS.ACC_ACH_ACCOUNT_TYPE_CD_CUR,ACC_ACH_ACCOUNT_TYPE_CD_CUR Reference key to lookup ACH account type such as checking saving etc (Current)
+API_ACCOUNTS.ACC_ACH_ACCOUNT_NBR_CUR,ACC_ACH_ACCOUNT_NBR_CUR The account number of the bank for ACH transaction (Current)
+API_ACCOUNTS.ACC_ACH_PMT_DAY_CUR,ACC_ACH_PMT_DAY_CUR The day on which debit to ACH will occur (Current)
+API_ACCOUNTS.ACC_ACH_PMT_AMT_CUR,ACC_ACH_PMT_AMT_CUR Amount of payment used in ACH transaction. (Current)
+API_ACCOUNTS.ACC_ACH_PMT_FREQ_CD_CUR,ACC_ACH_PMT_FREQ_CD_CUR Reference key to lookup ACH payment frequency such as weekly monthly etc (Current)
+API_ACCOUNTS.ACC_ACH_START_DT_CUR,ACC_ACH_START_DT_CUR The date on which ACH processing started (Current)
+API_ACCOUNTS.ACC_ACH_PROCESS_DT_NEXT,ACC_ACH_PROCESS_DT_NEXT The date on which last ACH processing was done
+API_ACCOUNTS.ACC_DUE_DAY_CUR,ACC_DUE_DAY_CUR The current due day of the account
+API_ACCOUNTS.ACC_INT_ACCRUED_AMT,ACC_INT_ACCRUED_AMT Total amount of interest accrued
+API_ACCOUNTS.ACC_DUE_DT1,ACC_DUE_DT1 1 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT2,ACC_DUE_DT2 2 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT3,ACC_DUE_DT3 3 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT4,ACC_DUE_DT4 4 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT5,ACC_DUE_DT5 5 cycle old due date
+API_ACCOUNTS.ACC_DUE_AMT1,ACC_DUE_AMT1 1 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT2,ACC_DUE_AMT2 2 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT3,ACC_DUE_AMT3 3 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT4,ACC_DUE_AMT4 4 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT5,ACC_DUE_AMT5 5 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT_PD1,ACC_DUE_AMT_PD1 1 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD2,ACC_DUE_AMT_PD2 2 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD3,ACC_DUE_AMT_PD3 3 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD4,ACC_DUE_AMT_PD4 4 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD5,ACC_DUE_AMT_PD5 5 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD_EXCESS,ACC_DUE_AMT_PD_EXCESS Total amount paid against future due dates
+API_ACCOUNTS.ACC_DUE_CAT1,ACC_DUE_CAT1 Enter the delinquency category of 1 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT2,ACC_DUE_CAT2 Enter the delinquency category of 2 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT3,ACC_DUE_CAT3 Enter the delinquency category of 3 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT4,ACC_DUE_CAT4 Enter the delinquency category of 4 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT5,ACC_DUE_CAT5 Enter the delinquency category of 5 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT_NEXT,ACC_DUE_DT_NEXT The date on which the next payment is due
+API_ACCOUNTS.ACC_DLQ_IND,ACC_DLQ_IND Indicates whether the account is delinquent
+API_ACCOUNTS.ACC_DLQ_DT,ACC_DLQ_DT The date on which the account went delinquent
+API_ACCOUNTS.ACC_DLQ_COUNT1_LIFE_CONV,ACC_DLQ_COUNT1_LIFE_CONV The number of times account is delinquent for 30 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT2_LIFE_CONV,ACC_DLQ_COUNT2_LIFE_CONV The number of times account is delinquent for 60 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT3_LIFE_CONV,ACC_DLQ_COUNT3_LIFE_CONV The number of times account is delinquent for 90 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT4_LIFE_CONV,ACC_DLQ_COUNT4_LIFE_CONV The number of times account is delinquent for 120 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_NEXT_FOLLOWUP_DT,ACC_DLQ_NEXT_FOLLOWUP_DT The date on which delinquency followup is scheduled
+API_ACCOUNTS.ACC_BKRP_IND,ACC_BKRP_IND Indicates whether the account is in bankruptcy
+API_ACCOUNTS.ACC_BKRP_TYPE_CD,ACC_BKRP_TYPE_CD Reference key to lookup bankruptcy type such as chapter 7 11 13
+API_ACCOUNTS.ACC_BKRP_DISPOSITION_CD,ACC_BKRP_DISPOSITION_CD Reference key to lookup bankruptcy disposition
+API_ACCOUNTS.ACC_BKRP_NEXT_FOLLOWUP_DT,ACC_BKRP_NEXT_FOLLOWUP_DT The date on which next followup is scheduled
+API_ACCOUNTS.ACC_BKRP_DT,ACC_BKRP_DT The date on which bankruptcy was filed
+API_ACCOUNTS.ACC_BKRP_COMMENT,ACC_BKRP_COMMENT A user defined comment for bankruptcy
+API_ACCOUNTS.ACC_REPO_FORC_IND,ACC_REPO_FORC_IND Indicates whether the account is repossessed
+API_ACCOUNTS.ACC_REPO_FORC_NEXT_FOLLOWUP_DT,ACC_REPO_FORC_NEXT_FOLLOWUP_DT The date on which next repo or foreclosure followup is scheduled
+API_ACCOUNTS.ACC_CHGOFF_IND,ACC_CHGOFF_IND Indicates whether the account is Charged off
+API_ACCOUNTS.ACC_CHGOFF_TYPE_CD,ACC_CHGOFF_TYPE_CD Reference key to lookup charged off type
+API_ACCOUNTS.ACC_CHGOFF_DISPOSITION_CD,ACC_CHGOFF_DISPOSITION_CD Reference key to lookup charged off disposition
+API_ACCOUNTS.ACC_CHGOFF_NEXT_FOLLOWUP_DT,ACC_CHGOFF_NEXT_FOLLOWUP_DT The date on which next deficiency followup is scheduled
+API_ACCOUNTS.ACC_CHGOFF_DT,ACC_CHGOFF_DT The date on which account was Charged off or deficiency was established
+API_ACCOUNTS.ACC_CHGOFF_AMT,ACC_CHGOFF_AMT Total charged off amount
+API_ACCOUNTS.ACC_CHGOFF_COMMENT,ACC_CHGOFF_COMMENT A user defined comment for Charged off account
+API_ACCOUNTS.ACC_PDOFF_DT,ACC_PDOFF_DT The date on which the account was paid off
+API_ACCOUNTS.ACC_POO_POOL,ACC_POO_POOL Reference key to pool
+API_ACCOUNTS.ACC_CRB_FIRST_DLQ_DT,ACC_CRB_FIRST_DLQ_DT Date on which the account went delinquent for the first time
+API_ACCOUNTS.ACC_CRB_PMT_HISTORY_DT,ACC_CRB_PMT_HISTORY_DT Enter the payment history date for credit bureau reporting.
+API_ACCOUNTS.ACC_RAT_RUN_DT_NEXT,ACC_RAT_RUN_DT_NEXT Next run date of rate change processing
+API_ACCOUNTS.ACC_DDT_RUN_DT_LAST,ACC_DDT_RUN_DT_LAST Effective date of last billing date
+API_ACCOUNTS.ACC_COMP_INT_AMT_EARNED,ACC_COMP_INT_AMT_EARNED Total interest amount earned
+API_ACCOUNTS.ACC_COMP_AMT_EARNED,ACC_COMP_AMT_EARNED Compensation amount earned
+API_ACCOUNTS.ACC_COMP_AMT_PD,ACC_COMP_AMT_PD Total compensation amount paid
+API_ACCOUNTS.ACC_COMP_AMT_WRITEOFF,ACC_COMP_AMT_WRITEOFF Total compensation amount written off
+API_ACCOUNTS.ACC_COMP_NEXT_PMT_DT,ACC_COMP_NEXT_PMT_DT The date on which next compensation payment is scheduled
+API_ACCOUNTS.ACC_COMP_LAST_PMT_DT,ACC_COMP_LAST_PMT_DT The date on which last compensation payment was paid
+API_ACCOUNTS.ACC_CHBK_AMT,ACC_CHBK_AMT Total amount of chargeback amount
+API_ACCOUNTS.ACC_INDEX_TYPE_CD_CUR,ACC_INDEX_TYPE_CD_CUR Reference key to lookup index type(Current)
+API_ACCOUNTS.ACC_INDEX_RATE_CUR,ACC_INDEX_RATE_CUR Index rate(Current)
+API_ACCOUNTS.ACC_MRATE_CUR,ACC_MRATE_CUR The margin rate(Current)
+API_ACCOUNTS.ACC_CR_LMT_CUR,ACC_CR_LMT_CUR Credit limit(Current)
+API_ACCOUNTS.ACC_CR_HOLD,ACC_CR_HOLD Credit limit on hold
+API_ACCOUNTS.ACC_CR_SUSPENDED,ACC_CR_SUSPENDED Suspended credit limit
+API_ACCOUNTS.ACC_CR_CONSUMED,ACC_CR_CONSUMED Consumed credit limit
+API_ACCOUNTS.ACC_CR_OVERLMT_COUNT_YEAR,ACC_CR_OVERLMT_COUNT_YEAR Number of times credit overlimit in this year of the account
+API_ACCOUNTS.ACC_CR_OVERLMT_COUNT_LIFE,ACC_CR_OVERLMT_COUNT_LIFE Number of times credit overlimit on the life of the account
+API_ACCOUNTS.ACC_ADV_AMT_LAST,ACC_ADV_AMT_LAST The amount of the  last advance
+API_ACCOUNTS.ACC_DLQ_COUNT0_LIFE_CONV,ACC_DLQ_COUNT0_LIFE_CONV The number of times account is delinquent for 30 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT5_LIFE_CONV,ACC_DLQ_COUNT5_LIFE_CONV The number of times account was delinquent for 150 days or more as per conversion
+API_ACCOUNTS.ACC_DLQ_COUNT6_LIFE_CONV,ACC_DLQ_COUNT6_LIFE_CONV The number of times account was delinquent for 180 days or more as per conversion
+API_ACCOUNTS.ACC_DCT_DLQ_START_DT,ACC_DCT_DLQ_START_DT The oldest due date associated to the highest delq category
+API_ACCOUNTS.ACC_DCT_HIGHEST_CATEGORY,ACC_DCT_HIGHEST_CATEGORY The highest delq category for the associated oldest due date
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE1,ACT_FTA_TABLE_ATTRIBUTE1 Name of the account tracking attribute parameter 1
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE2,ACT_FTA_TABLE_ATTRIBUTE2 Name of the account tracking attribute parameter 2
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE3,ACT_FTA_TABLE_ATTRIBUTE3 Name of the account tracking attribute parameter 3
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE4,ACT_FTA_TABLE_ATTRIBUTE4 Name of the account tracking attribute parameter 4
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE5,ACT_FTA_TABLE_ATTRIBUTE5 Name of the account tracking attribute parameter 5
+API_ACCOUNTS.ACC_CRB_ORIGINAL_CHGOFF_AMT,ACC_CRB_ORIGINAL_CHGOFF_AMT Original charged off Amount
+API_ACCOUNTS.ACC_MULTI_BILL_ASSET_RATE_IND,ACC_MULTI_BILL_ASSET_RATE_IND Indicates whether multiple asset rates are applicable for one billing period or not
+API_ACCOUNTS.ACC_PMT_MODE_CD_CUR,ACC_PMT_MODE_CD_CUR Reference lookup to Accounts payment mode current (cash/check)
+API_ACCOUNTS.ACC_SEC_ENABLED_IND,ACC_SEC_ENABLED_IND Account Securitization indicator
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_YEAR,ACC_RATE_MAX_INCREASE_YEAR Maximum allowable increase in rate in a year
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_LIFE,ACC_RATE_MAX_INCREASE_LIFE Maximum allowable increase in rate in the life of the contract
+API_ACCOUNTS.ACC_STMT_PREFERENCE_MODE_CD,ACC_STMT_PREFERENCE_MODE_CD Account Statement Preference Mode code
+API_ACCOUNTS.ACC_ACCRUAL_CALC_METHOD_CD,ACC_ACCRUAL_CALC_METHOD_CD Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest
+API_ACCOUNTS.ACC_INT_ACCRUED_AMT,ACC_INT_ACCRUED_AMT Total amount of interest accrued
+API_ACCOUNTS.ACC_ACCRUAL_CALC_METHOD_CD,ACC_ACCRUAL_CALC_METHOD_CD Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest
+API_ACCOUNTS.ACC_COMP_PLAN_UPD_DT_LAST,ACC_COMP_PLAN_UPD_DT_LAST The date on which last compensation plan revision was done
+API_ACCOUNTS.ACC_COMP_PLAN_UPD_DT_NEXT,ACC_COMP_PLAN_UPD_DT_NEXT The date on which next compensation plan revision will be done
+API_ACCOUNTS.ACC_COMP_REVISE_PLAN_TERM,ACC_COMP_REVISE_PLAN_TERM Compensation plan revision term
+API_ACCOUNTS.ACC_COMP_STOP_IND,ACC_COMP_STOP_IND Indicates if compensation calculation for the account is stopped
+API_ACCOUNTS.ACC_COUPON_FIRST_PMT_DT_CUR,ACC_COUPON_FIRST_PMT_DT_CUR The date on which first payment is expected on the re-ordered coupon book (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_ORDER_DT_CUR,ACC_COUPON_ORDER_DT_CUR The date on which coupon book was re-ordered (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_CRB_ORIGINAL_CHGOFF_AMT,ACC_CRB_ORIGINAL_CHGOFF_AMT Original charged off Amount
+API_ACCOUNTS.ACC_CRD_RUN_DT_LAST,ACC_CRD_RUN_DT_LAST The last run date of account credit card processing 
+API_ACCOUNTS.ACC_CRD_RUN_DT_NEXT,ACC_CRD_RUN_DT_NEXT The next scheduled run date of account credit card processing
+API_ACCOUNTS.ACC_DLQ_REASON_CD,ACC_DLQ_REASON_CD Account Delequency Code
+API_ACCOUNTS.ACC_FUTURE_PAYOFF_AMT,ACC_FUTURE_PAYOFF_AMT Pay off amount applicable till future payoff date
+API_ACCOUNTS.ACC_FUTURE_PAYOFF_DT,ACC_FUTURE_PAYOFF_DT Pay off amount applicable till this date
+API_ACCOUNTS.ACC_POO_SUPER_POOL,ACC_POO_SUPER_POOL Super pool name
+API_ACCOUNTS.ACC_PRD_PRODUCT,ACC_PRD_PRODUCT Reference key to product
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_LIFE,ACC_RATE_MAX_INCREASE_LIFE Maximum allowable increase in rate in the life of the contract
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_YEAR,ACC_RATE_MAX_INCREASE_YEAR Maximum allowable increase in rate in a year
+API_ACCOUNTS.ACC_REDRAW_AMT_AVAILABLE,ACC_REDRAW_AMT_AVAILABLE Account Available re-draw amount
+API_ACCOUNTS.ACC_REPAYMENT_SKIP_PERIOD,ACC_REPAYMENT_SKIP_PERIOD Stores all months that are allowed to skip payment such as MARCH APRIL MAY and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_SEC_ENABLED_IND,ACC_SEC_ENABLED_IND Account Securitization indicator
+API_ACCOUNTS.ACC_SETTL_AMT,ACC_SETTL_AMT Settlement amount agreed by customer to the lender
+API_ACCOUNTS.ACC_SETTL_AMT_PD,ACC_SETTL_AMT_PD Total amount paid by the customer and allocated to account balances between effective date and Good through date
+API_ACCOUNTS.ACC_SETTL_EXPIRY_DT,ACC_SETTL_EXPIRY_DT Settlement agreement end date
+API_ACCOUNTS.ACC_SETTL_START_DT,ACC_SETTL_START_DT Settlement agreement start date
+API_ACCOUNTS.ACC_STMT_PREFERENCE_MODE_CD,ACC_STMT_PREFERENCE_MODE_CD Account Statement Preference Mode code
+API_ACCOUNTS.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNTS.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNTS.ACC_ALLOW_REPO_ON_SCRA_IND,ACC_ALLOW_REPO_ON_SCRA_IND Indicator to state if SCRA is allowed on Reposession
+API_ACCOUNT_BALANCES.ABL_BAL_ABL,ABL_BAL_ABL Accumulated Average daily balance for advance balance type
+API_ACCOUNT_BALANCES.ABL_APP_ORIG_SYS_XREF,ABL_APP_ORIG_SYS_XREF External Reference Number
+API_ACCOUNT_BALANCES.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_BALANCES.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNT_BALANCES.ABL_DT,ABL_DT Effective date of the balance
+API_ACCOUNT_BALANCES.ABL_PROM_TYPE_CD,ABL_PROM_TYPE_CD Reference key to lookup promotion type
+API_ACCOUNT_BALANCES.ABL_RATE,ABL_RATE Interest rate during the promotional period
+API_ACCOUNT_BALANCES.ABL_TERM,ABL_TERM Promotional term or period
+API_ACCOUNT_BALANCES.ABL_PRM_END_DT,ABL_PRM_END_DT Promotion balance end date
+API_ACCOUNT_BALANCES.ABL_DUE_AMT1,ABL_DUE_AMT1 Due amount 1 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT2,ABL_DUE_AMT2 Due amount 2 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT3,ABL_DUE_AMT3 Due amount 3 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT4,ABL_DUE_AMT4 Due amount 4 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT5,ABL_DUE_AMT5 Due amount 5 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD1,ABL_DUE_AMT_PD1 Due amount 1 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD2,ABL_DUE_AMT_PD2 Due amount 2 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD3,ABL_DUE_AMT_PD3 Due amount 3 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD4,ABL_DUE_AMT_PD4 Due amount 4 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD5,ABL_DUE_AMT_PD5 Due amount 5 cycle old paid
+API_ACCOUNT_BALANCES.ABL_PIN_CODE,ABL_PIN_CODE Reference Key to Product Insurances
+API_ACCOUNT_BALANCES.ABL_INS_SUB_TYPE_CD,ABL_INS_SUB_TYPE_CD The credit insurance sub type code
+API_ACCOUNT_BALANCES.ABL_INS_STATUS_CD,ABL_INS_STATUS_CD The credit insurance status code such as active
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE,ABL_BAL_TERMINATE Terminated Balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_CTD,ABL_BAL_TERMINATE_CTD Terminated balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_YTD,ABL_BAL_TERMINATE_YTD Terminated balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_CTD1,ABL_BAL_TERMINATE_CTD1 Terminated balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_YTD1,ABL_BAL_TERMINATE_YTD1 Terminated balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_TERMINATE_IND,ABL_TERMINATE_IND Indicates whether balance is terminatable
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD1,ABL_BAL_ABL_CTD1 Accumulated Average daily balance for advance balance type for previous cycle one
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD2,ABL_BAL_ABL_CTD2 Accumulated Average daily balance for advance balance type for previous cycle two
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD3,ABL_BAL_ABL_CTD3 Accumulated Average daily balance for advance balance type for previous cycle three
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD4,ABL_BAL_ABL_CTD4 Accumulated Average daily balance for advance balance type for previous cycle four
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD5,ABL_BAL_ABL_CTD5 Accumulated Average daily balance for advance balance type for previous cycle five
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_ROLL_IND,ABL_NON_PERFORM_ROLL_IND Indicates whether balance can be rolled
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_TXN_TYPE_CD,ABL_NON_PERFORM_TXN_TYPE_CD Balance type where non-performing balance rolled into
+API_ACCOUNT_BALANCES.ABL_BAL_XFER2NON_PERFORM,ABL_BAL_XFER2NON_PERFORM Amount was due for the balance type  when account went into non-performance state
+API_ACCOUNT_BALANCES.ABL_BAL_PD_XFER2NON_PERFORM,ABL_BAL_PD_XFER2NON_PERFORM Amount was paid for the balance type  when account went into non-performance state
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL,ABL_NON_PERFORM_BAL Non performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_PD,ABL_NON_PERFORM_BAL_PD Amount paid against non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_PD_EXCESS,ABL_NON_PERFORM_BAL_PD_EXCESS Amount paid excess to non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_WAIVED,ABL_NON_PERFORM_BAL_WAIVED Waived non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_ADJ_PLUS,ABL_NON_PERFORM_BAL_ADJ_PLUS Positive adjustments to non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_ADJ_MINUS,ABL_NON_PERFORM_BAL_ADJ_MINUS Negative adjustments to non-performing balance
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED,ABL_BAL_BILLED Billed balance
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_CTD,ABL_BAL_BILLED_CTD Billed balance (CTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_CTD1,ABL_BAL_BILLED_CTD1 Billed balance (CTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_YTD,ABL_BAL_BILLED_YTD Billed balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_RATE_EFFECTIVE,ABL_RATE_EFFECTIVE Stores the current effective rate
+API_ACCOUNT_BALANCES.ABL_CPT_IND,ABL_CPT_IND Indicates whether the account is enabled for capitalized or not
+API_ACCOUNT_BALANCES.ABL_CPT_FREQUENCY_CD,ABL_CPT_FREQUENCY_CD Capitalization Frequency
+API_ACCOUNT_BALANCES.ABL_CPT_GRACE_DAYS,ABL_CPT_GRACE_DAYS Grace days provided before executing the Capitalization
+API_ACCOUNT_BALANCES.ABL_CPT_RUN_DT_NEXT,ABL_CPT_RUN_DT_NEXT Account Balances Capitalization next Run Date
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_PLUS,ABL_BAL_CPT_PLUS Positive adjustments to balance type (CPT) Capitalization
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_MINUS,ABL_BAL_CPT_MINUS Negative adjustments to balance type (CPT) Capitalization
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_PLUS_CTD,ABL_BAL_CPT_PLUS_CTD Current to date Adjusted Plus Balance
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_MINUS_CTD,ABL_BAL_CPT_MINUS_CTD Current to date Adjusted Minus Balance
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_PLUS_YTD,ABL_BAL_CPT_PLUS_YTD Positive adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_MINUS_YTD,ABL_BAL_CPT_MINUS_YTD Negative adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_TXN_TYPE_CD,ABL_TXN_TYPE_CD Reference key to lookup transaction type or balance type
+API_ACCOUNT_BALANCES.ABL_PRM_CODE,ABL_PRM_CODE Reference key to promotion
+API_ACCOUNT_BALANCES.ABL_BAL_SORT,ABL_BAL_SORT Sort
+API_ACCOUNT_BALANCES.ABL_BAL,ABL_BAL Current posted balance(Advance/Interest/Fee/Expense/Insurance)
+API_ACCOUNT_BALANCES.ABL_BAL_PD,ABL_BAL_PD Balance paid (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED,ABL_BAL_WAIVED Balance waived (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF,ABL_BAL_CHGOFF Charged off balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED,ABL_BAL_RECOVERED Balance recovered (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS,ABL_BAL_ADJUSTED_PLUS Positive adjustment balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS,ABL_BAL_ADJUSTED_MINUS Negative adjustment balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_CTD,ABL_BAL_OPEN_CTD Opening balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CTD,ABL_BAL_CTD Posted balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_PD_CTD,ABL_BAL_PD_CTD Balance paid (CTD) in the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_CTD,ABL_BAL_WAIVED_CTD Balance waived (CTD) in the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_CTD,ABL_BAL_CHGOFF_OPEN_CTD Opening Charged off balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_CTD,ABL_BAL_CHGOFF_CTD Charged off balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_CTD,ABL_BAL_RECOVERED_CTD Balance recovered (CTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_CTD,ABL_BAL_ADJUSTED_PLUS_CTD Positive adjustment balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_CTD,ABL_BAL_ADJUSTED_MINUS_CTD Negative adjustment balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_YTD,ABL_BAL_OPEN_YTD Opening balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_YTD,ABL_BAL_YTD Posted balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_PD_YTD,ABL_BAL_PD_YTD Balance paid(YTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_YTD,ABL_BAL_WAIVED_YTD Balance waived (YTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_YTD,ABL_BAL_CHGOFF_OPEN_YTD Opening Charged off balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_YTD,ABL_BAL_CHGOFF_YTD Charged off balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_YTD,ABL_BAL_RECOVERED_YTD Balance recovered (YTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_YTD,ABL_BAL_ADJUSTED_PLUS_YTD Positive adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_YTD,ABL_BAL_ADJUSTED_MINUS_YTD Negative adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_IND,ABL_BAL_BILLED_IND Indicates whether the balance is billable
+API_ACCOUNT_BALANCES.ABL_INTEREST_ACCRUED_IND,ABL_INTEREST_ACCRUED_IND Indicates whether interest is accruable
+API_ACCOUNT_BALANCES.ABL_CHARGEOFF_METHOD_CD,ABL_CHARGEOFF_METHOD_CD Reference key to lookup chargeoff method
+API_ACCOUNT_BALANCES.ABL_RESCHEDULE_METHOD_CD,ABL_RESCHEDULE_METHOD_CD Reference key to lookup reschedule method
+API_ACCOUNT_BALANCES.ABL_WRITEOFF_METHOD_CD,ABL_WRITEOFF_METHOD_CD Reference key to lookup writeoff method
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_CTD1,ABL_BAL_OPEN_CTD1 Opening balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CTD1,ABL_BAL_CTD1 Posted balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_PD_CTD1,ABL_BAL_PD_CTD1 Balance paid(CTD) in the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_CTD1,ABL_BAL_WAIVED_CTD1 Balance waived (CTD) in the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_CTD1,ABL_BAL_CHGOFF_OPEN_CTD1 Opening Charged off balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_CTD1,ABL_BAL_CHGOFF_CTD1 Charged off balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_CTD1,ABL_BAL_RECOVERED_CTD1 Balance recovered (CTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_CTD1,ABL_BAL_ADJUSTED_PLUS_CTD1 Positive adjustment balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_CTD1,ABL_BAL_ADJUSTED_MINUS_CTD1 Negative adjustment balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_YTD1,ABL_BAL_OPEN_YTD1 Opening balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_YTD1,ABL_BAL_YTD1 Posted balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_PD_YTD1,ABL_BAL_PD_YTD1 Balance paid(YTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_YTD1,ABL_BAL_WAIVED_YTD1 Balance waived (YTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_YTD1,ABL_BAL_CHGOFF_OPEN_YTD1 Opening Charged off balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_YTD1,ABL_BAL_CHGOFF_YTD1 Charged off balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_YTD1,ABL_BAL_RECOVERED_YTD1 Balance recovered (YTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_YTD1,ABL_BAL_ADJUSTED_PLUS_YTD1 Positive adjustment balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_YTD1,ABL_BAL_ADJUSTED_MINUS_YTD1 Negative adjustment balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BILL_METHOD_CD,ABL_BILL_METHOD_CD Reference key to lookup billing method
+API_ACCOUNT_BALANCES.ABL_PMT_AMT,ABL_PMT_AMT Promotional balance billing payment amount
+API_ACCOUNT_BALANCES.ABL_PMT_PER,ABL_PMT_PER Promotional balance billing payment percentage
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_APP_ORIG_SYS_XREF,ABA_APP_ORIG_SYS_XREF External Reference Number
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD1,ABA_TXN_TYPE_CD1 Amortize transaction type code 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL1,ABA_BAL1 Total amount to be amortize for balance type 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED1,ABA_BAL_EARNED1 Amortize Amount earned for balance type 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF1,ABA_BAL_WRITEOFF1 Amortize amount written-off for balance type 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD2,ABA_TXN_TYPE_CD2 Amortize transaction type code 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL2,ABA_BAL2 Total amount to be amortize for balance type 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED2,ABA_BAL_EARNED2 Amortize Amount earned for balance type 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF2,ABA_BAL_WRITEOFF2 Amortize amount written-off for balance type 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD3,ABA_TXN_TYPE_CD3 Amortize transaction type code 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL3,ABA_BAL3 Total amount to be amortize for balance type 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED3,ABA_BAL_EARNED3 Amortize Amount earned for balance type 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF3,ABA_BAL_WRITEOFF3 Amortize amount written-off for balance type 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD4,ABA_TXN_TYPE_CD4 Amortize transaction type code 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL4,ABA_BAL4 Total amount to be amortize for balance type 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED4,ABA_BAL_EARNED4 Amortize Amount earned for balance type 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF4,ABA_BAL_WRITEOFF4 Amortize amount written-off for balance type 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD5,ABA_TXN_TYPE_CD5 Amortize transaction type code 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL5,ABA_BAL5 Total amount to be amortize for balance type 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED5,ABA_BAL_EARNED5 Amortize Amount earned for balance type 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF5,ABA_BAL_WRITEOFF5 Amortize amount written-off for balance type 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_RATE1,ABA_FASB_RATE1 Interest rate for the FASB amortization calculation 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_BAL1,ABA_FASB_BAL1 Total FASB amortization balance 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_EFFECTIVE_BAL1,ABA_FASB_EFFECTIVE_BAL1 Total effective FASB amortization balance 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_RATE2,ABA_FASB_RATE2 Interest rate for the FASB amortization calculation 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_BAL2,ABA_FASB_BAL2 Total FASB amortization balance 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_EFFECTIVE_BAL2,ABA_FASB_EFFECTIVE_BAL2 Total effective FASB amortization balance 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_RATE3,ABA_FASB_RATE3 Interest rate for the FASB amortization calculation 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_BAL3,ABA_FASB_BAL3 Total FASB amortization balance 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_EFFECTIVE_BAL3,ABA_FASB_EFFECTIVE_BAL3 Total effective FASB amortization balance 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD1,ABA_AMORTIZE_FREQ_CD1 Stores the amortization frequency -1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD2,ABA_AMORTIZE_FREQ_CD2 Stores the amortization frequency -2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD3,ABA_AMORTIZE_FREQ_CD3 Stores the amortization frequency -3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD4,ABA_AMORTIZE_FREQ_CD4 Stores the amortization frequency -4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD5,ABA_AMORTIZE_FREQ_CD5 Stores the amortization frequency -5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT1,ABA_AMORTIZE_START_DT1 Stores the amortization start date -1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT2,ABA_AMORTIZE_START_DT2 Stores the amortization start date -2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT3,ABA_AMORTIZE_START_DT3 Stores the amortization start date -3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT4,ABA_AMORTIZE_START_DT4 Stores the amortization start date -4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT5,ABA_AMORTIZE_START_DT5 Stores the amortization start date -5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT1,ABA_FIRST_AMORTIZE_DT1 Stores the first amortization date-1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT2,ABA_FIRST_AMORTIZE_DT2 Stores the first amortization date-2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT3,ABA_FIRST_AMORTIZE_DT3 Stores the first amortization date-3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT4,ABA_FIRST_AMORTIZE_DT4 Stores the first amortization date-4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT5,ABA_FIRST_AMORTIZE_DT5 Stores the first amortization date-5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT1,ABA_AMORTIZE_END_DT1 Stores the amortization end date -1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT2,ABA_AMORTIZE_END_DT2 Stores the amortization end date -2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT3,ABA_AMORTIZE_END_DT3 Stores the amortization end date -3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT4,ABA_AMORTIZE_END_DT4 Stores the amortization end date -4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT5,ABA_AMORTIZE_END_DT5 Stores the amortization end date -5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_DT,ABA_DT Amortization Date
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT,ABA_AMORTIZE_START_DT Stores the date on which amortization of the balance should start
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT,ABA_FIRST_AMORTIZE_DT Stores the first amortization date for the balance
+API_ACCOUNT_BALANCES_AMORTIZE.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_BALANCES_AMORTIZE.CREATION_DATE,CREATION_DATE Standard Who
+API_TXNS.TXN_APP_ORIG_SYS_XREF,TXN_APP_ORIG_SYS_XREF Reference key to account id of legacy system
+API_TXNS.TXN_SEQ,TXN_SEQ The transaction sequence number
+API_TXNS.TXN_TCD_CODE,TXN_TCD_CODE Reference key to transaction
+API_TXNS.TXN_REASON_CD,TXN_REASON_CD Reference key to lookup transaction reason
+API_TXNS.TXN_MODE_CD,TXN_MODE_CD Reference key to lookup transaction mode
+API_TXNS.TXN_REFERENCE,TXN_REFERENCE Reference information
+API_TXNS.TXN_COMMENT,TXN_COMMENT The error reason or comment for transaction posting
+API_TXNS.TXN_BALANCE_AMT,TXN_BALANCE_AMT The receivable balance after the posting of the current transaction
+API_TXNS.TXN_POST_DT,TXN_POST_DT Date when the transaction was posted to the system
+API_TXNS.TXN_DT,TXN_DT Transaction effective date
+API_TXNS.TXN_AMT,TXN_AMT Transaction amount
+API_TXNS.TXN_PMT_AMT,TXN_PMT_AMT New payment amount
+API_TXNS.TXN_SPR_SPREAD,TXN_SPR_SPREAD Reference key to spread
+API_TXNS.PAL_AMT_ADV,PAL_AMT_ADV The payment amount allocated to Advance balance
+API_TXNS.PAL_AMT_INT,PAL_AMT_INT The payment amount allocated to Interest balance
+API_TXNS.PAL_AMT_LC,PAL_AMT_LC The payment amount allocated to Late Charge Fee balance
+API_TXNS.PAL_AMT_NSF,PAL_AMT_NSF The payment amount allocated to NSF Fee balance
+API_TXNS.PAL_AMT_OVERAGE,PAL_AMT_OVERAGE The payment amount allocated to overage
+API_TXNS.PAL_AMT_EXT,PAL_AMT_EXT The payment amount allocated to Extension Fee balance
+API_TXNS.PAL_AMT_MEM,PAL_AMT_MEM The payment amount allocated to Membership Fee balance
+API_TXNS.PAL_AMT_OVR,PAL_AMT_OVR The payment amount allocated to Overlimit Fee balance
+API_TXNS.PAL_AMT_FADV,PAL_AMT_FADV The payment amount allocated to Advance Fee balance
+API_TXNS.PAL_AMT_PPP,PAL_AMT_PPP The payment amount allocated to Pre Payment Penalty Fee balance
+API_TXNS.PAL_AMT_OVR,PAL_AMT_OVR The payment amount allocated to Overlimit Fee balance
+API_TXNS.PAL_AMT_PPP,PAL_AMT_PPP The payment amount allocated to Pre Payment Penalty Fee balance
+API_TXNS.PAL_AMT_FADV,PAL_AMT_FADV The payment amount allocated to Advance Fee balance
+API_TXNS.PAL_AMT_MEM,PAL_AMT_MEM The payment amount allocated to Membership Fee balance
+API_TXNS.PAL_AMT_EXT,PAL_AMT_EXT The payment amount allocated to Extension Fee balance
+API_TXNS.TXN_PMT_AMT,TXN_PMT_AMT New payment amount
+API_TXNS.TXN_PRIMARY_IND,TXN_PRIMARY_IND Indicates whether the transaction is a primary transaction
+API_TXNS.TXN_CURRENCY_AMT,TXN_CURRENCY_AMT Currency Transaction Amount
+API_TXNS.TXN_CUR_CURRENCY_CODE,TXN_CUR_CURRENCY_CODE Reference key to Currency
+API_TXNS.TXN_EXTN_TERM,TXN_EXTN_TERM New extension term
+API_TXNS.TXN_DUE_DT,TXN_DUE_DT Due date of the billing transaction
+API_TXNS.CREATED_BY,CREATED_BY Standard Who
+API_TXNS.CREATION_DATE,CREATION_DATE Standard Who
+API_COMMENTS.ACM_APP_ORIG_SYS_XREF,ACM_APP_ORIG_SYS_XREF Reference key to account comment of legacy system
+API_COMMENTS.ACM_SEQ,ACM_SEQ Sequence number for account comment
+API_COMMENTS.ACM_COMMENT,ACM_COMMENT A miscellaneous comment entered by the user
+API_COMMENTS.ACM_COMMENT_DT,ACM_COMMENT_DT Account comment date
+API_COMMENTS.ACM_COMMENT_BY,ACM_COMMENT_BY The name of the user entering and saving the comment
+API_COMMENTS.ACM_COMMENT_TYPE_CD,ACM_COMMENT_TYPE_CD The type of the comment  such as REG - Regular and SYG - System Generated
+API_COMMENTS.ACM_COMMENT_SUB_TYPE_CD,ACM_COMMENT_SUB_TYPE_CD The sub-type of the comment  such as ORG - Originations
+API_COMMENTS.ACM_COMMENT_IMP_IND,ACM_COMMENT_IMP_IND Indicates if the comment is considered important
+API_COMMENTS.ACM_ERROR_IND,ACM_ERROR_IND Error indicator for account comment
+API_COMMENTS.CREATION_DATE,CREATION_DATE Standard Who
+API_COMMENTS.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_REPMT_SCHEDULE.ACP_APP_ORIG_SYS_XREF,ACP_APP_ORIG_SYS_XREF Reference key to application id of legacy system and it is used for converting accounts from other system
+API_ACCOUNT_REPMT_SCHEDULE.ACP_SEQ,ACP_SEQ Sequence number for account repayment schedule and it is used for converting accounts from other system
+API_ACCOUNT_REPMT_SCHEDULE.ACP_REPAYMENT_DT,ACP_REPAYMENT_DT Stores the payment date for repayment schedule and it is used for converting accounts from other system
+API_ACCOUNT_REPMT_SCHEDULE.ACP_REPAYMENT_AMT,ACP_REPAYMENT_AMT Stores the payment amount for repayment schedule and it is used for converting accounts from other system
+API_ACCOUNT_REPMT_SCHEDULE.ACP_NO_OF_PMTS,ACP_NO_OF_PMTS Stores the number of payments for repayment schedule and it is used for converting accounts from other system
+API_ACCOUNT_REPMT_SCHEDULE.ACP_SYSTEM_GENERATED_IND,ACP_SYSTEM_GENERATED_IND Indicates if the payment in schedule is system generated and it is used for converting accounts from other system
+API_ACCOUNT_REPMT_SCHEDULE.ACP_PRINCIPAL_AMT,ACP_PRINCIPAL_AMT Stores Interest Amount calculated
+API_ACCOUNT_REPMT_SCHEDULE.ACP_INTEREST_AMT,ACP_INTEREST_AMT Stores Principal Amount calculated
+API_ACCOUNT_REPMT_SCHEDULE.CREATED_BY,CREATED_BY Standard Who and it is used for converting accounts from other system
+API_ACCOUNT_REPMT_SCHEDULE.CREATION_DATE,CREATION_DATE Standard Who and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.ACR_APP_ORIG_SYS_XREF,ACR_APP_ORIG_SYS_XREF Reference key to application id of legacy system and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.ACR_SEQ,ACR_SEQ Sequence Id for account rate change schedule and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.ACR_RATE_CHG_FREQ_TYPE_CD,ACR_RATE_CHG_FREQ_TYPE_CD Reference key to lookup rate change frequency type and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.ACR_RATE_CHG_PERIOD,ACR_RATE_CHG_PERIOD Stores the time or period between subsequent rate change based on rate adjustment frequency and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.ACR_RATE_CHG_OCCURANCES,ACR_RATE_CHG_OCCURANCES The number of rate adjustments that should take place for particular frequency and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.ACR_CURRENT_IND,ACR_CURRENT_IND Indicates the current rate change schedule being applied on account and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.CREATED_BY,CREATED_BY Standard Who and it is used for converting accounts from other system
+API_ACCOUNT_RATE_SCHEDULE.CREATION_DATE,CREATION_DATE Standard Who and it is used for converting accounts from other system
+API_INSURANCES.INS_PRIMARY_BENEFICIARY,INS_PRIMARY_BENEFICIARY Stores the primary beneficiary for the insurance details
+API_INSURANCES.INS_CANCEL_REASON_CD,INS_CANCEL_REASON_CD Reference key to lookup insurance cancel reason
+API_INSURANCES.INS_APP_ORIG_SYS_XREF,INS_APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_INSURANCES.INS_COMPANY,INS_COMPANY Stores the insurance company name
+API_INSURANCES.INS_PHONE_NO1,INS_PHONE_NO1 Stores the phone number #1 for the insurance transaction
+API_INSURANCES.INS_PHONE_EXTN1,INS_PHONE_EXTN1 Stores phone number extension for insurance details
+API_INSURANCES.INS_PHONE_NO2,INS_PHONE_NO2 Stores phone number for insurance details
+API_INSURANCES.INS_PHONE_EXTN2,INS_PHONE_EXTN2 Stores the phone number #2 for the insurance details
+API_INSURANCES.INS_POLICY_NBR,INS_POLICY_NBR Stores insurance policy number
+API_INSURANCES.INS_EFFECTIVE_DT,INS_EFFECTIVE_DT Stores insurance effective date
+API_INSURANCES.INS_TERM,INS_TERM Stores insurance term
+API_INSURANCES.INS_EXPIRY_DT,INS_EXPIRY_DT Stores insurance expiry date
+API_INSURANCES.INS_PREMIUM_AMT,INS_PREMIUM_AMT Stores the premium amount for the insurance
+API_INSURANCES.INS_SECONDARY_BENEFICIARY,INS_SECONDARY_BENEFICIARY Stores secondary beneficiary for the insurance
+API_INSURANCES.INS_CANCEL_DT,INS_CANCEL_DT Stores Insurance cancellation date
+API_INSURANCES.INS_CANCEL_TERM_REM,INS_CANCEL_TERM_REM The remaining term of the contract at the time of cancellation
+API_INSURANCES.INS_REFUND_AMT_EST,INS_REFUND_AMT_EST Stores the estimated refund amount for the insurance
+API_INSURANCES.INS_REFUND_AMT_RCVD,INS_REFUND_AMT_RCVD Stores the refund amount received from the insurance company
+API_INSURANCES.INS_COMPLETE_REFUND_RCVD_IND,INS_COMPLETE_REFUND_RCVD_IND Indicates the complete refund received
+API_INSURANCES.INS_INSURANCE_TYPE_CD,INS_INSURANCE_TYPE_CD Reference key to lookup insurance type
+API_INSURANCES.INS_SUB_TYPE_CD,INS_SUB_TYPE_CD Reference key to lookup insurance sub type
+API_INSURANCES.INS_COMMENT,INS_COMMENT Stores the comment for the insurance details
+API_INSURANCES.INS_REFUND_ALLOWED_IND,INS_REFUND_ALLOWED_IND Indicates whether or not the insurance cancellation is allowed
+API_INSURANCES.INS_REFUND_CALC_METHOD_CD,INS_REFUND_CALC_METHOD_CD Stores the contract method that is used to calculate refund in the event of insurance cancellation
+API_INSURANCES.INS_CONTRACT_IND,INS_CONTRACT_IND Indicates if the insurance was part of contract
+API_INSURANCES.INS_INSURANCE_STATUS_CD,INS_INSURANCE_STATUS_CD Reference key to lookup insurance status
+API_INSURANCES.INS_INSURANCE_MODE_CD,INS_INSURANCE_MODE_CD Reference key to lookup insurance mode
+API_INSURANCES.INS_CANCEL_FEE,INS_CANCEL_FEE Stores the insurance cancellation fee amount
+API_INSURANCES.INS_GRACE_PERIOD_FEE_IND,INS_GRACE_PERIOD_FEE_IND Indicates whether or not cancellation fee could be charged during grace days
+API_INSURANCES.INS_CANCEL_GRACE_DAYS,INS_CANCEL_GRACE_DAYS The number of days that allows insurance cancellation without fee
+API_INSURANCES.INS_CANCEL_FEE_FROM_CD,INS_CANCEL_FEE_FROM_CD Cancel fee from rebate or premium possible values PRM/RBT/NULL
+API_INSURANCES.INS_TXN_DT,INS_TXN_DT Date of Transaction
+API_INSURANCES.CREATED_BY,CREATED_BY Standard Who
+API_INSURANCES.INS_PIN_CODE,INS_PIN_CODE Pin Code
+API_INSURANCES.CREATION_DATE,CREATION_DATE Standard Who
+API_INSURANCES.INS_TXN_DT,INS_TXN_DT Date of Transaction
+API_SUBVENTIONS.SBV_APP_ORIG_SYS_XREF,SBV_APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_SUBVENTIONS.SBV_SBP_CODE,SBV_SBP_CODE Stores the Subvention plan code
+API_SUBVENTIONS.SBV_SBP_DESC,SBV_SBP_DESC Stores the Subvention Plan description
+API_SUBVENTIONS.SBV_SSP_CODE,SBV_SSP_CODE Stores the Subvention Sub-plan code
+API_SUBVENTIONS.SBV_SSP_DESC,SBV_SSP_DESC Stores the Subvention Sub-plan description
+API_SUBVENTIONS.SBV_SUBVENTION_TYPE_CD,SBV_SUBVENTION_TYPE_CD Reference key to lookup subvention_type_cd such as RATE CASH_BONUS etc
+API_SUBVENTIONS.SBV_PRO_ID,SBV_PRO_ID Stores the producer id
+API_SUBVENTIONS.SBV_SBV_CALC_METHOD_CD,SBV_SBV_CALC_METHOD_CD Reference key to lookup sbv_calc_method_cd such as SPREAD_DEFAULT SPREAD_DEFAULT_PV etc
+API_SUBVENTIONS.SBV_SBV_COLLECTION_METHOD_CD,SBV_SBV_COLLECTION_METHOD_CD Reference key to lookup sbv_collection_method_cd such as UPFRONT UPFRONT_STMT etc
+API_SUBVENTIONS.SBV_SUBVENTION_AMT,SBV_SUBVENTION_AMT Stores the subvention amount
+API_SUBVENTIONS.SBV_SUBVENTION_RATE,SBV_SUBVENTION_RATE Stores the subvention rate
+API_SUBVENTIONS.SBV_RFND_PDOFF_CALC_METHOD_CD,SBV_RFND_PDOFF_CALC_METHOD_CD Reference key to lookup RFND_PDOFF_CALC_METHOD_CD such as PERCENTAGE EARNED etc
+API_SUBVENTIONS.SBV_RFND_PDOFF_BASIS_CD,SBV_RFND_PDOFF_BASIS_CD Reference key to lookup RFND_PDOFF_BASIS_CD such as TERM DAYS etc
+API_SUBVENTIONS.SBV_RFND_PDOFF_PER,SBV_RFND_PDOFF_PER Stores the paid-off refund percentage
+API_SUBVENTIONS.SBV_RFND_PDOFF_PERIOD,SBV_RFND_PDOFF_PERIOD Stores the paid-off basis code for refund
+API_SUBVENTIONS.SBV_RFND_CHGOFF_CALC_METHOD_CD,SBV_RFND_CHGOFF_CALC_METHOD_CD Reference key to lookup RFND_CHGOFF_CALC_METHOD_CD such as PERCENTAGE EARNED etc
+API_SUBVENTIONS.SBV_RFND_CHGOFF_BASIS_CD,SBV_RFND_CHGOFF_BASIS_CD Reference key to lookup RFND_CHGOFF_BASIS_CD such as TERM DAYS etc
+API_SUBVENTIONS.SBV_RFND_CHGOFF_PER,SBV_RFND_CHGOFF_PER Stores the charge-off refund percentage
+API_SUBVENTIONS.SBV_RFND_CHGOFF_PERIOD,SBV_RFND_CHGOFF_PERIOD Stores the charge-off refund period
+API_SUBVENTIONS.SBV_SUBVENTION_TCD_CODE,SBV_SUBVENTION_TCD_CODE Stores the subvention transaction code
+API_SUBVENTIONS.SBV_UPFNT_ITEMIZATION_TCD_CODE,SBV_UPFNT_ITEMIZATION_TCD_CODE Stores the upfront itemization transaction code
+API_SUBVENTIONS.SBV_AMORTIZE_TXN_TYPE_CD,SBV_AMORTIZE_TXN_TYPE_CD Stores the amortization transaction type
+API_SUBVENTIONS.SBV_AMORTIZE_CALC_METHOD_CD,SBV_AMORTIZE_CALC_METHOD_CD Stores the amortization calculation method
+API_SUBVENTIONS.SBV_AMORTIZE_FREQ_CD,SBV_AMORTIZE_FREQ_CD Stores the amortization frequency
+API_SUBVENTIONS.SBV_AMORTIZE_FEE_METHOD_CD,SBV_AMORTIZE_FEE_METHOD_CD Stores the amortization Fee Method
+API_SUBVENTIONS.SBV_FIRST_AMORTIZE_DT,SBV_FIRST_AMORTIZE_DT Stores the first amortization date
+API_SUBVENTIONS.SBV_AMORTIZE_START_DT,SBV_AMORTIZE_START_DT Stores the amortization start date
+API_SUBVENTIONS.SBV_SBV_STATUS_TYPE_CD,SBV_SBV_STATUS_TYPE_CD Stores the Subvention status (REQUEST  DECISION or CONTRACT)
+API_SUBVENTIONS.CREATION_DATE,CREATION_DATE Standard Who
+API_SUBVENTIONS.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_PMT_CHG_SCH.ART_APP_ORIG_SYS_XREF,ART_APP_ORIG_SYS_XREF Reference key to application id of legacy system and it is used for converting accounts from other system
+API_ACCOUNT_PMT_CHG_SCH.ART_SEQ,ART_SEQ Sequence Id For Account Payment Change Schedule
+API_ACCOUNT_PMT_CHG_SCH.ART_FREQ,ART_FREQ Reference key to lookup payment change frequency type such as TERM
+API_ACCOUNT_PMT_CHG_SCH.ART_NO_OF_ADJUSTMENTS,ART_NO_OF_ADJUSTMENTS The number of adjustments that should take place for particular frequency
+API_ACCOUNT_PMT_CHG_SCH.ART_PERIOD,ART_PERIOD Stores the period between subsequent payment change based on payment adjustment frequency
+API_ACCOUNT_PMT_CHG_SCH.ART_OPTION_TYPE,ART_OPTION_TYPE The identifier for the repayment type such as STEP UP  STEP DOWN or BULLET
+API_ACCOUNT_PMT_CHG_SCH.ART_ADJUSTMENT_VALUE,ART_ADJUSTMENT_VALUE Value adjusted against payment
+API_ACCOUNT_PMT_CHG_SCH.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_PMT_CHG_SCH.CREATION_DATE,CREATION_DATE Standard Who
+API_BUSINESS_APPL_AFFILIATES.BSL_APP_ORIG_SYS_XREF,BSL_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_AFFILIATES.BSL_ORGANIZATION_TYPE_CD,BSL_ORGANIZATION_TYPE_CD   Stores Organization Type
+API_BUSINESS_APPL_AFFILIATES.BSL_LEGAL_NAME,BSL_LEGAL_NAME   Stores the Legal Name
+API_BUSINESS_APPL_AFFILIATES.BSL_BUSINESS_NAME,BSL_BUSINESS_NAME   Stores the Business Name
+API_BUSINESS_APPL_AFFILIATES.BSL_TAX_ID,BSL_TAX_ID   Tax ID
+API_BUSINESS_APPL_AFFILIATES.BSL_PERC_OWNERSHIP,BSL_PERC_OWNERSHIP   Stores the Percentage Ownership
+API_BUSINESS_APPL_AFFILIATES.BSL_NO_OF_EMPLOYEES,BSL_NO_OF_EMPLOYEES   Stores Number of Employees
+API_BUSINESS_APPL_AFFILIATES.BSL_NAICS_CODE,BSL_NAICS_CODE   Stores NAICS Code
+API_BUSINESS_APPL_AFFILIATES.BSL_ADDRESS_NBR,BSL_ADDRESS_NBR   Address Number
+API_BUSINESS_APPL_AFFILIATES.BSL_ADDRESS1,BSL_ADDRESS1   Stores the First Line of Address
+API_BUSINESS_APPL_AFFILIATES.BSL_CITY,BSL_CITY   City Name
+API_BUSINESS_APPL_AFFILIATES.BSL_STATE_CD,BSL_STATE_CD   State Name
+API_BUSINESS_APPL_AFFILIATES.BSL_ZIP,BSL_ZIP   Zip Code
+API_BUSINESS_APPL_AFFILIATES.BSL_COUNTRY_CD,BSL_COUNTRY_CD   Country Name
+API_BUSINESS_APPL_AFFILIATES.BSL_POSTAL_ADDRESS_TYPE_CD,BSL_POSTAL_ADDRESS_TYPE_CD   Postal Address Type Code
+API_BUSINESS_APPL_AFFILIATES.BSL_PHONE,BSL_PHONE   Phone Number
+API_BUSINESS_APPL_AFFILIATES.BSL_PHONE_ISD_CD,BSL_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_AFFILIATES.BSL_ZIP_EXTN,BSL_ZIP_EXTN Zip Code Extension for Business applicant affiliates
+API_BUSINESS_APPL_AFFILIATES.BSL_ADDRESS2,BSL_ADDRESS2 Second line of Address
+API_BUSINESS_APPL_PARTNERS.BSP_APP_ORIG_SYS_XREF,BSP_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_PARTNERS.BSP_FIRST_NAME,BSP_FIRST_NAME   Stores the First Name
+API_BUSINESS_APPL_PARTNERS.BSP_LAST_NAME,BSP_LAST_NAME   Stores the Last Name
+API_BUSINESS_APPL_PARTNERS.BSP_SSN,BSP_SSN   Stores the SSN Number
+API_BUSINESS_APPL_PARTNERS.BSP_BIRTH_DT,BSP_BIRTH_DT   Stores the Birth Date
+API_BUSINESS_APPL_PARTNERS.BSP_PERC_OWNERSHIP,BSP_PERC_OWNERSHIP   Stores the Percentage of Ownership
+API_BUSINESS_APPL_PARTNERS.BSP_NETWORTH,BSP_NETWORTH   Stores Net worth
+API_BUSINESS_APPL_PARTNERS.BSP_GROSS_INCOME,BSP_GROSS_INCOME   Stores Gross Income
+API_BUSINESS_APPL_PARTNERS.BSP_PHONE,BSP_PHONE   Phone Number
+API_BUSINESS_APPL_PARTNERS.BSP_ADDRESS_NBR,BSP_ADDRESS_NBR   Address Number
+API_BUSINESS_APPL_PARTNERS.BSP_ADDRESS1,BSP_ADDRESS1   First line of Address
+API_BUSINESS_APPL_PARTNERS.BSP_CITY,BSP_CITY   City Name
+API_BUSINESS_APPL_PARTNERS.BSP_STATE_CD,BSP_STATE_CD   State Code
+API_BUSINESS_APPL_PARTNERS.BSP_ZIP,BSP_ZIP   Zip Code
+API_BUSINESS_APPL_PARTNERS.BSP_COUNTRY_CD,BSP_COUNTRY_CD   Country Name
+API_BUSINESS_APPL_PARTNERS.BSP_DIRECTOR_IND,BSP_DIRECTOR_IND Indicates whether the director is partner
+API_BUSINESS_APPL_PARTNERS.BSP_PHONE_ISD_CD,BSP_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_PARTNERS.BSP_LANGUAGE_CD,BSP_LANGUAGE_CD Reference key to lookup language such as English
+API_BUSINESS_APPL_PARTNERS.BSP_MIDDLE_NAME,BSP_MIDDLE_NAME Business Partner Middle Name
+API_BUSINESS_APPL_PARTNERS.BSP_BIRTH_PLACE,BSP_BIRTH_PLACE Partner Birth Place
+API_BUSINESS_APPL_PARTNERS.BSP_TITLE,BSP_TITLE Business Partners Title 
+API_BUSINESS_APPL_PARTNERS.BSP_RACE_NATIONAL_ORIGIN_CD,BSP_RACE_NATIONAL_ORIGIN_CD Race  National and Origin Code
+API_BUSINESS_APPL_PARTNERS.BSP_EMAIL,BSP_EMAIL Email address of the business partner
+API_BUSINESS_APPL_PARTNERS.BSP_PHONE_EXTN,BSP_PHONE_EXTN Business Partner Phone Extension
+API_BUSINESS_APPL_PARTNERS.BSP_ADDRESS2,BSP_ADDRESS2 Second line of Address
+API_BUSINESS_APPL_PARTNERS.BSP_ZIP_EXTN,BSP_ZIP_EXTN Zip Code Extension for Business applicants Partner 
+API_BUSINESS_APPL_PARTNERS.BSP_PREFIX_CD,BSP_PREFIX_CD Reference key to lookup business applicant partner Prefix Code
+API_BUSINESS_APPL_PARTNERS.BSP_PERMISSION_TO_TEXT_IND,BSP_PERMISSION_TO_TEXT_IND Indicates Business applicant  partner permission to text
+API_BUSINESS_APPL_PARTNERS.BSP_PERMISSION_TO_CALL_IND,BSP_PERMISSION_TO_CALL_IND Indicates Business applicant partner permission to call
+API_BUSINESS_APPL_ADDRESS.BSA_APP_ORIG_SYS_XREF,BSA_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_ADDRESS.BSA_POSTAL_ADDRESS_TYPE_CD,BSA_POSTAL_ADDRESS_TYPE_CD   Postal Address Type
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS_NBR,BSA_ADDRESS_NBR   Address Number
+API_BUSINESS_APPL_ADDRESS.BSA_CITY,BSA_CITY   City Name
+API_BUSINESS_APPL_ADDRESS.BSA_STATE_CD,BSA_STATE_CD   State Name
+API_BUSINESS_APPL_ADDRESS.BSA_ZIP,BSA_ZIP   Zip Code
+API_BUSINESS_APPL_ADDRESS.BSA_COUNTRY_CD,BSA_COUNTRY_CD   Country Name
+API_BUSINESS_APPL_ADDRESS.BSA_PHONE,BSA_PHONE   Phone Number
+API_BUSINESS_APPL_ADDRESS.BSA_OWNERSHIP_CD,BSA_OWNERSHIP_CD   Ownership Code
+API_BUSINESS_APPL_ADDRESS.BSA_CONTACT_PHONE_EXTN,BSA_CONTACT_PHONE_EXTN   Contact Phone Extension
+API_BUSINESS_APPL_ADDRESS.BSA_CONTACT_PHONE,BSA_CONTACT_PHONE   Contact Phone number
+API_BUSINESS_APPL_ADDRESS.BSA_MAILING_IND,BSA_MAILING_IND   Indicates if this address is the mailing address
+API_BUSINESS_APPL_ADDRESS.BSA_CURRENT_IND,BSA_CURRENT_IND   Indicates if this address is the current Address
+API_BUSINESS_APPL_ADDRESS.BSA_PHONE_ISD_CD,BSA_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_ADDRESS.BSA_CONTACT_PHONE_ISD_CD,BSA_CONTACT_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_NAME,BSA_STREET_NAME Refers to Business applicant address Street Name
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_TYPE_CD,BSA_STREET_TYPE_CD Reference key lookup street type
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_POST_TYPE_CD,BSA_STREET_POST_TYPE_CD Type of post street direction such as North  South
+API_BUSINESS_APPL_ADDRESS.BSA_APT_STE_NBR,BSA_APT_STE_NBR Apartment or Suite Number
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS1,BSA_ADDRESS1 First Line of address
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS2,BSA_ADDRESS2 Second line of Address
+API_BUSINESS_APPL_ADDRESS.BSA_ZIP_EXTN,BSA_ZIP_EXTN Zip Code Extn for business applicants address
+API_BUSINESS_APPL_ADDRESS.BSA_COMMENT,BSA_COMMENT Comments about business applicant address
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS_TYPE_CD,BSA_ADDRESS_TYPE_CD Type of the address such as home  vacation
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_PRE_TYPE_CD,BSA_STREET_PRE_TYPE_CD Type of pre street direction such as North  South
+API_BUSINESS_APPL_ADDRESS.BSA_CONFIRMED_IND,BSA_CONFIRMED_IND Indicates if the address is confirmed or not
+API_BUSINESS_APPL_ADDRESS.BSA_TIME_ZONE_CD,BSA_TIME_ZONE_CD Stores the Timezone of the business
+API_BUSINESS_APPL_ADDRESS.BSA_CONFIRMED_IND,BSA_CONFIRMED_IND Indicates if the address is confirmed or not
+API_BUSINESS_APPL_ADDRESS.BSA_PERMISSION_TO_CALL_IND,BSA_PERMISSION_TO_CALL_IND Indicates Business applicant address permission to call
+API_BUSINESS_APPL_ADDRESS.BSA_PERMISSION_TO_TEXT_IND,BSA_PERMISSION_TO_TEXT_IND Indicates Business applicant address permission to text
+API_BUSINESS_APPL_ADDRESS.BSA_TIME_ZONE_CD,BSA_TIME_ZONE_CD Stores the Timezone of the business
+API_BUSINESS_APPL_TELECOMS.BST_APP_ORIG_SYS_XREF,BST_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_TELECOMS.BST_TELECOM_TYPE_CD,BST_TELECOM_TYPE_CD   Stores the Telecom Type Code
+API_BUSINESS_APPL_TELECOMS.BST_PHONE,BST_PHONE   Stores the Phone Number
+API_BUSINESS_APPL_TELECOMS.BST_CURRENT_IND,BST_CURRENT_IND   Indicates if the Telecom Current Indicator
+API_BUSINESS_APPL_TELECOMS.BST_PHONE_ISD_CD,BST_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_TELECOMS.BST_PHONE_EXTN,BST_PHONE_EXTN Business Telecom Phone Extension
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME_PERIOD_CD,BST_CALL_START_TIME_PERIOD_CD Best call start time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_TIME_ZONE_CD,BST_TIME_ZONE_CD Stores the Timezone of the Business  telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME,BST_CALL_END_TIME Best call end time for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME,BST_CALL_START_TIME Best call end time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_BEST_CALL_DAY_CD,BST_BEST_CALL_DAY_CD Applicant Telecom Best Day To Call Code
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME_PERIOD_CD,BST_CALL_END_TIME_PERIOD_CD Best call end time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME,BST_CALL_END_TIME Best call end time for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_PERMISSION_TO_TEXT_IND,BST_PERMISSION_TO_TEXT_IND Indicates Business applicant telecom permission to text
+API_BUSINESS_APPL_TELECOMS.BST_PERMISSION_TO_CALL_IND,BST_PERMISSION_TO_CALL_IND Indicates Business Applicant telecom permission to call
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME_PERIOD_CD,BST_CALL_START_TIME_PERIOD_CD Best call start time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME,BST_CALL_START_TIME Best call end time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_BEST_CALL_DAY_CD,BST_BEST_CALL_DAY_CD Applicant Telecom Best Day To Call Code
+API_BUSINESS_APPL_TELECOMS.BST_TIME_ZONE_CD,BST_TIME_ZONE_CD Stores the Timezone of the Business  telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME_PERIOD_CD,BST_CALL_END_TIME_PERIOD_CD Best call end time period code for Business Telecoms
+API_BUSINESS_APPL_LIABILITIES.BSB_APP_ORIG_SYS_XREF,BSB_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_LIABILITIES.BSB_LIABILITY_TYPE_CD,BSB_LIABILITY_TYPE_CD   Stores Liability Type Code
+API_BUSINESS_APPL_LIABILITIES.BSB_AMT,BSB_AMT   Stores the Amount
+API_BUSINESS_APPL_LIABILITIES.BSB_FREQ_CD,BSB_FREQ_CD   Stores the Frequency Code
+API_BUSINESS_APPL_LIABILITIES.BSB_CTL_ACCT_BALANCE,BSB_CTL_ACCT_BALANCE   Stores the Account Balance
+API_BUSINESS_APPL_LIABILITIES.BSB_CTL_ACCT_TYPE,BSB_CTL_ACCT_TYPE   Stores Account Type
+API_BUSINESS_APPL_LIABILITIES.BSB_INCLUDE_IND,BSB_INCLUDE_IND   Include Indicator
+API_BUSINESS_APPL_LIABILITIES.BSB_ACTUAL_MTHLY_AMT,BSB_ACTUAL_MTHLY_AMT   Stores the Actual Monthly Amount
+API_BUSINESS_APPL_LIABILITIES.BSB_STATED_MTHLY_AMT,BSB_STATED_MTHLY_AMT   Stores the Stated Monthly Amount
+API_BUSINESS_APPL_LIABILITIES.BSB_COMMENT,BSB_COMMENT Comments on Business liabilities
+API_BUSINESS_APPL_LIABILITIES.BSB_CUR_CURRENCY_CODE,BSB_CUR_CURRENCY_CODE Reference key to Currency for Business liabilities
+API_BUSINESS_APPL_LIABILITIES.BSB_CURRENCY_AMT,BSB_CURRENCY_AMT Stores the amount in local currency
+API_BUSINESS_APPL_FINANCIALS.BSF_APP_ORIG_SYS_XREF,BSF_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_FINANCIALS.BSF_FINANCIAL_TYPE_CD,BSF_FINANCIAL_TYPE_CD   Stores the Financial Type
+API_BUSINESS_APPL_FINANCIALS.BSF_AMT,BSF_AMT   Amount
+API_BUSINESS_APPL_FINANCIALS.BSF_INCLUDE_IND,BSF_INCLUDE_IND   Include Indicator
+API_BUSINESS_APPL_FINANCIALS.BSF_CUR_CURRENCY_CODE,BSF_CUR_CURRENCY_CODE Reference key to Currency(Stage)
+API_BUSINESS_APPL_FINANCIALS.BSF_COMMENT,BSF_COMMENT Comments on Business applicant financials
+API_BUSINESS_APPL_FINANCIALS.BSF_SOURCE,BSF_SOURCE Financial asset source
+API_BUSINESS_APPL_FINANCIALS.BSF_CURRENCY_AMT,BSF_CURRENCY_AMT Stores the amount in local currency
+API_BUSINESS_APPL_DETAILS.BSD_APP_ORIG_SYS_XREF,BSD_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_DETAILS.BSD_ORGANIZATION_TYPE_CD,BSD_ORGANIZATION_TYPE_CD   Organization Type Code
+API_BUSINESS_APPL_DETAILS.BSD_BUSINESS_TYPE_CD,BSD_BUSINESS_TYPE_CD   Business Type Code
+API_BUSINESS_APPL_DETAILS.BSD_BUSINESS_NAME,BSD_BUSINESS_NAME   Business Name
+API_BUSINESS_APPL_DETAILS.BSD_LEGAL_NAME,BSD_LEGAL_NAME   Business Legal Name
+API_BUSINESS_APPL_DETAILS.BSD_TAX_ID,BSD_TAX_ID   Business Tax ID
+API_BUSINESS_APPL_DETAILS.BSD_START_DT,BSD_START_DT   Business Start Date
+API_BUSINESS_APPL_DETAILS.BSD_CURR_NO_OF_EMPLOYEES,BSD_CURR_NO_OF_EMPLOYEES   Current Number of Employees
+API_BUSINESS_APPL_DETAILS.BSD_NO_OF_EMPLOYEES,BSD_NO_OF_EMPLOYEES   Number of Employees
+API_BUSINESS_APPL_DETAILS.BSD_NO_OF_LOCATIONS,BSD_NO_OF_LOCATIONS   Business Number of Locations
+API_BUSINESS_APPL_DETAILS.BSD_CURR_MANAGEMENT,BSD_CURR_MANAGEMENT   Business Current Management
+API_BUSINESS_APPL_DETAILS.BSD_CHECKING_BANK,BSD_CHECKING_BANK    Checking Bank
+API_BUSINESS_APPL_DETAILS.BSD_BANK_ACNO,BSD_BANK_ACNO   Bank Account Number
+API_BUSINESS_APPL_DETAILS.BSD_AVG_CHECKING_BALANCE,BSD_AVG_CHECKING_BALANCE   Business Average Checking  Balance
+API_BUSINESS_APPL_DETAILS.BSD_ANALYSIS_FREQ_CD,BSD_ANALYSIS_FREQ_CD   Business Analysis Frequency Code
+API_BUSINESS_APPL_DETAILS.BSD_GROSS_MARGIN_FACTOR,BSD_GROSS_MARGIN_FACTOR   Gross Margin factor
+API_BUSINESS_APPL_DETAILS.BSD_INCOME_AMT,BSD_INCOME_AMT   Business Income Amount
+API_BUSINESS_APPL_DETAILS.BSD_BUSINESS_EXP_AMT,BSD_BUSINESS_EXP_AMT   Business Expense Amount
+API_BUSINESS_APPL_DETAILS.BSD_PERSONAL_EXP_AMT,BSD_PERSONAL_EXP_AMT   Business Personal Expense Amount
+API_BUSINESS_APPL_DETAILS.BSD_ANNUAL_SALES_REVENUE,BSD_ANNUAL_SALES_REVENUE   Business Annual Sales Revenue
+API_BUSINESS_APPL_DETAILS.BSD_PROJ_SALES_AMT,BSD_PROJ_SALES_AMT   Business Projected Sales Amount
+API_BUSINESS_APPL_DETAILS.BSD_AVG_COLLECTION,BSD_AVG_COLLECTION   Business Average Collection
+API_BUSINESS_APPL_DETAILS.BSD_ANN_AVG_PROJ_COLLECTION,BSD_ANN_AVG_PROJ_COLLECTION   Business Annual Average Projected Collection
+API_BUSINESS_APPL_DETAILS.BSD_BOOK_LIST_VAL,BSD_BOOK_LIST_VAL   Business Book List Value
+API_BUSINESS_APPL_DETAILS.BSD_OPEN_DELQ_PERC,BSD_OPEN_DELQ_PERC   Business Open Delinquency Percentage
+API_BUSINESS_APPL_DETAILS.BSD_TURNOVER,BSD_TURNOVER   Business Turn Over
+API_BUSINESS_APPL_DETAILS.BSD_EQUITY,BSD_EQUITY   Business Equity
+API_BUSINESS_APPL_DETAILS.BSD_CAPITAL_AMT,BSD_CAPITAL_AMT   Capital Amount
+API_BUSINESS_APPL_DETAILS.BSD_EARNED_SURPLUS_AMT,BSD_EARNED_SURPLUS_AMT   Earned Surplus Amount
+API_BUSINESS_APPL_DETAILS.BSD_GROSS_PROFIT_AMT,BSD_GROSS_PROFIT_AMT   Gross Profit Amount
+API_BUSINESS_APPL_DETAILS.BSD_NET_PROFIT_AMT,BSD_NET_PROFIT_AMT   Net Profit Amount
+API_BUSINESS_APPL_DETAILS.BSD_WORKING_CAPITAL_AMT,BSD_WORKING_CAPITAL_AMT   Working Capital Amount
+API_BUSINESS_APPL_DETAILS.BSD_EXP_AMT,BSD_EXP_AMT    Business Expense Amount
+API_BUSINESS_APPL_DETAILS.BSD_PROJ_ANN_SALES_AMT,BSD_PROJ_ANN_SALES_AMT    Business Projected Annual Sales Amount
+API_BUSINESS_APPL_DETAILS.BSD_PROJ_ANN_EXP_AMT,BSD_PROJ_ANN_EXP_AMT    Business Projected Annual Expense Amount
+API_BUSINESS_APPL_DETAILS.BSD_CURRENT_ASSET_AMT,BSD_CURRENT_ASSET_AMT    Current Asset Amount
+API_BUSINESS_APPL_DETAILS.BSD_FIXED_ASSET_AMT,BSD_FIXED_ASSET_AMT    Fixed Asset Amount
+API_BUSINESS_APPL_DETAILS.BSD_INTANGIBLE_ASSET_AMT,BSD_INTANGIBLE_ASSET_AMT    Intangible Asset Amount
+API_BUSINESS_APPL_DETAILS.BSD_CURRENT_LIABILITY_AMT,BSD_CURRENT_LIABILITY_AMT    Current Liability Amount
+API_BUSINESS_APPL_DETAILS.BSD_LONGTERM_LIABILITY_AMT,BSD_LONGTERM_LIABILITY_AMT    Long-term Liability Amount
+API_BUSINESS_APPL_DETAILS.BSD_TOT_FINANCIAL_AMT,BSD_TOT_FINANCIAL_AMT    Business Total Financial Amount
+API_BUSINESS_APPL_DETAILS.BSD_EQUITY_AMT,BSD_EQUITY_AMT   Equity Amount
+API_BUSINESS_APPL_DETAILS.BSD_TOT_LIABILITY_AMT,BSD_TOT_LIABILITY_AMT   Business Total Liability Amount
+API_BUSINESS_APPL_DETAILS.BSD_EQUITY_RATIO,BSD_EQUITY_RATIO   Equity Ratio
+API_BUSINESS_APPL_DETAILS.BSD_ASSET_LIABILITY_RATIO,BSD_ASSET_LIABILITY_RATIO   Asset Liability Ratio
+API_BUSINESS_APPL_DETAILS.BSD_ERROR_IND,BSD_ERROR_IND   Error Indicator
+API_BUSINESS_APPL_DETAILS.BSD_PAH_HIERARCHY_CODE,BSD_PAH_HIERARCHY_CODE Payment Hierarchy Code
+API_BUSINESS_APPL_DETAILS.BSD_STOP_CORR_IND,BSD_STOP_CORR_IND Indicates if Business Applicant correspondence must be stopped 
+API_BUSINESS_APPL_DETAILS.BSD_EMAIL,BSD_EMAIL Email address of Business Applicant
+API_BUSINESS_APPL_DETAILS.BSD_SKIP_IND,BSD_SKIP_IND Indicates if current Business Address for customer is not valid
+API_BUSINESS_APPL_DETAILS.BSD_REFERENCE_NBR,BSD_REFERENCE_NBR Reference number for business applicant
+API_BUSINESS_APPL_DETAILS.BSD_TIME_ZONE_CD,BSD_TIME_ZONE_CD Stores the Timezone of the Business Applicants
+API_BUSINESS_APPL_DETAILS.BSD_COMMENTS,BSD_COMMENTS Business applicant comments
+API_BUSINESS_APPL_DETAILS.BSD_PRIVACY_OPT_OUT_IND,BSD_PRIVACY_OPT_OUT_IND Indicates if Business Applicant has opted out to share privacy information
+API_BUSINESS_APPL_DETAILS.BSD_SHARE_CR_OPT_OUT_IND,BSD_SHARE_CR_OPT_OUT_IND Business Applicant Share Credit Opt Out Indicator
+API_BUSINESS_APPL_DETAILS.BSD_CREDIT_SCORE,BSD_CREDIT_SCORE Credit score for Business Applicant
+API_BUSINESS_APPL_DETAILS.BSD_REASON_CD,BSD_REASON_CD Business Applicant reason code reference to lookup
+API_BUSINESS_APPL_DETAILS.BSD_CREDIT_SCORE_RECEIVED_DT,BSD_CREDIT_SCORE_RECEIVED_DT Credit score received date for Business Applicant
+API_BUSINESS_APPL_DETAILS.BSD_CREDIT_SOURCE_CD,BSD_CREDIT_SOURCE_CD Business applicants credit source code
+API_BUSINESS_APPL_DETAILS.BSD_BANKRUPTCY_IND,BSD_BANKRUPTCY_IND Indicates if the Business applicant bankruptcy is  enabled are not  
+API_BUSINESS_APPL_DETAILS.BSD_UPDATE_BUSINESS_INFO_IND,BSD_UPDATE_BUSINESS_INFO_IND Business Applicant override indicator
+API_BUSINESS_APPL_DETAILS.BSD_INSURANCE_OPT_OUT_IND,BSD_INSURANCE_OPT_OUT_IND Business Applicant Insurance Opt Out Indicator 
+API_BUSINESS_APPL_DETAILS.BSD_MARKETING_OPT_OUT_IND,BSD_MARKETING_OPT_OUT_IND Business Applicant Marketing Opt Out Indicator
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE1,BAT_FTA_TABLE_ATTRIBUTE1 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE10,BAT_FTA_TABLE_ATTRIBUTE10 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE2,BAT_FTA_TABLE_ATTRIBUTE2 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE3,BAT_FTA_TABLE_ATTRIBUTE3 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE4,BAT_FTA_TABLE_ATTRIBUTE4 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE5,BAT_FTA_TABLE_ATTRIBUTE5 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE6,BAT_FTA_TABLE_ATTRIBUTE6 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE7,BAT_FTA_TABLE_ATTRIBUTE7 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE8,BAT_FTA_TABLE_ATTRIBUTE8 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_FTA_TABLE_ATTRIBUTE9,BAT_FTA_TABLE_ATTRIBUTE9 Attribute Name 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE1,BAT_VALUE1 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE10,BAT_VALUE10 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE2,BAT_VALUE2 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE3,BAT_VALUE3 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE4,BAT_VALUE4 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE5,BAT_VALUE5 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE6,BAT_VALUE6 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE7,BAT_VALUE7 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE8,BAT_VALUE8 Attribute value 
+API_BUSINESS_APPL_DETAILS.BAT_VALUE9,BAT_VALUE9 Attribute value 
+API_BUSINESS_APPL_DETAILS.BSD_BANKRUPTCY_IND,BSD_BANKRUPTCY_IND Indicates if the Business applicant bankruptcy is  enabled are not  
+API_BUSINESS_APPL_DETAILS.BSD_BUSINESS_CATEGORY_CD,BSD_BUSINESS_CATEGORY_CD The category of business applicant details
+API_BUSINESS_APPL_DETAILS.BSD_BUS_ID,BSD_BUS_ID system generated unique  reference  id
+API_BUSINESS_APPL_DETAILS.BSD_COMMENTS,BSD_COMMENTS Business applicant comments
+API_BUSINESS_APPL_DETAILS.BSD_CREDIT_SCORE,BSD_CREDIT_SCORE Credit score for Business Applicant
+API_BUSINESS_APPL_DETAILS.BSD_CREDIT_SCORE_RECEIVED_DT,BSD_CREDIT_SCORE_RECEIVED_DT Credit score received date for Business Applicant
+API_BUSINESS_APPL_DETAILS.BSD_CREDIT_SOURCE_CD,BSD_CREDIT_SOURCE_CD Business applicants credit source code
+API_BUSINESS_APPL_DETAILS.BSD_CRED_LIMIT_EXPIRY_DT,BSD_CRED_LIMIT_EXPIRY_DT Business applicant credit limit expiry date
+API_BUSINESS_APPL_DETAILS.BSD_CRED_LIMIT_GRADE_CD,BSD_CRED_LIMIT_GRADE_CD Reference key to lookup business applicant credit limit grade code
+API_BUSINESS_APPL_DETAILS.BSD_CRED_LIMIT_MAX_AMT,BSD_CRED_LIMIT_MAX_AMT Business applicant maximum credit limit amount
+API_BUSINESS_APPL_DETAILS.BSD_CRED_LIMIT_MAX_LC_RATE,BSD_CRED_LIMIT_MAX_LC_RATE Business applicant credit limit maximum late charge
+API_BUSINESS_APPL_DETAILS.BSD_CRED_LIMIT_RENEW_DT,BSD_CRED_LIMIT_RENEW_DT Business applicant credit limit renew date
+API_BUSINESS_APPL_DETAILS.BSD_CUR_AVG_CHECKING_BALANCE,BSD_CUR_AVG_CHECKING_BALANCE Stores the Average Checking Balance of business
+API_BUSINESS_APPL_DETAILS.BSD_CUR_CURRENCY_CODE,BSD_CUR_CURRENCY_CODE Reference key to Currency
+API_BUSINESS_APPL_DETAILS.BSD_EMAIL,BSD_EMAIL Email address of Business Applicant
+API_BUSINESS_APPL_DETAILS.BSD_INSURANCE_OPT_OUT_IND,BSD_INSURANCE_OPT_OUT_IND Business Applicant Insurance Opt Out Indicator 
+API_BUSINESS_APPL_DETAILS.BSD_LIAB_NBR,BSD_LIAB_NBR Liability number for  Api_business_appl_details
+API_BUSINESS_APPL_DETAILS.BSD_MARKETING_OPT_OUT_IND,BSD_MARKETING_OPT_OUT_IND Business Applicant Marketing Opt Out Indicator
+API_BUSINESS_APPL_DETAILS.BSD_PRIOR_BUSINESS_IND,BSD_PRIOR_BUSINESS_IND Indicates whether the  priority business  is allowed
+API_BUSINESS_APPL_DETAILS.BSD_PRIVACY_OPT_OUT_IND,BSD_PRIVACY_OPT_OUT_IND Indicates if Business Applicant has opted out to share privacy information
+API_BUSINESS_APPL_DETAILS.BSD_REASON_CD,BSD_REASON_CD Business Applicant reason code reference to lookup
+API_BUSINESS_APPL_DETAILS.BSD_REFERENCE_NBR,BSD_REFERENCE_NBR Reference number for business applicant
+API_BUSINESS_APPL_DETAILS.BSD_SHARE_CR_OPT_OUT_IND,BSD_SHARE_CR_OPT_OUT_IND Business Applicant Share Credit Opt Out Indicator
+API_BUSINESS_APPL_DETAILS.BSD_SKIP_IND,BSD_SKIP_IND Indicates if current Business Address for customer is not valid
+API_BUSINESS_APPL_DETAILS.BSD_STOP_CORR_IND,BSD_STOP_CORR_IND Indicates if Business Applicant correspondence must be stopped 
+API_BUSINESS_APPL_DETAILS.BSD_UPDATE_BUSINESS_INFO_IND,BSD_UPDATE_BUSINESS_INFO_IND Business Applicant override indicator
+API_BUSINESS_APPL_DETAILS.BSD_UTILIZATION_PERC,BSD_UTILIZATION_PERC Business applicant credit limit utilization percentage
+API_POST_DATE_CHECKS.PDC_APP_ORIG_SYS_XREF,PDC_APP_ORIG_SYS_XREF Reference key to accounts id of legacy system and it is used for converting accounts from other system
+API_POST_DATE_CHECKS.PDC_STATUS_CD,PDC_STATUS_CD PDC status like OPEN PROCESSED VOID
+API_POST_DATE_CHECKS.PDC_CHECK_NBR,PDC_CHECK_NBR PDC check number
+API_POST_DATE_CHECKS.PDC_CHECK_DT,PDC_CHECK_DT PDC check date
+API_POST_DATE_CHECKS.PDC_CHECK_AMT,PDC_CHECK_AMT PDC check amount
+API_POST_DATE_CHECKS.PDC_BANK_ROUTING_NBR,PDC_BANK_ROUTING_NBR Drawer Bank Routing number
+API_POST_DATE_CHECKS.PDC_ACCOUNT_TYPE_CD,PDC_ACCOUNT_TYPE_CD PDC account type like SAVINGS CHECKING
+API_POST_DATE_CHECKS.PDC_ACCOUNT_NBR,PDC_ACCOUNT_NBR Drawer Bank Account Number
+API_POST_DATE_CHECKS.PDC_BANK_NAME,PDC_BANK_NAME Drawer Bank Name
+API_POST_DATE_CHECKS.PDC_BANK_BRANCH_NAME,PDC_BANK_BRANCH_NAME Drawer Bank Branch Name
+API_POST_DATE_CHECKS.PDC_DOCKET_CODE,PDC_DOCKET_CODE Docket code where the cheques are physically placed by the lending institution
+API_POST_DATE_CHECKS.PDC_COMMENTS,PDC_COMMENTS comments
+API_POST_DATE_CHECKS.CREATED_BY,CREATED_BY Standard Who
+API_POST_DATE_CHECKS.PDC_TYPE_CD,PDC_TYPE_CD PDC purpose like SECURITY PAYMENT
+API_POST_DATE_CHECKS.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_APP_ORIG_XREF,ADH_APP_ORIG_XREF Original system reference used for conversion only
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_DUE_DT,ADH_DUE_DT Stores the due date for the Account
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_DUE_AMT,ADH_DUE_AMT Stores the due amount for the Account
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_BALANCE_AMT,ADH_BALANCE_AMT Stores the balance amount for the due date
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_ACTUAL_DAYS_PAST_DUE,ADH_ACTUAL_DAYS_PAST_DUE Stores the Actual days from the last due date
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_PMT_SATISFIED_IND,ADH_PMT_SATISFIED_IND Indicates the payment satisfied is allowed for the account
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_PMT_DT,ADH_PMT_DT Stores the Payment date for the account
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_PMT_AMT,ADH_PMT_AMT Stores the Payment amount for the account
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_PRIMARY_IND,ADH_PRIMARY_IND Indicator specifying whether the due date is the primary due date or not
+API_ACCOUNT_DUE_DATE_HISTORY.ADH_TXN_SET_ID,ADH_TXN_SET_ID System generated unique identification number for transaction set
+API_ACCOUNT_DUE_DATE_HISTORY.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_DUE_DATE_HISTORY.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNT_DUE_DATE_HISTORY.LAST_UPDATED_BY,LAST_UPDATED_BY Standard Who
+API_ACCOUNT_DUE_DATE_HISTORY.LAST_UPDATE_DATE,LAST_UPDATE_DATE Standard Who
+API_ASSET_CHARGE_MATRIX.ACX_ORIG_SYS_XREF,ACX_ORIG_SYS_XREF External Refeence number
+API_ASSET_CHARGE_MATRIX.ACX_AST_TYPE,ACX_AST_TYPE Asset Sub Type
+API_ASSET_CHARGE_MATRIX.ACX_ASB_TYPE,ACX_ASB_TYPE Asset Type
+API_ASSET_CHARGE_MATRIX.ACX_UNITS_FROM,ACX_UNITS_FROM Starting Units from which the measument starts
+API_ASSET_CHARGE_MATRIX.ACX_CHARGE_PER_UNIT,ACX_CHARGE_PER_UNIT Changes applicable per unit.
+API_ASSET_CHARGE_MATRIX.ACX_CHARGE_TYPE_CD,ACX_CHARGE_TYPE_CD Charge type code - Base Cycle  Life
+API_ASSET_CHARGE_MATRIX.ACX_ENABLED_IND,ACX_ENABLED_IND Enabled Indicator
+API_ASSET_CHARGE_MATRIX.ACX_AGREEMENT_TYPE_CD,ACX_AGREEMENT_TYPE_CD Agreement type Code - Usage/Rental/Undefined.
+API_ASSET_CHARGE_MATRIX.ACX_USAGE_BILL_CYCLE_CD,ACX_USAGE_BILL_CYCLE_CD Frequency code at which usage bill has be calculated.
+API_ASSET_CHARGE_MATRIX.CREATED_BY,CREATED_BY Standard Who
+API_ASSET_CHARGE_MATRIX.CREATION_DATE,CREATION_DATE Standard Who
+API_ASSET_CHARGE_SUMMARY.AAS_ACC_XREF_NBR,AAS_ACC_XREF_NBR External Reference number
+API_ASSET_CHARGE_SUMMARY.AAS_BILLED_DATE,AAS_BILLED_DATE Billed Date
+API_ASSET_CHARGE_SUMMARY.AAS_NET_UNITS,AAS_NET_UNITS Net Units
+API_ASSET_CHARGE_SUMMARY.AAS_MIN_UNITS,AAS_MIN_UNITS Minimum Units
+API_ASSET_CHARGE_SUMMARY.AAS_CHARGEABLE_UNITS,AAS_CHARGEABLE_UNITS Chargeable units
+API_ASSET_CHARGE_SUMMARY.AAS_BASE_UNITS,AAS_BASE_UNITS Base Units
+API_ASSET_CHARGE_SUMMARY.AAS_EXCESS_UNITS_CYCLE,AAS_EXCESS_UNITS_CYCLE Excess units
+API_ASSET_CHARGE_SUMMARY.AAS_BASE_UNITS_CHARGE,AAS_BASE_UNITS_CHARGE Base Units
+API_ASSET_CHARGE_SUMMARY.AAS_EFFECTIVE_BASE_UNITS,AAS_EFFECTIVE_BASE_UNITS Effective base unit
+API_ASSET_CHARGE_SUMMARY.AAS_EXCESS_CHARGE_CYCLE,AAS_EXCESS_CHARGE_CYCLE Excess charge for Excess/Rental
+API_ASSET_CHARGE_SUMMARY.AAS_TOTAL_USAGE_CHARGE,AAS_TOTAL_USAGE_CHARGE Total Usage Charge for usage cycle
+API_ASSET_CHARGE_SUMMARY.AAS_UNUSED_UNITS_CYCLE,AAS_UNUSED_UNITS_CYCLE Unused units for the cycle
+API_ASSET_CHARGE_SUMMARY.AAS_PROCESSED_DATE,AAS_PROCESSED_DATE Processed Date
+API_ASSET_CHARGE_SUMMARY.AAS_USAGE_CYCLE,AAS_USAGE_CYCLE Indicates which Usage Cycle belongs to.
+API_ASSET_CHARGE_SUMMARY.AAS_EXCESS_UNITS_LIFE,AAS_EXCESS_UNITS_LIFE Excess units
+API_ASSET_CHARGE_SUMMARY.AAS_EXCESS_CHARGE_LIFE,AAS_EXCESS_CHARGE_LIFE Excess charge
+API_ASSET_CHARGE_SUMMARY.AAS_UNUSED_UNITS_LIFE,AAS_UNUSED_UNITS_LIFE Unused units
+API_ASSET_CHARGE_SUMMARY.AAS_ELASTIC_USAGE_TERM,AAS_ELASTIC_USAGE_TERM Number of term by which the total units will be elapsed.
+API_ASSET_CHARGE_SUMMARY.CREATED_BY,CREATED_BY Standard Who
+API_ASSET_CHARGE_SUMMARY.CREATION_DATE,CREATION_DATE Standard Who
+API_ASSET_CHARGE_SUMMARY.LAST_UPDATED_BY,LAST_UPDATED_BY Standard Who
+API_ASSET_CHARGE_SUMMARY.LAST_UPDATE_DATE,LAST_UPDATE_DATE Standard Who
+API_ACCOUNT_CONDITIONS.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_CONDITIONS.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNT_CONDITIONS.ACO_START_DT,ACO_START_DT The effective date the condition was started
+API_ACCOUNT_CONDITIONS.ACO_ACC_CONDITION_REASON_CD,ACO_ACC_CONDITION_REASON_CD The reason of the condition  such as 1ST - First Payment Default  CH7 - Chapter 7 Filed and CLAIM - Insurance Claim
+API_ACCOUNT_CONDITIONS.ACO_ACC_CONDITION_CD,ACO_ACC_CONDITION_CD The type of the condition  such as DELQ - Delinquency  BKRP - Bankruptcy and TIP - Termination in Progress (Payoff)
+API_ACCOUNT_CONDITIONS.ACO_ORIG_SYS_XREF,ACO_ORIG_SYS_XREF Unique Identification Number from the Legacy System
+API_TRACKING_ATTRIBUTES.ATT_NBR,ATT_NBR Attribute Number
+API_TRACKING_ATTRIBUTES.ATT_TYPE,ATT_TYPE Tracking type like Asset  Customer  Account
+API_TRACKING_ATTRIBUTES.CREATED_BY,CREATED_BY Standard Who
+API_TRACKING_ATTRIBUTES.CREATION_DATE,CREATION_DATE Standard Who
+API_TRACKING_ATTRIBUTES.ATT_FTA_TABLE_ATTRIBUTE,ATT_FTA_TABLE_ATTRIBUTE Name of the parameter
+API_TRACKING_ATTRIBUTES.ATT_APP_ORIG_SYS_XREF,ATT_APP_ORIG_SYS_XREF Original system reference used for conversion only
+API_TRACKING_ATTRIBUTES.ATT_VALUE,ATT_VALUE The value of the asset tracking attribute
+API_ACCOUNT_BKRP_HISTORY.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNT_BKRP_HISTORY.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_BKRP_HISTORY.ABH_ACC_STATUS_CD,ABH_ACC_STATUS_CD Account Status Code
+API_ACCOUNT_BKRP_HISTORY.ABH_CURRENT_IND,ABH_CURRENT_IND Current Indicator
+API_ACCOUNT_BKRP_HISTORY.ABH_PAYMENT_HISTORY,ABH_PAYMENT_HISTORY Payment History
+API_ACCOUNT_BKRP_HISTORY.ABH_ACC_CRB_ACC_STATUS_CD,ABH_ACC_CRB_ACC_STATUS_CD CRB Account Status
+API_ACCOUNT_BKRP_HISTORY.ABH_BILLING_DATE,ABH_BILLING_DATE Billing Date
+API_ACCOUNT_BKRP_HISTORY.ABH_CURRENT_BAL_AMT,ABH_CURRENT_BAL_AMT Current balance amount
+API_ACCOUNT_BKRP_HISTORY.ABH_DOFD_DT,ABH_DOFD_DT Date of First Delinquency
+API_ACCOUNT_BKRP_HISTORY.ABH_CIIC_CODE,ABH_CIIC_CODE CIIC Code
+API_ACCOUNT_BKRP_HISTORY.ABH_AMT_PAST_DUE,ABH_AMT_PAST_DUE Amount Past Due
+API_ACCOUNT_BKRP_HISTORY.ABH_MONTHLY_PMT_AMT,ABH_MONTHLY_PMT_AMT Monthly Payment Amount
+API_ACCOUNT_BKRP_HISTORY.ABH_ORIG_SYS_XREF,ABH_ORIG_SYS_XREF Unique Identification Number from the Legacy System
+API_BANKRUPTCY.CREATED_BY,CREATED_BY Standard Who
+API_BANKRUPTCY.BKP_NEXT_FOLLOWUP_DT,BKP_NEXT_FOLLOWUP_DT The date on which next followup is scheduled
+API_BANKRUPTCY.BKP_END_DT,BKP_END_DT The date on which bankruptcy ended
+API_BANKRUPTCY.BKP_DISPOSITION_CD,BKP_DISPOSITION_CD Reference key to lookup bankruptcy disposition
+API_BANKRUPTCY.BKP_TYPE_CD,BKP_TYPE_CD Reference key to lookup bankruptcy type such as chapter 7 11 13
+API_BANKRUPTCY.BKP_COMMENT,BKP_COMMENT A user defined comment for bankruptcy
+API_BANKRUPTCY.BKP_IND,BKP_IND Indicates whether the account is in bankruptcy
+API_BANKRUPTCY.BKP_DT,BKP_DT The date on which bankruptcy was filed
+API_BANKRUPTCY.BKP_FILE_RCVD_DT,BKP_FILE_RCVD_DT The date on which bankruptcy file was received
+API_BANKRUPTCY.CREATION_DATE,CREATION_DATE Standard Who
+API_BANKRUPTCY.BKP_CUR_IND,BKP_CUR_IND Indicates the current bankruptcy record 
+API_BANKRUPTCY.BKP_ORIG_SYS_XREF,BKP_ORIG_SYS_XREF Unique Identification Number from the Legacy System
+API_BANKRUPTCY.BKP_NBR,BKP_NBR Bankruptcy Number
+API_BANKRUPTCY.BKP_RELATION_TYPE_CD,BKP_RELATION_TYPE_CD Relation of bankrupt customer such as primary  spouse  secondary  cosigner
+API_CUSTOMER_CREDIT_SCORE.CREATED_BY,CREATED_BY Standard Who
+API_CUSTOMER_CREDIT_SCORE.CREATION_DATE,CREATION_DATE Standard Who
+API_CUSTOMER_CREDIT_SCORE.CSC_COMMENTS,CSC_COMMENTS Comments Regarding the Credit Score
+API_CUSTOMER_CREDIT_SCORE.CSC_CREDIT_SCORE,CSC_CREDIT_SCORE Credit Score
+API_CUSTOMER_CREDIT_SCORE.CSC_CREDIT_SCORE_RECEIVED_DT,CSC_CREDIT_SCORE_RECEIVED_DT Received Date
+API_CUSTOMER_CREDIT_SCORE.CSC_CREDIT_SOURCE_CD,CSC_CREDIT_SOURCE_CD Reference to Credit Source code
+API_CUSTOMER_CREDIT_SCORE.CSC_ORIG_SYS_XREF,CSC_ORIG_SYS_XREF Reference key to application id of legacy system
+API_CUSTOMER_CREDIT_SCORE.CSC_REASON_CD,CSC_REASON_CD Reference to Reason Code
+API_CUSTOMER_CREDIT_SCORE.CSC_REFERENCE_NBR,CSC_REFERENCE_NBR Reference Number
+API_CUSTOMER_CREDIT_SCORE.CSC_RELATION_TYPE_CD,CSC_RELATION_TYPE_CD Reference to Relationship Type code
+API_CUSTOMER_CREDIT_SCORE.CSC_TXN_DT,CSC_TXN_DT Transaction date
+API_CUSTOMER_CREDIT_SCORE.LAST_UPDATED_BY,LAST_UPDATED_BY Standard Who
+API_CUSTOMER_CREDIT_SCORE.LAST_UPDATE_DATE,LAST_UPDATE_DATE Standard Who
+API_BUSINESS_CREDIT_SCORE.BCS_COMMENTS,BCS_COMMENTS Comments Regarding the Credit Score
+API_BUSINESS_CREDIT_SCORE.BCS_CREDIT_SCORE,BCS_CREDIT_SCORE Credit Score From the Credit Bureau
+API_BUSINESS_CREDIT_SCORE.BCS_CREDIT_SCORE_RECEIVED_DT,BCS_CREDIT_SCORE_RECEIVED_DT Date of which Credit Score received
+API_BUSINESS_CREDIT_SCORE.BCS_CREDIT_SOURCE_CD,BCS_CREDIT_SOURCE_CD Name of The third Party Credit Bureau
+API_BUSINESS_CREDIT_SCORE.BCS_ORIG_SYS_XREF,BCS_ORIG_SYS_XREF Reference key to application id of legacy system
+API_BUSINESS_CREDIT_SCORE.BCS_REASON_CD,BCS_REASON_CD Reference to Reason Code
+API_BUSINESS_CREDIT_SCORE.BCS_REFERENCE_NBR,BCS_REFERENCE_NBR Reference Number
+API_BUSINESS_CREDIT_SCORE.BCS_TXN_DT,BCS_TXN_DT Date of Tranaction Date
+API_BUSINESS_CREDIT_SCORE.CREATED_BY,CREATED_BY Standard Who
+API_BUSINESS_CREDIT_SCORE.CREATION_DATE,CREATION_DATE Standard Who
+API_BUSINESS_CREDIT_SCORE.LAST_UPDATED_BY,LAST_UPDATED_BY Standard Who
+API_BUSINESS_CREDIT_SCORE.LAST_UPDATE_DATE,LAST_UPDATE_DATE Standard Who
+API_TRADE_DETAILS.TDT_SOURCE_XREF,TDT_SOURCE_XREF External Reference Number for source account
+API_TRADE_DETAILS.TDT_TARGET_XREF,TDT_TARGET_XREF External Reference Number for target account
+API_TRADE_DETAILS.TDT_EQUITY_AMT,TDT_EQUITY_AMT Equity Amount
+API_TRADE_DETAILS.TDT_TRADE_TYPE_CD,TDT_TRADE_TYPE_CD Trade Type Code
+API_TRADE_DETAILS.TDT_STATUS_CD,TDT_STATUS_CD Status code
+API_TRADE_DETAILS.TDT_CURRENT_IND,TDT_CURRENT_IND Current indicator
+API_TRADE_DETAILS.CREATED_BY,CREATED_BY Standard Who
+API_TRADE_DETAILS.CREATION_DATE,CREATION_DATE Standard Who
