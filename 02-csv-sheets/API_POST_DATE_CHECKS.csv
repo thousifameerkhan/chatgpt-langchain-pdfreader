@@ -1,17 +1,16 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-PDC_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to accounts id of legacy system and it is used for converting accounts from other system,,,,,,,,Y,Y,
-PDC_STATUS_CD,VARCHAR2,,N,PDC status like OPEN PROCESSED VOID,,,,,,,,Y,Y,
-PDC_CHECK_NBR,NUMBER,,N,PDC check number,,,,,,,,Y,Y,
-PDC_CHECK_DT,DATE,,N,PDC check date,,,,,,,,N,N,
-PDC_CHECK_AMT,NUMBER,,N,PDC check amount,,,,,,,,Y,Y,
-PDC_BANK_ROUTING_NBR,VARCHAR2,,N,Drawer Bank Routing number,,,,,,,,Y,Y,
-PDC_ACCOUNT_TYPE_CD,VARCHAR2,,N,PDC account type like SAVINGS CHECKING,,,,,,,,N,N,
-PDC_ACCOUNT_NBR,VARCHAR2,,N,Drawer Bank Account Number,,,,,,,,Y,Y,
-PDC_BANK_NAME,VARCHAR2,,N,Drawer Bank Name,,,,,,,,Y,Y,
-PDC_BANK_BRANCH_NAME,VARCHAR2,,N,Drawer Bank Branch Name,,,,,,,,Y,Y,
-PDC_DOCKET_CODE,VARCHAR2,,N,Docket code where the cheques are physically placed by the lending institution,,,,,,,,N,N,
-PDC_COMMENTS,VARCHAR2,,N,comments,,,,,,,,N,N,
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
-PDC_TYPE_CD,VARCHAR2,,N,PDC purpose like SECURITY PAYMENT,,,,,,,,Y,Y,Y
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
+key,description
+API_POST_DATE_CHECKS.PDC_APP_ORIG_SYS_XREF,PDC_APP_ORIG_SYS_XREF Reference key to accounts id of legacy system and it is used for converting accounts from other system
+API_POST_DATE_CHECKS.PDC_STATUS_CD,PDC_STATUS_CD PDC status like OPEN PROCESSED VOID
+API_POST_DATE_CHECKS.PDC_CHECK_NBR,PDC_CHECK_NBR PDC check number
+API_POST_DATE_CHECKS.PDC_CHECK_DT,PDC_CHECK_DT PDC check date
+API_POST_DATE_CHECKS.PDC_CHECK_AMT,PDC_CHECK_AMT PDC check amount
+API_POST_DATE_CHECKS.PDC_BANK_ROUTING_NBR,PDC_BANK_ROUTING_NBR Drawer Bank Routing number
+API_POST_DATE_CHECKS.PDC_ACCOUNT_TYPE_CD,PDC_ACCOUNT_TYPE_CD PDC account type like SAVINGS CHECKING
+API_POST_DATE_CHECKS.PDC_ACCOUNT_NBR,PDC_ACCOUNT_NBR Drawer Bank Account Number
+API_POST_DATE_CHECKS.PDC_BANK_NAME,PDC_BANK_NAME Drawer Bank Name
+API_POST_DATE_CHECKS.PDC_BANK_BRANCH_NAME,PDC_BANK_BRANCH_NAME Drawer Bank Branch Name
+API_POST_DATE_CHECKS.PDC_DOCKET_CODE,PDC_DOCKET_CODE Docket code where the cheques are physically placed by the lending institution
+API_POST_DATE_CHECKS.PDC_COMMENTS,PDC_COMMENTS comments
+API_POST_DATE_CHECKS.CREATED_BY,CREATED_BY Standard Who
+API_POST_DATE_CHECKS.PDC_TYPE_CD,PDC_TYPE_CD PDC purpose like SECURITY PAYMENT
+API_POST_DATE_CHECKS.CREATION_DATE,CREATION_DATE Standard Who

@@ -1,33 +1,32 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-BSA_APP_ORIG_SYS_XREF,VARCHAR2,,N,  Unique Identification Number from the Legacy System,,,,,,,,Y,,Y
-BSA_POSTAL_ADDRESS_TYPE_CD,VARCHAR2,,Y,  Postal Address Type,POSTAL_ADDRESS_TYPE_CD,,,,,,,Y,,Y
-BSA_ADDRESS_NBR,VARCHAR2,,N,  Address Number,,,,,,,,N,,N
-BSA_CITY,VARCHAR2,,Y,  City Name,,,,,,,,Y,,Y
-BSA_STATE_CD,VARCHAR2,,Y,  State Name,STATE_CD,,,,,,,Y,,Y
-BSA_ZIP,VARCHAR2,,Y,  Zip Code,,,,,,,,Y,,Y
-BSA_COUNTRY_CD,VARCHAR2,,Y,  Country Name,COUNTRY_CD,,,,,,,Y,,Y
-BSA_PHONE,NUMBER,,Y,  Phone Number,,,,,,,,Y,,Y
-BSA_OWNERSHIP_CD,VARCHAR2,,N,  Ownership Code,OWNERSHIP_CD,,,,,,,N,,N
-BSA_CONTACT_PHONE_EXTN,NUMBER,,N,  Contact Phone Extension,,,,,,,,N,,N
-BSA_CONTACT_PHONE,NUMBER,,N,  Contact Phone number,,,,,,,,N,,N
-BSA_MAILING_IND,VARCHAR2,,N,  Indicates if this address is the mailing address,,,,,,,,N,,N
-BSA_CURRENT_IND,VARCHAR2,,N,  Indicates if this address is the current Address,,,,,,,,N,,N
-BSA_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,PHONE_ISD_CD,,,,,,,N,,N
-BSA_CONTACT_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,,,,,,,,N,,N
-BSA_STREET_NAME,VARCHAR2,,N,Refers to Business applicant address Street Name,,,,,,,,N,,N
-BSA_STREET_TYPE_CD,VARCHAR2,,N,Reference key lookup street type,STREET_TYPE_CD,,,,,,,N,,N
-BSA_STREET_POST_TYPE_CD,VARCHAR2,,N,Type of post street direction such as North  South,STREET_PRE_TYPE_CD,,,,,,,N,,N
-BSA_APT_STE_NBR,VARCHAR2,,N,Apartment or Suite Number,,,,,,,,N,,N
-BSA_ADDRESS1,VARCHAR2,,N,First Line of address,,,,,,,,N,,N
-BSA_ADDRESS2,VARCHAR2,,N,Second line of Address,,,,,,,,N,,N
-BSA_ZIP_EXTN,VARCHAR2,,N,Zip Code Extn for business applicants address,,,,,,,,N,,N
-BSA_COMMENT,VARCHAR2,,N,Comments about business applicant address,,,,,,,,N,,N
-BSA_ADDRESS_TYPE_CD,VARCHAR2,,N,Type of the address such as home  vacation,ADDRESS_TYPE_CD,,,,,,,N,,N
-BSA_STREET_PRE_TYPE_CD,VARCHAR2,,N,Type of pre street direction such as North  South,STREET_PRE_TYPE_CD,,,,,,,N,,N
-BSA_CONFIRMED_IND,VARCHAR2,,Y,Indicates if the address is confirmed or not,,,,,,,,Y,Y,Y
-BSA_TIME_ZONE_CD,VARCHAR2,,N,Stores the Timezone of the business,TIME_ZONE_CD,,,,,,,Y,Y,Y
-BSA_CONFIRMED_IND,VARCHAR2,,Y,Indicates if the address is confirmed or not,,,,,,,,Y,Y,Y
-BSA_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Business applicant address permission to call,,,,,,,,Y,Y,N
-BSA_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Business applicant address permission to text,,,,,,,,Y,Y,N
-BSA_TIME_ZONE_CD,VARCHAR2,,N,Stores the Timezone of the business,,,,,,,,Y,Y,Y
+key,description
+API_BUSINESS_APPL_ADDRESS.BSA_APP_ORIG_SYS_XREF,BSA_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_ADDRESS.BSA_POSTAL_ADDRESS_TYPE_CD,BSA_POSTAL_ADDRESS_TYPE_CD   Postal Address Type
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS_NBR,BSA_ADDRESS_NBR   Address Number
+API_BUSINESS_APPL_ADDRESS.BSA_CITY,BSA_CITY   City Name
+API_BUSINESS_APPL_ADDRESS.BSA_STATE_CD,BSA_STATE_CD   State Name
+API_BUSINESS_APPL_ADDRESS.BSA_ZIP,BSA_ZIP   Zip Code
+API_BUSINESS_APPL_ADDRESS.BSA_COUNTRY_CD,BSA_COUNTRY_CD   Country Name
+API_BUSINESS_APPL_ADDRESS.BSA_PHONE,BSA_PHONE   Phone Number
+API_BUSINESS_APPL_ADDRESS.BSA_OWNERSHIP_CD,BSA_OWNERSHIP_CD   Ownership Code
+API_BUSINESS_APPL_ADDRESS.BSA_CONTACT_PHONE_EXTN,BSA_CONTACT_PHONE_EXTN   Contact Phone Extension
+API_BUSINESS_APPL_ADDRESS.BSA_CONTACT_PHONE,BSA_CONTACT_PHONE   Contact Phone number
+API_BUSINESS_APPL_ADDRESS.BSA_MAILING_IND,BSA_MAILING_IND   Indicates if this address is the mailing address
+API_BUSINESS_APPL_ADDRESS.BSA_CURRENT_IND,BSA_CURRENT_IND   Indicates if this address is the current Address
+API_BUSINESS_APPL_ADDRESS.BSA_PHONE_ISD_CD,BSA_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_ADDRESS.BSA_CONTACT_PHONE_ISD_CD,BSA_CONTACT_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_NAME,BSA_STREET_NAME Refers to Business applicant address Street Name
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_TYPE_CD,BSA_STREET_TYPE_CD Reference key lookup street type
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_POST_TYPE_CD,BSA_STREET_POST_TYPE_CD Type of post street direction such as North  South
+API_BUSINESS_APPL_ADDRESS.BSA_APT_STE_NBR,BSA_APT_STE_NBR Apartment or Suite Number
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS1,BSA_ADDRESS1 First Line of address
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS2,BSA_ADDRESS2 Second line of Address
+API_BUSINESS_APPL_ADDRESS.BSA_ZIP_EXTN,BSA_ZIP_EXTN Zip Code Extn for business applicants address
+API_BUSINESS_APPL_ADDRESS.BSA_COMMENT,BSA_COMMENT Comments about business applicant address
+API_BUSINESS_APPL_ADDRESS.BSA_ADDRESS_TYPE_CD,BSA_ADDRESS_TYPE_CD Type of the address such as home  vacation
+API_BUSINESS_APPL_ADDRESS.BSA_STREET_PRE_TYPE_CD,BSA_STREET_PRE_TYPE_CD Type of pre street direction such as North  South
+API_BUSINESS_APPL_ADDRESS.BSA_CONFIRMED_IND,BSA_CONFIRMED_IND Indicates if the address is confirmed or not
+API_BUSINESS_APPL_ADDRESS.BSA_TIME_ZONE_CD,BSA_TIME_ZONE_CD Stores the Timezone of the business
+API_BUSINESS_APPL_ADDRESS.BSA_CONFIRMED_IND,BSA_CONFIRMED_IND Indicates if the address is confirmed or not
+API_BUSINESS_APPL_ADDRESS.BSA_PERMISSION_TO_CALL_IND,BSA_PERMISSION_TO_CALL_IND Indicates Business applicant address permission to call
+API_BUSINESS_APPL_ADDRESS.BSA_PERMISSION_TO_TEXT_IND,BSA_PERMISSION_TO_TEXT_IND Indicates Business applicant address permission to text
+API_BUSINESS_APPL_ADDRESS.BSA_TIME_ZONE_CD,BSA_TIME_ZONE_CD Stores the Timezone of the business

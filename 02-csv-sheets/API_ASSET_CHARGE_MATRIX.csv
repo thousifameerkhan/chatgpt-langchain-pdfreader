@@ -1,13 +1,12 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-ACX_ORIG_SYS_XREF,VARCHAR2,,N,External Refeence number,,,,,,,,,Y,
-ACX_AST_TYPE,VARCHAR2,,Y,Asset Sub Type,,,,,,,,,Y,
-ACX_ASB_TYPE,VARCHAR2,,Y,Asset Type,,,,,,,,,Y,
-ACX_UNITS_FROM,NUMBER,,Y,Starting Units from which the measument starts,,,,,,,,,Y,
-ACX_CHARGE_PER_UNIT,NUMBER,,Y,Changes applicable per unit.,,,,,,,,,Y,
-ACX_CHARGE_TYPE_CD,VARCHAR2,,Y,Charge type code - Base Cycle  Life,,,,,,,,,Y,
-ACX_ENABLED_IND,VARCHAR2,,Y,Enabled Indicator,,,,,,,,,Y,
-ACX_AGREEMENT_TYPE_CD,VARCHAR2,,Y,Agreement type Code - Usage/Rental/Undefined.,,,,,,,,,Y,
-ACX_USAGE_BILL_CYCLE_CD,VARCHAR2,,Y,Frequency code at which usage bill has be calculated.,,,,,,,,,Y,
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,,Y,
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,,Y,
+key,description
+API_ASSET_CHARGE_MATRIX.ACX_ORIG_SYS_XREF,ACX_ORIG_SYS_XREF External Refeence number
+API_ASSET_CHARGE_MATRIX.ACX_AST_TYPE,ACX_AST_TYPE Asset Sub Type
+API_ASSET_CHARGE_MATRIX.ACX_ASB_TYPE,ACX_ASB_TYPE Asset Type
+API_ASSET_CHARGE_MATRIX.ACX_UNITS_FROM,ACX_UNITS_FROM Starting Units from which the measument starts
+API_ASSET_CHARGE_MATRIX.ACX_CHARGE_PER_UNIT,ACX_CHARGE_PER_UNIT Changes applicable per unit.
+API_ASSET_CHARGE_MATRIX.ACX_CHARGE_TYPE_CD,ACX_CHARGE_TYPE_CD Charge type code - Base Cycle  Life
+API_ASSET_CHARGE_MATRIX.ACX_ENABLED_IND,ACX_ENABLED_IND Enabled Indicator
+API_ASSET_CHARGE_MATRIX.ACX_AGREEMENT_TYPE_CD,ACX_AGREEMENT_TYPE_CD Agreement type Code - Usage/Rental/Undefined.
+API_ASSET_CHARGE_MATRIX.ACX_USAGE_BILL_CYCLE_CD,ACX_USAGE_BILL_CYCLE_CD Frequency code at which usage bill has be calculated.
+API_ASSET_CHARGE_MATRIX.CREATED_BY,CREATED_BY Standard Who
+API_ASSET_CHARGE_MATRIX.CREATION_DATE,CREATION_DATE Standard Who

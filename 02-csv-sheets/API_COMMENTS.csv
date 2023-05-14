@@ -1,13 +1,12 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-ACM_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to account comment of legacy system,,,,,,,,Y,,Y
-ACM_SEQ,NUMBER,,N,Sequence number for account comment,,,,,,,,Y,,Y
-ACM_COMMENT,VARCHAR2,,N,A miscellaneous comment entered by the user,,,,,,,,Y,,Y
-ACM_COMMENT_DT,DATE,,N,Account comment date,,,,,,,,Y,,Y
-ACM_COMMENT_BY,VARCHAR2,,N,The name of the user entering and saving the comment,,,,,,,,Y,,Y
-ACM_COMMENT_TYPE_CD,VARCHAR2,,N,The type of the comment  such as REG - Regular and SYG - System Generated,COMMENT_TYPE_CD,,,,,,,Y,,Y
-ACM_COMMENT_SUB_TYPE_CD,VARCHAR2,,N,The sub-type of the comment  such as ORG - Originations,COMMENT_SUB_TYPE_CD,,,,,,,Y,,Y
-ACM_COMMENT_IMP_IND,VARCHAR2,,N,Indicates if the comment is considered important,,,,,,,,Y,,Y
-ACM_ERROR_IND,VARCHAR2,,N,Error indicator for account comment,,,,,,,,N,,N
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
+key,description
+API_COMMENTS.ACM_APP_ORIG_SYS_XREF,ACM_APP_ORIG_SYS_XREF Reference key to account comment of legacy system
+API_COMMENTS.ACM_SEQ,ACM_SEQ Sequence number for account comment
+API_COMMENTS.ACM_COMMENT,ACM_COMMENT A miscellaneous comment entered by the user
+API_COMMENTS.ACM_COMMENT_DT,ACM_COMMENT_DT Account comment date
+API_COMMENTS.ACM_COMMENT_BY,ACM_COMMENT_BY The name of the user entering and saving the comment
+API_COMMENTS.ACM_COMMENT_TYPE_CD,ACM_COMMENT_TYPE_CD The type of the comment  such as REG - Regular and SYG - System Generated
+API_COMMENTS.ACM_COMMENT_SUB_TYPE_CD,ACM_COMMENT_SUB_TYPE_CD The sub-type of the comment  such as ORG - Originations
+API_COMMENTS.ACM_COMMENT_IMP_IND,ACM_COMMENT_IMP_IND Indicates if the comment is considered important
+API_COMMENTS.ACM_ERROR_IND,ACM_ERROR_IND Error indicator for account comment
+API_COMMENTS.CREATION_DATE,CREATION_DATE Standard Who
+API_COMMENTS.CREATED_BY,CREATED_BY Standard Who

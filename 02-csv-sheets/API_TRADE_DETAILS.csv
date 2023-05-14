@@ -1,10 +1,9 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-TDT_SOURCE_XREF,VARCHAR2,,N,External Reference Number for source account,,,,,,,,Y,Y,
-TDT_TARGET_XREF,VARCHAR2,,N,External Reference Number for target account,,,,,,,,Y,Y,
-TDT_EQUITY_AMT,NUMBER,,N,Equity Amount,,,,,,,,Y,Y,
-TDT_TRADE_TYPE_CD,VARCHAR2,,N,Trade Type Code,TRADE_TYPE_CD,,,,,,,Y,Y,
-TDT_STATUS_CD,VARCHAR2,,N,Status code,TRADE_STATUS_CD,,,,,,,Y,Y,
-TDT_CURRENT_IND,VARCHAR2,,N,Current indicator,,,,,,,,Y,Y,
-CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,
-CREATION_DATE,DATE,,N,Standard Who,DATE,,,,,,,Y,Y,
+key,description
+API_TRADE_DETAILS.TDT_SOURCE_XREF,TDT_SOURCE_XREF External Reference Number for source account
+API_TRADE_DETAILS.TDT_TARGET_XREF,TDT_TARGET_XREF External Reference Number for target account
+API_TRADE_DETAILS.TDT_EQUITY_AMT,TDT_EQUITY_AMT Equity Amount
+API_TRADE_DETAILS.TDT_TRADE_TYPE_CD,TDT_TRADE_TYPE_CD Trade Type Code
+API_TRADE_DETAILS.TDT_STATUS_CD,TDT_STATUS_CD Status code
+API_TRADE_DETAILS.TDT_CURRENT_IND,TDT_CURRENT_IND Current indicator
+API_TRADE_DETAILS.CREATED_BY,CREATED_BY Standard Who
+API_TRADE_DETAILS.CREATION_DATE,CREATION_DATE Standard Who

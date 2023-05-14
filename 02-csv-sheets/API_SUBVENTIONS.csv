@@ -1,32 +1,31 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-SBV_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,Y,,
-SBV_SBP_CODE,VARCHAR2,,N,Stores the Subvention plan code,,,,,,,,Y,,
-SBV_SBP_DESC,VARCHAR2,,N,Stores the Subvention Plan description,,,,,,,,Y,,
-SBV_SSP_CODE,VARCHAR2,,N,Stores the Subvention Sub-plan code,,,,,,,,Y,,
-SBV_SSP_DESC,VARCHAR2,,N,Stores the Subvention Sub-plan description,,,,,,,,N,,
-SBV_SUBVENTION_TYPE_CD,VARCHAR2,,N,Reference key to lookup subvention_type_cd such as RATE CASH_BONUS etc,SUBVENTION_TYPE_CD,,,,,,,Y,,
-SBV_PRO_ID,NUMBER,,N,Stores the producer id,,,,,,,,Y,,
-SBV_SBV_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup sbv_calc_method_cd such as SPREAD_DEFAULT SPREAD_DEFAULT_PV etc,SBV_CALC_METHOD_CD,,,,,,,Y,,
-SBV_SBV_COLLECTION_METHOD_CD,VARCHAR2,,N,Reference key to lookup sbv_collection_method_cd such as UPFRONT UPFRONT_STMT etc,SBV_COLLECTION_METHOD_CD,,,,,,,Y,,
-SBV_SUBVENTION_AMT,NUMBER,,N,Stores the subvention amount,,,,,,,,Y,,
-SBV_SUBVENTION_RATE,NUMBER,,N,Stores the subvention rate,,,,,,,,Y,,
-SBV_RFND_PDOFF_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup RFND_PDOFF_CALC_METHOD_CD such as PERCENTAGE EARNED etc,RFND_PDOFF_CALC_METHOD_CD,,,,,,,N,,
-SBV_RFND_PDOFF_BASIS_CD,VARCHAR2,,N,Reference key to lookup RFND_PDOFF_BASIS_CD such as TERM DAYS etc,RFND_PDOFF_BASIS_CD,,,,,,,N,,
-SBV_RFND_PDOFF_PER,NUMBER,,N,Stores the paid-off refund percentage,,,,,,,,N,,
-SBV_RFND_PDOFF_PERIOD,NUMBER,,N,Stores the paid-off basis code for refund,,,,,,,,N,,
-SBV_RFND_CHGOFF_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup RFND_CHGOFF_CALC_METHOD_CD such as PERCENTAGE EARNED etc,RFND_CHGOFF_CALC_METHOD_CD,,,,,,,N,,
-SBV_RFND_CHGOFF_BASIS_CD,VARCHAR2,,N,Reference key to lookup RFND_CHGOFF_BASIS_CD such as TERM DAYS etc,RFND_CHGOFF_BASIS_CD,,,,,,,N,,
-SBV_RFND_CHGOFF_PER,NUMBER,,N,Stores the charge-off refund percentage,,,,,,,,N,,
-SBV_RFND_CHGOFF_PERIOD,NUMBER,,N,Stores the charge-off refund period,,,,,,,,N,,
-SBV_SUBVENTION_TCD_CODE,VARCHAR2,,N,Stores the subvention transaction code,,,,,,,,Y,,
-SBV_UPFNT_ITEMIZATION_TCD_CODE,VARCHAR2,,N,Stores the upfront itemization transaction code,,,,,,,,Y,,
-SBV_AMORTIZE_TXN_TYPE_CD,VARCHAR2,,N,Stores the amortization transaction type,AMORTIZE_TXN_TYPE_CD,,,,,,,Y,,
-SBV_AMORTIZE_CALC_METHOD_CD,VARCHAR2,,N,Stores the amortization calculation method,AMORTIZE_CALC_METHOD_CD,,,,,,,Y,,
-SBV_AMORTIZE_FREQ_CD,VARCHAR2,,N,Stores the amortization frequency,AMORTIZE_FREQ_CD,,,,,,,Y,,
-SBV_AMORTIZE_FEE_METHOD_CD,VARCHAR2,,N,Stores the amortization Fee Method,AMORTIZE_FEE_METHOD_CD,,,,,,,N,,
-SBV_FIRST_AMORTIZE_DT,DATE,,N,Stores the first amortization date,,,,,,,,N,,
-SBV_AMORTIZE_START_DT,DATE,,N,Stores the amortization start date,,,,,,,,N,,
-SBV_SBV_STATUS_TYPE_CD,VARCHAR2,,N,Stores the Subvention status (REQUEST  DECISION or CONTRACT),,,,,,,,y ,,
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
+key,description
+API_SUBVENTIONS.SBV_APP_ORIG_SYS_XREF,SBV_APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_SUBVENTIONS.SBV_SBP_CODE,SBV_SBP_CODE Stores the Subvention plan code
+API_SUBVENTIONS.SBV_SBP_DESC,SBV_SBP_DESC Stores the Subvention Plan description
+API_SUBVENTIONS.SBV_SSP_CODE,SBV_SSP_CODE Stores the Subvention Sub-plan code
+API_SUBVENTIONS.SBV_SSP_DESC,SBV_SSP_DESC Stores the Subvention Sub-plan description
+API_SUBVENTIONS.SBV_SUBVENTION_TYPE_CD,SBV_SUBVENTION_TYPE_CD Reference key to lookup subvention_type_cd such as RATE CASH_BONUS etc
+API_SUBVENTIONS.SBV_PRO_ID,SBV_PRO_ID Stores the producer id
+API_SUBVENTIONS.SBV_SBV_CALC_METHOD_CD,SBV_SBV_CALC_METHOD_CD Reference key to lookup sbv_calc_method_cd such as SPREAD_DEFAULT SPREAD_DEFAULT_PV etc
+API_SUBVENTIONS.SBV_SBV_COLLECTION_METHOD_CD,SBV_SBV_COLLECTION_METHOD_CD Reference key to lookup sbv_collection_method_cd such as UPFRONT UPFRONT_STMT etc
+API_SUBVENTIONS.SBV_SUBVENTION_AMT,SBV_SUBVENTION_AMT Stores the subvention amount
+API_SUBVENTIONS.SBV_SUBVENTION_RATE,SBV_SUBVENTION_RATE Stores the subvention rate
+API_SUBVENTIONS.SBV_RFND_PDOFF_CALC_METHOD_CD,SBV_RFND_PDOFF_CALC_METHOD_CD Reference key to lookup RFND_PDOFF_CALC_METHOD_CD such as PERCENTAGE EARNED etc
+API_SUBVENTIONS.SBV_RFND_PDOFF_BASIS_CD,SBV_RFND_PDOFF_BASIS_CD Reference key to lookup RFND_PDOFF_BASIS_CD such as TERM DAYS etc
+API_SUBVENTIONS.SBV_RFND_PDOFF_PER,SBV_RFND_PDOFF_PER Stores the paid-off refund percentage
+API_SUBVENTIONS.SBV_RFND_PDOFF_PERIOD,SBV_RFND_PDOFF_PERIOD Stores the paid-off basis code for refund
+API_SUBVENTIONS.SBV_RFND_CHGOFF_CALC_METHOD_CD,SBV_RFND_CHGOFF_CALC_METHOD_CD Reference key to lookup RFND_CHGOFF_CALC_METHOD_CD such as PERCENTAGE EARNED etc
+API_SUBVENTIONS.SBV_RFND_CHGOFF_BASIS_CD,SBV_RFND_CHGOFF_BASIS_CD Reference key to lookup RFND_CHGOFF_BASIS_CD such as TERM DAYS etc
+API_SUBVENTIONS.SBV_RFND_CHGOFF_PER,SBV_RFND_CHGOFF_PER Stores the charge-off refund percentage
+API_SUBVENTIONS.SBV_RFND_CHGOFF_PERIOD,SBV_RFND_CHGOFF_PERIOD Stores the charge-off refund period
+API_SUBVENTIONS.SBV_SUBVENTION_TCD_CODE,SBV_SUBVENTION_TCD_CODE Stores the subvention transaction code
+API_SUBVENTIONS.SBV_UPFNT_ITEMIZATION_TCD_CODE,SBV_UPFNT_ITEMIZATION_TCD_CODE Stores the upfront itemization transaction code
+API_SUBVENTIONS.SBV_AMORTIZE_TXN_TYPE_CD,SBV_AMORTIZE_TXN_TYPE_CD Stores the amortization transaction type
+API_SUBVENTIONS.SBV_AMORTIZE_CALC_METHOD_CD,SBV_AMORTIZE_CALC_METHOD_CD Stores the amortization calculation method
+API_SUBVENTIONS.SBV_AMORTIZE_FREQ_CD,SBV_AMORTIZE_FREQ_CD Stores the amortization frequency
+API_SUBVENTIONS.SBV_AMORTIZE_FEE_METHOD_CD,SBV_AMORTIZE_FEE_METHOD_CD Stores the amortization Fee Method
+API_SUBVENTIONS.SBV_FIRST_AMORTIZE_DT,SBV_FIRST_AMORTIZE_DT Stores the first amortization date
+API_SUBVENTIONS.SBV_AMORTIZE_START_DT,SBV_AMORTIZE_START_DT Stores the amortization start date
+API_SUBVENTIONS.SBV_SBV_STATUS_TYPE_CD,SBV_SBV_STATUS_TYPE_CD Stores the Subvention status (REQUEST  DECISION or CONTRACT)
+API_SUBVENTIONS.CREATION_DATE,CREATION_DATE Standard Who
+API_SUBVENTIONS.CREATED_BY,CREATED_BY Standard Who

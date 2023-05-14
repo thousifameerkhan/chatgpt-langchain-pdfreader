@@ -1,276 +1,275 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-ACT_FTA_TABLE_ATTRIBUTE6,VARCHAR2,,N,Name of the account tracking attribute parameter 6,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE7,VARCHAR2,,N,Name of the account tracking attribute parameter 7,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE8,VARCHAR2,,N,Name of the account tracking attribute parameter 8,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE9,VARCHAR2,,N,Name of the account tracking attribute parameter 9,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE10,VARCHAR2,,N,Name of the account tracking attribute parameter 10,,,,,,,,N,N,N
-ACT_VALUE1,VARCHAR2,,N,Value of the account tracking attribute 1,,,,,,,,N,N,N
-ACT_VALUE2,VARCHAR2,,N,Value of the account tracking attribute 2,,,,,,,,N,N,N
-ACT_VALUE3,VARCHAR2,,N,Value of the account tracking attribute 3,,,,,,,,N,N,N
-ACT_VALUE4,VARCHAR2,,N,Value of the account tracking attribute 4,,,,,,,,N,N,N
-ACT_VALUE5,VARCHAR2,,N,Value of the account tracking attribute 5,,,,,,,,N,N,N
-ACT_VALUE6,VARCHAR2,,N,Value of the account tracking attribute 6,,,,,,,,N,N,N
-ACT_VALUE7,VARCHAR2,,N,Value of the account tracking attribute 7,,,,,,,,N,N,N
-ACT_VALUE8,VARCHAR2,,N,Value of the account tracking attribute 8,,,,,,,,N,N,N
-ACT_VALUE9,VARCHAR2,,N,Value of the account tracking attribute 9,,,,,,,,N,N,N
-ACT_VALUE10,VARCHAR2,,N,Value of the account tracking attribute 10,,,,,,,,N,N,N
-ACC_ESC_REQUIRED_IND_CUR,VARCHAR2,,N,Indicates if escrow is allowed for the account (current),,,,,,,,Y,N,Y
-ACC_ESC_OPT_OUT_IND_CUR,VARCHAR2,,N,Indicates whether escrow is opted out (current),,,,,,,,Y,N,Y
-ACC_ESC_ANALYSIS_RUN_DT_NEXT,DATE,,N,The latest date on which escrow analysis was done for the account,,,,,,,,Y,N,Y
-ACC_ESC_PMT_AMT_CUR,NUMBER,,N,Escrow payment amount (current),,,,,,,,Y,N,Y
-ACC_DUE_ESC_AMT,NUMBER,,N,The escrow amount due for the account,,,,,,,,Y,N,Y
-ACC_ESC_AMT_PD,NUMBER,,N,Total escrow amount paid,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT1,NUMBER,,N,Escrow Due amount 1 cycle old,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT2,NUMBER,,N,Escrow Due amount 2 cycle old,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT3,NUMBER,,N,Escrow Due amount 3 cycle old,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT4,NUMBER,,N,Escrow Due amount 4 cycle old,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT5,NUMBER,,N,Escrow Due amount 5 cycle old,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT_PD1,NUMBER,,N,Escrow Due amount 1 cycle old paid,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT_PD2,NUMBER,,N,Escrow Due amount 2 cycle old paid,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT_PD3,NUMBER,,N,Escrow Due amount 3 cycle old paid,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT_PD4,NUMBER,,N,Escrow Due amount 4 cycle old paid,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT_PD5,NUMBER,,N,Escrow Due amount 5 cycle old paid,,,,,,,,Y,N,Y
-ACC_ESC_DUE_AMT_PD_EXCESS,NUMBER,,N,Total escrow amount paid against future due dates,,,,,,,,Y,N,Y
-ACC_ESC_BAL_OPEN,NUMBER,,N,Opening escrow balance (ITD),,,,,,,,Y,N,Y
-ACC_ESC_BAL,NUMBER,,N,Current posted escrow balance for the account,,,,,,,,Y,N,Y
-ACC_ESC_BAL_PD,NUMBER,,N,Escrow balance paid (ITD),,,,,,,,Y,N,Y
-ACC_ESC_BAL_ADJUST_PLUS,NUMBER,,N,Positive adjustment escrow balance (ITD),,,,,,,,Y,N,Y
-ACC_ESC_BAL_ADJUST_MINUS,NUMBER,,N,Negative adjustment escrow balance (ITD),,,,,,,,Y,N,Y
-ACC_NON_PERFORM_IND,VARCHAR2,,N,Indicates whether account is in non-performing state,,,,,,,,Y,N,Y
-ACC_NON_PERFORM_TYPE_CD,VARCHAR2,,N,Reference key to lookup Non-Performance types such as non-accrual  etc,,,,,,,,N,N,N
-ACC_NON_PERFORM_INT_REBATE,NUMBER,,N,Interest rebate computed when account gets into non-performing state,,,,,,,,Y,N,Y
-ACC_PROM_END_DT,DATE,,N,The date on which promotion ends,,,,,,,,N,N,N
-ACC_PROM_PERIOD_TYPE_CD,VARCHAR2,,N,Promotion period type,,,,,,,,Y,N,Y
-ACC_PROM_TOLERANCE_AMT,NUMBER,,N,Promotion tolerance amount checked against outstanding balance for promotion benefits,,,,,,,,Y,N,Y
-ACC_FINAL_PMT_AMT,NUMBER,,N,Final payment amount,,,,,,,,Y,N,Y
-ACC_ADV_DRAW_END_DT,DATE,,N,The end date to draw advance for stage funded loans,,,,,,,,N,N,N
-ACC_COUPON_FIRST_PMT_DT_CUR,DATE,,N,The date on which first payment is expected on the re-ordered coupon book (Current) and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_COUPON_NOS_CUR,NUMBER,,N,Number of coupons for order (Current) and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_COUPON_ORDER_BY_CUR,VARCHAR2,,N,Identifies coupon ordered by (Current) and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_COUPON_ORDER_IND_CUR,VARCHAR2,,N,Indicates whether the coupon has been re-ordered (Current) and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_COUPON_START_NO_CUR,NUMBER,,N,The starting number of the coupon (Current) and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_STATE_CD,VARCHAR2,,N,Reference key to lookup state code and it is used for converting accounts from other system,,,,,,,,Y,,Y
-ACC_RATE_CHG_RSC_METHOD_CD,VARCHAR2,,N,Reference key to lookup Rate Change Reschedule Method and it is used for converting accounts from other system,RATE_CHG_RSC_METHOD_CD,,,,,,,N,N,N
-ACC_RATE_CHG_RSC_VALUE,NUMBER,,N,The percentage value to be used to change the payment amount when rate changes on account and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_RATE_CHG_OCCURANCES_MAX,NUMBER,,N,The maximum number of rate change occurrences for the particular rate adjustment frequency and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_FLEXIBLE_REPAYMENT_IND,VARCHAR2,,N,Indicates Flexible Repayment option is allowed or not and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_REPAYMENT_TYPE_CD,VARCHAR2,,N,Reference key to lookup account repayment type and it is used for converting accounts from other system,,,,,,,,,N,
-ACC_LOSS_RESERVE_PRO_IND,VARCHAR2,,N,Indicates if account has contributed to dealer loss reserve and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_PRODUCER_HOLDBACK_AMT,NUMBER,,N,Stores the amount held back from dealer proceed on that account and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_PROM_CANCEL_DLQ_DAYS,NUMBER,,N,Stores the delinquency days after which the promotion is cancelled automatically and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_CRB_ACC_STATUS_CD,VARCHAR2,,N,Reference key to lookup credit bureau account status,,,,,,,,N,,N
-ACC_RECURRING_CRD_PMT_IND,VARCHAR2,,N,Recurring Credit Payment Indicator,,,,,,,,Y,N,Y
-ACC_RECURRING_CRD_PMT_AMT,NUMBER,,N,Recurring Credit Payment Amount,,,,,,,,Y,N,Y
-ACC_CRD_START_DT,DATE,,N,Account Credit Start Date,,,,,,,,Y,N,Y
-ACC_IN_PROMOTION_IND,VARCHAR2,,N,Indicates whether or not the account is in promotion and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_INT_AMT_ESTIMATED_CUR,NUMBER,,N,Total current interest estimated amount for pre-compute loans and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_INDEX_RATE_ROUND_FACTOR_CD,NUMBER,,N,Reference key to lookup index rate round factor,INDEX_RATE_ROUND_FACTOR_CD,,,,,,,N,N,N
-ACC_COLLECT_INTEREST_IND,VARCHAR2,,N,Indicates whether the interest has to be collected or not,,,,,,,,Y,N,Y
-ACC_BOOK_NO,VARCHAR2,,N,Account Book Number and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_PAGE_NBR,VARCHAR2,,N,Account Page Number and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_DEEDING_PAGE_NO,VARCHAR2,,N,Account Deeding Page Number and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_DEEDING_BOOK_NO,VARCHAR2,,N,Account Deeding Book Number and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_DEEDING_TRANSMITTAL_NO,VARCHAR2,,N,Stores the Deeding Transmittal Number and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_MRTG_RECORDING_DT,DATE,,N,Stores the Mortgage Recording Date and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_DEED_RECORDING_DT,DATE,,N,Stores the Deed Recording Date and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_DEED_INPUT_DT,DATE,,N,Stores the Deed Input Date and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_NOTE_TRANSMITTAL_NO,VARCHAR2,,N,Stores the Note Transmittal Number and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_CNCL_CSHOT_TRANSMITTAL_NBR,VARCHAR2,,N,Cancel/Cashout Transmittal Number and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_RATE_CHG_OCCURANCES,NUMBER,,N,The number of times rate change has occurred for the particular rate adjustment frequency on account and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_RATE_CHG_PERIOD,NUMBER,,N,Stores the time or period between subsequent rate change based on rate adjustment frequency on account and it is used for converting accounts from other system,,,,,,,,Y,N,Y
-ACC_RATE_CHG_FREQ_TYPE_CD,VARCHAR2,,N,Reference key to lookup rate change frequency type such as MONTHLY QUARTERLY etc and it is used for converting accounts from other system,RATE_CHANGE_FREQ_TYPE_CD,,,,,,,Y,N,Y
-ACC_RATE_EFFECTIVE_CUR,NUMBER,,N,Stores the current effective rate,,,,,,,,N,N,N
-ACC_MRATE_EFFECTIVE_CUR,NUMBER,,N,Stores the current effective margin rate,,,,,,,,N,N,N
-ACC_INDEX_RATE_EFFECTIVE_CUR,NUMBER,,N,Stores the current effective index rate,,,,,,,,N,N,N
-ACC_TIME_ZONE_CD,VARCHAR2,,N,Stores the Time Zone Code. This is used for Conversion of data from other system,TIME_ZONE_CD,,,,,,,N,,N
-ACC_TOTAL_DISCOUNT_RATE,NUMBER,,N,Stores the Total Discount Rate. This is used for Conversion of data from other system,,,,,,,,N,N,N
-ACC_REPMT_FIXED_PRINCIPAL_AMT,NUMBER,,N,Stores Principal Amount calculated,,,,,,,,Y,N,Y
-ACC_EXTEND_BALLOON_TERM_MAX,NUMBER,,N,Stores the maximum Extendable Balloon term,,,,,,,,Y,N,Y
-ACC_LOAN_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency  Loan Currency,,,,,,,,N,N,N
-ACC_RPMT_CUR_CURRENCY_CODE_CUR,VARCHAR2,,N,Reference key to Currency  Repayment Currency (Current),,,,,,,,N,N,N
-ACC_AMT_PD_IN_EXCESS,NUMBER,,N,Stores information on Amount paid in Excess,,,,,,,,Y,N,Y
-ACC_ACH_FEE_IND,VARCHAR2,,N,ACH fee indicator,,,,,,,,Y,N,Y
-ACC_PMT_MAX_INCREASE_YEAR,NUMBER,,N,Payment max increase year,,,,,,,,Y,N,Y
-ACC_PMT_MAX_INCREASE_LIFE,NUMBER,,N,Payment max increase life,,,,,,,,Y,N,Y
-ACC_PMT_START_OF_YEAR,NUMBER,,N,Payment start of the year,,,,,,,,Y,N,Y
-ACC_AAG_START_DT,DATE,,N,Plan arrangement start date,,,,,,,,N,N,N
-ACC_AAG_END_DT,DATE,,N,Plan arrangement end date,,,,,,,,N,N,N
-ACC_AAG_IND,VARCHAR2,,N,Plan arrangement indicator,,,,,,,,N,N,N
-ACC_SIGNING_DT,DATE,,N,Account signing date,,,,,,,,N,N,N
-ACC_PROBABLE_DELIVERY_DT,DATE,,N,Accounts probable delivery date,,,,,,,,N,N,N
-ACC_RENTAL_FEE,NUMBER,,N,Rental fee,,,,,,,,Y,Y,Y
-ACC_RESIDUAL_DAYS,NUMBER,,N,Residual days,,,,,,,,Y,Y,Y
-ACC_PROM_PROFIT_RATE,NUMBER,,N,Promotional profit rate,,,,,,,,Y,Y,Y
-ACC_STOP_ACCRUAL_DAYS,NUMBER,,Y,Stop Accrual Days for accounts,,,,,,,,Y,Y,Y
-ACC_LIAB_NBR,VARCHAR2,,N,Liability number for accounts,,,,,,,,N,N,N
-ACC_POOL_CODE,VARCHAR2,,N,Pool code for the account,,,,,,,,N,N,N
-ACC_LINE_CODE,VARCHAR2,,N,The   line code for accounts,,,,,,,,N,N,N
-ACC_LINE_SERIAL_NO,NUMBER,,N,Line Serial Number for accounts,,,,,,,,N,N,N
-ACC_UTILIZATION_REF_NBR,VARCHAR2,,N,Utilization Reference number  for  account,,,,,,,,N,N,N
-ACC_DIRECT_DISB_MODE_CD,VARCHAR2,,Y,Reference key to lookup  account  direct disbursement mode code for accounts,,,,,,,,Y,Y,Y
-ACC_DIRECT_DISB_CASA_ACC_NBR,VARCHAR2,,N,Direct disbursement casa  account number for accounts,,,,,,,,N,N,N
-ACC_SUBUNIT_CD,VARCHAR2,,N,Stores the Sale transfer Sub Unit Code,,,,,,,,N,N,N
-ACC_SCRA_IND,VARCHAR2,,Y,Stores the SCRA indicator,,,,,,,,N,N,N
-ACC_RATE_LAST,NUMBER,,Y,Stores the last rate,,,,,,,,N,N,N
-ACC_CRB_FULL_PMT_HISTORY,VARCHAR2,,N,Complete credit bureau payment rating history,,,,,,,,N,N,N
-ACC_RAT_RUN_DT_NEXT,DATE,,N,Next run date of rate change processing,,,,,,,,N,N,N
-ACC_RATE_START_OF_YEAR,NUMBER,,N,Rate at the beginning of the year,,,,,,,,N,N,N
-ACC_CHGOFF_AMT,NUMBER,,N,Total charged off amount,,,,,,,,N,N,N
-ACC_DDT_RUN_DT_LAST,DATE,,N,Effective date of last billing date,,,,,,,,N,N,N
-ACC_CRB_FIRST_DLQ_DT,DATE,,N,Date on which the account went delinquent for the first time,,,,,,,,N,N,N
-ACC_CLOSE_DT,DATE,,N,Date on which account was closed,,,,,,,,N,N,N
-ACC_OPEN_IND,VARCHAR2,,N,Indicates whether the account is open or closed,,,,,,,,N,N,N
-ACC_INDEX_RATE,NUMBER,,N,Index rate(Original),,,,,,,,Y,Y,Y
-ACC_MRATE,NUMBER,,N,Margin rate(Original),,,,,,,,Y,Y,Y
-ACC_ACCRUAL_DT_START,DATE,,N,Date on which interest accrual date starts,,,,,,,,N,N,N
-ACC_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,Y,Y,Y
-ACC_OPEN_IND,VARCHAR2,,N,Indicates whether the account is open or closed,,,,,,,,N,N,N
-ACC_STATUS_CD,VARCHAR2,,N,The status of the account such as ACTIVE  CHGOFF  PAID,,,,,,,,Y,Y,Y
-ACC_EFFECTIVE_DT,DATE,,N,The date on which the account become effective,,,,,,,,N,N,N
-ACC_RATE_START_OF_YEAR,NUMBER,,N,Rate at the beginning of the year,,,,,,,,N,N,N
-ACC_TERM_CUR,NUMBER,,N,Term of the contract(Current),,,,,,,,Y,N,Y
-ACC_TERM_PD,NUMBER,,N,Term paid,,,,,,,,Y,N,Y
-ACC_MATURITY_DT_CUR,DATE,,N,The date on which the account would mature(Current),,,,,,,,N,N,N
-ACC_BALLOON_AMT_CUR,NUMBER,,N,Current balloon payment amount,,,,,,,,Y,N,Y
-ACC_ACCRUAL_DT_START,DATE,,N,Date on which interest accrual date starts,,,,,,,,N,N,N
-ACC_ACCRUAL_DT_LAST,DATE,,N,The date on which last interest accrual was done,,,,,,,,Y,Y,Y
-ACC_ACCRUAL_STOP_IND,VARCHAR2,,N,Indicates whether accrual has been stopped,,,,,,,,Y,Y,Y
-ACC_EXTN_COUNT_YEAR,NUMBER,,N,Number of extensions given in a year,,,,,,,,Y,Y,Y
-ACC_EXTN_COUNT_LIFE,NUMBER,,N,Number of extensions given in the life of the account,,,,,,,,Y,Y,Y
-ACC_EXTN_TERM_YEAR,NUMBER,,N,Number of cycles extended  in a year,,,,,,,,Y,Y,Y
-ACC_EXTN_TERM_LIFE,NUMBER,,N,Number of cycles extended in the life of the account,,,,,,,,Y,Y,Y
-ACC_EXTN_DT_LAST,DATE,,N,The date on which last extension was given,,,,,,,,N,N,N
-ACC_ADV_DT_LAST,DATE,,N,The date on which last advance was given,,,,,,,,N,N,N
-ACC_PMT_DT_LAST,DATE,,N,The date on which last payment was received,,,,,,,,N,N,N
-ACC_PMT_AMT_LAST,NUMBER,,N,The amount of the last payment received,,,,,,,,Y,N,Y
-ACC_LAST_ACTIVITY_DT,DATE,,N,The date on which last activity was performed on an account,,,,,,,,N,N,N
-ACC_CLOSE_DT,DATE,,N,Date on which account was closed,,,,,,,,Y,N,Y
-ACC_RATE_CUR,NUMBER,,N,The contract rate(Current),,,,,,,,Y,Y,Y
-ACC_PMT_AMT_CUR,NUMBER,,N,Payment amount(Current),,,,,,,,Y,Y,Y
-ACC_ACH_IND_CUR,VARCHAR2,,N,Indicates whether the account has been setup for ACH (Current),,,,,,,,Y,N,Y
-ACC_ACH_BANK_NAME_CUR,VARCHAR2,,N,The name of the ACH bank of the customer (Current),,,,,,,,N,N,N
-ACC_ACH_BANK_ROUTING_NBR_CUR,VARCHAR2,,N,The 9-digit ABA number of the ACH bank of the customer. (Current),,,,,,,,N,N,N
-ACC_ACH_ACCOUNT_TYPE_CD_CUR,VARCHAR2,,N,Reference key to lookup ACH account type such as checking saving etc (Current),ACC_ACH_ACCOUNT_TYPE_CD,,,,,,,N,N,N
-ACC_ACH_ACCOUNT_NBR_CUR,VARCHAR2,,N,The account number of the bank for ACH transaction (Current),,,,,,,,N,N,N
-ACC_ACH_PMT_DAY_CUR,NUMBER,,N,The day on which debit to ACH will occur (Current),,,,,,,,Y,N,Y
-ACC_ACH_PMT_AMT_CUR,NUMBER,,N,Amount of payment used in ACH transaction. (Current),,,,,,,,Y,N,Y
-ACC_ACH_PMT_FREQ_CD_CUR,VARCHAR2,,N,Reference key to lookup ACH payment frequency such as weekly monthly etc (Current),ACC_ACH_PMT_FREQ_CD,,,,,,,Y,N,Y
-ACC_ACH_START_DT_CUR,DATE,,N,The date on which ACH processing started (Current),,,,,,,,N,N,N
-ACC_ACH_PROCESS_DT_NEXT,DATE,,N,The date on which last ACH processing was done,,,,,,,,Y,N,Y
-ACC_DUE_DAY_CUR,NUMBER,,N,The current due day of the account,,,,,,,,Y,N,Y
-ACC_INT_ACCRUED_AMT,NUMBER,,N,Total amount of interest accrued,,,,,,,,Y,N,Y
-ACC_DUE_DT1,DATE,,N,1 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_DT2,DATE,,N,2 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_DT3,DATE,,N,3 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_DT4,DATE,,N,4 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_DT5,DATE,,N,5 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_AMT1,NUMBER,,N,1 cycle old due amount,,,,,,,,Y,N,Y
-ACC_DUE_AMT2,NUMBER,,N,2 cycle old due amount,,,,,,,,Y,N,Y
-ACC_DUE_AMT3,NUMBER,,N,3 cycle old due amount,,,,,,,,Y,N,Y
-ACC_DUE_AMT4,NUMBER,,N,4 cycle old due amount,,,,,,,,Y,N,Y
-ACC_DUE_AMT5,NUMBER,,N,5 cycle old due amount,,,,,,,,Y,N,Y
-ACC_DUE_AMT_PD1,NUMBER,,N,1 cycle old due amount paid,,,,,,,,Y,N,Y
-ACC_DUE_AMT_PD2,NUMBER,,N,2 cycle old due amount paid,,,,,,,,Y,N,Y
-ACC_DUE_AMT_PD3,NUMBER,,N,3 cycle old due amount paid,,,,,,,,Y,N,Y
-ACC_DUE_AMT_PD4,NUMBER,,N,4 cycle old due amount paid,,,,,,,,Y,N,Y
-ACC_DUE_AMT_PD5,NUMBER,,N,5 cycle old due amount paid,,,,,,,,Y,N,Y
-ACC_DUE_AMT_PD_EXCESS,NUMBER,,N,Total amount paid against future due dates,,,,,,,,Y,N,Y
-ACC_DUE_CAT1,VARCHAR2,,N,Enter the delinquency category of 1 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_CAT2,VARCHAR2,,N,Enter the delinquency category of 2 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_CAT3,VARCHAR2,,N,Enter the delinquency category of 3 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_CAT4,VARCHAR2,,N,Enter the delinquency category of 4 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_CAT5,VARCHAR2,,N,Enter the delinquency category of 5 cycle old due date,,,,,,,,N,N,N
-ACC_DUE_DT_NEXT,DATE,,N,The date on which the next payment is due,,,,,,,,N,N,N
-ACC_DLQ_IND,VARCHAR2,,N,Indicates whether the account is delinquent,,,,,,,,Y,N,Y
-ACC_DLQ_DT,DATE,,N,The date on which the account went delinquent,,,,,,,,N,N,N
-ACC_DLQ_COUNT1_LIFE_CONV,NUMBER,,N,The number of times account is delinquent for 30 days or more for conversion,,,,,,,,Y,N,Y
-ACC_DLQ_COUNT2_LIFE_CONV,NUMBER,,N,The number of times account is delinquent for 60 days or more for conversion,,,,,,,,Y,N,Y
-ACC_DLQ_COUNT3_LIFE_CONV,NUMBER,,N,The number of times account is delinquent for 90 days or more for conversion,,,,,,,,Y,N,Y
-ACC_DLQ_COUNT4_LIFE_CONV,NUMBER,,N,The number of times account is delinquent for 120 days or more for conversion,,,,,,,,Y,N,Y
-ACC_DLQ_NEXT_FOLLOWUP_DT,DATE,,N,The date on which delinquency followup is scheduled,,,,,,,,Y,N,Y
-ACC_BKRP_IND,VARCHAR2,,N,Indicates whether the account is in bankruptcy,,,,,,,,Y,N,Y
-ACC_BKRP_TYPE_CD,VARCHAR2,,N,Reference key to lookup bankruptcy type such as chapter 7 11 13,ACC_BKRP_TYPE_CD,,,,,,,N,N,N
-ACC_BKRP_DISPOSITION_CD,VARCHAR2,,N,Reference key to lookup bankruptcy disposition,ACC_BKRP_DISPOSITION_CD,,,,,,,Y,Y,Y
-ACC_BKRP_NEXT_FOLLOWUP_DT,DATE,,N,The date on which next followup is scheduled,,,,,,,,Y,Y,Y
-ACC_BKRP_DT,DATE,,N,The date on which bankruptcy was filed,,,,,,,,N,N,N
-ACC_BKRP_COMMENT,VARCHAR2,,N,A user defined comment for bankruptcy,,,,,,,,N,N,N
-ACC_REPO_FORC_IND,VARCHAR2,,N,Indicates whether the account is repossessed,,,,,,,,Y,Y,Y
-ACC_REPO_FORC_NEXT_FOLLOWUP_DT,DATE,,N,The date on which next repo or foreclosure followup is scheduled,,,,,,,,Y,Y,Y
-ACC_CHGOFF_IND,VARCHAR2,,N,Indicates whether the account is Charged off,,,,,,,,Y,Y,Y
-ACC_CHGOFF_TYPE_CD,VARCHAR2,,N,Reference key to lookup charged off type,ACC_CHGOFF_TYPE_CD,,,,,,,N,N,N
-ACC_CHGOFF_DISPOSITION_CD,VARCHAR2,,N,Reference key to lookup charged off disposition,ACC_CHGOFF_DISPOSITION_CD,,,,,,,Y,Y,Y
-ACC_CHGOFF_NEXT_FOLLOWUP_DT,DATE,,N,The date on which next deficiency followup is scheduled,,,,,,,,Y,Y,Y
-ACC_CHGOFF_DT,DATE,,N,The date on which account was Charged off or deficiency was established,,,,,,,,N,N,N
-ACC_CHGOFF_AMT,NUMBER,,N,Total charged off amount,,,,,,,,Y,N,Y
-ACC_CHGOFF_COMMENT,VARCHAR2,,N,A user defined comment for Charged off account,,,,,,,,N,N,N
-ACC_PDOFF_DT,DATE,,N,The date on which the account was paid off,,,,,,,,N,N,N
-ACC_POO_POOL,VARCHAR2,,N,Reference key to pool,,,,,,,,Y,Y,Y
-ACC_CRB_FIRST_DLQ_DT,DATE,,N,Date on which the account went delinquent for the first time,,,,,,,,Y,N,Y
-ACC_CRB_PMT_HISTORY_DT,DATE,,N,Enter the payment history date for credit bureau reporting.,,,,,,,,Y,N,Y
-ACC_RAT_RUN_DT_NEXT,DATE,,N,Next run date of rate change processing,,,,,,,,Y,N,Y
-ACC_DDT_RUN_DT_LAST,DATE,,N,Effective date of last billing date,,,,,,,,Y,N,Y
-ACC_COMP_INT_AMT_EARNED,NUMBER,,N,Total interest amount earned,,,,,,,,Y,Y,Y
-ACC_COMP_AMT_EARNED,NUMBER,,N,Compensation amount earned,,,,,,,,Y,Y,Y
-ACC_COMP_AMT_PD,NUMBER,,N,Total compensation amount paid,,,,,,,,Y,Y,Y
-ACC_COMP_AMT_WRITEOFF,NUMBER,,N,Total compensation amount written off,,,,,,,,Y,Y,Y
-ACC_COMP_NEXT_PMT_DT,DATE,,N,The date on which next compensation payment is scheduled,,,,,,,,N,N,N
-ACC_COMP_LAST_PMT_DT,DATE,,N,The date on which last compensation payment was paid,,,,,,,,N,N,N
-ACC_CHBK_AMT,NUMBER,,N,Total amount of chargeback amount,,,,,,,,N,N,N
-ACC_INDEX_TYPE_CD_CUR,VARCHAR2,,N,Reference key to lookup index type(Current),,,,,,,,Y,`,Y
-ACC_INDEX_RATE_CUR,NUMBER,,N,Index rate(Current),,,,,,,,Y,Y,Y
-ACC_MRATE_CUR,NUMBER,,N,The margin rate(Current),,,,,,,,Y,Y,Y
-ACC_CR_LMT_CUR,NUMBER,,N,Credit limit(Current),,,,,,,,Y,Y,Y
-ACC_CR_HOLD,NUMBER,,N,Credit limit on hold,,,,,,,,Y,Y,Y
-ACC_CR_SUSPENDED,NUMBER,,N,Suspended credit limit,,,,,,,,Y,Y,Y
-ACC_CR_CONSUMED,NUMBER,,N,Consumed credit limit,,,,,,,,Y,Y,Y
-ACC_CR_OVERLMT_COUNT_YEAR,NUMBER,,N,Number of times credit overlimit in this year of the account,,,,,,,,Y,Y,Y
-ACC_CR_OVERLMT_COUNT_LIFE,NUMBER,,N,Number of times credit overlimit on the life of the account,,,,,,,,Y,Y,Y
-ACC_ADV_AMT_LAST,NUMBER,,N,The amount of the  last advance,,,,,,,,Y,Y,Y
-ACC_DLQ_COUNT0_LIFE_CONV,NUMBER,,N,The number of times account is delinquent for 30 days or more for conversion,,,,,,,,Y,Y,Y
-ACC_DLQ_COUNT5_LIFE_CONV,NUMBER,,N,The number of times account was delinquent for 150 days or more as per conversion,,,,,,,,Y,Y,Y
-ACC_DLQ_COUNT6_LIFE_CONV,NUMBER,,N,The number of times account was delinquent for 180 days or more as per conversion,,,,,,,,Y,Y,Y
-ACC_DCT_DLQ_START_DT,DATE,,N,The oldest due date associated to the highest delq category,,,,,,,,N,N,N
-ACC_DCT_HIGHEST_CATEGORY,VARCHAR2,,N,The highest delq category for the associated oldest due date,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE1,VARCHAR2,,N,Name of the account tracking attribute parameter 1,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE2,VARCHAR2,,N,Name of the account tracking attribute parameter 2,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE3,VARCHAR2,,N,Name of the account tracking attribute parameter 3,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE4,VARCHAR2,,N,Name of the account tracking attribute parameter 4,,,,,,,,N,N,N
-ACT_FTA_TABLE_ATTRIBUTE5,VARCHAR2,,N,Name of the account tracking attribute parameter 5,,,,,,,,N,N,N
-ACC_CRB_ORIGINAL_CHGOFF_AMT,NUMBER,,N,Original charged off Amount,,,,,,,,N,Y,N
-ACC_MULTI_BILL_ASSET_RATE_IND,VARCHAR2,,Y,Indicates whether multiple asset rates are applicable for one billing period or not,,,,,,,,Y,Y,Y
-ACC_PMT_MODE_CD_CUR,VARCHAR2,,N,Reference lookup to Accounts payment mode current (cash/check),,,,,,,,Y,Y,Y
-ACC_SEC_ENABLED_IND,VARCHAR2,,N,Account Securitization indicator,,,,,,,,Y,Y,N
-ACC_RATE_MAX_INCREASE_YEAR,NUMBER,,N,Maximum allowable increase in rate in a year,,,,,,,,Y,Y,Y
-ACC_RATE_MAX_INCREASE_LIFE,NUMBER,,N,Maximum allowable increase in rate in the life of the contract,,,,,,,,Y,Y,Y
-ACC_STMT_PREFERENCE_MODE_CD,VARCHAR2,,N,Account Statement Preference Mode code,STMT_PREFERENCE_MODE_CD,,,,,,,Y,Y,Y
-ACC_ACCRUAL_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest,ACCRUAL_CALC_METHOD_CD,,,,,,,Y,Y,Y
-ACC_INT_ACCRUED_AMT,NUMBER,,N,Total amount of interest accrued,,,,,,,,Y,Y,Y
-ACC_ACCRUAL_CALC_METHOD_CD,VARCHAR2,,N,Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest,ACCRUAL_CALC_METHOD_CD,,,,,,,N,N,N
-ACC_COMP_PLAN_UPD_DT_LAST,DATE,,N,The date on which last compensation plan revision was done,,,,,,,,N,N,N
-ACC_COMP_PLAN_UPD_DT_NEXT,DATE,,N,The date on which next compensation plan revision will be done,,,,,,,,N,N,N
-ACC_COMP_REVISE_PLAN_TERM,NUMBER,,N,Compensation plan revision term,,,,,,,,N,N,N
-ACC_COMP_STOP_IND,VARCHAR2,,N,Indicates if compensation calculation for the account is stopped,,,,,,,,N,N,N
-ACC_COUPON_FIRST_PMT_DT_CUR,DATE,,N,The date on which first payment is expected on the re-ordered coupon book (Current) and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_COUPON_ORDER_DT_CUR,DATE,,N,The date on which coupon book was re-ordered (Current) and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_CRB_ORIGINAL_CHGOFF_AMT,NUMBER,,N,Original charged off Amount,,,,,,,,N,N,N
-ACC_CRD_RUN_DT_LAST,DATE,,N,The last run date of account credit card processing ,,,,,,,,N,N,N
-ACC_CRD_RUN_DT_NEXT,DATE,,N,The next scheduled run date of account credit card processing,,,,,,,,N,N,N
-ACC_DLQ_REASON_CD,VARCHAR2,,N,Account Delequency Code,,,,,,,,N,N,N
-ACC_FUTURE_PAYOFF_AMT,NUMBER,,N,Pay off amount applicable till future payoff date,,,,,,,,N,N,N
-ACC_FUTURE_PAYOFF_DT,DATE,,N,Pay off amount applicable till this date,,,,,,,,N,N,N
-ACC_POO_SUPER_POOL,VARCHAR2,,N,Super pool name,,,,,,,,N,N,N
-ACC_PRD_PRODUCT,VARCHAR2,,N,Reference key to product,,,,,,,,N,N,N
-ACC_RATE_MAX_INCREASE_LIFE,NUMBER,,N,Maximum allowable increase in rate in the life of the contract,,,,,,,,N,N,N
-ACC_RATE_MAX_INCREASE_YEAR,NUMBER,,N,Maximum allowable increase in rate in a year,,,,,,,,N,N,N
-ACC_REDRAW_AMT_AVAILABLE,NUMBER,,N,Account Available re-draw amount,,,,,,,,N,N,N
-ACC_REPAYMENT_SKIP_PERIOD,VARCHAR2,,N,Stores all months that are allowed to skip payment such as MARCH APRIL MAY and it is used for converting accounts from other system,,,,,,,,N,N,N
-ACC_SEC_ENABLED_IND,VARCHAR2,,N,Account Securitization indicator,,,,,,,,N,N,N
-ACC_SETTL_AMT,NUMBER,,N,Settlement amount agreed by customer to the lender,,,,,,,,N,N,N
-ACC_SETTL_AMT_PD,NUMBER,,N,Total amount paid by the customer and allocated to account balances between effective date and Good through date,,,,,,,,N,N,N
-ACC_SETTL_EXPIRY_DT,DATE,,N,Settlement agreement end date,,,,,,,,N,N,N
-ACC_SETTL_START_DT,DATE,,N,Settlement agreement start date,,,,,,,,N,N,N
-ACC_STMT_PREFERENCE_MODE_CD,VARCHAR2,,N,Account Statement Preference Mode code,STMT_PREFERENCE_MODE_CD,,,,,,,N,N,N
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,N,N,N
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,N,N,N
-ACC_ALLOW_REPO_ON_SCRA_IND,VARCHAR2,,Y,Indicator to state if SCRA is allowed on Reposession,,,,,,,,Y,Y,Y
+key,description
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE6,ACT_FTA_TABLE_ATTRIBUTE6 Name of the account tracking attribute parameter 6
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE7,ACT_FTA_TABLE_ATTRIBUTE7 Name of the account tracking attribute parameter 7
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE8,ACT_FTA_TABLE_ATTRIBUTE8 Name of the account tracking attribute parameter 8
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE9,ACT_FTA_TABLE_ATTRIBUTE9 Name of the account tracking attribute parameter 9
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE10,ACT_FTA_TABLE_ATTRIBUTE10 Name of the account tracking attribute parameter 10
+API_ACCOUNTS.ACT_VALUE1,ACT_VALUE1 Value of the account tracking attribute 1
+API_ACCOUNTS.ACT_VALUE2,ACT_VALUE2 Value of the account tracking attribute 2
+API_ACCOUNTS.ACT_VALUE3,ACT_VALUE3 Value of the account tracking attribute 3
+API_ACCOUNTS.ACT_VALUE4,ACT_VALUE4 Value of the account tracking attribute 4
+API_ACCOUNTS.ACT_VALUE5,ACT_VALUE5 Value of the account tracking attribute 5
+API_ACCOUNTS.ACT_VALUE6,ACT_VALUE6 Value of the account tracking attribute 6
+API_ACCOUNTS.ACT_VALUE7,ACT_VALUE7 Value of the account tracking attribute 7
+API_ACCOUNTS.ACT_VALUE8,ACT_VALUE8 Value of the account tracking attribute 8
+API_ACCOUNTS.ACT_VALUE9,ACT_VALUE9 Value of the account tracking attribute 9
+API_ACCOUNTS.ACT_VALUE10,ACT_VALUE10 Value of the account tracking attribute 10
+API_ACCOUNTS.ACC_ESC_REQUIRED_IND_CUR,ACC_ESC_REQUIRED_IND_CUR Indicates if escrow is allowed for the account (current)
+API_ACCOUNTS.ACC_ESC_OPT_OUT_IND_CUR,ACC_ESC_OPT_OUT_IND_CUR Indicates whether escrow is opted out (current)
+API_ACCOUNTS.ACC_ESC_ANALYSIS_RUN_DT_NEXT,ACC_ESC_ANALYSIS_RUN_DT_NEXT The latest date on which escrow analysis was done for the account
+API_ACCOUNTS.ACC_ESC_PMT_AMT_CUR,ACC_ESC_PMT_AMT_CUR Escrow payment amount (current)
+API_ACCOUNTS.ACC_DUE_ESC_AMT,ACC_DUE_ESC_AMT The escrow amount due for the account
+API_ACCOUNTS.ACC_ESC_AMT_PD,ACC_ESC_AMT_PD Total escrow amount paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT1,ACC_ESC_DUE_AMT1 Escrow Due amount 1 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT2,ACC_ESC_DUE_AMT2 Escrow Due amount 2 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT3,ACC_ESC_DUE_AMT3 Escrow Due amount 3 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT4,ACC_ESC_DUE_AMT4 Escrow Due amount 4 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT5,ACC_ESC_DUE_AMT5 Escrow Due amount 5 cycle old
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD1,ACC_ESC_DUE_AMT_PD1 Escrow Due amount 1 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD2,ACC_ESC_DUE_AMT_PD2 Escrow Due amount 2 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD3,ACC_ESC_DUE_AMT_PD3 Escrow Due amount 3 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD4,ACC_ESC_DUE_AMT_PD4 Escrow Due amount 4 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD5,ACC_ESC_DUE_AMT_PD5 Escrow Due amount 5 cycle old paid
+API_ACCOUNTS.ACC_ESC_DUE_AMT_PD_EXCESS,ACC_ESC_DUE_AMT_PD_EXCESS Total escrow amount paid against future due dates
+API_ACCOUNTS.ACC_ESC_BAL_OPEN,ACC_ESC_BAL_OPEN Opening escrow balance (ITD)
+API_ACCOUNTS.ACC_ESC_BAL,ACC_ESC_BAL Current posted escrow balance for the account
+API_ACCOUNTS.ACC_ESC_BAL_PD,ACC_ESC_BAL_PD Escrow balance paid (ITD)
+API_ACCOUNTS.ACC_ESC_BAL_ADJUST_PLUS,ACC_ESC_BAL_ADJUST_PLUS Positive adjustment escrow balance (ITD)
+API_ACCOUNTS.ACC_ESC_BAL_ADJUST_MINUS,ACC_ESC_BAL_ADJUST_MINUS Negative adjustment escrow balance (ITD)
+API_ACCOUNTS.ACC_NON_PERFORM_IND,ACC_NON_PERFORM_IND Indicates whether account is in non-performing state
+API_ACCOUNTS.ACC_NON_PERFORM_TYPE_CD,ACC_NON_PERFORM_TYPE_CD Reference key to lookup Non-Performance types such as non-accrual  etc
+API_ACCOUNTS.ACC_NON_PERFORM_INT_REBATE,ACC_NON_PERFORM_INT_REBATE Interest rebate computed when account gets into non-performing state
+API_ACCOUNTS.ACC_PROM_END_DT,ACC_PROM_END_DT The date on which promotion ends
+API_ACCOUNTS.ACC_PROM_PERIOD_TYPE_CD,ACC_PROM_PERIOD_TYPE_CD Promotion period type
+API_ACCOUNTS.ACC_PROM_TOLERANCE_AMT,ACC_PROM_TOLERANCE_AMT Promotion tolerance amount checked against outstanding balance for promotion benefits
+API_ACCOUNTS.ACC_FINAL_PMT_AMT,ACC_FINAL_PMT_AMT Final payment amount
+API_ACCOUNTS.ACC_ADV_DRAW_END_DT,ACC_ADV_DRAW_END_DT The end date to draw advance for stage funded loans
+API_ACCOUNTS.ACC_COUPON_FIRST_PMT_DT_CUR,ACC_COUPON_FIRST_PMT_DT_CUR The date on which first payment is expected on the re-ordered coupon book (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_NOS_CUR,ACC_COUPON_NOS_CUR Number of coupons for order (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_ORDER_BY_CUR,ACC_COUPON_ORDER_BY_CUR Identifies coupon ordered by (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_ORDER_IND_CUR,ACC_COUPON_ORDER_IND_CUR Indicates whether the coupon has been re-ordered (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_START_NO_CUR,ACC_COUPON_START_NO_CUR The starting number of the coupon (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_STATE_CD,ACC_STATE_CD Reference key to lookup state code and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_RSC_METHOD_CD,ACC_RATE_CHG_RSC_METHOD_CD Reference key to lookup Rate Change Reschedule Method and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_RSC_VALUE,ACC_RATE_CHG_RSC_VALUE The percentage value to be used to change the payment amount when rate changes on account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_OCCURANCES_MAX,ACC_RATE_CHG_OCCURANCES_MAX The maximum number of rate change occurrences for the particular rate adjustment frequency and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_FLEXIBLE_REPAYMENT_IND,ACC_FLEXIBLE_REPAYMENT_IND Indicates Flexible Repayment option is allowed or not and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_REPAYMENT_TYPE_CD,ACC_REPAYMENT_TYPE_CD Reference key to lookup account repayment type and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_LOSS_RESERVE_PRO_IND,ACC_LOSS_RESERVE_PRO_IND Indicates if account has contributed to dealer loss reserve and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_PRODUCER_HOLDBACK_AMT,ACC_PRODUCER_HOLDBACK_AMT Stores the amount held back from dealer proceed on that account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_PROM_CANCEL_DLQ_DAYS,ACC_PROM_CANCEL_DLQ_DAYS Stores the delinquency days after which the promotion is cancelled automatically and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_CRB_ACC_STATUS_CD,ACC_CRB_ACC_STATUS_CD Reference key to lookup credit bureau account status
+API_ACCOUNTS.ACC_RECURRING_CRD_PMT_IND,ACC_RECURRING_CRD_PMT_IND Recurring Credit Payment Indicator
+API_ACCOUNTS.ACC_RECURRING_CRD_PMT_AMT,ACC_RECURRING_CRD_PMT_AMT Recurring Credit Payment Amount
+API_ACCOUNTS.ACC_CRD_START_DT,ACC_CRD_START_DT Account Credit Start Date
+API_ACCOUNTS.ACC_IN_PROMOTION_IND,ACC_IN_PROMOTION_IND Indicates whether or not the account is in promotion and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_INT_AMT_ESTIMATED_CUR,ACC_INT_AMT_ESTIMATED_CUR Total current interest estimated amount for pre-compute loans and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_INDEX_RATE_ROUND_FACTOR_CD,ACC_INDEX_RATE_ROUND_FACTOR_CD Reference key to lookup index rate round factor
+API_ACCOUNTS.ACC_COLLECT_INTEREST_IND,ACC_COLLECT_INTEREST_IND Indicates whether the interest has to be collected or not
+API_ACCOUNTS.ACC_BOOK_NO,ACC_BOOK_NO Account Book Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_PAGE_NBR,ACC_PAGE_NBR Account Page Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEEDING_PAGE_NO,ACC_DEEDING_PAGE_NO Account Deeding Page Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEEDING_BOOK_NO,ACC_DEEDING_BOOK_NO Account Deeding Book Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEEDING_TRANSMITTAL_NO,ACC_DEEDING_TRANSMITTAL_NO Stores the Deeding Transmittal Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_MRTG_RECORDING_DT,ACC_MRTG_RECORDING_DT Stores the Mortgage Recording Date and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEED_RECORDING_DT,ACC_DEED_RECORDING_DT Stores the Deed Recording Date and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_DEED_INPUT_DT,ACC_DEED_INPUT_DT Stores the Deed Input Date and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_NOTE_TRANSMITTAL_NO,ACC_NOTE_TRANSMITTAL_NO Stores the Note Transmittal Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_CNCL_CSHOT_TRANSMITTAL_NBR,ACC_CNCL_CSHOT_TRANSMITTAL_NBR Cancel/Cashout Transmittal Number and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_OCCURANCES,ACC_RATE_CHG_OCCURANCES The number of times rate change has occurred for the particular rate adjustment frequency on account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_PERIOD,ACC_RATE_CHG_PERIOD Stores the time or period between subsequent rate change based on rate adjustment frequency on account and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_CHG_FREQ_TYPE_CD,ACC_RATE_CHG_FREQ_TYPE_CD Reference key to lookup rate change frequency type such as MONTHLY QUARTERLY etc and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_RATE_EFFECTIVE_CUR,ACC_RATE_EFFECTIVE_CUR Stores the current effective rate
+API_ACCOUNTS.ACC_MRATE_EFFECTIVE_CUR,ACC_MRATE_EFFECTIVE_CUR Stores the current effective margin rate
+API_ACCOUNTS.ACC_INDEX_RATE_EFFECTIVE_CUR,ACC_INDEX_RATE_EFFECTIVE_CUR Stores the current effective index rate
+API_ACCOUNTS.ACC_TIME_ZONE_CD,ACC_TIME_ZONE_CD Stores the Time Zone Code. This is used for Conversion of data from other system
+API_ACCOUNTS.ACC_TOTAL_DISCOUNT_RATE,ACC_TOTAL_DISCOUNT_RATE Stores the Total Discount Rate. This is used for Conversion of data from other system
+API_ACCOUNTS.ACC_REPMT_FIXED_PRINCIPAL_AMT,ACC_REPMT_FIXED_PRINCIPAL_AMT Stores Principal Amount calculated
+API_ACCOUNTS.ACC_EXTEND_BALLOON_TERM_MAX,ACC_EXTEND_BALLOON_TERM_MAX Stores the maximum Extendable Balloon term
+API_ACCOUNTS.ACC_LOAN_CUR_CURRENCY_CODE,ACC_LOAN_CUR_CURRENCY_CODE Reference key to Currency  Loan Currency
+API_ACCOUNTS.ACC_RPMT_CUR_CURRENCY_CODE_CUR,ACC_RPMT_CUR_CURRENCY_CODE_CUR Reference key to Currency  Repayment Currency (Current)
+API_ACCOUNTS.ACC_AMT_PD_IN_EXCESS,ACC_AMT_PD_IN_EXCESS Stores information on Amount paid in Excess
+API_ACCOUNTS.ACC_ACH_FEE_IND,ACC_ACH_FEE_IND ACH fee indicator
+API_ACCOUNTS.ACC_PMT_MAX_INCREASE_YEAR,ACC_PMT_MAX_INCREASE_YEAR Payment max increase year
+API_ACCOUNTS.ACC_PMT_MAX_INCREASE_LIFE,ACC_PMT_MAX_INCREASE_LIFE Payment max increase life
+API_ACCOUNTS.ACC_PMT_START_OF_YEAR,ACC_PMT_START_OF_YEAR Payment start of the year
+API_ACCOUNTS.ACC_AAG_START_DT,ACC_AAG_START_DT Plan arrangement start date
+API_ACCOUNTS.ACC_AAG_END_DT,ACC_AAG_END_DT Plan arrangement end date
+API_ACCOUNTS.ACC_AAG_IND,ACC_AAG_IND Plan arrangement indicator
+API_ACCOUNTS.ACC_SIGNING_DT,ACC_SIGNING_DT Account signing date
+API_ACCOUNTS.ACC_PROBABLE_DELIVERY_DT,ACC_PROBABLE_DELIVERY_DT Accounts probable delivery date
+API_ACCOUNTS.ACC_RENTAL_FEE,ACC_RENTAL_FEE Rental fee
+API_ACCOUNTS.ACC_RESIDUAL_DAYS,ACC_RESIDUAL_DAYS Residual days
+API_ACCOUNTS.ACC_PROM_PROFIT_RATE,ACC_PROM_PROFIT_RATE Promotional profit rate
+API_ACCOUNTS.ACC_STOP_ACCRUAL_DAYS,ACC_STOP_ACCRUAL_DAYS Stop Accrual Days for accounts
+API_ACCOUNTS.ACC_LIAB_NBR,ACC_LIAB_NBR Liability number for accounts
+API_ACCOUNTS.ACC_POOL_CODE,ACC_POOL_CODE Pool code for the account
+API_ACCOUNTS.ACC_LINE_CODE,ACC_LINE_CODE The   line code for accounts
+API_ACCOUNTS.ACC_LINE_SERIAL_NO,ACC_LINE_SERIAL_NO Line Serial Number for accounts
+API_ACCOUNTS.ACC_UTILIZATION_REF_NBR,ACC_UTILIZATION_REF_NBR Utilization Reference number  for  account
+API_ACCOUNTS.ACC_DIRECT_DISB_MODE_CD,ACC_DIRECT_DISB_MODE_CD Reference key to lookup  account  direct disbursement mode code for accounts
+API_ACCOUNTS.ACC_DIRECT_DISB_CASA_ACC_NBR,ACC_DIRECT_DISB_CASA_ACC_NBR Direct disbursement casa  account number for accounts
+API_ACCOUNTS.ACC_SUBUNIT_CD,ACC_SUBUNIT_CD Stores the Sale transfer Sub Unit Code
+API_ACCOUNTS.ACC_SCRA_IND,ACC_SCRA_IND Stores the SCRA indicator
+API_ACCOUNTS.ACC_RATE_LAST,ACC_RATE_LAST Stores the last rate
+API_ACCOUNTS.ACC_CRB_FULL_PMT_HISTORY,ACC_CRB_FULL_PMT_HISTORY Complete credit bureau payment rating history
+API_ACCOUNTS.ACC_RAT_RUN_DT_NEXT,ACC_RAT_RUN_DT_NEXT Next run date of rate change processing
+API_ACCOUNTS.ACC_RATE_START_OF_YEAR,ACC_RATE_START_OF_YEAR Rate at the beginning of the year
+API_ACCOUNTS.ACC_CHGOFF_AMT,ACC_CHGOFF_AMT Total charged off amount
+API_ACCOUNTS.ACC_DDT_RUN_DT_LAST,ACC_DDT_RUN_DT_LAST Effective date of last billing date
+API_ACCOUNTS.ACC_CRB_FIRST_DLQ_DT,ACC_CRB_FIRST_DLQ_DT Date on which the account went delinquent for the first time
+API_ACCOUNTS.ACC_CLOSE_DT,ACC_CLOSE_DT Date on which account was closed
+API_ACCOUNTS.ACC_OPEN_IND,ACC_OPEN_IND Indicates whether the account is open or closed
+API_ACCOUNTS.ACC_INDEX_RATE,ACC_INDEX_RATE Index rate(Original)
+API_ACCOUNTS.ACC_MRATE,ACC_MRATE Margin rate(Original)
+API_ACCOUNTS.ACC_ACCRUAL_DT_START,ACC_ACCRUAL_DT_START Date on which interest accrual date starts
+API_ACCOUNTS.ACC_APP_ORIG_SYS_XREF,ACC_APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_ACCOUNTS.ACC_OPEN_IND,ACC_OPEN_IND Indicates whether the account is open or closed
+API_ACCOUNTS.ACC_STATUS_CD,ACC_STATUS_CD The status of the account such as ACTIVE  CHGOFF  PAID
+API_ACCOUNTS.ACC_EFFECTIVE_DT,ACC_EFFECTIVE_DT The date on which the account become effective
+API_ACCOUNTS.ACC_RATE_START_OF_YEAR,ACC_RATE_START_OF_YEAR Rate at the beginning of the year
+API_ACCOUNTS.ACC_TERM_CUR,ACC_TERM_CUR Term of the contract(Current)
+API_ACCOUNTS.ACC_TERM_PD,ACC_TERM_PD Term paid
+API_ACCOUNTS.ACC_MATURITY_DT_CUR,ACC_MATURITY_DT_CUR The date on which the account would mature(Current)
+API_ACCOUNTS.ACC_BALLOON_AMT_CUR,ACC_BALLOON_AMT_CUR Current balloon payment amount
+API_ACCOUNTS.ACC_ACCRUAL_DT_START,ACC_ACCRUAL_DT_START Date on which interest accrual date starts
+API_ACCOUNTS.ACC_ACCRUAL_DT_LAST,ACC_ACCRUAL_DT_LAST The date on which last interest accrual was done
+API_ACCOUNTS.ACC_ACCRUAL_STOP_IND,ACC_ACCRUAL_STOP_IND Indicates whether accrual has been stopped
+API_ACCOUNTS.ACC_EXTN_COUNT_YEAR,ACC_EXTN_COUNT_YEAR Number of extensions given in a year
+API_ACCOUNTS.ACC_EXTN_COUNT_LIFE,ACC_EXTN_COUNT_LIFE Number of extensions given in the life of the account
+API_ACCOUNTS.ACC_EXTN_TERM_YEAR,ACC_EXTN_TERM_YEAR Number of cycles extended  in a year
+API_ACCOUNTS.ACC_EXTN_TERM_LIFE,ACC_EXTN_TERM_LIFE Number of cycles extended in the life of the account
+API_ACCOUNTS.ACC_EXTN_DT_LAST,ACC_EXTN_DT_LAST The date on which last extension was given
+API_ACCOUNTS.ACC_ADV_DT_LAST,ACC_ADV_DT_LAST The date on which last advance was given
+API_ACCOUNTS.ACC_PMT_DT_LAST,ACC_PMT_DT_LAST The date on which last payment was received
+API_ACCOUNTS.ACC_PMT_AMT_LAST,ACC_PMT_AMT_LAST The amount of the last payment received
+API_ACCOUNTS.ACC_LAST_ACTIVITY_DT,ACC_LAST_ACTIVITY_DT The date on which last activity was performed on an account
+API_ACCOUNTS.ACC_CLOSE_DT,ACC_CLOSE_DT Date on which account was closed
+API_ACCOUNTS.ACC_RATE_CUR,ACC_RATE_CUR The contract rate(Current)
+API_ACCOUNTS.ACC_PMT_AMT_CUR,ACC_PMT_AMT_CUR Payment amount(Current)
+API_ACCOUNTS.ACC_ACH_IND_CUR,ACC_ACH_IND_CUR Indicates whether the account has been setup for ACH (Current)
+API_ACCOUNTS.ACC_ACH_BANK_NAME_CUR,ACC_ACH_BANK_NAME_CUR The name of the ACH bank of the customer (Current)
+API_ACCOUNTS.ACC_ACH_BANK_ROUTING_NBR_CUR,ACC_ACH_BANK_ROUTING_NBR_CUR The 9-digit ABA number of the ACH bank of the customer. (Current)
+API_ACCOUNTS.ACC_ACH_ACCOUNT_TYPE_CD_CUR,ACC_ACH_ACCOUNT_TYPE_CD_CUR Reference key to lookup ACH account type such as checking saving etc (Current)
+API_ACCOUNTS.ACC_ACH_ACCOUNT_NBR_CUR,ACC_ACH_ACCOUNT_NBR_CUR The account number of the bank for ACH transaction (Current)
+API_ACCOUNTS.ACC_ACH_PMT_DAY_CUR,ACC_ACH_PMT_DAY_CUR The day on which debit to ACH will occur (Current)
+API_ACCOUNTS.ACC_ACH_PMT_AMT_CUR,ACC_ACH_PMT_AMT_CUR Amount of payment used in ACH transaction. (Current)
+API_ACCOUNTS.ACC_ACH_PMT_FREQ_CD_CUR,ACC_ACH_PMT_FREQ_CD_CUR Reference key to lookup ACH payment frequency such as weekly monthly etc (Current)
+API_ACCOUNTS.ACC_ACH_START_DT_CUR,ACC_ACH_START_DT_CUR The date on which ACH processing started (Current)
+API_ACCOUNTS.ACC_ACH_PROCESS_DT_NEXT,ACC_ACH_PROCESS_DT_NEXT The date on which last ACH processing was done
+API_ACCOUNTS.ACC_DUE_DAY_CUR,ACC_DUE_DAY_CUR The current due day of the account
+API_ACCOUNTS.ACC_INT_ACCRUED_AMT,ACC_INT_ACCRUED_AMT Total amount of interest accrued
+API_ACCOUNTS.ACC_DUE_DT1,ACC_DUE_DT1 1 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT2,ACC_DUE_DT2 2 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT3,ACC_DUE_DT3 3 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT4,ACC_DUE_DT4 4 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT5,ACC_DUE_DT5 5 cycle old due date
+API_ACCOUNTS.ACC_DUE_AMT1,ACC_DUE_AMT1 1 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT2,ACC_DUE_AMT2 2 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT3,ACC_DUE_AMT3 3 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT4,ACC_DUE_AMT4 4 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT5,ACC_DUE_AMT5 5 cycle old due amount
+API_ACCOUNTS.ACC_DUE_AMT_PD1,ACC_DUE_AMT_PD1 1 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD2,ACC_DUE_AMT_PD2 2 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD3,ACC_DUE_AMT_PD3 3 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD4,ACC_DUE_AMT_PD4 4 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD5,ACC_DUE_AMT_PD5 5 cycle old due amount paid
+API_ACCOUNTS.ACC_DUE_AMT_PD_EXCESS,ACC_DUE_AMT_PD_EXCESS Total amount paid against future due dates
+API_ACCOUNTS.ACC_DUE_CAT1,ACC_DUE_CAT1 Enter the delinquency category of 1 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT2,ACC_DUE_CAT2 Enter the delinquency category of 2 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT3,ACC_DUE_CAT3 Enter the delinquency category of 3 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT4,ACC_DUE_CAT4 Enter the delinquency category of 4 cycle old due date
+API_ACCOUNTS.ACC_DUE_CAT5,ACC_DUE_CAT5 Enter the delinquency category of 5 cycle old due date
+API_ACCOUNTS.ACC_DUE_DT_NEXT,ACC_DUE_DT_NEXT The date on which the next payment is due
+API_ACCOUNTS.ACC_DLQ_IND,ACC_DLQ_IND Indicates whether the account is delinquent
+API_ACCOUNTS.ACC_DLQ_DT,ACC_DLQ_DT The date on which the account went delinquent
+API_ACCOUNTS.ACC_DLQ_COUNT1_LIFE_CONV,ACC_DLQ_COUNT1_LIFE_CONV The number of times account is delinquent for 30 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT2_LIFE_CONV,ACC_DLQ_COUNT2_LIFE_CONV The number of times account is delinquent for 60 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT3_LIFE_CONV,ACC_DLQ_COUNT3_LIFE_CONV The number of times account is delinquent for 90 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT4_LIFE_CONV,ACC_DLQ_COUNT4_LIFE_CONV The number of times account is delinquent for 120 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_NEXT_FOLLOWUP_DT,ACC_DLQ_NEXT_FOLLOWUP_DT The date on which delinquency followup is scheduled
+API_ACCOUNTS.ACC_BKRP_IND,ACC_BKRP_IND Indicates whether the account is in bankruptcy
+API_ACCOUNTS.ACC_BKRP_TYPE_CD,ACC_BKRP_TYPE_CD Reference key to lookup bankruptcy type such as chapter 7 11 13
+API_ACCOUNTS.ACC_BKRP_DISPOSITION_CD,ACC_BKRP_DISPOSITION_CD Reference key to lookup bankruptcy disposition
+API_ACCOUNTS.ACC_BKRP_NEXT_FOLLOWUP_DT,ACC_BKRP_NEXT_FOLLOWUP_DT The date on which next followup is scheduled
+API_ACCOUNTS.ACC_BKRP_DT,ACC_BKRP_DT The date on which bankruptcy was filed
+API_ACCOUNTS.ACC_BKRP_COMMENT,ACC_BKRP_COMMENT A user defined comment for bankruptcy
+API_ACCOUNTS.ACC_REPO_FORC_IND,ACC_REPO_FORC_IND Indicates whether the account is repossessed
+API_ACCOUNTS.ACC_REPO_FORC_NEXT_FOLLOWUP_DT,ACC_REPO_FORC_NEXT_FOLLOWUP_DT The date on which next repo or foreclosure followup is scheduled
+API_ACCOUNTS.ACC_CHGOFF_IND,ACC_CHGOFF_IND Indicates whether the account is Charged off
+API_ACCOUNTS.ACC_CHGOFF_TYPE_CD,ACC_CHGOFF_TYPE_CD Reference key to lookup charged off type
+API_ACCOUNTS.ACC_CHGOFF_DISPOSITION_CD,ACC_CHGOFF_DISPOSITION_CD Reference key to lookup charged off disposition
+API_ACCOUNTS.ACC_CHGOFF_NEXT_FOLLOWUP_DT,ACC_CHGOFF_NEXT_FOLLOWUP_DT The date on which next deficiency followup is scheduled
+API_ACCOUNTS.ACC_CHGOFF_DT,ACC_CHGOFF_DT The date on which account was Charged off or deficiency was established
+API_ACCOUNTS.ACC_CHGOFF_AMT,ACC_CHGOFF_AMT Total charged off amount
+API_ACCOUNTS.ACC_CHGOFF_COMMENT,ACC_CHGOFF_COMMENT A user defined comment for Charged off account
+API_ACCOUNTS.ACC_PDOFF_DT,ACC_PDOFF_DT The date on which the account was paid off
+API_ACCOUNTS.ACC_POO_POOL,ACC_POO_POOL Reference key to pool
+API_ACCOUNTS.ACC_CRB_FIRST_DLQ_DT,ACC_CRB_FIRST_DLQ_DT Date on which the account went delinquent for the first time
+API_ACCOUNTS.ACC_CRB_PMT_HISTORY_DT,ACC_CRB_PMT_HISTORY_DT Enter the payment history date for credit bureau reporting.
+API_ACCOUNTS.ACC_RAT_RUN_DT_NEXT,ACC_RAT_RUN_DT_NEXT Next run date of rate change processing
+API_ACCOUNTS.ACC_DDT_RUN_DT_LAST,ACC_DDT_RUN_DT_LAST Effective date of last billing date
+API_ACCOUNTS.ACC_COMP_INT_AMT_EARNED,ACC_COMP_INT_AMT_EARNED Total interest amount earned
+API_ACCOUNTS.ACC_COMP_AMT_EARNED,ACC_COMP_AMT_EARNED Compensation amount earned
+API_ACCOUNTS.ACC_COMP_AMT_PD,ACC_COMP_AMT_PD Total compensation amount paid
+API_ACCOUNTS.ACC_COMP_AMT_WRITEOFF,ACC_COMP_AMT_WRITEOFF Total compensation amount written off
+API_ACCOUNTS.ACC_COMP_NEXT_PMT_DT,ACC_COMP_NEXT_PMT_DT The date on which next compensation payment is scheduled
+API_ACCOUNTS.ACC_COMP_LAST_PMT_DT,ACC_COMP_LAST_PMT_DT The date on which last compensation payment was paid
+API_ACCOUNTS.ACC_CHBK_AMT,ACC_CHBK_AMT Total amount of chargeback amount
+API_ACCOUNTS.ACC_INDEX_TYPE_CD_CUR,ACC_INDEX_TYPE_CD_CUR Reference key to lookup index type(Current)
+API_ACCOUNTS.ACC_INDEX_RATE_CUR,ACC_INDEX_RATE_CUR Index rate(Current)
+API_ACCOUNTS.ACC_MRATE_CUR,ACC_MRATE_CUR The margin rate(Current)
+API_ACCOUNTS.ACC_CR_LMT_CUR,ACC_CR_LMT_CUR Credit limit(Current)
+API_ACCOUNTS.ACC_CR_HOLD,ACC_CR_HOLD Credit limit on hold
+API_ACCOUNTS.ACC_CR_SUSPENDED,ACC_CR_SUSPENDED Suspended credit limit
+API_ACCOUNTS.ACC_CR_CONSUMED,ACC_CR_CONSUMED Consumed credit limit
+API_ACCOUNTS.ACC_CR_OVERLMT_COUNT_YEAR,ACC_CR_OVERLMT_COUNT_YEAR Number of times credit overlimit in this year of the account
+API_ACCOUNTS.ACC_CR_OVERLMT_COUNT_LIFE,ACC_CR_OVERLMT_COUNT_LIFE Number of times credit overlimit on the life of the account
+API_ACCOUNTS.ACC_ADV_AMT_LAST,ACC_ADV_AMT_LAST The amount of the  last advance
+API_ACCOUNTS.ACC_DLQ_COUNT0_LIFE_CONV,ACC_DLQ_COUNT0_LIFE_CONV The number of times account is delinquent for 30 days or more for conversion
+API_ACCOUNTS.ACC_DLQ_COUNT5_LIFE_CONV,ACC_DLQ_COUNT5_LIFE_CONV The number of times account was delinquent for 150 days or more as per conversion
+API_ACCOUNTS.ACC_DLQ_COUNT6_LIFE_CONV,ACC_DLQ_COUNT6_LIFE_CONV The number of times account was delinquent for 180 days or more as per conversion
+API_ACCOUNTS.ACC_DCT_DLQ_START_DT,ACC_DCT_DLQ_START_DT The oldest due date associated to the highest delq category
+API_ACCOUNTS.ACC_DCT_HIGHEST_CATEGORY,ACC_DCT_HIGHEST_CATEGORY The highest delq category for the associated oldest due date
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE1,ACT_FTA_TABLE_ATTRIBUTE1 Name of the account tracking attribute parameter 1
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE2,ACT_FTA_TABLE_ATTRIBUTE2 Name of the account tracking attribute parameter 2
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE3,ACT_FTA_TABLE_ATTRIBUTE3 Name of the account tracking attribute parameter 3
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE4,ACT_FTA_TABLE_ATTRIBUTE4 Name of the account tracking attribute parameter 4
+API_ACCOUNTS.ACT_FTA_TABLE_ATTRIBUTE5,ACT_FTA_TABLE_ATTRIBUTE5 Name of the account tracking attribute parameter 5
+API_ACCOUNTS.ACC_CRB_ORIGINAL_CHGOFF_AMT,ACC_CRB_ORIGINAL_CHGOFF_AMT Original charged off Amount
+API_ACCOUNTS.ACC_MULTI_BILL_ASSET_RATE_IND,ACC_MULTI_BILL_ASSET_RATE_IND Indicates whether multiple asset rates are applicable for one billing period or not
+API_ACCOUNTS.ACC_PMT_MODE_CD_CUR,ACC_PMT_MODE_CD_CUR Reference lookup to Accounts payment mode current (cash/check)
+API_ACCOUNTS.ACC_SEC_ENABLED_IND,ACC_SEC_ENABLED_IND Account Securitization indicator
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_YEAR,ACC_RATE_MAX_INCREASE_YEAR Maximum allowable increase in rate in a year
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_LIFE,ACC_RATE_MAX_INCREASE_LIFE Maximum allowable increase in rate in the life of the contract
+API_ACCOUNTS.ACC_STMT_PREFERENCE_MODE_CD,ACC_STMT_PREFERENCE_MODE_CD Account Statement Preference Mode code
+API_ACCOUNTS.ACC_ACCRUAL_CALC_METHOD_CD,ACC_ACCRUAL_CALC_METHOD_CD Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest
+API_ACCOUNTS.ACC_INT_ACCRUED_AMT,ACC_INT_ACCRUED_AMT Total amount of interest accrued
+API_ACCOUNTS.ACC_ACCRUAL_CALC_METHOD_CD,ACC_ACCRUAL_CALC_METHOD_CD Reference key to lookup accrual calculation method such as actuarial  sum of digits or simple interest
+API_ACCOUNTS.ACC_COMP_PLAN_UPD_DT_LAST,ACC_COMP_PLAN_UPD_DT_LAST The date on which last compensation plan revision was done
+API_ACCOUNTS.ACC_COMP_PLAN_UPD_DT_NEXT,ACC_COMP_PLAN_UPD_DT_NEXT The date on which next compensation plan revision will be done
+API_ACCOUNTS.ACC_COMP_REVISE_PLAN_TERM,ACC_COMP_REVISE_PLAN_TERM Compensation plan revision term
+API_ACCOUNTS.ACC_COMP_STOP_IND,ACC_COMP_STOP_IND Indicates if compensation calculation for the account is stopped
+API_ACCOUNTS.ACC_COUPON_FIRST_PMT_DT_CUR,ACC_COUPON_FIRST_PMT_DT_CUR The date on which first payment is expected on the re-ordered coupon book (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_COUPON_ORDER_DT_CUR,ACC_COUPON_ORDER_DT_CUR The date on which coupon book was re-ordered (Current) and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_CRB_ORIGINAL_CHGOFF_AMT,ACC_CRB_ORIGINAL_CHGOFF_AMT Original charged off Amount
+API_ACCOUNTS.ACC_CRD_RUN_DT_LAST,ACC_CRD_RUN_DT_LAST The last run date of account credit card processing 
+API_ACCOUNTS.ACC_CRD_RUN_DT_NEXT,ACC_CRD_RUN_DT_NEXT The next scheduled run date of account credit card processing
+API_ACCOUNTS.ACC_DLQ_REASON_CD,ACC_DLQ_REASON_CD Account Delequency Code
+API_ACCOUNTS.ACC_FUTURE_PAYOFF_AMT,ACC_FUTURE_PAYOFF_AMT Pay off amount applicable till future payoff date
+API_ACCOUNTS.ACC_FUTURE_PAYOFF_DT,ACC_FUTURE_PAYOFF_DT Pay off amount applicable till this date
+API_ACCOUNTS.ACC_POO_SUPER_POOL,ACC_POO_SUPER_POOL Super pool name
+API_ACCOUNTS.ACC_PRD_PRODUCT,ACC_PRD_PRODUCT Reference key to product
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_LIFE,ACC_RATE_MAX_INCREASE_LIFE Maximum allowable increase in rate in the life of the contract
+API_ACCOUNTS.ACC_RATE_MAX_INCREASE_YEAR,ACC_RATE_MAX_INCREASE_YEAR Maximum allowable increase in rate in a year
+API_ACCOUNTS.ACC_REDRAW_AMT_AVAILABLE,ACC_REDRAW_AMT_AVAILABLE Account Available re-draw amount
+API_ACCOUNTS.ACC_REPAYMENT_SKIP_PERIOD,ACC_REPAYMENT_SKIP_PERIOD Stores all months that are allowed to skip payment such as MARCH APRIL MAY and it is used for converting accounts from other system
+API_ACCOUNTS.ACC_SEC_ENABLED_IND,ACC_SEC_ENABLED_IND Account Securitization indicator
+API_ACCOUNTS.ACC_SETTL_AMT,ACC_SETTL_AMT Settlement amount agreed by customer to the lender
+API_ACCOUNTS.ACC_SETTL_AMT_PD,ACC_SETTL_AMT_PD Total amount paid by the customer and allocated to account balances between effective date and Good through date
+API_ACCOUNTS.ACC_SETTL_EXPIRY_DT,ACC_SETTL_EXPIRY_DT Settlement agreement end date
+API_ACCOUNTS.ACC_SETTL_START_DT,ACC_SETTL_START_DT Settlement agreement start date
+API_ACCOUNTS.ACC_STMT_PREFERENCE_MODE_CD,ACC_STMT_PREFERENCE_MODE_CD Account Statement Preference Mode code
+API_ACCOUNTS.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNTS.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNTS.ACC_ALLOW_REPO_ON_SCRA_IND,ACC_ALLOW_REPO_ON_SCRA_IND Indicator to state if SCRA is allowed on Reposession

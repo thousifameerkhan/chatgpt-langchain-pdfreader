@@ -1,9 +1,8 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-ATT_NBR,VARCHAR2,,N,Attribute Number,,,,,,,,Y,Y,Y
-ATT_TYPE,VARCHAR2,,N,Tracking type like Asset  Customer  Account,,,,,,,,Y,Y,Y
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
-ATT_FTA_TABLE_ATTRIBUTE,VARCHAR2,,N,Name of the parameter,,,,,,,,Y,Y,Y
-ATT_APP_ORIG_SYS_XREF,VARCHAR2,,N,Original system reference used for conversion only,,,,,,,,Y,Y,Y
-ATT_VALUE,VARCHAR2,,N,The value of the asset tracking attribute,,,,,,,,Y,Y,Y
+key,description
+API_TRACKING_ATTRIBUTES.ATT_NBR,ATT_NBR Attribute Number
+API_TRACKING_ATTRIBUTES.ATT_TYPE,ATT_TYPE Tracking type like Asset  Customer  Account
+API_TRACKING_ATTRIBUTES.CREATED_BY,CREATED_BY Standard Who
+API_TRACKING_ATTRIBUTES.CREATION_DATE,CREATION_DATE Standard Who
+API_TRACKING_ATTRIBUTES.ATT_FTA_TABLE_ATTRIBUTE,ATT_FTA_TABLE_ATTRIBUTE Name of the parameter
+API_TRACKING_ATTRIBUTES.ATT_APP_ORIG_SYS_XREF,ATT_APP_ORIG_SYS_XREF Original system reference used for conversion only
+API_TRACKING_ATTRIBUTES.ATT_VALUE,ATT_VALUE The value of the asset tracking attribute

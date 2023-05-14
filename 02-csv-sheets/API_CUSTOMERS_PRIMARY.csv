@@ -1,175 +1,174 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-ALT_VALUE4,VARCHAR2,,N,Value4,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE5,VARCHAR2,,N,Name of the unit tracking attribute parameter5,,,,,,,,N,N,N
-ALT_VALUE5,VARCHAR2,,N,Value5,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE6,VARCHAR2,,N,Name of the unit tracking attribute parameter6,,,,,,,,N,N,N
-ALT_VALUE6,VARCHAR2,,N,Value6,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE7,VARCHAR2,,N,Name of the unit tracking attribute parameter7,,,,,,,,N,N,N
-ALT_VALUE7,VARCHAR2,,N,Value7,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE8,VARCHAR2,,N,Name of the unit tracking attribute parameter8,,,,,,,,N,N,N
-ALT_VALUE8,VARCHAR2,,N,Value8,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE9,VARCHAR2,,N,Name of the unit tracking attribute parameter9,,,,,,,,N,N,N
-ALT_VALUE9,VARCHAR2,,N,Value9,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE10,VARCHAR2,,N,Name of the unit tracking attribute parameter10,,,,,,,,N,N,N
-ALT_VALUE10,VARCHAR2,,N,Value10,,,,,,,,N,N,N
-APL_APP_ORIG_SYS_XREF,VARCHAR2,,N,Original system cross reference for application,,,,,,,,Y,Y,Y
-APL_FIRST_NAME,VARCHAR2,,N,First name of applicant,,,,,,,,Y,Y,Y
-APL_MIDDLE_NAME,VARCHAR2,,N,Applicant middle name,,,,,,,,N,N,N
-APL_LAST_NAME,VARCHAR2,,N,Applicant last name,,,,,,,,Y,Y,Y
-APL_GENERATION_CD,VARCHAR2,,N,Applicant generation such as Jr  Sr  III,GENERATION_CD,,,,,,,N,N,N
-APL_SSN,NUMBER,,N,Nine digit Social Security number,,,,,,,,Y,Y,Y
-APL_BIRTH_DT,DATE,,N,Birth date of applicant,,,,,,,,Y,Y,Y
-APL_GENDER_CD,VARCHAR2,,N,Gender of applicant  M=male  F=female,GENDER_CD,,,,,,,N,N,N
-APL_LANGUAGE_CD,VARCHAR2,,N,Primary language of applicant such as E (English)  S (Spanish),LANGUAGE_CD,,,,,,,Y,Y,Y
-APL_MARITAL_STATUS_CD,VARCHAR2,,N,Applicant marital status such as M (Married)  S (Single),MARITAL_STATUS_CD,,,,,,,N,N,N
-APL_EMAIL_ADDRESS1,VARCHAR2,,N,Applicant email address,,,,,,,,N,N,N
-APL_CLASS_TYPE_CD,VARCHAR2,,N,Applicant class as defined by Company such as employee,APL_CUS_CLASS_TYPE_CD,,,,,,,Y,Y,Y
-APL_CRB_ECOA_CD,VARCHAR2,,N,Applicant ECOA code on the liability such as individual  joint contractual liability etc,CRB_ECOA_CD,,,,,,,N,N,N
-APL_RACE_NATIONAL_ORIGIN_CD,VARCHAR2,,N,Applicant national origin,RACE_NATIONAL_ORIGIN_CD,,,,,,,N,N,N
-APA_ADDRESS_NBR,VARCHAR2,,N,Numeric portion of address location,,,,,,,,N,N,N
-APA_STREET_NAME,VARCHAR2,,N,Name of street where address is located,,,,,,,,N,N,N
-APA_APT_STE_NBR,VARCHAR2,,N,Apartment or suite number of address,,,,,,,,N,N,N
-APA_ADDRESS1,VARCHAR2,,N,First line of address for this location,,,,,,,,Y,Y,Y
-APA_ADDRESS2,VARCHAR2,,N,Second line of address for this location,,,,,,,,N,N,N
-APA_ZIP,VARCHAR2,,N,5 Digit Zip Code of applicant address,,,,,,,,Y,Y,Y
-APA_CITY,VARCHAR2,,N,City name of address,,,,,,,,Y,Y,Y
-APA_STATE_CD,VARCHAR2,,N,Name of state where address is located,STATE_CD,,,,,,,Y,Y,Y
-APA_ZIP_EXTN,VARCHAR2,,N,Last 4 digits of Zip Code of applicant address,,,,,,,,N,N,N
-APA_COUNTRY_CD,VARCHAR2,,N,Stores country code for PRIMARY applicant address,COUNTRY_CD,,,,,,,N,N,N
-APA_PHONE,NUMBER,,N,The phone number at the address,,,,,,,,Y,Y,Y
-APA_OWNERSHIP_CD,VARCHAR2,,N,Indicates if applicant owns or rents property,OWNERSHIP_CD,,,,,,,Y,Y,Y
-APA_LOCATION,VARCHAR2,,N,Identifies MSA (metropolitan statistical area) location,,,,,,,,N,N,N
-APA_BLOCK,VARCHAR2,,N,Identifies census tract/block number of address,,,,,,,,N,N,N
-APA_COMMENT,VARCHAR2,,N,Comments about applicant address,,,,,,,,N,N,N
-APE_NAME,VARCHAR2,,N,Name of employer,,,,,,,,Y,Y,Y
-APE_TITLE,VARCHAR2,,N,The actual name of applicant position at employment,,,,,,,,N,N,N
-APE_OCCUPATION_CD,VARCHAR2,,N,Occupation of applicant such as professional,OCCUPATION_CD,,,,,,,N,N,N
-APE_ADDRESS1,VARCHAR2,,N,First line of address for this location of employment,,,,,,,,N,N,N
-APE_ADDRESS1,VARCHAR2,,N,First line of address for this location of employment,,,,,,,,N,N,N
-APE_ADDRESS2,VARCHAR2,,N,Second line of address for this location of employment,,,,,,,,N,N,N
-APE_ZIP,VARCHAR2,,N,5 Digit Zip Code of employer address,,,,,,,,N,N,N
-APE_CITY,VARCHAR2,,N,City name of address,,,,,,,,N,N,N
-APE_STATE_CD,VARCHAR2,,N,State code where employment is located,STATE_CD,,,,,,,N,N,N
-APE_ZIP_EXTN,VARCHAR2,,N,Last 4 digits of Zip Code of employer address,,,,,,,,N,N,N
-APE_COUNTRY_CD,VARCHAR2,,N,Stores country code for PRIMARY applicant employment address,COUNTRY_CD,,,,,,,N,N,N
-APE_PHONE,NUMBER,,N,Phone number of employer,,,,,,,,Y,Y,Y
-APE_PHONE_EXTN,NUMBER,,N,Phone number extension of employer,,,,,,,,N,N,N
-APE_COMMENT,VARCHAR2,,N,Comments about applicant address,,,,,,,,N,N,N
-APT_MOBILE_NUMBER,NUMBER,,N,The mobile number of the primary customer,,,,,,,,N,N,N
-APT_FAX_NUMBER,NUMBER,,N,The fax number of the primary customer,,,,,,,,N,N,N
-APT_PAGER_NUMBER,NUMBER,,N,The pager number of the primary customer,,,,,,,,N,N,N
-APL_ETHNIC_CD,VARCHAR2,,N,Ethnic Code,,,,,,,,N,N,N
-APA_COUNTRY_CD,VARCHAR2,,N,Stores country code for PRIMARY applicant address,,,,,,,,Y,Y,Y
-APE_COUNTRY_CD,VARCHAR2,,N,Stores country code for PRIMARY applicant employment address,,,,,,,,Y,Y,Y
-APE_EMPLOYMENT_TYPE_CD,VARCHAR2,,N,Type of the employment such as full time  part time,EMPLOYMENT_TYPE_CD,,,,,,,Y,Y,Y
-APE_STREET_NAME,VARCHAR2,,N,Street Name,,,,,,,,N,N,N
-APE_APT_STE_NBR,VARCHAR2,,N,Apartment Number,,,,,,,,N,N,N
-APE_ADDRESS_NBR,VARCHAR2,,N,Street number of address for this location,,,,,,,,N,N,N
-APA_STREET_NAME,VARCHAR2,,N,Name of street where address is located,,,,,,,,N,N,N
-APA_APT_STE_NBR,VARCHAR2,,N,Apartment or suite number of address,,,,,,,,N,N,N
-APA_ADDRESS_NBR,VARCHAR2,,N,Numeric portion of address location,,,,,,,,N,N,N
-APL_SALUTATION_TYPE_CD,VARCHAR2,,N,Salutation,SALUTATION_TYPE_CD,,,,,,,N,N,N
-APL_CHRISTIAN_NAME,VARCHAR2,,N,Applicant Initials,,,,,,,,N,N,N
-APL_MAIDEN_MI_NAME,VARCHAR2,,N,Applicant Middle Initial,,,,,,,,N,N,N
-APL_MAIDEN_NAME,VARCHAR2,,N,Applicant Maiden Name,,,,,,,,N,N,N
-APL_FULL_NAME,VARCHAR2,,N,Applicant Full Name,,,,,,,,N,N,N
-APL_PERMIT_TO_STAY_CD,VARCHAR2,,N,Permission to Stay in the Country,PERMIT_TO_STAY_CD,,,,,,,N,N,N
-APL_PERMIT_TO_WORK_CD,VARCHAR2,,N,Permission to Work in the Country,PERMIT_TO_WORK_CD,,,,,,,N,N,N
-APL_SPECIALITY_TYPE_CD,VARCHAR2,,N,Special Condition for Applicant,SPECIALITY_TYPE_CD,,,,,,,N,N,N
-APL_EXISTING_CIF,VARCHAR2,,N,Existing applicant CIF,,,,,,,,N,N,N
-APL_PASSPORT_NBR,VARCHAR2,,N,Passport number of customer,,,,,,,,N,N,N
-APL_PASSPORT_ISSUE_DT,DATE,,N,Passport Issue date of customer,,,,,,,,N,N,N
-APL_PASSPORT_EXPIRY_DT,DATE,,N,Passport expiry date of customer,,,,,,,,N,N,N
-APL_MSG_PREFERENCE,VARCHAR2,,N,Stores the Message reference,,,,,,,,N,N,N
-APL_NATIONAL_ID,VARCHAR2,,N,National ID of applicant,,,,,,,,Y,Y,Y
-APA_LANDMARK,VARCHAR2,,N,Landmark near address,,,,,,,,N,N,N
-APA_ADDRESS3,VARCHAR2,,N,Address Line 3,,,,,,,,N,N,N
-APE_DEPARTMENT,VARCHAR2,,N,Stores the department,,,,,,,,N,N,N
-APE_EMPLOYEE_ID,VARCHAR2,,N,Stores the Employee ID,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE1,VARCHAR2,,N,Name of the unit tracking attribute parameter1,,,,,,,,N,N,N
-ALT_VALUE1,VARCHAR2,,N,Value1,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE2,VARCHAR2,,N,Name of the unit tracking attribute parameter2,,,,,,,,N,N,N
-ALT_VALUE2,VARCHAR2,,N,Value2,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE3,VARCHAR2,,N,Name of the unit tracking attribute parameter3,,,,,,,,N,N,N
-ALT_VALUE3,VARCHAR2,,N,Value3,,,,,,,,N,N,N
-ALT_FTA_TABLE_ATTRIBUTE4,VARCHAR2,,N,Name of the unit tracking attribute parameter4,,,,,,,,N,N,N
-APL_VISA_NBR,VARCHAR2,,Y,Primary visa number,,,,,,,,N,N,N
-APL_NATIONALITY_CD,VARCHAR2,,Y,Primary Nationality code,,,,,,,,Y,Y,Y
-APL_EDUCATION_LEVEL_CD,VARCHAR2,,Y,Primary Applicant education level code,,,,,,,,N,N,N
-APA_CONFIRMED_IND,VARCHAR2,,Y,Indicates if the address is confirmed or not,,,,,,,,Y,Y,Y
-APT_TIME_ZONE_CD,VARCHAR2,,N, Stores the Timezone of the primary customer,,,,,,,,N,N,N
-APL_SCRA_IND,VARCHAR2,,N,Stores the scra Indicator,,,,,,,,Y,Y,Y
-APL_SCRA_EFFECTIVE_DT,DATE,,N,Stores the scra effective date,,,,,,,,N,N,N
-APL_SCRA_ORDER_REF_NBR,VARCHAR2,,N,Stores the scra order reference number,,,,,,,,N,N,N
-APL_SCRA_RELEASED_DT,DATE,,N,Stores the scra released date,,,,,,,,N,N,N
-APL_PA_ADDRESS,VARCHAR2,,N,Address,,,,,,,,N,N,N
-APL_KYC_REF_NBR,VARCHAR2,,N,Applicant  know your customer reference number,,,,,,,,N,N,N
-APL_KYC_STATUS_CD,VARCHAR2,,N,Status Code,,,,,,,,N,N,N
-APL_LIAB_NBR,VARCHAR2,,N,Applicant liability number,,,,,,,,N,N,N
-APL_BIRTH_PLACE,VARCHAR2,,N,Birth Place,,,,,,,,N,N,N
-APL_BIRTH_COUNTRY_CD,VARCHAR2,,N,Country Code,,,,,,,,N,N,N
-APL_US_RES_IND,VARCHAR2,,N,Indicates whether the US Resident is currently enabled,,,,,,,,N,N,N
-APL_CUSTOMER_CATEGORY_CD,VARCHAR2,,N,Customer Category Code,,,,,,,,N,N,N
-APL_PA_ISSUED_IND,VARCHAR2,,N,Indicates whether the payee issued is currently enabled,,,,,,,,N,N,N
-APL_PA_HOLDER_NAME,VARCHAR2,,N,Holder Name,,,,,,,,N,N,N
-APL_PA_HOLDER_ADR_CNTRY_CD,VARCHAR2,,N,Applicant Personal  holder  address country code,,,,,,,,N,N,N
-APL_PA_HOLDER_NATIONALITY_CD,VARCHAR2,,N,unique Applicant Nationality code,,,,,,,,N,N,N
-APL_PA_HOLDER_PHONE,NUMBER,,N,Holder Phone Number,,,,,,,,N,N,N
-APA_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code for  Api_Customers_Primary,,,,,,,,N,N,N
-APE_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,,,,,,,,N,N,N
-APT_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD Code,,,,,,,,N,N,N
-APL_PA_HOLDER_PHONE_ISD_CD,VARCHAR2,,N, Phone ISD code,,,,,,,,N,N,N
-APT_PHONE,NUMBER,,N,Phone number,,,,,,,,N,N,N
-APT_PHONE_EXTN,NUMBER,,N,Phone Extension,,,,,,,,N,N,N
-APT_TELECOM_TYPE_CD,VARCHAR2,,N,Type of the telecom such as pager,,,,,,,,Y,Y,Y
-APE_ACTUAL_PAY_DAY_DT,DATE,,N,Actual pay day date of the primary applicants employment for conversion.,,,,,,,,N,N,N
-APA_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
-APE_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
-APE_STATED_PAY_DAY_DT,DATE,,N,Stated pay date,,,,,,,,Y,Y,Y
-APA_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
-APE_CUR_CURRENCY_CODE,VARCHAR2,,N,Refers to the current currency code,,,,,,,,Y,Y,Y
-APE_STATED_PAY_DAY_DT,DATE,,N,Stated pay date,,,,,,,,Y,Y,Y
-APL_PAH_HIERARCHY_CODE,VARCHAR2,,N,Payment Hierarchy Code,,,,,,,,Y,Y,Y
-APL_SHARE_CREDIT_INFO_IND,VARCHAR2,,N,Share Credit Opt Out Indicator,,,,,,,,Y,Y,Y
-APL_SKIP_IND,VARCHAR2,,N,Indicates if current address for business applicant is not valid,,,,,,,,Y,Y,Y
-APL_DECEASED_DT,DATE,,N,Deceased date of customer,,,,,,,,Y,Y,Y
-APL_STOP_CORR_IND,VARCHAR2,,N,Indicates if customer correspondence must be stopped,,,,,,,,Y,Y,Y
-APL_PRIVACY_OPT_OUT_IND,VARCHAR2,,N,Indicates if business applicant has opted out to share privacy information,,,,,,,,Y,Y,Y
-APL_UPDATE_CUSTOMER_INFO_IND,VARCHAR2,,N,Customer override indicator,,,,,,,,Y,Y,Y
-APL_CREDIT_SCORE,NUMBER,,N,Archive:Credit score value,,,,,,,,Y,Y,Y
-APL_CREDIT_SCORE_RECEIVED_DT,DATE,,N,Credit score received date.,,,,,,,,Y,Y,Y
-APL_CREDIT_SOURCE_CD,VARCHAR2,,N,Reference to Credit source code,CRB_SOURCE_CD,,,,,,,Y,Y,Y
-APL_COMMENTS,VARCHAR2,,N,Customer Comments,,,,,,,,Y,Y,Y
-APL_REASON_CD,VARCHAR2,,N,Customer Reason code,,,,,,,,Y,Y,Y
-APL_REFERENCE_NBR,VARCHAR2,,N,Reference Number,,,,,,,,Y,Y,Y
-APL_SKIP_IND,VARCHAR2,,N,Indicates if current address for business applicant is not valid,,,,,,,,Y,Y,Y
-APL_SHARE_CR_OPT_OUT_IND,VARCHAR2,,N,Staging :  Share Credit Opt Out Indicator,,,,,,,,N,Y,N
-APL_UPDATE_CUSTOMER_INFO_IND,VARCHAR2,,N,Customer override indicator,,,,,,,,Y,Y,Y
-APL_UTILIZATION_PERC,NUMBER,,Y,Stores the applicant credit limit utilization percentage,,,,,,,,Y,Y,Y
-APT_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Applicant telecom Permission to call,,,,,,,,Y,Y,Y
-APT_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Applicant telecom Permission to text,,,,,,,,Y,Y,Y
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
-APA_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Applicant address Permission to call,,,,,,,,Y,Y,Y
-APA_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Applicant address Permission to text,,,,,,,,Y,Y,Y
-APE_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Applicant employment Permission to call,,,,,,,,Y,Y,Y
-APE_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Applicant employment Permission to text,,,,,,,,Y,Y,Y
-APL_COMMENTS,VARCHAR2,,N,Customer Comments,,,,,,,,Y,Y,Y
-APL_CREDIT_SCORE,NUMBER,,N,Archive:Credit score value,,,,,,,,Y,Y,Y
-APL_CREDIT_SCORE_RECEIVED_DT,DATE,,N,Credit score received date.,,,,,,,,Y,Y,Y
-APL_CREDIT_SOURCE_CD,VARCHAR2,,N,Reference to Credit source code,,,,,,,,Y,Y,Y
-APL_CRED_LIMIT_EXPIRY_DT,DATE,,Y,Business applicant credit limit expiry date,,,,,,,,Y,Y,Y
-APL_CRED_LIMIT_GRADE_CD,VARCHAR2,,N,Reference key to lookup credit limit grade code ,,,,,,,,Y,Y,Y
-APL_CRED_LIMIT_MAX_AMT,NUMBER,,Y,Stores the maximum credit limit amount,,,,,,,,Y,Y,Y
-APL_CRED_LIMIT_MAX_LC_RATE,NUMBER,,Y,Stores the credit limit maximum Late Charge rate,,,,,,,,Y,Y,Y
-APL_CRED_LIMIT_RENEW_DT,DATE,,Y,Business applicant credit limit renew date,,,,,,,,Y,Y,Y
-APL_CUS_NBR,VARCHAR2,,N,Reference Number for Customer,,,,,,,,Y,Y,Y
-APL_DECEASED_DT,DATE,,N,Deceased date of customer,,,,,,,,Y,Y,Y
-APL_INSURANCE_OPT_OUT_IND,VARCHAR2,,N,Applicant Insurance Opt Out Indicator,,,,,,,,N,Y,N
-APL_MARKETING_OPT_OUT_IND,VARCHAR2,,N,Applicant Marketing Opt Out Indicator,,,,,,,,N,Y,N
-APL_PRIVACY_OPT_OUT_IND,VARCHAR2,,N,Indicates if business applicant has opted out to share privacy information,,,,,,,,Y,Y,Y
-APL_REASON_CD,VARCHAR2,,N,Customer Reason code,,,,,,,,Y,Y,Y
-APL_REFERENCE_NBR,VARCHAR2,,N,Reference Number,,,,,,,,Y,Y,Y
-APL_SHARE_CREDIT_INFO_IND,VARCHAR2,,N,Share Credit Opt Out Indicator,,,,,,,,Y,Y,Y
-APL_STOP_CORR_IND,VARCHAR2,,N,Indicates if customer correspondence must be stopped,,,,,,,,Y,Y,Y
+key,description
+API_CUSTOMERS_PRIMARY.ALT_VALUE4,ALT_VALUE4 Value4
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE5,ALT_FTA_TABLE_ATTRIBUTE5 Name of the unit tracking attribute parameter5
+API_CUSTOMERS_PRIMARY.ALT_VALUE5,ALT_VALUE5 Value5
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE6,ALT_FTA_TABLE_ATTRIBUTE6 Name of the unit tracking attribute parameter6
+API_CUSTOMERS_PRIMARY.ALT_VALUE6,ALT_VALUE6 Value6
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE7,ALT_FTA_TABLE_ATTRIBUTE7 Name of the unit tracking attribute parameter7
+API_CUSTOMERS_PRIMARY.ALT_VALUE7,ALT_VALUE7 Value7
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE8,ALT_FTA_TABLE_ATTRIBUTE8 Name of the unit tracking attribute parameter8
+API_CUSTOMERS_PRIMARY.ALT_VALUE8,ALT_VALUE8 Value8
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE9,ALT_FTA_TABLE_ATTRIBUTE9 Name of the unit tracking attribute parameter9
+API_CUSTOMERS_PRIMARY.ALT_VALUE9,ALT_VALUE9 Value9
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE10,ALT_FTA_TABLE_ATTRIBUTE10 Name of the unit tracking attribute parameter10
+API_CUSTOMERS_PRIMARY.ALT_VALUE10,ALT_VALUE10 Value10
+API_CUSTOMERS_PRIMARY.APL_APP_ORIG_SYS_XREF,APL_APP_ORIG_SYS_XREF Original system cross reference for application
+API_CUSTOMERS_PRIMARY.APL_FIRST_NAME,APL_FIRST_NAME First name of applicant
+API_CUSTOMERS_PRIMARY.APL_MIDDLE_NAME,APL_MIDDLE_NAME Applicant middle name
+API_CUSTOMERS_PRIMARY.APL_LAST_NAME,APL_LAST_NAME Applicant last name
+API_CUSTOMERS_PRIMARY.APL_GENERATION_CD,APL_GENERATION_CD Applicant generation such as Jr  Sr  III
+API_CUSTOMERS_PRIMARY.APL_SSN,APL_SSN Nine digit Social Security number
+API_CUSTOMERS_PRIMARY.APL_BIRTH_DT,APL_BIRTH_DT Birth date of applicant
+API_CUSTOMERS_PRIMARY.APL_GENDER_CD,APL_GENDER_CD Gender of applicant  M=male  F=female
+API_CUSTOMERS_PRIMARY.APL_LANGUAGE_CD,APL_LANGUAGE_CD Primary language of applicant such as E (English)  S (Spanish)
+API_CUSTOMERS_PRIMARY.APL_MARITAL_STATUS_CD,APL_MARITAL_STATUS_CD Applicant marital status such as M (Married)  S (Single)
+API_CUSTOMERS_PRIMARY.APL_EMAIL_ADDRESS1,APL_EMAIL_ADDRESS1 Applicant email address
+API_CUSTOMERS_PRIMARY.APL_CLASS_TYPE_CD,APL_CLASS_TYPE_CD Applicant class as defined by Company such as employee
+API_CUSTOMERS_PRIMARY.APL_CRB_ECOA_CD,APL_CRB_ECOA_CD Applicant ECOA code on the liability such as individual  joint contractual liability etc
+API_CUSTOMERS_PRIMARY.APL_RACE_NATIONAL_ORIGIN_CD,APL_RACE_NATIONAL_ORIGIN_CD Applicant national origin
+API_CUSTOMERS_PRIMARY.APA_ADDRESS_NBR,APA_ADDRESS_NBR Numeric portion of address location
+API_CUSTOMERS_PRIMARY.APA_STREET_NAME,APA_STREET_NAME Name of street where address is located
+API_CUSTOMERS_PRIMARY.APA_APT_STE_NBR,APA_APT_STE_NBR Apartment or suite number of address
+API_CUSTOMERS_PRIMARY.APA_ADDRESS1,APA_ADDRESS1 First line of address for this location
+API_CUSTOMERS_PRIMARY.APA_ADDRESS2,APA_ADDRESS2 Second line of address for this location
+API_CUSTOMERS_PRIMARY.APA_ZIP,APA_ZIP 5 Digit Zip Code of applicant address
+API_CUSTOMERS_PRIMARY.APA_CITY,APA_CITY City name of address
+API_CUSTOMERS_PRIMARY.APA_STATE_CD,APA_STATE_CD Name of state where address is located
+API_CUSTOMERS_PRIMARY.APA_ZIP_EXTN,APA_ZIP_EXTN Last 4 digits of Zip Code of applicant address
+API_CUSTOMERS_PRIMARY.APA_COUNTRY_CD,APA_COUNTRY_CD Stores country code for PRIMARY applicant address
+API_CUSTOMERS_PRIMARY.APA_PHONE,APA_PHONE The phone number at the address
+API_CUSTOMERS_PRIMARY.APA_OWNERSHIP_CD,APA_OWNERSHIP_CD Indicates if applicant owns or rents property
+API_CUSTOMERS_PRIMARY.APA_LOCATION,APA_LOCATION Identifies MSA (metropolitan statistical area) location
+API_CUSTOMERS_PRIMARY.APA_BLOCK,APA_BLOCK Identifies census tract/block number of address
+API_CUSTOMERS_PRIMARY.APA_COMMENT,APA_COMMENT Comments about applicant address
+API_CUSTOMERS_PRIMARY.APE_NAME,APE_NAME Name of employer
+API_CUSTOMERS_PRIMARY.APE_TITLE,APE_TITLE The actual name of applicant position at employment
+API_CUSTOMERS_PRIMARY.APE_OCCUPATION_CD,APE_OCCUPATION_CD Occupation of applicant such as professional
+API_CUSTOMERS_PRIMARY.APE_ADDRESS1,APE_ADDRESS1 First line of address for this location of employment
+API_CUSTOMERS_PRIMARY.APE_ADDRESS1,APE_ADDRESS1 First line of address for this location of employment
+API_CUSTOMERS_PRIMARY.APE_ADDRESS2,APE_ADDRESS2 Second line of address for this location of employment
+API_CUSTOMERS_PRIMARY.APE_ZIP,APE_ZIP 5 Digit Zip Code of employer address
+API_CUSTOMERS_PRIMARY.APE_CITY,APE_CITY City name of address
+API_CUSTOMERS_PRIMARY.APE_STATE_CD,APE_STATE_CD State code where employment is located
+API_CUSTOMERS_PRIMARY.APE_ZIP_EXTN,APE_ZIP_EXTN Last 4 digits of Zip Code of employer address
+API_CUSTOMERS_PRIMARY.APE_COUNTRY_CD,APE_COUNTRY_CD Stores country code for PRIMARY applicant employment address
+API_CUSTOMERS_PRIMARY.APE_PHONE,APE_PHONE Phone number of employer
+API_CUSTOMERS_PRIMARY.APE_PHONE_EXTN,APE_PHONE_EXTN Phone number extension of employer
+API_CUSTOMERS_PRIMARY.APE_COMMENT,APE_COMMENT Comments about applicant address
+API_CUSTOMERS_PRIMARY.APT_MOBILE_NUMBER,APT_MOBILE_NUMBER The mobile number of the primary customer
+API_CUSTOMERS_PRIMARY.APT_FAX_NUMBER,APT_FAX_NUMBER The fax number of the primary customer
+API_CUSTOMERS_PRIMARY.APT_PAGER_NUMBER,APT_PAGER_NUMBER The pager number of the primary customer
+API_CUSTOMERS_PRIMARY.APL_ETHNIC_CD,APL_ETHNIC_CD Ethnic Code
+API_CUSTOMERS_PRIMARY.APA_COUNTRY_CD,APA_COUNTRY_CD Stores country code for PRIMARY applicant address
+API_CUSTOMERS_PRIMARY.APE_COUNTRY_CD,APE_COUNTRY_CD Stores country code for PRIMARY applicant employment address
+API_CUSTOMERS_PRIMARY.APE_EMPLOYMENT_TYPE_CD,APE_EMPLOYMENT_TYPE_CD Type of the employment such as full time  part time
+API_CUSTOMERS_PRIMARY.APE_STREET_NAME,APE_STREET_NAME Street Name
+API_CUSTOMERS_PRIMARY.APE_APT_STE_NBR,APE_APT_STE_NBR Apartment Number
+API_CUSTOMERS_PRIMARY.APE_ADDRESS_NBR,APE_ADDRESS_NBR Street number of address for this location
+API_CUSTOMERS_PRIMARY.APA_STREET_NAME,APA_STREET_NAME Name of street where address is located
+API_CUSTOMERS_PRIMARY.APA_APT_STE_NBR,APA_APT_STE_NBR Apartment or suite number of address
+API_CUSTOMERS_PRIMARY.APA_ADDRESS_NBR,APA_ADDRESS_NBR Numeric portion of address location
+API_CUSTOMERS_PRIMARY.APL_SALUTATION_TYPE_CD,APL_SALUTATION_TYPE_CD Salutation
+API_CUSTOMERS_PRIMARY.APL_CHRISTIAN_NAME,APL_CHRISTIAN_NAME Applicant Initials
+API_CUSTOMERS_PRIMARY.APL_MAIDEN_MI_NAME,APL_MAIDEN_MI_NAME Applicant Middle Initial
+API_CUSTOMERS_PRIMARY.APL_MAIDEN_NAME,APL_MAIDEN_NAME Applicant Maiden Name
+API_CUSTOMERS_PRIMARY.APL_FULL_NAME,APL_FULL_NAME Applicant Full Name
+API_CUSTOMERS_PRIMARY.APL_PERMIT_TO_STAY_CD,APL_PERMIT_TO_STAY_CD Permission to Stay in the Country
+API_CUSTOMERS_PRIMARY.APL_PERMIT_TO_WORK_CD,APL_PERMIT_TO_WORK_CD Permission to Work in the Country
+API_CUSTOMERS_PRIMARY.APL_SPECIALITY_TYPE_CD,APL_SPECIALITY_TYPE_CD Special Condition for Applicant
+API_CUSTOMERS_PRIMARY.APL_EXISTING_CIF,APL_EXISTING_CIF Existing applicant CIF
+API_CUSTOMERS_PRIMARY.APL_PASSPORT_NBR,APL_PASSPORT_NBR Passport number of customer
+API_CUSTOMERS_PRIMARY.APL_PASSPORT_ISSUE_DT,APL_PASSPORT_ISSUE_DT Passport Issue date of customer
+API_CUSTOMERS_PRIMARY.APL_PASSPORT_EXPIRY_DT,APL_PASSPORT_EXPIRY_DT Passport expiry date of customer
+API_CUSTOMERS_PRIMARY.APL_MSG_PREFERENCE,APL_MSG_PREFERENCE Stores the Message reference
+API_CUSTOMERS_PRIMARY.APL_NATIONAL_ID,APL_NATIONAL_ID National ID of applicant
+API_CUSTOMERS_PRIMARY.APA_LANDMARK,APA_LANDMARK Landmark near address
+API_CUSTOMERS_PRIMARY.APA_ADDRESS3,APA_ADDRESS3 Address Line 3
+API_CUSTOMERS_PRIMARY.APE_DEPARTMENT,APE_DEPARTMENT Stores the department
+API_CUSTOMERS_PRIMARY.APE_EMPLOYEE_ID,APE_EMPLOYEE_ID Stores the Employee ID
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE1,ALT_FTA_TABLE_ATTRIBUTE1 Name of the unit tracking attribute parameter1
+API_CUSTOMERS_PRIMARY.ALT_VALUE1,ALT_VALUE1 Value1
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE2,ALT_FTA_TABLE_ATTRIBUTE2 Name of the unit tracking attribute parameter2
+API_CUSTOMERS_PRIMARY.ALT_VALUE2,ALT_VALUE2 Value2
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE3,ALT_FTA_TABLE_ATTRIBUTE3 Name of the unit tracking attribute parameter3
+API_CUSTOMERS_PRIMARY.ALT_VALUE3,ALT_VALUE3 Value3
+API_CUSTOMERS_PRIMARY.ALT_FTA_TABLE_ATTRIBUTE4,ALT_FTA_TABLE_ATTRIBUTE4 Name of the unit tracking attribute parameter4
+API_CUSTOMERS_PRIMARY.APL_VISA_NBR,APL_VISA_NBR Primary visa number
+API_CUSTOMERS_PRIMARY.APL_NATIONALITY_CD,APL_NATIONALITY_CD Primary Nationality code
+API_CUSTOMERS_PRIMARY.APL_EDUCATION_LEVEL_CD,APL_EDUCATION_LEVEL_CD Primary Applicant education level code
+API_CUSTOMERS_PRIMARY.APA_CONFIRMED_IND,APA_CONFIRMED_IND Indicates if the address is confirmed or not
+API_CUSTOMERS_PRIMARY.APT_TIME_ZONE_CD,APT_TIME_ZONE_CD  Stores the Timezone of the primary customer
+API_CUSTOMERS_PRIMARY.APL_SCRA_IND,APL_SCRA_IND Stores the scra Indicator
+API_CUSTOMERS_PRIMARY.APL_SCRA_EFFECTIVE_DT,APL_SCRA_EFFECTIVE_DT Stores the scra effective date
+API_CUSTOMERS_PRIMARY.APL_SCRA_ORDER_REF_NBR,APL_SCRA_ORDER_REF_NBR Stores the scra order reference number
+API_CUSTOMERS_PRIMARY.APL_SCRA_RELEASED_DT,APL_SCRA_RELEASED_DT Stores the scra released date
+API_CUSTOMERS_PRIMARY.APL_PA_ADDRESS,APL_PA_ADDRESS Address
+API_CUSTOMERS_PRIMARY.APL_KYC_REF_NBR,APL_KYC_REF_NBR Applicant  know your customer reference number
+API_CUSTOMERS_PRIMARY.APL_KYC_STATUS_CD,APL_KYC_STATUS_CD Status Code
+API_CUSTOMERS_PRIMARY.APL_LIAB_NBR,APL_LIAB_NBR Applicant liability number
+API_CUSTOMERS_PRIMARY.APL_BIRTH_PLACE,APL_BIRTH_PLACE Birth Place
+API_CUSTOMERS_PRIMARY.APL_BIRTH_COUNTRY_CD,APL_BIRTH_COUNTRY_CD Country Code
+API_CUSTOMERS_PRIMARY.APL_US_RES_IND,APL_US_RES_IND Indicates whether the US Resident is currently enabled
+API_CUSTOMERS_PRIMARY.APL_CUSTOMER_CATEGORY_CD,APL_CUSTOMER_CATEGORY_CD Customer Category Code
+API_CUSTOMERS_PRIMARY.APL_PA_ISSUED_IND,APL_PA_ISSUED_IND Indicates whether the payee issued is currently enabled
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_NAME,APL_PA_HOLDER_NAME Holder Name
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_ADR_CNTRY_CD,APL_PA_HOLDER_ADR_CNTRY_CD Applicant Personal  holder  address country code
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_NATIONALITY_CD,APL_PA_HOLDER_NATIONALITY_CD unique Applicant Nationality code
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_PHONE,APL_PA_HOLDER_PHONE Holder Phone Number
+API_CUSTOMERS_PRIMARY.APA_PHONE_ISD_CD,APA_PHONE_ISD_CD Phone ISD code for  Api_Customers_Primary
+API_CUSTOMERS_PRIMARY.APE_PHONE_ISD_CD,APE_PHONE_ISD_CD Phone ISD code
+API_CUSTOMERS_PRIMARY.APT_PHONE_ISD_CD,APT_PHONE_ISD_CD Phone ISD Code
+API_CUSTOMERS_PRIMARY.APL_PA_HOLDER_PHONE_ISD_CD,APL_PA_HOLDER_PHONE_ISD_CD  Phone ISD code
+API_CUSTOMERS_PRIMARY.APT_PHONE,APT_PHONE Phone number
+API_CUSTOMERS_PRIMARY.APT_PHONE_EXTN,APT_PHONE_EXTN Phone Extension
+API_CUSTOMERS_PRIMARY.APT_TELECOM_TYPE_CD,APT_TELECOM_TYPE_CD Type of the telecom such as pager
+API_CUSTOMERS_PRIMARY.APE_ACTUAL_PAY_DAY_DT,APE_ACTUAL_PAY_DAY_DT Actual pay day date of the primary applicants employment for conversion.
+API_CUSTOMERS_PRIMARY.APA_CUR_CURRENCY_CODE,APA_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_CUR_CURRENCY_CODE,APE_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_STATED_PAY_DAY_DT,APE_STATED_PAY_DAY_DT Stated pay date
+API_CUSTOMERS_PRIMARY.APA_CUR_CURRENCY_CODE,APA_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_CUR_CURRENCY_CODE,APE_CUR_CURRENCY_CODE Refers to the current currency code
+API_CUSTOMERS_PRIMARY.APE_STATED_PAY_DAY_DT,APE_STATED_PAY_DAY_DT Stated pay date
+API_CUSTOMERS_PRIMARY.APL_PAH_HIERARCHY_CODE,APL_PAH_HIERARCHY_CODE Payment Hierarchy Code
+API_CUSTOMERS_PRIMARY.APL_SHARE_CREDIT_INFO_IND,APL_SHARE_CREDIT_INFO_IND Share Credit Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_SKIP_IND,APL_SKIP_IND Indicates if current address for business applicant is not valid
+API_CUSTOMERS_PRIMARY.APL_DECEASED_DT,APL_DECEASED_DT Deceased date of customer
+API_CUSTOMERS_PRIMARY.APL_STOP_CORR_IND,APL_STOP_CORR_IND Indicates if customer correspondence must be stopped
+API_CUSTOMERS_PRIMARY.APL_PRIVACY_OPT_OUT_IND,APL_PRIVACY_OPT_OUT_IND Indicates if business applicant has opted out to share privacy information
+API_CUSTOMERS_PRIMARY.APL_UPDATE_CUSTOMER_INFO_IND,APL_UPDATE_CUSTOMER_INFO_IND Customer override indicator
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE,APL_CREDIT_SCORE Archive:Credit score value
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE_RECEIVED_DT,APL_CREDIT_SCORE_RECEIVED_DT Credit score received date.
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SOURCE_CD,APL_CREDIT_SOURCE_CD Reference to Credit source code
+API_CUSTOMERS_PRIMARY.APL_COMMENTS,APL_COMMENTS Customer Comments
+API_CUSTOMERS_PRIMARY.APL_REASON_CD,APL_REASON_CD Customer Reason code
+API_CUSTOMERS_PRIMARY.APL_REFERENCE_NBR,APL_REFERENCE_NBR Reference Number
+API_CUSTOMERS_PRIMARY.APL_SKIP_IND,APL_SKIP_IND Indicates if current address for business applicant is not valid
+API_CUSTOMERS_PRIMARY.APL_SHARE_CR_OPT_OUT_IND,APL_SHARE_CR_OPT_OUT_IND Staging :  Share Credit Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_UPDATE_CUSTOMER_INFO_IND,APL_UPDATE_CUSTOMER_INFO_IND Customer override indicator
+API_CUSTOMERS_PRIMARY.APL_UTILIZATION_PERC,APL_UTILIZATION_PERC Stores the applicant credit limit utilization percentage
+API_CUSTOMERS_PRIMARY.APT_PERMISSION_TO_CALL_IND,APT_PERMISSION_TO_CALL_IND Indicates Applicant telecom Permission to call
+API_CUSTOMERS_PRIMARY.APT_PERMISSION_TO_TEXT_IND,APT_PERMISSION_TO_TEXT_IND Indicates Applicant telecom Permission to text
+API_CUSTOMERS_PRIMARY.CREATED_BY,CREATED_BY Standard Who
+API_CUSTOMERS_PRIMARY.CREATION_DATE,CREATION_DATE Standard Who
+API_CUSTOMERS_PRIMARY.APA_PERMISSION_TO_CALL_IND,APA_PERMISSION_TO_CALL_IND Indicates Applicant address Permission to call
+API_CUSTOMERS_PRIMARY.APA_PERMISSION_TO_TEXT_IND,APA_PERMISSION_TO_TEXT_IND Indicates Applicant address Permission to text
+API_CUSTOMERS_PRIMARY.APE_PERMISSION_TO_CALL_IND,APE_PERMISSION_TO_CALL_IND Indicates Applicant employment Permission to call
+API_CUSTOMERS_PRIMARY.APE_PERMISSION_TO_TEXT_IND,APE_PERMISSION_TO_TEXT_IND Indicates Applicant employment Permission to text
+API_CUSTOMERS_PRIMARY.APL_COMMENTS,APL_COMMENTS Customer Comments
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE,APL_CREDIT_SCORE Archive:Credit score value
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SCORE_RECEIVED_DT,APL_CREDIT_SCORE_RECEIVED_DT Credit score received date.
+API_CUSTOMERS_PRIMARY.APL_CREDIT_SOURCE_CD,APL_CREDIT_SOURCE_CD Reference to Credit source code
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_EXPIRY_DT,APL_CRED_LIMIT_EXPIRY_DT Business applicant credit limit expiry date
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_GRADE_CD,APL_CRED_LIMIT_GRADE_CD Reference key to lookup credit limit grade code 
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_MAX_AMT,APL_CRED_LIMIT_MAX_AMT Stores the maximum credit limit amount
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_MAX_LC_RATE,APL_CRED_LIMIT_MAX_LC_RATE Stores the credit limit maximum Late Charge rate
+API_CUSTOMERS_PRIMARY.APL_CRED_LIMIT_RENEW_DT,APL_CRED_LIMIT_RENEW_DT Business applicant credit limit renew date
+API_CUSTOMERS_PRIMARY.APL_CUS_NBR,APL_CUS_NBR Reference Number for Customer
+API_CUSTOMERS_PRIMARY.APL_DECEASED_DT,APL_DECEASED_DT Deceased date of customer
+API_CUSTOMERS_PRIMARY.APL_INSURANCE_OPT_OUT_IND,APL_INSURANCE_OPT_OUT_IND Applicant Insurance Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_MARKETING_OPT_OUT_IND,APL_MARKETING_OPT_OUT_IND Applicant Marketing Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_PRIVACY_OPT_OUT_IND,APL_PRIVACY_OPT_OUT_IND Indicates if business applicant has opted out to share privacy information
+API_CUSTOMERS_PRIMARY.APL_REASON_CD,APL_REASON_CD Customer Reason code
+API_CUSTOMERS_PRIMARY.APL_REFERENCE_NBR,APL_REFERENCE_NBR Reference Number
+API_CUSTOMERS_PRIMARY.APL_SHARE_CREDIT_INFO_IND,APL_SHARE_CREDIT_INFO_IND Share Credit Opt Out Indicator
+API_CUSTOMERS_PRIMARY.APL_STOP_CORR_IND,APL_STOP_CORR_IND Indicates if customer correspondence must be stopped

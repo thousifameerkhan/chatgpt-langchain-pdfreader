@@ -1,114 +1,113 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-ABL_BAL_ABL,NUMBER,,N,Accumulated Average daily balance for advance balance type,,,,,,,,Y,N,
-ABL_APP_ORIG_SYS_XREF,VARCHAR2,,Y,External Reference Number,,,,,,,,Y,Y,
-CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,Y
-CREATION_DATE,DATE,,N,Standard Who,,,,,,,,Y,Y,Y
-ABL_DT,DATE,,N,Effective date of the balance,DATE,,,,,,,Y,Y,
-ABL_PROM_TYPE_CD,VARCHAR2,,N,Reference key to lookup promotion type,PROM_TYPE_CD,,,,,,,Y,Y,
-ABL_RATE,NUMBER,,N,Interest rate during the promotional period,,,,,,,,Y,Y,
-ABL_TERM,NUMBER,,N,Promotional term or period,,,,,,,,Y,Y,
-ABL_PRM_END_DT,DATE,,N,Promotion balance end date,,,,,,,,Y,Y,
-ABL_DUE_AMT1,NUMBER,,N,Due amount 1 cycle old,,,,,,,,Y,Y,
-ABL_DUE_AMT2,NUMBER,,N,Due amount 2 cycle old,,,,,,,,Y,Y,
-ABL_DUE_AMT3,NUMBER,,N,Due amount 3 cycle old,,,,,,,,Y,Y,
-ABL_DUE_AMT4,NUMBER,,N,Due amount 4 cycle old,,,,,,,,Y,Y,
-ABL_DUE_AMT5,NUMBER,,N,Due amount 5 cycle old,,,,,,,,Y,Y,
-ABL_DUE_AMT_PD1,NUMBER,,N,Due amount 1 cycle old paid,,,,,,,,Y,Y,
-ABL_DUE_AMT_PD2,NUMBER,,N,Due amount 2 cycle old paid,,,,,,,,Y,Y,
-ABL_DUE_AMT_PD3,NUMBER,,N,Due amount 3 cycle old paid,,,,,,,,Y,Y,
-ABL_DUE_AMT_PD4,NUMBER,,N,Due amount 4 cycle old paid,,,,,,,,Y,Y,
-ABL_DUE_AMT_PD5,NUMBER,,N,Due amount 5 cycle old paid,,,,,,,,Y,Y,
-ABL_PIN_CODE,VARCHAR2,,N,Reference Key to Product Insurances,,,,,,,,Y,Y,
-ABL_INS_SUB_TYPE_CD,VARCHAR2,,N,The credit insurance sub type code,INS_SUB_TYPE_CD,,,,,,,Y,Y,
-ABL_INS_STATUS_CD,VARCHAR2,,N,The credit insurance status code such as active,INSURANCE_STATUS_CD,,,,,,,Y,Y,
-ABL_BAL_TERMINATE,NUMBER,,N,Terminated Balance (ITD),,,,,,,,Y,Y,
-ABL_BAL_TERMINATE_CTD,NUMBER,,N,Terminated balance (CTD) for the current cycle,,,,,,,,Y,Y,
-ABL_BAL_TERMINATE_YTD,NUMBER,,N,Terminated balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_TERMINATE_CTD1,NUMBER,,N,Terminated balance (CTD) for the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_TERMINATE_YTD1,NUMBER,,N,Terminated balance (YTD) for the previous year,,,,,,,,Y,Y,
-ABL_TERMINATE_IND,VARCHAR2,,N,Indicates whether balance is terminatable,,,,,,,,Y,Y,
-ABL_BAL_ABL_CTD1,NUMBER,,N,Accumulated Average daily balance for advance balance type for previous cycle one,,,,,,,,Y,Y,
-ABL_BAL_ABL_CTD2,NUMBER,,N,Accumulated Average daily balance for advance balance type for previous cycle two,,,,,,,,Y,Y,
-ABL_BAL_ABL_CTD3,NUMBER,,N,Accumulated Average daily balance for advance balance type for previous cycle three,,,,,,,,Y,Y,
-ABL_BAL_ABL_CTD4,NUMBER,,N,Accumulated Average daily balance for advance balance type for previous cycle four,,,,,,,,Y,Y,
-ABL_BAL_ABL_CTD5,NUMBER,,N,Accumulated Average daily balance for advance balance type for previous cycle five,,,,,,,,Y,Y,
-ABL_NON_PERFORM_ROLL_IND,VARCHAR2,,N,Indicates whether balance can be rolled,,,,,,,,Y,Y,
-ABL_NON_PERFORM_TXN_TYPE_CD,VARCHAR2,,N,Balance type where non-performing balance rolled into,NON_PERFORM_TXN_TYPE_CD,,,,,,,Y,Y,
-ABL_BAL_XFER2NON_PERFORM,NUMBER,,N,Amount was due for the balance type  when account went into non-performance state,,,,,,,,Y,Y,
-ABL_BAL_PD_XFER2NON_PERFORM,NUMBER,,N,Amount was paid for the balance type  when account went into non-performance state,,,,,,,,Y,Y,
-ABL_NON_PERFORM_BAL,NUMBER,,N,Non performing balance,,,,,,,,Y,Y,
-ABL_NON_PERFORM_BAL_PD,NUMBER,,N,Amount paid against non-performing balance,,,,,,,,Y,Y,
-ABL_NON_PERFORM_BAL_PD_EXCESS,NUMBER,,N,Amount paid excess to non-performing balance,,,,,,,,Y,Y,
-ABL_NON_PERFORM_BAL_WAIVED,NUMBER,,N,Waived non-performing balance,,,,,,,,Y,Y,
-ABL_NON_PERFORM_BAL_ADJ_PLUS,NUMBER,,N,Positive adjustments to non-performing balance,,,,,,,,Y,Y,
-ABL_NON_PERFORM_BAL_ADJ_MINUS,NUMBER,,N,Negative adjustments to non-performing balance,,,,,,,,Y,Y,
-ABL_BAL_BILLED,NUMBER,,N,Billed balance,,,,,,,,Y,Y,
-ABL_BAL_BILLED_CTD,NUMBER,,N,Billed balance (CTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_BILLED_CTD1,NUMBER,,N,Billed balance (CTD) for the previous year,,,,,,,,Y,Y,
-ABL_BAL_BILLED_YTD,NUMBER,,N,Billed balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_RATE_EFFECTIVE,NUMBER,,N,Stores the current effective rate,,,,,,,,Y,Y,
-ABL_CPT_IND,VARCHAR2,,Y,Indicates whether the account is enabled for capitalized or not,,,,,,,,Y,Y,
-ABL_CPT_FREQUENCY_CD,VARCHAR2,,Y,Capitalization Frequency,CPT_CYCLE_CD,,,,,,,Y,Y,
-ABL_CPT_GRACE_DAYS,NUMBER,,Y,Grace days provided before executing the Capitalization,,,,,,,,Y,Y,
-ABL_CPT_RUN_DT_NEXT,DATE,,Y,Account Balances Capitalization next Run Date,DATE,,,,,,,Y,Y,
-ABL_BAL_CPT_PLUS,NUMBER,,Y,Positive adjustments to balance type (CPT) Capitalization,,,,,,,,Y,Y,
-ABL_BAL_CPT_MINUS,NUMBER,,Y,Negative adjustments to balance type (CPT) Capitalization,,,,,,,,Y,Y,
-ABL_BAL_CPT_PLUS_CTD,NUMBER,,Y,Current to date Adjusted Plus Balance,,,,,,,,Y,Y,
-ABL_BAL_CPT_MINUS_CTD,NUMBER,,Y,Current to date Adjusted Minus Balance,,,,,,,,Y,Y,
-ABL_BAL_CPT_PLUS_YTD,NUMBER,,Y,Positive adjustment balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_CPT_MINUS_YTD,NUMBER,,Y,Negative adjustment balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_TXN_TYPE_CD,VARCHAR2,,Y,Reference key to lookup transaction type or balance type,TXN_TYPE_CD,,,,,,,Y,Y,
-ABL_PRM_CODE,VARCHAR2,,N,Reference key to promotion,,,,,,,,Y,Y,
-ABL_BAL_SORT,NUMBER,,N,Sort,,,,,,,,Y,Y,
-ABL_BAL,NUMBER,,N,Current posted balance(Advance/Interest/Fee/Expense/Insurance),,,,,,,,Y,Y,
-ABL_BAL_PD,NUMBER,,N,Balance paid (ITD),,,,,,,,Y,Y,
-ABL_BAL_WAIVED,NUMBER,,N,Balance waived (ITD),,,,,,,,Y,Y,
-ABL_BAL_CHGOFF,NUMBER,,N,Charged off balance (ITD),,,,,,,,Y,Y,
-ABL_BAL_RECOVERED,NUMBER,,N,Balance recovered (ITD),,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_PLUS,NUMBER,,N,Positive adjustment balance (ITD),,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_MINUS,NUMBER,,N,Negative adjustment balance (ITD),,,,,,,,Y,Y,
-ABL_BAL_OPEN_CTD,NUMBER,,N,Opening balance (CTD) for the current cycle,,,,,,,,Y,Y,
-ABL_BAL_CTD,NUMBER,,N,Posted balance (CTD) for the current cycle,,,,,,,,Y,Y,
-ABL_BAL_PD_CTD,NUMBER,,N,Balance paid (CTD) in the current cycle,,,,,,,,Y,Y,
-ABL_BAL_WAIVED_CTD,NUMBER,,N,Balance waived (CTD) in the current cycle,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_OPEN_CTD,NUMBER,,N,Opening Charged off balance (CTD) for the current cycle,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_CTD,NUMBER,,N,Charged off balance (CTD) for the current cycle,,,,,,,,Y,Y,
-ABL_BAL_RECOVERED_CTD,NUMBER,,N,Balance recovered (CTD) in the current year,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_PLUS_CTD,NUMBER,,N,Positive adjustment balance (CTD) for the current cycle,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_MINUS_CTD,NUMBER,,N,Negative adjustment balance (CTD) for the current cycle,,,,,,,,Y,Y,
-ABL_BAL_OPEN_YTD,NUMBER,,N,Opening balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_YTD,NUMBER,,N,Posted balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_PD_YTD,NUMBER,,N,Balance paid(YTD) in the current year,,,,,,,,Y,Y,
-ABL_BAL_WAIVED_YTD,NUMBER,,N,Balance waived (YTD) in the current year,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_OPEN_YTD,NUMBER,,N,Opening Charged off balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_YTD,NUMBER,,N,Charged off balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_RECOVERED_YTD,NUMBER,,N,Balance recovered (YTD) in the current year,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_PLUS_YTD,NUMBER,,N,Positive adjustment balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_MINUS_YTD,NUMBER,,N,Negative adjustment balance (YTD) for the current year,,,,,,,,Y,Y,
-ABL_BAL_BILLED_IND,VARCHAR2,,N,Indicates whether the balance is billable,,,,,,,,Y,Y,
-ABL_INTEREST_ACCRUED_IND,VARCHAR2,,N,Indicates whether interest is accruable,,,,,,,,Y,Y,
-ABL_CHARGEOFF_METHOD_CD,VARCHAR2,,N,Reference key to lookup chargeoff method,CHARGEOFF_METHOD_CD,,,,,,,Y,Y,
-ABL_RESCHEDULE_METHOD_CD,VARCHAR2,,N,Reference key to lookup reschedule method,RESCHEDULE_METHOD_CD,,,,,,,Y,Y,
-ABL_WRITEOFF_METHOD_CD,VARCHAR2,,N,Reference key to lookup writeoff method,WRITEOFF_METHOD_CD,,,,,,,Y,Y,
-ABL_BAL_OPEN_CTD1,NUMBER,,N,Opening balance (CTD) for the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_CTD1,NUMBER,,N,Posted balance (CTD) for the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_PD_CTD1,NUMBER,,N,Balance paid(CTD) in the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_WAIVED_CTD1,NUMBER,,N,Balance waived (CTD) in the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_OPEN_CTD1,NUMBER,,N,Opening Charged off balance (CTD) for the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_CTD1,NUMBER,,N,Charged off balance (CTD) for the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_RECOVERED_CTD1,NUMBER,,N,Balance recovered (CTD) in the previous year,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_PLUS_CTD1,NUMBER,,N,Positive adjustment balance (CTD) for the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_MINUS_CTD1,NUMBER,,N,Negative adjustment balance (CTD) for the previous cycle,,,,,,,,Y,Y,
-ABL_BAL_OPEN_YTD1,NUMBER,,N,Opening balance (YTD) for the previous year,,,,,,,,Y,Y,
-ABL_BAL_YTD1,NUMBER,,N,Posted balance (YTD) for the previous year,,,,,,,,Y,Y,
-ABL_BAL_PD_YTD1,NUMBER,,N,Balance paid(YTD) in the previous year,,,,,,,,Y,Y,
-ABL_BAL_WAIVED_YTD1,NUMBER,,N,Balance waived (YTD) in the previous year,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_OPEN_YTD1,NUMBER,,N,Opening Charged off balance (YTD) for the previous year,,,,,,,,Y,Y,
-ABL_BAL_CHGOFF_YTD1,NUMBER,,N,Charged off balance (YTD) for the previous year,,,,,,,,Y,Y,
-ABL_BAL_RECOVERED_YTD1,NUMBER,,N,Balance recovered (YTD) in the previous year,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_PLUS_YTD1,NUMBER,,N,Positive adjustment balance (YTD) for the previous year,,,,,,,,Y,Y,
-ABL_BAL_ADJUSTED_MINUS_YTD1,NUMBER,,N,Negative adjustment balance (YTD) for the previous year,,,,,,,,Y,Y,
-ABL_BILL_METHOD_CD,VARCHAR2,,N,Reference key to lookup billing method,BILL_METHOD_CD,,,,,,,Y,Y,
-ABL_PMT_AMT,NUMBER,,N,Promotional balance billing payment amount,,,,,,,,Y,Y,
-ABL_PMT_PER,NUMBER,,N,Promotional balance billing payment percentage,,,,,,,,Y,Y,
+key,description
+API_ACCOUNT_BALANCES.ABL_BAL_ABL,ABL_BAL_ABL Accumulated Average daily balance for advance balance type
+API_ACCOUNT_BALANCES.ABL_APP_ORIG_SYS_XREF,ABL_APP_ORIG_SYS_XREF External Reference Number
+API_ACCOUNT_BALANCES.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_BALANCES.CREATION_DATE,CREATION_DATE Standard Who
+API_ACCOUNT_BALANCES.ABL_DT,ABL_DT Effective date of the balance
+API_ACCOUNT_BALANCES.ABL_PROM_TYPE_CD,ABL_PROM_TYPE_CD Reference key to lookup promotion type
+API_ACCOUNT_BALANCES.ABL_RATE,ABL_RATE Interest rate during the promotional period
+API_ACCOUNT_BALANCES.ABL_TERM,ABL_TERM Promotional term or period
+API_ACCOUNT_BALANCES.ABL_PRM_END_DT,ABL_PRM_END_DT Promotion balance end date
+API_ACCOUNT_BALANCES.ABL_DUE_AMT1,ABL_DUE_AMT1 Due amount 1 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT2,ABL_DUE_AMT2 Due amount 2 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT3,ABL_DUE_AMT3 Due amount 3 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT4,ABL_DUE_AMT4 Due amount 4 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT5,ABL_DUE_AMT5 Due amount 5 cycle old
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD1,ABL_DUE_AMT_PD1 Due amount 1 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD2,ABL_DUE_AMT_PD2 Due amount 2 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD3,ABL_DUE_AMT_PD3 Due amount 3 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD4,ABL_DUE_AMT_PD4 Due amount 4 cycle old paid
+API_ACCOUNT_BALANCES.ABL_DUE_AMT_PD5,ABL_DUE_AMT_PD5 Due amount 5 cycle old paid
+API_ACCOUNT_BALANCES.ABL_PIN_CODE,ABL_PIN_CODE Reference Key to Product Insurances
+API_ACCOUNT_BALANCES.ABL_INS_SUB_TYPE_CD,ABL_INS_SUB_TYPE_CD The credit insurance sub type code
+API_ACCOUNT_BALANCES.ABL_INS_STATUS_CD,ABL_INS_STATUS_CD The credit insurance status code such as active
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE,ABL_BAL_TERMINATE Terminated Balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_CTD,ABL_BAL_TERMINATE_CTD Terminated balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_YTD,ABL_BAL_TERMINATE_YTD Terminated balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_CTD1,ABL_BAL_TERMINATE_CTD1 Terminated balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_TERMINATE_YTD1,ABL_BAL_TERMINATE_YTD1 Terminated balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_TERMINATE_IND,ABL_TERMINATE_IND Indicates whether balance is terminatable
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD1,ABL_BAL_ABL_CTD1 Accumulated Average daily balance for advance balance type for previous cycle one
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD2,ABL_BAL_ABL_CTD2 Accumulated Average daily balance for advance balance type for previous cycle two
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD3,ABL_BAL_ABL_CTD3 Accumulated Average daily balance for advance balance type for previous cycle three
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD4,ABL_BAL_ABL_CTD4 Accumulated Average daily balance for advance balance type for previous cycle four
+API_ACCOUNT_BALANCES.ABL_BAL_ABL_CTD5,ABL_BAL_ABL_CTD5 Accumulated Average daily balance for advance balance type for previous cycle five
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_ROLL_IND,ABL_NON_PERFORM_ROLL_IND Indicates whether balance can be rolled
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_TXN_TYPE_CD,ABL_NON_PERFORM_TXN_TYPE_CD Balance type where non-performing balance rolled into
+API_ACCOUNT_BALANCES.ABL_BAL_XFER2NON_PERFORM,ABL_BAL_XFER2NON_PERFORM Amount was due for the balance type  when account went into non-performance state
+API_ACCOUNT_BALANCES.ABL_BAL_PD_XFER2NON_PERFORM,ABL_BAL_PD_XFER2NON_PERFORM Amount was paid for the balance type  when account went into non-performance state
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL,ABL_NON_PERFORM_BAL Non performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_PD,ABL_NON_PERFORM_BAL_PD Amount paid against non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_PD_EXCESS,ABL_NON_PERFORM_BAL_PD_EXCESS Amount paid excess to non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_WAIVED,ABL_NON_PERFORM_BAL_WAIVED Waived non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_ADJ_PLUS,ABL_NON_PERFORM_BAL_ADJ_PLUS Positive adjustments to non-performing balance
+API_ACCOUNT_BALANCES.ABL_NON_PERFORM_BAL_ADJ_MINUS,ABL_NON_PERFORM_BAL_ADJ_MINUS Negative adjustments to non-performing balance
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED,ABL_BAL_BILLED Billed balance
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_CTD,ABL_BAL_BILLED_CTD Billed balance (CTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_CTD1,ABL_BAL_BILLED_CTD1 Billed balance (CTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_YTD,ABL_BAL_BILLED_YTD Billed balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_RATE_EFFECTIVE,ABL_RATE_EFFECTIVE Stores the current effective rate
+API_ACCOUNT_BALANCES.ABL_CPT_IND,ABL_CPT_IND Indicates whether the account is enabled for capitalized or not
+API_ACCOUNT_BALANCES.ABL_CPT_FREQUENCY_CD,ABL_CPT_FREQUENCY_CD Capitalization Frequency
+API_ACCOUNT_BALANCES.ABL_CPT_GRACE_DAYS,ABL_CPT_GRACE_DAYS Grace days provided before executing the Capitalization
+API_ACCOUNT_BALANCES.ABL_CPT_RUN_DT_NEXT,ABL_CPT_RUN_DT_NEXT Account Balances Capitalization next Run Date
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_PLUS,ABL_BAL_CPT_PLUS Positive adjustments to balance type (CPT) Capitalization
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_MINUS,ABL_BAL_CPT_MINUS Negative adjustments to balance type (CPT) Capitalization
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_PLUS_CTD,ABL_BAL_CPT_PLUS_CTD Current to date Adjusted Plus Balance
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_MINUS_CTD,ABL_BAL_CPT_MINUS_CTD Current to date Adjusted Minus Balance
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_PLUS_YTD,ABL_BAL_CPT_PLUS_YTD Positive adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_CPT_MINUS_YTD,ABL_BAL_CPT_MINUS_YTD Negative adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_TXN_TYPE_CD,ABL_TXN_TYPE_CD Reference key to lookup transaction type or balance type
+API_ACCOUNT_BALANCES.ABL_PRM_CODE,ABL_PRM_CODE Reference key to promotion
+API_ACCOUNT_BALANCES.ABL_BAL_SORT,ABL_BAL_SORT Sort
+API_ACCOUNT_BALANCES.ABL_BAL,ABL_BAL Current posted balance(Advance/Interest/Fee/Expense/Insurance)
+API_ACCOUNT_BALANCES.ABL_BAL_PD,ABL_BAL_PD Balance paid (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED,ABL_BAL_WAIVED Balance waived (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF,ABL_BAL_CHGOFF Charged off balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED,ABL_BAL_RECOVERED Balance recovered (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS,ABL_BAL_ADJUSTED_PLUS Positive adjustment balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS,ABL_BAL_ADJUSTED_MINUS Negative adjustment balance (ITD)
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_CTD,ABL_BAL_OPEN_CTD Opening balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CTD,ABL_BAL_CTD Posted balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_PD_CTD,ABL_BAL_PD_CTD Balance paid (CTD) in the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_CTD,ABL_BAL_WAIVED_CTD Balance waived (CTD) in the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_CTD,ABL_BAL_CHGOFF_OPEN_CTD Opening Charged off balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_CTD,ABL_BAL_CHGOFF_CTD Charged off balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_CTD,ABL_BAL_RECOVERED_CTD Balance recovered (CTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_CTD,ABL_BAL_ADJUSTED_PLUS_CTD Positive adjustment balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_CTD,ABL_BAL_ADJUSTED_MINUS_CTD Negative adjustment balance (CTD) for the current cycle
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_YTD,ABL_BAL_OPEN_YTD Opening balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_YTD,ABL_BAL_YTD Posted balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_PD_YTD,ABL_BAL_PD_YTD Balance paid(YTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_YTD,ABL_BAL_WAIVED_YTD Balance waived (YTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_YTD,ABL_BAL_CHGOFF_OPEN_YTD Opening Charged off balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_YTD,ABL_BAL_CHGOFF_YTD Charged off balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_YTD,ABL_BAL_RECOVERED_YTD Balance recovered (YTD) in the current year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_YTD,ABL_BAL_ADJUSTED_PLUS_YTD Positive adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_YTD,ABL_BAL_ADJUSTED_MINUS_YTD Negative adjustment balance (YTD) for the current year
+API_ACCOUNT_BALANCES.ABL_BAL_BILLED_IND,ABL_BAL_BILLED_IND Indicates whether the balance is billable
+API_ACCOUNT_BALANCES.ABL_INTEREST_ACCRUED_IND,ABL_INTEREST_ACCRUED_IND Indicates whether interest is accruable
+API_ACCOUNT_BALANCES.ABL_CHARGEOFF_METHOD_CD,ABL_CHARGEOFF_METHOD_CD Reference key to lookup chargeoff method
+API_ACCOUNT_BALANCES.ABL_RESCHEDULE_METHOD_CD,ABL_RESCHEDULE_METHOD_CD Reference key to lookup reschedule method
+API_ACCOUNT_BALANCES.ABL_WRITEOFF_METHOD_CD,ABL_WRITEOFF_METHOD_CD Reference key to lookup writeoff method
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_CTD1,ABL_BAL_OPEN_CTD1 Opening balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CTD1,ABL_BAL_CTD1 Posted balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_PD_CTD1,ABL_BAL_PD_CTD1 Balance paid(CTD) in the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_CTD1,ABL_BAL_WAIVED_CTD1 Balance waived (CTD) in the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_CTD1,ABL_BAL_CHGOFF_OPEN_CTD1 Opening Charged off balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_CTD1,ABL_BAL_CHGOFF_CTD1 Charged off balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_CTD1,ABL_BAL_RECOVERED_CTD1 Balance recovered (CTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_CTD1,ABL_BAL_ADJUSTED_PLUS_CTD1 Positive adjustment balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_CTD1,ABL_BAL_ADJUSTED_MINUS_CTD1 Negative adjustment balance (CTD) for the previous cycle
+API_ACCOUNT_BALANCES.ABL_BAL_OPEN_YTD1,ABL_BAL_OPEN_YTD1 Opening balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_YTD1,ABL_BAL_YTD1 Posted balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_PD_YTD1,ABL_BAL_PD_YTD1 Balance paid(YTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_WAIVED_YTD1,ABL_BAL_WAIVED_YTD1 Balance waived (YTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_OPEN_YTD1,ABL_BAL_CHGOFF_OPEN_YTD1 Opening Charged off balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_CHGOFF_YTD1,ABL_BAL_CHGOFF_YTD1 Charged off balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_RECOVERED_YTD1,ABL_BAL_RECOVERED_YTD1 Balance recovered (YTD) in the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_PLUS_YTD1,ABL_BAL_ADJUSTED_PLUS_YTD1 Positive adjustment balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BAL_ADJUSTED_MINUS_YTD1,ABL_BAL_ADJUSTED_MINUS_YTD1 Negative adjustment balance (YTD) for the previous year
+API_ACCOUNT_BALANCES.ABL_BILL_METHOD_CD,ABL_BILL_METHOD_CD Reference key to lookup billing method
+API_ACCOUNT_BALANCES.ABL_PMT_AMT,ABL_PMT_AMT Promotional balance billing payment amount
+API_ACCOUNT_BALANCES.ABL_PMT_PER,ABL_PMT_PER Promotional balance billing payment percentage

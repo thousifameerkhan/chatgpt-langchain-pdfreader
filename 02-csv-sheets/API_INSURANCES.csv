@@ -1,38 +1,37 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-INS_PRIMARY_BENEFICIARY,VARCHAR2,,N,Stores the primary beneficiary for the insurance details,,,,,,,,N,,
-INS_CANCEL_REASON_CD,VARCHAR2,,N,Reference key to lookup insurance cancel reason,INS_CANCEL_REASON_CD,,,,,,,N,,
-INS_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to application id of legacy system,,,,,,,,Y,,
-INS_COMPANY,VARCHAR2,,N,Stores the insurance company name,,,,,,,,N,,
-INS_PHONE_NO1,NUMBER,,N,Stores the phone number #1 for the insurance transaction,,,,,,,,N,,
-INS_PHONE_EXTN1,NUMBER,,N,Stores phone number extension for insurance details,,,,,,,,N,,
-INS_PHONE_NO2,NUMBER,,N,Stores phone number for insurance details,,,,,,,,N,,
-INS_PHONE_EXTN2,NUMBER,,N,Stores the phone number #2 for the insurance details,,,,,,,,N,,
-INS_POLICY_NBR,VARCHAR2,,N,Stores insurance policy number,,,,,,,,Y,,
-INS_EFFECTIVE_DT,DATE,,N,Stores insurance effective date,,,,,,,,Y,,
-INS_TERM,NUMBER,,N,Stores insurance term,,,,,,,,Y,,
-INS_EXPIRY_DT,DATE,,N,Stores insurance expiry date,,,,,,,,N,,
-INS_PREMIUM_AMT,NUMBER,,N,Stores the premium amount for the insurance,,,,,,,,Y,,
-INS_SECONDARY_BENEFICIARY,VARCHAR2,,N,Stores secondary beneficiary for the insurance,,,,,,,,N,,
-INS_CANCEL_DT,DATE,,N,Stores Insurance cancellation date,,,,,,,,N,,
-INS_CANCEL_TERM_REM,NUMBER,,N,The remaining term of the contract at the time of cancellation,,,,,,,,Y,,
-INS_REFUND_AMT_EST,NUMBER,,N,Stores the estimated refund amount for the insurance,,,,,,,,Y,,
-INS_REFUND_AMT_RCVD,NUMBER,,N,Stores the refund amount received from the insurance company,,,,,,,,Y,,
-INS_COMPLETE_REFUND_RCVD_IND,VARCHAR2,,N,Indicates the complete refund received,,,,,,,,Y,,
-INS_INSURANCE_TYPE_CD,VARCHAR2,,N,Reference key to lookup insurance type,INSURANCE_TYPE_CD,,,,,,,Y,,
-INS_SUB_TYPE_CD,VARCHAR2,,N,Reference key to lookup insurance sub type,INS_SUB_TYPE_CD,,,,,,,Y,,
-INS_COMMENT,VARCHAR2,,N,Stores the comment for the insurance details,,,,,,,,N,,
-INS_REFUND_ALLOWED_IND,VARCHAR2,,N,Indicates whether or not the insurance cancellation is allowed,,,,,,,,Y,,
-INS_REFUND_CALC_METHOD_CD,VARCHAR2,,N,Stores the contract method that is used to calculate refund in the event of insurance cancellation,INS_REFUND_CALC_METHOD_CD,,,,,,,Y,,
-INS_CONTRACT_IND,VARCHAR2,,N,Indicates if the insurance was part of contract,,,,,,,,Y,,
-INS_INSURANCE_STATUS_CD,VARCHAR2,,N,Reference key to lookup insurance status,INSURANCE_STATUS_CD,,,,,,,Y,,
-INS_INSURANCE_MODE_CD,VARCHAR2,,N,Reference key to lookup insurance mode,INSURANCE_MODE_CD,,,,,,,Y,,
-INS_CANCEL_FEE,NUMBER,,N,Stores the insurance cancellation fee amount,,,,,,,,,,
-INS_GRACE_PERIOD_FEE_IND,VARCHAR2,,N,Indicates whether or not cancellation fee could be charged during grace days,,,,,,,,Y,,
-INS_CANCEL_GRACE_DAYS,NUMBER,,N,The number of days that allows insurance cancellation without fee,,,,,,,,Y,,
-INS_CANCEL_FEE_FROM_CD,VARCHAR2,,N,Cancel fee from rebate or premium possible values PRM/RBT/NULL,CANCEL_FEE_FROM_CD,,,,,,,N,,
-INS_TXN_DT,DATE,,Y,Date of Transaction,,,,,,,,Y,N,Y
-CREATED_BY,VARCHAR2,,N,Standard Who,,,,,,,,Y,Y,Y
-INS_PIN_CODE,VARCHAR2,,N,Pin Code,,,,,,,,Y,N,N
-CREATION_DATE,DATE,,N,Standard Who,,,,,,,,Y,Y,Y
-INS_TXN_DT,DATE,,Y,Date of Transaction,,,,,,,,Y,Y,Y
+key,description
+API_INSURANCES.INS_PRIMARY_BENEFICIARY,INS_PRIMARY_BENEFICIARY Stores the primary beneficiary for the insurance details
+API_INSURANCES.INS_CANCEL_REASON_CD,INS_CANCEL_REASON_CD Reference key to lookup insurance cancel reason
+API_INSURANCES.INS_APP_ORIG_SYS_XREF,INS_APP_ORIG_SYS_XREF Reference key to application id of legacy system
+API_INSURANCES.INS_COMPANY,INS_COMPANY Stores the insurance company name
+API_INSURANCES.INS_PHONE_NO1,INS_PHONE_NO1 Stores the phone number #1 for the insurance transaction
+API_INSURANCES.INS_PHONE_EXTN1,INS_PHONE_EXTN1 Stores phone number extension for insurance details
+API_INSURANCES.INS_PHONE_NO2,INS_PHONE_NO2 Stores phone number for insurance details
+API_INSURANCES.INS_PHONE_EXTN2,INS_PHONE_EXTN2 Stores the phone number #2 for the insurance details
+API_INSURANCES.INS_POLICY_NBR,INS_POLICY_NBR Stores insurance policy number
+API_INSURANCES.INS_EFFECTIVE_DT,INS_EFFECTIVE_DT Stores insurance effective date
+API_INSURANCES.INS_TERM,INS_TERM Stores insurance term
+API_INSURANCES.INS_EXPIRY_DT,INS_EXPIRY_DT Stores insurance expiry date
+API_INSURANCES.INS_PREMIUM_AMT,INS_PREMIUM_AMT Stores the premium amount for the insurance
+API_INSURANCES.INS_SECONDARY_BENEFICIARY,INS_SECONDARY_BENEFICIARY Stores secondary beneficiary for the insurance
+API_INSURANCES.INS_CANCEL_DT,INS_CANCEL_DT Stores Insurance cancellation date
+API_INSURANCES.INS_CANCEL_TERM_REM,INS_CANCEL_TERM_REM The remaining term of the contract at the time of cancellation
+API_INSURANCES.INS_REFUND_AMT_EST,INS_REFUND_AMT_EST Stores the estimated refund amount for the insurance
+API_INSURANCES.INS_REFUND_AMT_RCVD,INS_REFUND_AMT_RCVD Stores the refund amount received from the insurance company
+API_INSURANCES.INS_COMPLETE_REFUND_RCVD_IND,INS_COMPLETE_REFUND_RCVD_IND Indicates the complete refund received
+API_INSURANCES.INS_INSURANCE_TYPE_CD,INS_INSURANCE_TYPE_CD Reference key to lookup insurance type
+API_INSURANCES.INS_SUB_TYPE_CD,INS_SUB_TYPE_CD Reference key to lookup insurance sub type
+API_INSURANCES.INS_COMMENT,INS_COMMENT Stores the comment for the insurance details
+API_INSURANCES.INS_REFUND_ALLOWED_IND,INS_REFUND_ALLOWED_IND Indicates whether or not the insurance cancellation is allowed
+API_INSURANCES.INS_REFUND_CALC_METHOD_CD,INS_REFUND_CALC_METHOD_CD Stores the contract method that is used to calculate refund in the event of insurance cancellation
+API_INSURANCES.INS_CONTRACT_IND,INS_CONTRACT_IND Indicates if the insurance was part of contract
+API_INSURANCES.INS_INSURANCE_STATUS_CD,INS_INSURANCE_STATUS_CD Reference key to lookup insurance status
+API_INSURANCES.INS_INSURANCE_MODE_CD,INS_INSURANCE_MODE_CD Reference key to lookup insurance mode
+API_INSURANCES.INS_CANCEL_FEE,INS_CANCEL_FEE Stores the insurance cancellation fee amount
+API_INSURANCES.INS_GRACE_PERIOD_FEE_IND,INS_GRACE_PERIOD_FEE_IND Indicates whether or not cancellation fee could be charged during grace days
+API_INSURANCES.INS_CANCEL_GRACE_DAYS,INS_CANCEL_GRACE_DAYS The number of days that allows insurance cancellation without fee
+API_INSURANCES.INS_CANCEL_FEE_FROM_CD,INS_CANCEL_FEE_FROM_CD Cancel fee from rebate or premium possible values PRM/RBT/NULL
+API_INSURANCES.INS_TXN_DT,INS_TXN_DT Date of Transaction
+API_INSURANCES.CREATED_BY,CREATED_BY Standard Who
+API_INSURANCES.INS_PIN_CODE,INS_PIN_CODE Pin Code
+API_INSURANCES.CREATION_DATE,CREATION_DATE Standard Who
+API_INSURANCES.INS_TXN_DT,INS_TXN_DT Date of Transaction

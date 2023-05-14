@@ -1,10 +1,9 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-BSF_APP_ORIG_SYS_XREF,VARCHAR2,,N,  Unique Identification Number from the Legacy System,,,,,,,,Y,,
-BSF_FINANCIAL_TYPE_CD,VARCHAR2,,Y,  Stores the Financial Type,FINANCIAL_TYPE_CD,,,,,,,Y,,
-BSF_AMT,NUMBER,,Y,  Amount,,,,,,,,Y,,
-BSF_INCLUDE_IND,VARCHAR2,,N,  Include Indicator,,,,,,,,Y,,
-BSF_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency(Stage),,,,,,,,N,,
-BSF_COMMENT,VARCHAR2,,N,Comments on Business applicant financials,,,,,,,,N,,
-BSF_SOURCE,VARCHAR2,,N,Financial asset source,,,,,,,,N,,
-BSF_CURRENCY_AMT,NUMBER,,N,Stores the amount in local currency,,,,,,,,Y,Y,Y
+key,description
+API_BUSINESS_APPL_FINANCIALS.BSF_APP_ORIG_SYS_XREF,BSF_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_FINANCIALS.BSF_FINANCIAL_TYPE_CD,BSF_FINANCIAL_TYPE_CD   Stores the Financial Type
+API_BUSINESS_APPL_FINANCIALS.BSF_AMT,BSF_AMT   Amount
+API_BUSINESS_APPL_FINANCIALS.BSF_INCLUDE_IND,BSF_INCLUDE_IND   Include Indicator
+API_BUSINESS_APPL_FINANCIALS.BSF_CUR_CURRENCY_CODE,BSF_CUR_CURRENCY_CODE Reference key to Currency(Stage)
+API_BUSINESS_APPL_FINANCIALS.BSF_COMMENT,BSF_COMMENT Comments on Business applicant financials
+API_BUSINESS_APPL_FINANCIALS.BSF_SOURCE,BSF_SOURCE Financial asset source
+API_BUSINESS_APPL_FINANCIALS.BSF_CURRENCY_AMT,BSF_CURRENCY_AMT Stores the amount in local currency

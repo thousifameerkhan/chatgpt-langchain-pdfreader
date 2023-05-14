@@ -1,14 +1,13 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-BSB_APP_ORIG_SYS_XREF,VARCHAR2,,N,  Unique Identification Number from the Legacy System,,,,,,,,Y,,
-BSB_LIABILITY_TYPE_CD,VARCHAR2,,Y,  Stores Liability Type Code,LIABILITY_TYPE_CD,,,,,,,Y,,
-BSB_AMT,NUMBER,,Y,  Stores the Amount,,,,,,,,Y,,
-BSB_FREQ_CD,VARCHAR2,,Y,  Stores the Frequency Code,FREQ_CD,,,,,,,Y,,
-BSB_CTL_ACCT_BALANCE,NUMBER,,N,  Stores the Account Balance,,,,,,,,N,,
-BSB_CTL_ACCT_TYPE,VARCHAR2,,N,  Stores Account Type,,,,,,,,N,,
-BSB_INCLUDE_IND,VARCHAR2,,N,  Include Indicator,,,,,,,,N,,
-BSB_ACTUAL_MTHLY_AMT,NUMBER,,N,  Stores the Actual Monthly Amount,,,,,,,,N,,
-BSB_STATED_MTHLY_AMT,NUMBER,,N,  Stores the Stated Monthly Amount,,,,,,,,N,,
-BSB_COMMENT,VARCHAR2,,N,Comments on Business liabilities,,,,,,,,N,,
-BSB_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency for Business liabilities,,,,,,,,N,,
-BSB_CURRENCY_AMT,NUMBER,,N,Stores the amount in local currency,,,,,,,,Y,Y,Y
+key,description
+API_BUSINESS_APPL_LIABILITIES.BSB_APP_ORIG_SYS_XREF,BSB_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_LIABILITIES.BSB_LIABILITY_TYPE_CD,BSB_LIABILITY_TYPE_CD   Stores Liability Type Code
+API_BUSINESS_APPL_LIABILITIES.BSB_AMT,BSB_AMT   Stores the Amount
+API_BUSINESS_APPL_LIABILITIES.BSB_FREQ_CD,BSB_FREQ_CD   Stores the Frequency Code
+API_BUSINESS_APPL_LIABILITIES.BSB_CTL_ACCT_BALANCE,BSB_CTL_ACCT_BALANCE   Stores the Account Balance
+API_BUSINESS_APPL_LIABILITIES.BSB_CTL_ACCT_TYPE,BSB_CTL_ACCT_TYPE   Stores Account Type
+API_BUSINESS_APPL_LIABILITIES.BSB_INCLUDE_IND,BSB_INCLUDE_IND   Include Indicator
+API_BUSINESS_APPL_LIABILITIES.BSB_ACTUAL_MTHLY_AMT,BSB_ACTUAL_MTHLY_AMT   Stores the Actual Monthly Amount
+API_BUSINESS_APPL_LIABILITIES.BSB_STATED_MTHLY_AMT,BSB_STATED_MTHLY_AMT   Stores the Stated Monthly Amount
+API_BUSINESS_APPL_LIABILITIES.BSB_COMMENT,BSB_COMMENT Comments on Business liabilities
+API_BUSINESS_APPL_LIABILITIES.BSB_CUR_CURRENCY_CODE,BSB_CUR_CURRENCY_CODE Reference key to Currency for Business liabilities
+API_BUSINESS_APPL_LIABILITIES.BSB_CURRENCY_AMT,BSB_CURRENCY_AMT Stores the amount in local currency

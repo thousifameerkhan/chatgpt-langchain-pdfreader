@@ -1,38 +1,37 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-TXN_APP_ORIG_SYS_XREF,VARCHAR2,,N,Reference key to account id of legacy system,,,,,,,,Y,Y,
-TXN_SEQ,NUMBER,,N,The transaction sequence number,,,,,,,,N,N,
-TXN_TCD_CODE,VARCHAR2,,N,Reference key to transaction,,,,,,,,Y,Y,
-TXN_REASON_CD,VARCHAR2,,N,Reference key to lookup transaction reason,TXN_REASON_CD,,,,,,,N,N,
-TXN_MODE_CD,VARCHAR2,,N,Reference key to lookup transaction mode,TXN_MODE_CD,,,,,,,N,N,
-TXN_REFERENCE,VARCHAR2,,N,Reference information,,,,,,,,N,N,
-TXN_COMMENT,VARCHAR2,,N,The error reason or comment for transaction posting,,,,,,,,N,N,
-TXN_BALANCE_AMT,NUMBER,,N,The receivable balance after the posting of the current transaction,,,,,,,,Y,Y,
-TXN_POST_DT,DATE,,N,Date when the transaction was posted to the system,,,,,,,,Y,Y,
-TXN_DT,DATE,,N,Transaction effective date,,,,,,,,Y,Y,
-TXN_AMT,NUMBER,,N,Transaction amount,,,,,,,,Y,Y,
-TXN_PMT_AMT,NUMBER,,N,New payment amount,,,,,,,,N,N,
-TXN_SPR_SPREAD,VARCHAR2,,N,Reference key to spread,,,,,,,,N,N,
-PAL_AMT_ADV,NUMBER,,N,The payment amount allocated to Advance balance,,,,,,,,N,N,
-PAL_AMT_INT,NUMBER,,N,The payment amount allocated to Interest balance,,,,,,,,N,N,
-PAL_AMT_LC,NUMBER,,N,The payment amount allocated to Late Charge Fee balance,,,,,,,,N,N,
-PAL_AMT_NSF,NUMBER,,N,The payment amount allocated to NSF Fee balance,,,,,,,,N,N,
-PAL_AMT_OVERAGE,NUMBER,,N,The payment amount allocated to overage,,,,,,,,N,N,
-PAL_AMT_EXT,NUMBER,,N,The payment amount allocated to Extension Fee balance,,,,,,,,N,N,
-PAL_AMT_MEM,NUMBER,,N,The payment amount allocated to Membership Fee balance,,,,,,,,N,N,
-PAL_AMT_OVR,NUMBER,,N,The payment amount allocated to Overlimit Fee balance,,,,,,,,N,N,
-PAL_AMT_FADV,NUMBER,,N,The payment amount allocated to Advance Fee balance,,,,,,,,N,N,
-PAL_AMT_PPP,NUMBER,,N,The payment amount allocated to Pre Payment Penalty Fee balance,,,,,,,,N,N,
-PAL_AMT_OVR,NUMBER,,N,The payment amount allocated to Overlimit Fee balance,,,,,,,,N,N,
-PAL_AMT_PPP,NUMBER,,N,The payment amount allocated to Pre Payment Penalty Fee balance,,,,,,,,N,N,
-PAL_AMT_FADV,NUMBER,,N,The payment amount allocated to Advance Fee balance,,,,,,,,N,N,
-PAL_AMT_MEM,NUMBER,,N,The payment amount allocated to Membership Fee balance,,,,,,,,N,N,
-PAL_AMT_EXT,NUMBER,,N,The payment amount allocated to Extension Fee balance,,,,,,,,N,N,
-TXN_PMT_AMT,NUMBER,,N,New payment amount,,,,,,,,N,N,
-TXN_PRIMARY_IND,VARCHAR2,,N,Indicates whether the transaction is a primary transaction,,,,,,,,N,N,
-TXN_CURRENCY_AMT,NUMBER,,N,Currency Transaction Amount,,,,,,,,Y,Y,
-TXN_CUR_CURRENCY_CODE,VARCHAR2,,N,Reference key to Currency,,,,,,,,Y,Y,
-TXN_EXTN_TERM,NUMBER,,N,New extension term,,,,,,,,Y,Y,
-TXN_DUE_DT,DATE,,N,Due date of the billing transaction,,,,,,,,N,N,
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
+key,description
+API_TXNS.TXN_APP_ORIG_SYS_XREF,TXN_APP_ORIG_SYS_XREF Reference key to account id of legacy system
+API_TXNS.TXN_SEQ,TXN_SEQ The transaction sequence number
+API_TXNS.TXN_TCD_CODE,TXN_TCD_CODE Reference key to transaction
+API_TXNS.TXN_REASON_CD,TXN_REASON_CD Reference key to lookup transaction reason
+API_TXNS.TXN_MODE_CD,TXN_MODE_CD Reference key to lookup transaction mode
+API_TXNS.TXN_REFERENCE,TXN_REFERENCE Reference information
+API_TXNS.TXN_COMMENT,TXN_COMMENT The error reason or comment for transaction posting
+API_TXNS.TXN_BALANCE_AMT,TXN_BALANCE_AMT The receivable balance after the posting of the current transaction
+API_TXNS.TXN_POST_DT,TXN_POST_DT Date when the transaction was posted to the system
+API_TXNS.TXN_DT,TXN_DT Transaction effective date
+API_TXNS.TXN_AMT,TXN_AMT Transaction amount
+API_TXNS.TXN_PMT_AMT,TXN_PMT_AMT New payment amount
+API_TXNS.TXN_SPR_SPREAD,TXN_SPR_SPREAD Reference key to spread
+API_TXNS.PAL_AMT_ADV,PAL_AMT_ADV The payment amount allocated to Advance balance
+API_TXNS.PAL_AMT_INT,PAL_AMT_INT The payment amount allocated to Interest balance
+API_TXNS.PAL_AMT_LC,PAL_AMT_LC The payment amount allocated to Late Charge Fee balance
+API_TXNS.PAL_AMT_NSF,PAL_AMT_NSF The payment amount allocated to NSF Fee balance
+API_TXNS.PAL_AMT_OVERAGE,PAL_AMT_OVERAGE The payment amount allocated to overage
+API_TXNS.PAL_AMT_EXT,PAL_AMT_EXT The payment amount allocated to Extension Fee balance
+API_TXNS.PAL_AMT_MEM,PAL_AMT_MEM The payment amount allocated to Membership Fee balance
+API_TXNS.PAL_AMT_OVR,PAL_AMT_OVR The payment amount allocated to Overlimit Fee balance
+API_TXNS.PAL_AMT_FADV,PAL_AMT_FADV The payment amount allocated to Advance Fee balance
+API_TXNS.PAL_AMT_PPP,PAL_AMT_PPP The payment amount allocated to Pre Payment Penalty Fee balance
+API_TXNS.PAL_AMT_OVR,PAL_AMT_OVR The payment amount allocated to Overlimit Fee balance
+API_TXNS.PAL_AMT_PPP,PAL_AMT_PPP The payment amount allocated to Pre Payment Penalty Fee balance
+API_TXNS.PAL_AMT_FADV,PAL_AMT_FADV The payment amount allocated to Advance Fee balance
+API_TXNS.PAL_AMT_MEM,PAL_AMT_MEM The payment amount allocated to Membership Fee balance
+API_TXNS.PAL_AMT_EXT,PAL_AMT_EXT The payment amount allocated to Extension Fee balance
+API_TXNS.TXN_PMT_AMT,TXN_PMT_AMT New payment amount
+API_TXNS.TXN_PRIMARY_IND,TXN_PRIMARY_IND Indicates whether the transaction is a primary transaction
+API_TXNS.TXN_CURRENCY_AMT,TXN_CURRENCY_AMT Currency Transaction Amount
+API_TXNS.TXN_CUR_CURRENCY_CODE,TXN_CUR_CURRENCY_CODE Reference key to Currency
+API_TXNS.TXN_EXTN_TERM,TXN_EXTN_TERM New extension term
+API_TXNS.TXN_DUE_DT,TXN_DUE_DT Due date of the billing transaction
+API_TXNS.CREATED_BY,CREATED_BY Standard Who
+API_TXNS.CREATION_DATE,CREATION_DATE Standard Who

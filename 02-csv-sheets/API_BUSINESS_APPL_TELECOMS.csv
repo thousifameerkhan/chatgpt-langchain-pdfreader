@@ -1,22 +1,21 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-BST_APP_ORIG_SYS_XREF,VARCHAR2,,N,  Unique Identification Number from the Legacy System,,,,,,,,Y,Y,Y
-BST_TELECOM_TYPE_CD,VARCHAR2,,Y,  Stores the Telecom Type Code,TELECOM_TYPE_CD,,,,,,,Y,Y,Y
-BST_PHONE,NUMBER,,Y,  Stores the Phone Number,,,,,,,,Y,Y,Y
-BST_CURRENT_IND,VARCHAR2,,N,  Indicates if the Telecom Current Indicator,,,,,,,,Y,Y,Y
-BST_PHONE_ISD_CD,VARCHAR2,,N,Phone ISD code,PHONE_ISD_CD,,,,,,,N,N,N
-BST_PHONE_EXTN,NUMBER,,N,Business Telecom Phone Extension,,,,,,,,N,N,N
-BST_CALL_START_TIME_PERIOD_CD,VARCHAR2,,N,Best call start time period code for Business Telecoms,TIME_PERIOD_CD,,,,,,,Y,Y,Y
-BST_TIME_ZONE_CD,VARCHAR2,,N,Stores the Timezone of the Business  telecoms,TIME_ZONE_CD,,,,,,,Y,Y,Y
-BST_CALL_END_TIME,NUMBER,,N,Best call end time for Business Telecoms,,,,,,,,Y,Y,Y
-BST_CALL_START_TIME,NUMBER,,N,Best call end time period code for Business Telecoms,,,,,,,,Y,Y,Y
-BST_BEST_CALL_DAY_CD,VARCHAR2,,N,Applicant Telecom Best Day To Call Code,,,,,,,,Y,Y,Y
-BST_CALL_END_TIME_PERIOD_CD,VARCHAR2,,N,Best call end time period code for Business Telecoms,,,,,,,,Y,N,N
-BST_CALL_END_TIME,NUMBER,,N,Best call end time for Business Telecoms,,,,,,,,Y,Y,Y
-BST_PERMISSION_TO_TEXT_IND,VARCHAR2,,N,Indicates Business applicant telecom permission to text,,,,,,,,Y,Y,N
-BST_PERMISSION_TO_CALL_IND,VARCHAR2,,N,Indicates Business Applicant telecom permission to call,,,,,,,,Y,Y,N
-BST_CALL_START_TIME_PERIOD_CD,VARCHAR2,,N,Best call start time period code for Business Telecoms,TIME_PERIOD_CD,,,,,,,Y,Y,Y
-BST_CALL_START_TIME,NUMBER,,N,Best call end time period code for Business Telecoms,,,,,,,,Y,Y,Y
-BST_BEST_CALL_DAY_CD,VARCHAR2,,N,Applicant Telecom Best Day To Call Code,CALENDAR_DAYS_CD,,,,,,,Y,Y,Y
-BST_TIME_ZONE_CD,VARCHAR2,,N,Stores the Timezone of the Business  telecoms,TIME_ZONE_CD,,,,,,,Y,Y,Y
-BST_CALL_END_TIME_PERIOD_CD,VARCHAR2,,N,Best call end time period code for Business Telecoms,TIME_PERIOD_CD,,,,,,,Y,Y,Y
+key,description
+API_BUSINESS_APPL_TELECOMS.BST_APP_ORIG_SYS_XREF,BST_APP_ORIG_SYS_XREF   Unique Identification Number from the Legacy System
+API_BUSINESS_APPL_TELECOMS.BST_TELECOM_TYPE_CD,BST_TELECOM_TYPE_CD   Stores the Telecom Type Code
+API_BUSINESS_APPL_TELECOMS.BST_PHONE,BST_PHONE   Stores the Phone Number
+API_BUSINESS_APPL_TELECOMS.BST_CURRENT_IND,BST_CURRENT_IND   Indicates if the Telecom Current Indicator
+API_BUSINESS_APPL_TELECOMS.BST_PHONE_ISD_CD,BST_PHONE_ISD_CD Phone ISD code
+API_BUSINESS_APPL_TELECOMS.BST_PHONE_EXTN,BST_PHONE_EXTN Business Telecom Phone Extension
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME_PERIOD_CD,BST_CALL_START_TIME_PERIOD_CD Best call start time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_TIME_ZONE_CD,BST_TIME_ZONE_CD Stores the Timezone of the Business  telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME,BST_CALL_END_TIME Best call end time for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME,BST_CALL_START_TIME Best call end time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_BEST_CALL_DAY_CD,BST_BEST_CALL_DAY_CD Applicant Telecom Best Day To Call Code
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME_PERIOD_CD,BST_CALL_END_TIME_PERIOD_CD Best call end time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME,BST_CALL_END_TIME Best call end time for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_PERMISSION_TO_TEXT_IND,BST_PERMISSION_TO_TEXT_IND Indicates Business applicant telecom permission to text
+API_BUSINESS_APPL_TELECOMS.BST_PERMISSION_TO_CALL_IND,BST_PERMISSION_TO_CALL_IND Indicates Business Applicant telecom permission to call
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME_PERIOD_CD,BST_CALL_START_TIME_PERIOD_CD Best call start time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_START_TIME,BST_CALL_START_TIME Best call end time period code for Business Telecoms
+API_BUSINESS_APPL_TELECOMS.BST_BEST_CALL_DAY_CD,BST_BEST_CALL_DAY_CD Applicant Telecom Best Day To Call Code
+API_BUSINESS_APPL_TELECOMS.BST_TIME_ZONE_CD,BST_TIME_ZONE_CD Stores the Timezone of the Business  telecoms
+API_BUSINESS_APPL_TELECOMS.BST_CALL_END_TIME_PERIOD_CD,BST_CALL_END_TIME_PERIOD_CD Best call end time period code for Business Telecoms

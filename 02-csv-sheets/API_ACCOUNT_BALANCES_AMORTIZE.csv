@@ -1,57 +1,56 @@
-OFSLL Field Mapping for Conversion,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Source Details,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-Column Name,Data Type,Size,Required ?,Hint,Refer Lookup,Hint,Refer Lookup,Source Table Name,Source Field Name,Data Type,Size,Loans,Lease,Line
-ABA_APP_ORIG_SYS_XREF,VARCHAR2,,N,External Reference Number,,,,,,,,Y,Y,
-ABA_TXN_TYPE_CD1,VARCHAR2,,N,Amortize transaction type code 1,TXN_TYPE_CD,,,,,,,N,N,
-ABA_BAL1,NUMBER,,N,Total amount to be amortize for balance type 1,,,,,,,,N,N,
-ABA_BAL_EARNED1,NUMBER,,N,Amortize Amount earned for balance type 1,,,,,,,,N,N,
-ABA_BAL_WRITEOFF1,NUMBER,,N,Amortize amount written-off for balance type 1,,,,,,,,N,N,
-ABA_TXN_TYPE_CD2,VARCHAR2,,N,Amortize transaction type code 2,TXN_TYPE_CD,,,,,,,N,N,
-ABA_BAL2,NUMBER,,N,Total amount to be amortize for balance type 2,,,,,,,,N,N,
-ABA_BAL_EARNED2,NUMBER,,N,Amortize Amount earned for balance type 2,,,,,,,,N,N,
-ABA_BAL_WRITEOFF2,NUMBER,,N,Amortize amount written-off for balance type 2,,,,,,,,N,N,
-ABA_TXN_TYPE_CD3,VARCHAR2,,N,Amortize transaction type code 3,TXN_TYPE_CD,,,,,,,N,N,
-ABA_BAL3,NUMBER,,N,Total amount to be amortize for balance type 3,,,,,,,,N,N,
-ABA_BAL_EARNED3,NUMBER,,N,Amortize Amount earned for balance type 3,,,,,,,,N,N,
-ABA_BAL_WRITEOFF3,NUMBER,,N,Amortize amount written-off for balance type 3,,,,,,,,N,N,
-ABA_TXN_TYPE_CD4,VARCHAR2,,N,Amortize transaction type code 4,TXN_TYPE_CD,,,,,,,N,N,
-ABA_BAL4,NUMBER,,N,Total amount to be amortize for balance type 4,,,,,,,,N,N,
-ABA_BAL_EARNED4,NUMBER,,N,Amortize Amount earned for balance type 4,,,,,,,,N,N,
-ABA_BAL_WRITEOFF4,NUMBER,,N,Amortize amount written-off for balance type 4,,,,,,,,N,N,
-ABA_TXN_TYPE_CD5,VARCHAR2,,N,Amortize transaction type code 5,TXN_TYPE_CD,,,,,,,N,N,
-ABA_BAL5,NUMBER,,N,Total amount to be amortize for balance type 5,,,,,,,,N,N,
-ABA_BAL_EARNED5,NUMBER,,N,Amortize Amount earned for balance type 5,,,,,,,,N,N,
-ABA_BAL_WRITEOFF5,NUMBER,,N,Amortize amount written-off for balance type 5,,,,,,,,N,N,
-ABA_FASB_RATE1,NUMBER,,N,Interest rate for the FASB amortization calculation 1,,,,,,,,N,N,
-ABA_FASB_BAL1,NUMBER,,N,Total FASB amortization balance 1,,,,,,,,N,N,
-ABA_FASB_EFFECTIVE_BAL1,NUMBER,,N,Total effective FASB amortization balance 1,,,,,,,,N,N,
-ABA_FASB_RATE2,NUMBER,,N,Interest rate for the FASB amortization calculation 2,,,,,,,,N,N,
-ABA_FASB_BAL2,NUMBER,,N,Total FASB amortization balance 2,,,,,,,,N,N,
-ABA_FASB_EFFECTIVE_BAL2,NUMBER,,N,Total effective FASB amortization balance 2,,,,,,,,N,N,
-ABA_FASB_RATE3,NUMBER,,N,Interest rate for the FASB amortization calculation 3,,,,,,,,N,N,
-ABA_FASB_BAL3,NUMBER,,N,Total FASB amortization balance 3,,,,,,,,N,N,
-ABA_FASB_EFFECTIVE_BAL3,NUMBER,,N,Total effective FASB amortization balance 3,,,,,,,,N,N,
-ABA_AMORTIZE_FREQ_CD1,VARCHAR2,,N,Stores the amortization frequency -1 for the balance and it is used for converting accounts from other system,AMORTIZE_FREQ_CD,,,,,,,N,N,
-ABA_AMORTIZE_FREQ_CD2,VARCHAR2,,N,Stores the amortization frequency -2 for the balance and it is used for converting accounts from other system,AMORTIZE_FREQ_CD,,,,,,,N,N,
-ABA_AMORTIZE_FREQ_CD3,VARCHAR2,,N,Stores the amortization frequency -3 for the balance and it is used for converting accounts from other system,AMORTIZE_FREQ_CD,,,,,,,N,N,
-ABA_AMORTIZE_FREQ_CD4,VARCHAR2,,N,Stores the amortization frequency -4 for the balance and it is used for converting accounts from other system,AMORTIZE_FREQ_CD,,,,,,,N,N,
-ABA_AMORTIZE_FREQ_CD5,VARCHAR2,,N,Stores the amortization frequency -5 for the balance and it is used for converting accounts from other system,AMORTIZE_FREQ_CD,,,,,,,N,N,
-ABA_AMORTIZE_START_DT1,DATE,,N,Stores the amortization start date -1 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_START_DT2,DATE,,N,Stores the amortization start date -2 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_START_DT3,DATE,,N,Stores the amortization start date -3 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_START_DT4,DATE,,N,Stores the amortization start date -4 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_START_DT5,DATE,,N,Stores the amortization start date -5 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_FIRST_AMORTIZE_DT1,DATE,,N,Stores the first amortization date-1 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_FIRST_AMORTIZE_DT2,DATE,,N,Stores the first amortization date-2 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_FIRST_AMORTIZE_DT3,DATE,,N,Stores the first amortization date-3 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_FIRST_AMORTIZE_DT4,DATE,,N,Stores the first amortization date-4 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_FIRST_AMORTIZE_DT5,DATE,,N,Stores the first amortization date-5 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_END_DT1,DATE,,N,Stores the amortization end date -1 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_END_DT2,DATE,,N,Stores the amortization end date -2 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_END_DT3,DATE,,N,Stores the amortization end date -3 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_END_DT4,DATE,,N,Stores the amortization end date -4 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_AMORTIZE_END_DT5,DATE,,N,Stores the amortization end date -5 for the balance and it is used for converting accounts from other system,,,,,,,,N,N,
-ABA_DT,DATE,,Y,Amortization Date,,,,,,,,N,N,
-ABA_AMORTIZE_START_DT,DATE,,N,Stores the date on which amortization of the balance should start,,,,,,,,N,Y,N
-ABA_FIRST_AMORTIZE_DT,DATE,,N,Stores the first amortization date for the balance,,,,,,,,N,Y,N
-CREATED_BY,VARCHAR2,,Y,Standard Who,,,,,,,,Y,Y,Y
-CREATION_DATE,DATE,,Y,Standard Who,,,,,,,,Y,Y,Y
+key,description
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_APP_ORIG_SYS_XREF,ABA_APP_ORIG_SYS_XREF External Reference Number
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD1,ABA_TXN_TYPE_CD1 Amortize transaction type code 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL1,ABA_BAL1 Total amount to be amortize for balance type 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED1,ABA_BAL_EARNED1 Amortize Amount earned for balance type 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF1,ABA_BAL_WRITEOFF1 Amortize amount written-off for balance type 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD2,ABA_TXN_TYPE_CD2 Amortize transaction type code 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL2,ABA_BAL2 Total amount to be amortize for balance type 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED2,ABA_BAL_EARNED2 Amortize Amount earned for balance type 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF2,ABA_BAL_WRITEOFF2 Amortize amount written-off for balance type 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD3,ABA_TXN_TYPE_CD3 Amortize transaction type code 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL3,ABA_BAL3 Total amount to be amortize for balance type 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED3,ABA_BAL_EARNED3 Amortize Amount earned for balance type 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF3,ABA_BAL_WRITEOFF3 Amortize amount written-off for balance type 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD4,ABA_TXN_TYPE_CD4 Amortize transaction type code 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL4,ABA_BAL4 Total amount to be amortize for balance type 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED4,ABA_BAL_EARNED4 Amortize Amount earned for balance type 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF4,ABA_BAL_WRITEOFF4 Amortize amount written-off for balance type 4
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_TXN_TYPE_CD5,ABA_TXN_TYPE_CD5 Amortize transaction type code 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL5,ABA_BAL5 Total amount to be amortize for balance type 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_EARNED5,ABA_BAL_EARNED5 Amortize Amount earned for balance type 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_BAL_WRITEOFF5,ABA_BAL_WRITEOFF5 Amortize amount written-off for balance type 5
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_RATE1,ABA_FASB_RATE1 Interest rate for the FASB amortization calculation 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_BAL1,ABA_FASB_BAL1 Total FASB amortization balance 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_EFFECTIVE_BAL1,ABA_FASB_EFFECTIVE_BAL1 Total effective FASB amortization balance 1
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_RATE2,ABA_FASB_RATE2 Interest rate for the FASB amortization calculation 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_BAL2,ABA_FASB_BAL2 Total FASB amortization balance 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_EFFECTIVE_BAL2,ABA_FASB_EFFECTIVE_BAL2 Total effective FASB amortization balance 2
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_RATE3,ABA_FASB_RATE3 Interest rate for the FASB amortization calculation 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_BAL3,ABA_FASB_BAL3 Total FASB amortization balance 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FASB_EFFECTIVE_BAL3,ABA_FASB_EFFECTIVE_BAL3 Total effective FASB amortization balance 3
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD1,ABA_AMORTIZE_FREQ_CD1 Stores the amortization frequency -1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD2,ABA_AMORTIZE_FREQ_CD2 Stores the amortization frequency -2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD3,ABA_AMORTIZE_FREQ_CD3 Stores the amortization frequency -3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD4,ABA_AMORTIZE_FREQ_CD4 Stores the amortization frequency -4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_FREQ_CD5,ABA_AMORTIZE_FREQ_CD5 Stores the amortization frequency -5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT1,ABA_AMORTIZE_START_DT1 Stores the amortization start date -1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT2,ABA_AMORTIZE_START_DT2 Stores the amortization start date -2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT3,ABA_AMORTIZE_START_DT3 Stores the amortization start date -3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT4,ABA_AMORTIZE_START_DT4 Stores the amortization start date -4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT5,ABA_AMORTIZE_START_DT5 Stores the amortization start date -5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT1,ABA_FIRST_AMORTIZE_DT1 Stores the first amortization date-1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT2,ABA_FIRST_AMORTIZE_DT2 Stores the first amortization date-2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT3,ABA_FIRST_AMORTIZE_DT3 Stores the first amortization date-3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT4,ABA_FIRST_AMORTIZE_DT4 Stores the first amortization date-4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT5,ABA_FIRST_AMORTIZE_DT5 Stores the first amortization date-5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT1,ABA_AMORTIZE_END_DT1 Stores the amortization end date -1 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT2,ABA_AMORTIZE_END_DT2 Stores the amortization end date -2 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT3,ABA_AMORTIZE_END_DT3 Stores the amortization end date -3 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT4,ABA_AMORTIZE_END_DT4 Stores the amortization end date -4 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_END_DT5,ABA_AMORTIZE_END_DT5 Stores the amortization end date -5 for the balance and it is used for converting accounts from other system
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_DT,ABA_DT Amortization Date
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_AMORTIZE_START_DT,ABA_AMORTIZE_START_DT Stores the date on which amortization of the balance should start
+API_ACCOUNT_BALANCES_AMORTIZE.ABA_FIRST_AMORTIZE_DT,ABA_FIRST_AMORTIZE_DT Stores the first amortization date for the balance
+API_ACCOUNT_BALANCES_AMORTIZE.CREATED_BY,CREATED_BY Standard Who
+API_ACCOUNT_BALANCES_AMORTIZE.CREATION_DATE,CREATION_DATE Standard Who
