@@ -64,3 +64,9 @@
 ## Misc
 - pip install pandas openpyxl
 - remove_comma.py is the file that travers through the excel sheet and extracts the data into csv files. comma is replaced by a space.
+
+
+refernce :
+
+https://weaviate.io/developers/weaviate/api/graphql/vector-search-parameters#nearvector
+https://openai.com/blog/new-and-improved-embedding-model
