@@ -17,72 +17,60 @@ def load_env_variables():
 
     # Loading API Key
     load_dotenv()
-    
+
     print('\n##########################################################')
     print('>>>>>>>>>>>>>  Displaying Environment Variables <<<<<<<<<<')
     print('##########################################################')
-    print('Loaded OpenAI API Key     -> '+os.getenv("OPENAI_API_KEY"))
-    print('Loaded Weaviate URL       -> '+os.getenv("WEAVIATE_URL"))
-    print('Loaded CSV Location       -> '+os.getenv("CSV_FILE_LOCATION"))
-    print('Loaded Master ClassName   -> '+os.getenv("MASTER_CLASS_NAME"))
+    print('Loaded OpenAI API Key     -> ' + os.getenv("OPENAI_API_KEY"))
+    print('Loaded Weaviate URL       -> ' + os.getenv("WEAVIATE_URL"))
+    print('Loaded CSV Location       -> ' + os.getenv("CSV_FILE_LOCATION"))
+    print('Loaded Master ClassName   -> ' + os.getenv("MASTER_CLASS_NAME"))
     print('##########################################################\n')
 
     class_name = os.getenv("MASTER_CLASS_NAME")
     weaviate_url = os.getenv("WEAVIATE_URL")
-    weaviate_client = weaviate.Client(
-                                        weaviate_url
-                                     )
-
-def show_dataframe(df):
-    return df.style.hide_index().set_table_attributes('class="table"').render()
+    weaviate_client = weaviate.Client(weaviate_url)
 
 
 def prompt_text(prompt):
-  # Declare Global Variables
-  load_env_variables()
-  global class_name
-  global weaviate_client
-  global df
-  openai.api_key = os.getenv("OPENAI_API_KEY")
-  
-  # Embedding User Input
-  input_embedding = get_embedding(prompt, engine="text-embedding-ada-002")
+    # Declare Global Variables
+    load_env_variables()
+    global class_name
+    global weaviate_client
+    openai.api_key = os.getenv("OPENAI_API_KEY")
 
-  # Semantic Search
-  vec = {"vector": input_embedding}
-  result = weaviate_client \
-        .query.get(class_name, ["key","description", "_additional {certainty}"]) \
+    # Embedding User Input
+    input_embedding = get_embedding(prompt, engine="text-embedding-ada-002")
+
+    # Semantic Search
+    vec = {"vector": input_embedding}
+    result = weaviate_client \
+        .query.get(class_name, ["key", "description", "_additional {certainty}"]) \
         .with_near_vector(vec) \
         .with_limit(4) \
         .do()
-  print(result)
-  df = pd.DataFrame(result)
-  iface = gr.Interface(
-    fn=show_dataframe,
-    inputs=gr.inputs.Dataframe(),
-    outputs=gr.outputs.HTML(),
-    title="Display Pandas DataFrame as a Table",
-    description="This app displays a Pandas DataFrame as an HTML table using Gradio.",
-    theme="default"
-    )
-  output =""
-  closest_paragraphs = result.get('data').get('Get').get(class_name)
-  for p in closest_paragraphs:
-    output=output + " "+p.get('key')
+    print(result)
 
-  return(output)
+    output = []
+    closest_paragraphs = result.get('data').get('Get').get(class_name)
+    for p in closest_paragraphs:
+        output.append(p.get('key'))
+
+    return output
+
 
 def add_text(history, text):
     global valid_file
-    
+
     print("In Add Text")
-    history = history + [(text, None)]
-    history = history + [(None, prompt_text(text))]
+    matched_columns = prompt_text(text)
+    if matched_columns:
+        output_table = pd.DataFrame(matched_columns, columns=["Matched Columns"])
+        history = history + [(text, output_table)]
+    else:
+        history = history + [(text, "No matching columns found")]
 
     return history, ""
-
-    return df.style.hide_index().set_table_attributes('class="table"').render()
-
 
 
 def add_file(history, file):
@@ -91,11 +79,12 @@ def add_file(history, file):
     print("In Add File")
     if file.name.endswith(".csv"):  # Only accept CSV files
         valid_file = True
-        history = history + [("Uploaded file - "+file.name, None)]
+        history = history + [("Uploaded file - " + file.name, None)]
     else:
         valid_file = False
         history = history + [(None, "Upload only CSV Files")]
     return history
+
 
 def bot(history):
     global valid_file
@@ -104,38 +93,11 @@ def bot(history):
     valid_file = True
     return history
 
+
 def main():
-    with gr.Blocks(title="OFSLL DataMapper") as demo:
-        chatbot = gr.Chatbot([], elem_id="chatbot").style(height=750)
+    with gr.Interface(fn=bot, inputs="text", outputs="text") as iface:
+        iface.launch()
 
-        with gr.Row():
-            with gr.Column(scale=0.85):
-                txt = gr.Textbox(
-                    show_label=False,
-                    placeholder="Enter text and press enter, or upload csv",
-                ).style(container=False)
-            
-            with gr.Column(scale=0.15, min_width=0):
-                btn = gr.UploadButton("📁", file_types=["csv"])  # Allow only CSV files
-        
-        txt.submit(add_text, [chatbot, txt], [chatbot, txt]).then(
-                    bot, chatbot, chatbot
-                )
-        btn.upload(add_file, [chatbot, btn], [chatbot]).then(
-                    bot, chatbot, chatbot
-                )
-    
-    iface = gr.Interface(
-        fn=show_dataframe,
-        inputs=gr.inputs.Dataframe(),
-        outputs=gr.outputs.HTML(),
-        title="Display Pandas DataFrame as a Table",
-        description="This app displays a Pandas DataFrame as an HTML table using Gradio.",
-        theme="default"
-    )
-
-
-    demo.launch()
 
 if __name__ == '__main__':
     main()
