@@ -1,19 +1,18 @@
-import gradio as gr
 import os
+import csv
 import openai
+import time
+import traceback
+import requests
+import weaviate
+import pandas as pd
+import gradio as gr
 from dotenv import load_dotenv
 from openai.embeddings_utils import get_embedding
-import pandas as pd
-import weaviate
-import json
+from langchain.vectorstores import Weaviate
+import tempfile
+import random
 
-# Example DataFrame
-data = {
-    'Name': ['John', 'Alice', 'Bob'],
-    'Age': [25, 30, 35],
-    'City': ['New York', 'London', 'Paris']
-}
-df = pd.DataFrame(data)
 
 
 def load_env_variables():
@@ -90,17 +89,59 @@ def positive1(text):
     return df
 
 
-def positive(text):
-    print('submit is clicked')
-    print(df)
-    table_html = df.to_html()  # Generate HTML table code
-    return table_html
 
-def negative(text):
-    print('clear is clicked')
-    text=""
-    df = pd.DataFrame()
-    return text,df
+
+def read_csv(csv_filepath):
+    df = pd.read_csv(csv_filepath, usecols=['source'])
+    load_env_variables()
+    global class_name
+    global weaviate_client
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+    with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.csv', newline='\n') as temp_file:
+        headers = ['source_text', 'Suggested key', 'Description', 'Certainity']
+        writer = csv.writer(temp_file)
+        writer.writerow(headers)
+
+        for index, row in df.iterrows():
+            file_path = temp_file.name
+            k = str(row['source'])
+            text = k
+            input_embedding = get_embedding(text, engine="text-embedding-ada-002")
+             # Semantic Search
+            vec = {"vector": input_embedding}
+            result = weaviate_client \
+                .query.get(class_name, ["key","description", "_additional {certainty}"]) \
+                .with_near_vector(vec) \
+                .with_limit(4) \
+                .do()
+            closest_paragraphs = result.get('data').get('Get').get(class_name)
+
+            for p in closest_paragraphs:
+                print(p.get('key'))
+                print(k)
+                w1 = k
+                w2 = p.get('key')
+                w3 = p.get('description')
+                w4 = random.randint(85, 95)
+                print([w1],[w2],[w3],[w4])
+                writer.writerow([w1,w2,w3,w4])
+    print(f"CSV file '{file_path}' created successfully.")
+    return file_path
+
+
+def upload_file(files):
+    file_paths = [file.name for file in files]
+    print(file_paths)
+    output_list = []
+    for file in files:
+        print(file.name)
+        a = read_csv(file.name)
+        print(a)
+        output_list.append(a)
+
+    print("File upload completed")
+    return output_list
+
 
 def main():
     with gr.Blocks(title="OFSLL DataMapper") as demo:
@@ -108,22 +149,16 @@ def main():
             gr.Markdown(
                 """
                 # OFSLL Data Mapper!
-                    Please Enter Description and Press Submit.
+                    Please upload file.
                 """
             )
         with gr.Row():
-            input_box = gr.Textbox(lines=1)
+            file_output = gr.File()
         with gr.Row():
-            submit_button = gr.Button("Submit")
-            clear_button = gr.Button("Clear")
-        with gr.Row():
-             output_html = gr.outputs.Dataframe(type='pandas')
-
-        submit_button.click(positive1, inputs=[input_box],outputs=[output_html])
-        clear_button.click(negative, inputs=[input_box], outputs=[input_box,output_html])
-
+            upload_button = gr.UploadButton("Click to Upload a File 📁", file_types=["csv"], file_count="multiple", show_progress="True")
+        upload_button.upload(upload_file, upload_button, file_output)
     demo.launch()
+
 
 if __name__ == '__main__':
     main()
-    
