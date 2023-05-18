@@ -78,6 +78,8 @@ def positive1(text):
         print(p.get('key'))
         keys.append(p.get('key'))
         description.append(p.get('description'))
+        b=p.get('_additional')
+        print(b)
     a=(keys,description)
     print("json_dumps")
     a = {
@@ -102,6 +104,13 @@ def negative(text):
 
 def main():
     with gr.Blocks(title="OFSLL DataMapper") as demo:
+        with gr.Row():
+            gr.Markdown(
+                """
+                # OFSLL Data Mapper!
+                    Please Enter Description and Press Enter.
+                """
+            )
         with gr.Row():
             input_box = gr.Textbox(lines=1)
         with gr.Row():
