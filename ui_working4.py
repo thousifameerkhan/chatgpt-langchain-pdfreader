@@ -1,5 +1,11 @@
 import gradio as gr
+import os
+import openai
+from dotenv import load_dotenv
+from openai.embeddings_utils import get_embedding
 import pandas as pd
+import weaviate
+import json
 
 # Example DataFrame
 data = {
@@ -35,8 +41,50 @@ def load_env_variables():
 
 def positive1(text):
     print('submit is clicked')
-    print(df)
-    table_html = df.to_html()  # Generate HTML table code
+    # print(df)
+    # Declare Global Variables
+    load_env_variables()
+    global class_name
+    global weaviate_client
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+
+    input_embedding = get_embedding(text, engine="text-embedding-ada-002")
+
+    df = pd.DataFrame()
+
+     # Semantic Search
+    vec = {"vector": input_embedding}
+
+
+    # result = weaviate_client \
+    #    
+    #  .query.get(class_name, ["key","description", "_additional {certainty}"]) \
+    #     .with_near_vector(vec) \
+    #     .with_limit(4) \
+    #     .do()
+
+    result = weaviate_client \
+        .query.get(class_name, ["key","description"]) \
+        .with_near_vector(vec) \
+        .with_limit(4) \
+        .do()
+    closest_paragraphs = result.get('data').get('Get').get(class_name)
+    
+    #df = json.dumps(closest_paragraphs)
+    #print(df)
+    keys =[]
+    description = []
+    for p in closest_paragraphs:
+        print(p.get('key'))
+        keys.append(p.get('key'))
+        description.append(p.get('description'))
+    a=(keys,description)
+    print("json_dumps")
+    a = {
+        "KEY": a[0],
+        "DESCRIPTION": a[1]
+    }
+    df=pd.DataFrame(a)
     return df
 
 
@@ -53,7 +101,7 @@ def negative(text):
     return text,df
 
 def main():
-    with gr.Blocks(title="OFSLL DataMapper) as demo:
+    with gr.Blocks(title="OFSLL DataMapper") as demo:
         with gr.Row():
             input_box = gr.Textbox(lines=1)
         with gr.Row():
@@ -65,7 +113,7 @@ def main():
         submit_button.click(positive1, inputs=[input_box],outputs=[output_html])
         clear_button.click(negative, inputs=[input_box], outputs=[input_box,output_html])
 
-demo.launch()
+    demo.launch()
 
 if __name__ == '__main__':
     main()
